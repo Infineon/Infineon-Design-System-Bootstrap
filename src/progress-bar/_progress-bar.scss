@@ -1,0 +1,17 @@
+@use "@infineon/design-system-tokens/dist/tokens";
+
+.progress {
+  font-size: 13px;
+  border-radius: 1px;
+  background-color: tokens.$color-info-200;
+}
+
+.progress-bar {
+  background-color: tokens.$color-secondary-500;
+}
+
+.ifx {
+  &__progress-small {
+    height: 4px;
+  }
+}
