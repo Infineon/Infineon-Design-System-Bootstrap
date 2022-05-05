@@ -20,7 +20,7 @@
     "copy-fonts": "cp -a node_modules/@infineon/design-system-tokens/dist/fonts .storybook",
     "build-docs": "node tools/createMarkdownStories.js",
     "build-storybook": "build-storybook",
-    "build": "yarn copy-fonts && yarn build-tokens && yarn build-storybook",
+    "build": "yarn copy-fonts && yarn build-tokens && yarn build-docs && yarn build-storybook",
     "watch-docs": "chokidar \"*.md\" -c \"yarn build-docs\" --initial",
     "watch-storybook": "start-storybook -p 6006",
     "start": "yarn copy-fonts && concurrently -r yarn:watch-*",
@@ -29,7 +29,9 @@
     "bundle-fonts": "cp -a node_modules/@infineon/design-system-tokens/dist/fonts dist",
     "bundle-assets": "cp -a public/. dist",
     "bundle": "concurrently -r yarn:bundle-*",
-    "chromatic": "chromatic --build-script-name=build --exit-once-uploaded"
+    "package-source": "cp -a src dist-sources",
+    "package-assets": "cp -a public dist-sources",
+    "package": "concurrently -r yarn:package-*"
   },
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.1.16",
@@ -51,7 +53,6 @@
     "@whitespace/storybook-addon-html": "git+https://github.com/lmestel/storybook-addon-html.git",
     "babel-loader": "^8.2.3",
     "chokidar-cli": "^3.0.0",
-    "chromatic": "^6.2.0",
     "concurrently": "^6.4.0",
     "css-loader": "^6.5.1",
     "esbuild": "^0.14.38",
