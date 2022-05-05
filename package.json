@@ -20,7 +20,7 @@
     "copy-fonts": "cp -a node_modules/@infineon/design-system-tokens/dist/fonts .storybook",
     "build-docs": "node tools/createMarkdownStories.js",
     "build-storybook": "build-storybook",
-    "build": "yarn copy-fonts && yarn build-tokens && yarn build-docs && yarn build-storybook",
+    "build": "yarn copy-fonts && yarn build-docs && yarn build-storybook",
     "watch-docs": "chokidar \"*.md\" -c \"yarn build-docs\" --initial",
     "watch-storybook": "start-storybook -p 6006",
     "start": "yarn copy-fonts && concurrently -r yarn:watch-*",
