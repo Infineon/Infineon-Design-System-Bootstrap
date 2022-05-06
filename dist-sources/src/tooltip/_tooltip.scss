@@ -1,0 +1,32 @@
+@use "@infineon/design-system-tokens/dist/tokens";
+
+.tooltip {
+  filter: drop-shadow(0px 5px 20px rgba(36, 34, 34, 0.2));
+}
+
+.bs-tooltip-top .tooltip-arrow::before,
+.bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before {
+  border-top-color: tokens.$color-info-600;
+}
+
+.bs-tooltip-end .tooltip-arrow::before,
+.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before {
+  border-right-color: tokens.$color-info-600;
+}
+
+.bs-tooltip-bottom .tooltip-arrow::before,
+.bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before {
+  border-bottom-color: tokens.$color-info-600;
+}
+
+.bs-tooltip-start .tooltip-arrow::before,
+.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before {
+  border-left-color: tokens.$color-info-600;
+}
+
+.tooltip-inner {
+  font-size: tokens.$font-size-m;
+  background-color: tokens.$color-info-600;
+  border-radius: 1px;
+  padding: 0 16px;
+}

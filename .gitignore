@@ -3,6 +3,7 @@
 src/*/_*-tokens.scss
 storybook-static
 .storybook/fonts
+tmp/
 
 # Logs
 logs
@@ -89,6 +90,7 @@ typings/
 
 # TODO re-add this, when modules is published for real
 # dist
+# dist-sources
 
 # Gatsby files
 .cache/

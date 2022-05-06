@@ -1,0 +1,84 @@
+@use "@infineon/design-system-tokens/dist/tokens";
+
+.btn-group {
+  .btn:not(.btn-outline-primary, 
+           .btn-outline-secondary,
+           .btn-outline-success,
+           .btn-outline-danger,
+           .btn-outline-warning) {
+    border-color: tokens.$color-info-200;
+  }
+
+  .btn {
+    padding: 8px 24px;
+
+    &.btn-primary, &.btn-secondary, &.btn-success, &.btn-danger, &.btn-warning {
+      &:focus {
+        border-color: tokens.$color-info-200;  
+      }
+  
+      &:hover {
+        border-color: tokens.$color-info-200;  
+      }
+  
+      &:active, &.active {
+        border-color: tokens.$color-info-200;  
+      }
+    }
+
+    &.btn-primary {
+      &:focus-visible {
+        border-color: tokens.$color-primary-400;  
+      }
+    }
+
+    &.btn-secondary {
+      &:focus-visible {
+        border-color: tokens.$color-secondary-400;  
+      }
+    }
+
+    &.btn-success {
+      &:focus-visible {
+        border-color: tokens.$color-success-400;  
+      }
+    }
+
+    &.btn-danger {
+      &:focus-visible {
+        border-color: tokens.$color-danger-400;  
+      }
+    }
+
+    &.btn-warning {
+      &:focus-visible {
+        border-color: tokens.$color-warning-400;  
+      }
+    }
+  }
+
+  & .btn + .btn-outline-primary:disabled, & .btn-outline-primary.disabled {
+    border-left-color: tokens.$color-primary-500;
+  }
+
+  & .btn + .btn-outline-secondary:disabled, & .btn-outline-secondary.disabled {
+    border-left-color: tokens.$color-secondary-500;
+  }
+
+  & .btn + .btn-outline-success:disabled, & .btn-outline-success.disabled {
+    border-left-color: tokens.$color-success-500;
+  }
+
+  & .btn + .btn-outline-danger:disabled, & .btn-outline-danger.disabled {
+    border-left-color: tokens.$color-danger-500;
+  }
+
+  & .btn + .btn-outline-warning:disabled, & .btn-outline-warning.disabled {
+    border-left-color: tokens.$color-warning-500;
+  }
+}
+
+.btn-group-sm > .btn,
+.btn-group-lg > .btn  {
+  border-radius: 1px;
+}
