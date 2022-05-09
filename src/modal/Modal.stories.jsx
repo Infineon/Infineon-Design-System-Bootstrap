@@ -7,7 +7,6 @@ import BsModal from "react-bootstrap/Modal";
 export default {
   title: "Components/Modal",
   component: Modal,
-  args: {size: "m"}
 };
 
 const DefaultTemplate = (args) => {

@@ -1,23 +1,12 @@
-import PropTypes from "prop-types";
 import BsModal from "react-bootstrap/Modal";
 import { Button } from "../button/Button";
 import { useRef, useEffect } from "react";
 import { Modal as ModalScript } from "bootstrap";
 
-const propTypes = {
-  /** Specifies a large or small Modal */
-  size: PropTypes.oneOf(["s", "m", "l"]),
-};
-
-export const Modal = ({ size, children }) => {
-  const bsSize =
-    size === "s" ? "sm" 
-    : size === "l" ? "lg" 
-    : undefined;
-
+export const Modal = ({ children }) => {
   return (
     <div className="modal fade" id="exampleModal" tabIndex="-1" aria-hidden="true">
-      <BsModal.Dialog size={bsSize}>
+      <BsModal.Dialog>
         <BsModal.Header>
           <div className="modal-title">Modal title</div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -27,7 +16,6 @@ export const Modal = ({ size, children }) => {
     </div>
   )
 };
-Modal.propTypes = propTypes;
 
 export const ModalDemo = ( children ) => {
   return (props) => {
