@@ -19,18 +19,10 @@ export const Modal = ({ size, children }) => {
     <div className="modal fade" id="exampleModal" tabIndex="-1" aria-hidden="true">
       <BsModal.Dialog size={bsSize}>
         <BsModal.Header>
-          <BsModal.Title>Modal title</BsModal.Title>
+          <div className="modal-title">Modal title</div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </BsModal.Header>
-
-        <BsModal.Body>
-          {children}
-        </BsModal.Body>
-
-        <BsModal.Footer>
-          <Button color="primary" variant="outline" data-bs-dismiss="modal">Close</Button>
-          <Button>Save changes</Button>
-        </BsModal.Footer>
+        {children}
       </BsModal.Dialog>
     </div>
   )
