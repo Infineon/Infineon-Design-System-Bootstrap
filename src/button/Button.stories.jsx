@@ -36,12 +36,6 @@ const BorderSpinnerTemplate = (args) => (
   </Button>
 );
 
-const GrowingSpinnerTemplate = (args) => (
-  <Button {...args}>
-    <Spinner size="s" animation="grow"></Spinner>{args.label}
-  </Button>
-);
-
 const BadgeOnIconTemplate = (args) => (
   <div className="ifx__badge-on-icon position-relative d-inline-block">
     <div className="d-flex align-items-center">
@@ -62,11 +56,6 @@ ButtonBadge.args = {
 
 export const BorderSpinner = BorderSpinnerTemplate.bind({});
 BorderSpinner.args = {
-  color: "secondary",
-};
-
-export const GrowingSpinner = GrowingSpinnerTemplate.bind({});
-GrowingSpinner.args = {
   color: "secondary",
 };
 
