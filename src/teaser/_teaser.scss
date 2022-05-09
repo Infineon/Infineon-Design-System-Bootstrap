@@ -5,44 +5,27 @@
   border-radius: 1px;
 
   & .card-body {
-    padding: 17px 18px;
+    padding: 16px;
   }
 
-  & .card-title {
-    font-size: 28px;
+  .ifx__teaser-title {
+    font-size: 24px;
     font-weight: 600;
-    line-height: 35.2px;
+    line-height: 30px;
     margin-bottom: 8px;
   }
 
   & .card-subtitle {
     margin-top: 0;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
   }
-
-  & .card-link {
-    font-weight: 600;
-    color: tokens.$color-secondary-500;
-    text-decoration: none;
-  }
 }
-
-.ifx__teaser-vertical {
-  max-width: 370px;
-
-  .card-img-overlay {
-    height: calc(100% - 56px);
-  }
-
-  & .ifx__card-link-wrapper {
-    border-top: 1px solid tokens.$color-info-200;
-  }
-}
-
 
 .ifx__teaser-horizontal {
-  max-width: 711px;
+  @media (min-width: 768px) { 
+    max-width: 540px;
+  }
 
   & img {
     max-width: 100%;
@@ -50,7 +33,6 @@
 
   & .ifx__aspect-ratio {
     &__box-wrapper, .ifx__card__img {
-      max-width: 370px;
       width: 100%;
     }
 
@@ -87,29 +69,38 @@
 }
 
 .ifx__teaser-horizontal {
-  & .card-img-overlay {
-    height: calc(100% - 56px);
+  .row {
+    --bs-gutter-x: 0;
   }
 
-  & .card-title {
-    font-size: 28px;
+  .col-md-6 {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .card-body {
+    padding: 16px;
+    flex: 0;
   }
 
   & .ifx__card-link-wrapper {
-    border-top: 1px solid tokens.$color-info-200;
-  }
-
-  & .card-link {
-    color: tokens.$color-secondary-500;
-    text-decoration: none;
+    width: 100%;
+    margin-top: auto;
   }
 }
 
 .ifx__teaser-vertical {
+  @media (min-width: 768px) { 
+    max-width: 350px;
+  }
+
   & .ifx__aspect-ratio {
     &__box-wrapper, .ifx__card__img {
-      max-width: 370px;
       width: 100%;
+
+      @media (min-width: 768px) { 
+        max-width: 350px;
+      }
     }
 
     &__box {
@@ -141,5 +132,18 @@
     &--1-1 {
       padding-bottom: 100%;
     }
+  }
+}
+
+.ifx__teaser-event {
+  .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  & .card-subtitle + a {
+    display: inline-block;
+    margin-top: 0;
   }
 }
