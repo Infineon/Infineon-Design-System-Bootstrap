@@ -216,17 +216,6 @@
     height: 14px;
   }
 
-  & .btn-badge {
-    font-size: 13px;
-    font-weight: 400;
-    padding: 3.5px 5.5px 1.5px 5.5px;
-    min-width: 18px;
-    min-height: 18px;
-    margin-left: 12px;
-    line-height: 10px;
-    color: tokens.$color-black;
-  }
-
   & .spinner-border, .spinner-grow {
     width: 14px;
     height: 14px;
@@ -258,5 +247,34 @@
     &--after {
       margin-left: 10px;
     }
+  }
+}
+
+.btn-badge {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 2px 8px;
+  min-width: 18px;
+  min-height: 18px;
+  margin-left: 12px;
+  color: tokens.$color-black;
+}
+
+.ifx__badge-on-icon {
+  font-size: 13px;
+
+  svg {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+  }
+
+  & .btn-badge {
+    position: absolute;
+    top: -13px;
+    right: -16px;
+    color: tokens.$color-white;
+    margin-left: 0;
   }
 }
