@@ -278,3 +278,18 @@
     margin-left: 0;
   }
 }
+
+.ifx__btn-back-to-top {
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+  width: 30px;
+  height: 30px;
+  display: none;
+  padding: 0;
+  border-radius: tokens.$border-radius-circle;
+}
+
+.ifx__btn-back-to-top.scroll-down {
+  display: block;
+}
