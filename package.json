@@ -23,6 +23,7 @@
     "build": "yarn copy-fonts && yarn build-docs && yarn build-storybook",
     "watch-docs": "chokidar \"*.md\" -c \"yarn build-docs\" --initial",
     "watch-storybook": "start-storybook -p 6006",
+    "watch-css": "chokidar \"src/**/*.scss\" -c \"yarn bundle-css\" --initial",
     "start": "yarn copy-fonts && concurrently -r yarn:watch-*",
     "bundle-css": "sass --load-path=node_modules --style=compressed --no-source-map .storybook/index.scss dist/index.css",
     "bundle-js": "esbuild src/index.js --outfile=dist/index.js --bundle --platform=browser --minify",
