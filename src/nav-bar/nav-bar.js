@@ -1,11 +1,19 @@
+let navBar;
+let navBarHeight;
+let mobileShow;
+let currentContent;
+let desktopShow;
+let dropdowns;
+let navLinks;
+
 export function initNavBar() {
-  const navBar = document.querySelector(".ifx__navbar");
+  navBar = document.querySelector(".ifx__navbar");
 
   if ( !navBar ) {
     return
   }
 
-  let navBarHeight = navBar.offsetHeight;
+  navBarHeight = navBar.offsetHeight;
 
   function setShadow() {
     const scrollY = window.scrollY;
@@ -19,8 +27,7 @@ export function initNavBar() {
 
   document.addEventListener("scroll", setShadow, {passive: true});
 
-  const mobileShow = document.querySelector('.ifx__nav-link-wrapper.ifx__mobile-show');
-  let currentContent;
+  mobileShow = document.querySelector('.ifx__nav-link-wrapper.ifx__mobile-show');
   mobileShow.addEventListener('click', toggleMenu);
   window.addEventListener('resize', updateNavHeight, {passive: true});
 
@@ -65,16 +72,18 @@ export function initNavBar() {
     }
   }
 
-  const desktopShow = document.querySelector('.ifx__nav-list');
+  desktopShow = document.querySelector('.ifx__nav-list');
   if (!desktopShow) {
     return
   }
 
+  desktopShow.removeEventListener('click', toggleMenuDesktop);
   desktopShow.addEventListener('click', toggleMenuDesktop);
+
   desktopShow.addEventListener('focusout', toggleMenuItem);
 
-  const dropdowns = desktopShow.childNodes;
-  const navLinks = desktopShow.querySelectorAll('.nav-link');
+  dropdowns = desktopShow.childNodes;
+  navLinks = desktopShow.querySelectorAll('.nav-link');
 
   function toggleMenuDesktop(e) {
     const dropdownLink = e.target && e.target.closest(".ifx__nav-link");

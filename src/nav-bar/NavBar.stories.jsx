@@ -18,13 +18,21 @@ const image = {
   alt: 'infineon-logo',
 };
 
-const DefaultTemplate = (args) => {
+const JsWrapper = ({ children }) => {
   useEffect(() => {
     initNavBar();
   }, [])
 
   return (
     <>
+      {children}
+    </>
+  );
+}
+
+const DefaultTemplate = (args) => {
+  return (
+    <JsWrapper>
       <div className="ifx__navbar">
         <NavBar {...args}>
           <div className="d-flex">
@@ -120,17 +128,13 @@ const DefaultTemplate = (args) => {
       </div>
 
       <div style={{height: "200vh"}}></div>
-    </>
+    </JsWrapper>
   );
 }
 
 const ExtendedTemplate = (args) => {
-  useEffect(() => {
-    initNavBar();
-  }, [])
-
   return (
-    <>
+    <JsWrapper>
       <div className="ifx__navbar ifx__navbar-extended">
         <NavBar {...args}>
           <div className="d-flex align-items-center">
@@ -232,17 +236,13 @@ const ExtendedTemplate = (args) => {
       </div>
 
       <div style={{height: "200vh"}}></div>
-    </>
+    </JsWrapper>
   );
 }
 
 const ExtendedLevel2Template = (args) => {
-  useEffect(() => {
-    initNavBar();
-  }, [])
-
   return (
-    <>
+    <JsWrapper>
       <div className="ifx__navbar ifx__navbar-extended">
         <NavBar {...args}>
           <div className="d-flex align-items-center">
@@ -2035,7 +2035,7 @@ const ExtendedLevel2Template = (args) => {
       </div>
 
       <div style={{height: "200vh"}}></div>
-    </>
+    </JsWrapper>
   );
 }
 
@@ -2047,12 +2047,8 @@ const NavLinkWithIcon = ({label}) => (
 )
 
 const ExtendedLevel3Template = (args) => {
-  useEffect(() => {
-    initNavBar();
-  }, [])
-
   return (
-    <>
+    <JsWrapper>
       <div className="ifx__navbar ifx__navbar-extended">
         <NavBar {...args}>
           <div className="d-flex align-items-center">
@@ -4158,15 +4154,11 @@ const ExtendedLevel3Template = (args) => {
       </div>
       
       <div style={{height: "200vh"}}></div>
-    </>
+    </JsWrapper>
   );
 }
 
 const VerticalTemplate = (args) => {
-  useEffect(() => {
-    initNavBar();
-  }, [])
-
   return (
     <div className="ifx__nav-bar-vertical" {...args}>
       <div>
@@ -4233,10 +4225,6 @@ const VerticalTemplate = (args) => {
 }
 
 const VerticalCollapsibleTemplate = (args) => {
-  useEffect(() => {
-    initNavBar();
-  }, [])
-
   return (
     <div className="d-flex ifx__nav-bar-vertical ifx__nav-bar-vertical-collapsible">
       <div>
