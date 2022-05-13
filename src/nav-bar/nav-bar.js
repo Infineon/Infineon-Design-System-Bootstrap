@@ -1,5 +1,10 @@
 export function initNavBar() {
   const navBar = document.querySelector(".ifx__navbar");
+
+  if ( !navBar ) {
+    return
+  }
+
   let navBarHeight = navBar.offsetHeight;
 
   function setShadow() {
@@ -17,7 +22,7 @@ export function initNavBar() {
   const mobileShow = document.querySelector('.ifx__nav-link-wrapper.ifx__mobile-show');
   let currentContent;
   mobileShow.addEventListener('click', toggleMenu);
-  window.addEventListener('resize', updateNavHeight);
+  window.addEventListener('resize', updateNavHeight, {passive: true});
 
   function updateNavHeight() {
     navBarHeight = navBar.offsetHeight;
