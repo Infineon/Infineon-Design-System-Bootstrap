@@ -2039,10 +2039,1312 @@ const ExtendedLevel2Template = (args) => {
   );
 }
 
+// Mobile
+const NavMegaDropdownMobileLayer3 = ({label}) => (
+  <div className="w-100 ifx__nav-mega-dropdown-mobile ifx__nav-wrapper">
+    <div className="ifx__nav-mega-dropdown-mobile-content">
+      <div>
+      <BsNav.Link className="ifx__nav-mega-dropdown-last-layer" href="#" data-text="Overview Nav Link">
+        <FontAwesomeIcon icon={["fal", "chevron-left"]}/>
+          {label}
+      </BsNav.Link>
+      </div>
+      <div className="row">
+        <div className="col-sm-6">
+          <ul>
+            <li>
+              <BsNav.Link href="#" data-text="Overview Nav Link">
+                Overview Nav Link
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+          </ul>
+        </div>
+
+        <div className="col-sm-6">
+          <ul>
+            <li>
+              <BsNav.Link href="#" data-text="Overview Nav Link">
+                Overview Nav Link
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+          </ul>
+        </div>
+
+        <div className="col-sm-6">
+          <ul>
+            <li>
+              <BsNav.Link href="#" data-text="Overview Nav Link">
+                Overview Nav Link
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+          </ul>
+        </div>
+
+        <div className="col-sm-6">
+          <ul>
+            <li>
+              <BsNav.Link href="#" data-text="Overview Nav Link">
+                Overview Nav Link
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+            <li>
+              <BsNav.Link href="#" data-text="Navigationlink">
+                Navigationlink
+              </BsNav.Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+)
+
+// Mobile
+const NavMegaDropdownMobile = ({label}) => (
+  <div className="w-100 ifx__nav-mega-dropdown-mobile ifx__nav-wrapper">
+    <div className="ifx__nav-mega-dropdown-mobile-content">
+      <div>
+      <BsNav.Link className="ifx__nav-mega-dropdown-last-layer" href="#" data-text="Nav Link 1">
+        <FontAwesomeIcon icon={["fal", "chevron-left"]}/>
+          {label}
+      </BsNav.Link>
+      </div>
+      <div className="row">
+        <div className="col-sm-6">
+          <ul>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Overview Nav Link">
+                <div>
+                  <span>Overview Nav Link</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Overview Nav Link"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+          </ul>
+        </div>
+
+        <div className="col-sm-6">
+          <ul>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Overview Nav Link">
+                <div>
+                  <span>Overview Nav Link</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Overview Nav Link"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+          </ul>
+        </div>
+
+        <div className="col-sm-6">
+          <ul>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Overview Nav Link">
+                <div>
+                  <span>Overview Nav Link</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Overview Nav Link"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+          </ul>
+        </div>
+
+        <div className="col-sm-6">
+          <ul>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Overview Nav Link">
+                <div>
+                  <span>Overview Nav Link</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Overview Nav Link"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+            <li>
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+              </BsNav.Link>
+
+              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+)
+
+// Desktop
 const NavLinkWithIcon = ({label}) => (
   <div className="ifx__nav-link-with-icon">
-  <span>{label}</span>
-  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+    <span>{label}</span>
+    <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+  </div>
+)
+
+// Desktop
+const NavMegaDropdown = () => (
+  <div className="w-100 ifx__nav-mega-dropdown">
+    <div className="ifx__nav-wrapper">
+      <div className="row">
+        <div className="col-lg-6">
+          <BsNav.Link href="#" data-text="Overview Nav Link">
+            <NavLinkWithIcon label="Overview Nav Link"/>
+            <div className="w-100 ifx__nav-mega-dropdown-level-3">
+              <div className="w-100">
+                <div className="row">
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </BsNav.Link>
+
+          <BsNav.Link href="#" data-text="Navigationlink">
+            <NavLinkWithIcon label="Navigationlink"/>
+            <div className="w-100 ifx__nav-mega-dropdown-level-3">
+              <div className="w-100">
+                <div className="row">
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </BsNav.Link>
+
+          <BsNav.Link href="#" data-text="Navigationlink">
+            <NavLinkWithIcon label="Navigationlink"/>
+            <div className="w-100 ifx__nav-mega-dropdown-level-3">
+              <div className="w-100">
+                <div className="row">
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </BsNav.Link>
+
+          <BsNav.Link href="#" data-text="Navigationlink">
+            <NavLinkWithIcon label="Navigationlink"/>
+            <div className="w-100 ifx__nav-mega-dropdown-level-3">
+              <div className="w-100">
+                <div className="row">
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </BsNav.Link>
+
+          <BsNav.Link href="#" data-text="Navigationlink">
+            <NavLinkWithIcon label="Navigationlink"/>
+            <div className="w-100 ifx__nav-mega-dropdown-level-3">
+              <div className="w-100">
+                <div className="row">
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </BsNav.Link>
+
+          <BsNav.Link href="#" data-text="Navigationlink">
+            <NavLinkWithIcon label="Navigationlink"/>
+            <div className="w-100 ifx__nav-mega-dropdown-level-3">
+              <div className="w-100">
+                <div className="row">
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </BsNav.Link>
+
+          <BsNav.Link href="#" data-text="Navigationlink">
+            <NavLinkWithIcon label="Navigationlink"/>
+            <div className="w-100 ifx__nav-mega-dropdown-level-3">
+              <div className="w-100">
+                <div className="row">
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </BsNav.Link>
+        </div>
+
+        <div className="col-lg-6">
+          <BsNav.Link href="#" data-text="Overview Nav Link">
+            <NavLinkWithIcon label="Overview Nav Link"/>
+            <div className="w-100 ifx__nav-mega-dropdown-level-3">
+              <div className="w-100">
+                <div className="row">
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </BsNav.Link>
+
+          <BsNav.Link href="#" data-text="Navigationlink">
+            <NavLinkWithIcon label="Navigationlink"/>
+            <div className="w-100 ifx__nav-mega-dropdown-level-3">
+              <div className="w-100">
+                <div className="row">
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </BsNav.Link>
+
+          <BsNav.Link href="#" data-text="Navigationlink">
+            <NavLinkWithIcon label="Navigationlink"/>
+            <div className="w-100 ifx__nav-mega-dropdown-level-3">
+              <div className="w-100">
+                <div className="row">
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </BsNav.Link>
+
+          <BsNav.Link href="#" data-text="Navigationlink">
+            <NavLinkWithIcon label="Navigationlink"/>
+            <div className="w-100 ifx__nav-mega-dropdown-level-3">
+              <div className="w-100">
+                <div className="row">
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </BsNav.Link>
+
+          <BsNav.Link href="#" data-text="Navigationlink">
+            <NavLinkWithIcon label="Navigationlink"/>
+            <div className="w-100 ifx__nav-mega-dropdown-level-3">
+              <div className="w-100">
+                <div className="row">
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </BsNav.Link>
+
+          <BsNav.Link href="#" data-text="Navigationlink">
+            <NavLinkWithIcon label="Navigationlink"/>
+            <div className="w-100 ifx__nav-mega-dropdown-level-3">
+              <div className="w-100">
+                <div className="row">
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </BsNav.Link>
+
+          <BsNav.Link href="#" data-text="Navigationlink">
+            <NavLinkWithIcon label="Navigationlink"/>
+            <div className="w-100 ifx__nav-mega-dropdown-level-3">
+              <div className="w-100">
+                <div className="row">
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+
+                  <div className="col-lg-6">
+                    <BsNav.Link href="#" data-text="Overview Nav Link">
+                      Overview Nav Link
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                    <BsNav.Link href="#" data-text="Navigationlink">
+                      Navigationlink
+                    </BsNav.Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </BsNav.Link>
+        </div>
+      </div>
+    </div>
   </div>
 )
 
@@ -2096,249 +3398,7 @@ const ExtendedLevel3Template = (args) => {
                       </div>
                     </BsNav.Link>
 
-                    <div className="w-100 ifx__nav-mega-dropdown-mobile ifx__nav-wrapper">
-                      <div className="ifx__nav-mega-dropdown-mobile-content">
-                        <div>
-                        <BsNav.Link className="ifx__nav-mega-dropdown-last-layer" href="#" data-text="Nav Link 1">
-                          <FontAwesomeIcon icon={["fal", "chevron-left"]}/>
-                            Nav Link 1
-                        </BsNav.Link>
-                        </div>
-                        <div className="row">
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-
-                                <div className="w-100 ifx__nav-mega-dropdown-mobile ifx__nav-wrapper">
-                                  <div className="ifx__nav-mega-dropdown-mobile-content">
-                                    <div>
-                                    <BsNav.Link className="ifx__nav-mega-dropdown-last-layer" href="#" data-text="Overview Nav Link">
-                                      <FontAwesomeIcon icon={["fal", "chevron-left"]}/>
-                                        Overview Nav Link
-                                    </BsNav.Link>
-                                    </div>
-                                    <div className="row">
-                                      <div className="col-sm-6">
-                                        <ul>
-                                          <li>
-                                            <BsNav.Link href="#" data-text="Overview Nav Link">
-                                              Overview Nav Link
-                                            </BsNav.Link>
-                                          </li>
-                                          <li>
-                                            <BsNav.Link href="#" data-text="Navigationlink">
-                                              Navigationlink
-                                            </BsNav.Link>
-                                          </li>
-                                          <li>
-                                            <BsNav.Link href="#" data-text="Navigationlink">
-                                              Navigationlink
-                                            </BsNav.Link>
-                                          </li>
-                                          <li>
-                                            <BsNav.Link href="#" data-text="Navigationlink">
-                                              Navigationlink
-                                            </BsNav.Link>
-                                          </li>
-                                        </ul>
-                                      </div>
-
-                                      <div className="col-sm-6">
-                                        <ul>
-                                          <li>
-                                            <BsNav.Link href="#" data-text="Overview Nav Link">
-                                              Overview Nav Link
-                                            </BsNav.Link>
-                                          </li>
-                                          <li>
-                                            <BsNav.Link href="#" data-text="Navigationlink">
-                                              Navigationlink
-                                            </BsNav.Link>
-                                          </li>
-                                          <li>
-                                            <BsNav.Link href="#" data-text="Navigationlink">
-                                              Navigationlink
-                                            </BsNav.Link>
-                                          </li>
-                                          <li>
-                                            <BsNav.Link href="#" data-text="Navigationlink">
-                                              Navigationlink
-                                            </BsNav.Link>
-                                          </li>
-                                          <li>
-                                            <BsNav.Link href="#" data-text="Navigationlink">
-                                              Navigationlink
-                                            </BsNav.Link>
-                                          </li>
-                                          <li>
-                                            <BsNav.Link href="#" data-text="Navigationlink">
-                                              Navigationlink
-                                            </BsNav.Link>
-                                          </li>
-                                          <li>
-                                            <BsNav.Link href="#" data-text="Navigationlink">
-                                              Navigationlink
-                                            </BsNav.Link>
-                                          </li>
-                                        </ul>
-                                      </div>
-
-                                      <div className="col-sm-6">
-                                        <ul>
-                                          <li>
-                                            <BsNav.Link href="#" data-text="Overview Nav Link">
-                                              Overview Nav Link
-                                            </BsNav.Link>
-                                          </li>
-                                          <li>
-                                            <BsNav.Link href="#" data-text="Navigationlink">
-                                              Navigationlink
-                                            </BsNav.Link>
-                                          </li>
-                                        </ul>
-                                      </div>
-
-                                      <div className="col-sm-6">
-                                        <ul>
-                                          <li>
-                                            <BsNav.Link href="#" data-text="Overview Nav Link">
-                                              Overview Nav Link
-                                            </BsNav.Link>
-                                          </li>
-                                          <li>
-                                            <BsNav.Link href="#" data-text="Navigationlink">
-                                              Navigationlink
-                                            </BsNav.Link>
-                                          </li>
-                                          <li>
-                                            <BsNav.Link href="#" data-text="Navigationlink">
-                                              Navigationlink
-                                            </BsNav.Link>
-                                          </li>
-                                          <li>
-                                            <BsNav.Link href="#" data-text="Navigationlink">
-                                              Navigationlink
-                                            </BsNav.Link>
-                                          </li>
-                                          <li>
-                                            <BsNav.Link href="#" data-text="Navigationlink">
-                                              Navigationlink
-                                            </BsNav.Link>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link href="#" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link href="#" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link href="#" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <NavMegaDropdownMobile label="Nav Link 1"/>
                   </li>
 
                   <li>
@@ -2349,177 +3409,7 @@ const ExtendedLevel3Template = (args) => {
                       </div>
                     </BsNav.Link>
 
-                    <div className="w-100 ifx__nav-mega-dropdown-mobile ifx__nav-wrapper">
-                      <div className="ifx__nav-mega-dropdown-mobile-content">
-                        <div>
-                        <BsNav.Link className="ifx__nav-mega-dropdown-last-layer" href="#" data-text="Nav Link 2">
-                          <FontAwesomeIcon icon={["fal", "chevron-left"]}/>
-                            Nav Link 2
-                        </BsNav.Link>
-                        </div>
-                        <div className="row">
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link href="#" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link href="#" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link href="#" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link href="#" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <NavMegaDropdownMobile label="Nav Link 2"/>
                   </li>
 
                   <li>
@@ -2530,177 +3420,7 @@ const ExtendedLevel3Template = (args) => {
                       </div>
                     </BsNav.Link>
 
-                    <div className="w-100 ifx__nav-mega-dropdown-mobile ifx__nav-wrapper">
-                      <div className="ifx__nav-mega-dropdown-mobile-content">
-                        <div>
-                        <BsNav.Link className="ifx__nav-mega-dropdown-last-layer" href="#" data-text="Nav Link 2">
-                          <FontAwesomeIcon icon={["fal", "chevron-left"]}/>
-                            Nav Link 3
-                        </BsNav.Link>
-                        </div>
-                        <div className="row">
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link href="#" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link href="#" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link href="#" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link href="#" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <NavMegaDropdownMobile label="Nav Link 3"/>
                   </li>
 
                   <li>
@@ -2711,177 +3431,7 @@ const ExtendedLevel3Template = (args) => {
                       </div>
                     </BsNav.Link>
 
-                    <div className="w-100 ifx__nav-mega-dropdown-mobile ifx__nav-wrapper">
-                      <div className="ifx__nav-mega-dropdown-mobile-content">
-                        <div>
-                        <BsNav.Link className="ifx__nav-mega-dropdown-last-layer" href="#" data-text="Nav Link 2">
-                          <FontAwesomeIcon icon={["fal", "chevron-left"]}/>
-                            Nav Link 4
-                        </BsNav.Link>
-                        </div>
-                        <div className="row">
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link href="#" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link href="#" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link href="#" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link href="#" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <NavMegaDropdownMobile label="Nav Link 4"/>
                   </li>
 
                   <li>
@@ -2892,177 +3442,7 @@ const ExtendedLevel3Template = (args) => {
                       </div>
                     </BsNav.Link>
 
-                    <div className="w-100 ifx__nav-mega-dropdown-mobile ifx__nav-wrapper">
-                      <div className="ifx__nav-mega-dropdown-mobile-content">
-                        <div>
-                        <BsNav.Link className="ifx__nav-mega-dropdown-last-layer" href="#" data-text="Nav Link 2">
-                          <FontAwesomeIcon icon={["fal", "chevron-left"]}/>
-                            Nav Link 5
-                        </BsNav.Link>
-                        </div>
-                        <div className="row">
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link href="#" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link href="#" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link href="#" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link href="#" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="#" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <NavMegaDropdownMobile label="Nav Link 5"/>
                   </li>
                 </ul>
               </div>
@@ -3076,50 +3456,7 @@ const ExtendedLevel3Template = (args) => {
                   Nav Link 1
                 </BsNav.Link>
 
-                <div className="w-100 ifx__nav-mega-dropdown">
-                  <div>
-                    <div className="row">
-                      <div className="col-6 col-lg-3">
-                        <BsNav.Link href="#" data-text="Overview Nav Link">
-                          <NavLinkWithIcon label="Overview Nav Link"/>
-                        </BsNav.Link>
-                        <BsNav.Link href="#" data-text="Navigationlink">
-                          <NavLinkWithIcon label="Navigationlink"/>
-                        </BsNav.Link>
-                        <BsNav.Link href="#" data-text="Navigationlink">
-                          <NavLinkWithIcon label="Navigationlink"/>
-                        </BsNav.Link>
-                        <BsNav.Link href="#" data-text="Navigationlink">
-                          <NavLinkWithIcon label="Navigationlink"/>
-                        </BsNav.Link>
-                      </div>
-
-                      <div className="col-lg-3">
-                        <BsNav.Link href="#" data-text="Overview Nav Link">
-                          <NavLinkWithIcon label="Overview Nav Link"/>
-                        </BsNav.Link>
-                        <BsNav.Link href="#" data-text="Navigationlink">
-                          <NavLinkWithIcon label="Navigationlink"/>
-                        </BsNav.Link>
-                        <BsNav.Link href="#" data-text="Navigationlink">
-                          <NavLinkWithIcon label="Navigationlink"/>
-                        </BsNav.Link>
-                        <BsNav.Link href="#" data-text="Navigationlink">
-                          <NavLinkWithIcon label="Navigationlink"/>
-                        </BsNav.Link>
-                        <BsNav.Link href="#" data-text="Navigationlink">
-                          <NavLinkWithIcon label="Navigationlink"/>
-                        </BsNav.Link>
-                        <BsNav.Link href="#" data-text="Navigationlink">
-                          <NavLinkWithIcon label="Navigationlink"/>
-                        </BsNav.Link>
-                        <BsNav.Link href="#" data-text="Navigationlink">
-                          <NavLinkWithIcon label="Navigationlink"/>
-                        </BsNav.Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <NavMegaDropdown/>
               </li>
 
               <li>
@@ -3127,1026 +3464,31 @@ const ExtendedLevel3Template = (args) => {
                   Nav Link 2
                 </BsNav.Link>
 
-                <div className="w-100 ifx__nav-mega-dropdown">
-                  <div className="ifx__nav-wrapper">
-                    <div className="row">
-                      <div className="col-lg-6">
-                        <BsNav.Link href="#" data-text="Overview Nav Link">
-                          <NavLinkWithIcon label="Overview Nav Link"/>
-                          <div className="w-100 ifx__nav-mega-dropdown-level-3">
-                            <div className="w-100">
-                              <div className="row">
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </BsNav.Link>
-
-                        <BsNav.Link href="#" data-text="Navigationlink">
-                          <NavLinkWithIcon label="Navigationlink"/>
-                          <div className="w-100 ifx__nav-mega-dropdown-level-3">
-                            <div className="w-100">
-                              <div className="row">
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </BsNav.Link>
-
-                        <BsNav.Link href="#" data-text="Navigationlink">
-                          <NavLinkWithIcon label="Navigationlink"/>
-                          <div className="w-100 ifx__nav-mega-dropdown-level-3">
-                            <div className="w-100">
-                              <div className="row">
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </BsNav.Link>
-
-                        <BsNav.Link href="#" data-text="Navigationlink">
-                          <NavLinkWithIcon label="Navigationlink"/>
-                          <div className="w-100 ifx__nav-mega-dropdown-level-3">
-                            <div className="w-100">
-                              <div className="row">
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </BsNav.Link>
-
-                        <BsNav.Link href="#" data-text="Navigationlink">
-                          <NavLinkWithIcon label="Navigationlink"/>
-                          <div className="w-100 ifx__nav-mega-dropdown-level-3">
-                            <div className="w-100">
-                              <div className="row">
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </BsNav.Link>
-
-                        <BsNav.Link href="#" data-text="Navigationlink">
-                          <NavLinkWithIcon label="Navigationlink"/>
-                          <div className="w-100 ifx__nav-mega-dropdown-level-3">
-                            <div className="w-100">
-                              <div className="row">
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </BsNav.Link>
-
-                        <BsNav.Link href="#" data-text="Navigationlink">
-                          <NavLinkWithIcon label="Navigationlink"/>
-                          <div className="w-100 ifx__nav-mega-dropdown-level-3">
-                            <div className="w-100">
-                              <div className="row">
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </BsNav.Link>
-                      </div>
-
-                      <div className="col-lg-6">
-                        <BsNav.Link href="#" data-text="Overview Nav Link">
-                          <NavLinkWithIcon label="Overview Nav Link"/>
-                          <div className="w-100 ifx__nav-mega-dropdown-level-3">
-                            <div className="w-100">
-                              <div className="row">
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </BsNav.Link>
-
-                        <BsNav.Link href="#" data-text="Navigationlink">
-                          <NavLinkWithIcon label="Navigationlink"/>
-                          <div className="w-100 ifx__nav-mega-dropdown-level-3">
-                            <div className="w-100">
-                              <div className="row">
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </BsNav.Link>
-
-                        <BsNav.Link href="#" data-text="Navigationlink">
-                          <NavLinkWithIcon label="Navigationlink"/>
-                          <div className="w-100 ifx__nav-mega-dropdown-level-3">
-                            <div className="w-100">
-                              <div className="row">
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </BsNav.Link>
-
-                        <BsNav.Link href="#" data-text="Navigationlink">
-                          <NavLinkWithIcon label="Navigationlink"/>
-                          <div className="w-100 ifx__nav-mega-dropdown-level-3">
-                            <div className="w-100">
-                              <div className="row">
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </BsNav.Link>
-
-                        <BsNav.Link href="#" data-text="Navigationlink">
-                          <NavLinkWithIcon label="Navigationlink"/>
-                          <div className="w-100 ifx__nav-mega-dropdown-level-3">
-                            <div className="w-100">
-                              <div className="row">
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </BsNav.Link>
-
-                        <BsNav.Link href="#" data-text="Navigationlink">
-                          <NavLinkWithIcon label="Navigationlink"/>
-                          <div className="w-100 ifx__nav-mega-dropdown-level-3">
-                            <div className="w-100">
-                              <div className="row">
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </BsNav.Link>
-
-                        <BsNav.Link href="#" data-text="Navigationlink">
-                          <NavLinkWithIcon label="Navigationlink"/>
-                          <div className="w-100 ifx__nav-mega-dropdown-level-3">
-                            <div className="w-100">
-                              <div className="row">
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-
-                                <div className="col-lg-6">
-                                  <BsNav.Link href="#" data-text="Overview Nav Link">
-                                    Overview Nav Link
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                  <BsNav.Link href="#" data-text="Navigationlink">
-                                    Navigationlink
-                                  </BsNav.Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </BsNav.Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <NavMegaDropdown/>
               </li>
 
               <li>
                 <BsNav.Link className="ifx__nav-link" href="#" data-text="Nav Link 3">
                   Nav Link 3
                 </BsNav.Link>
-                <div className="w-100 ifx__nav-mega-dropdown">
-                  <div className="row">
-                    <div className="col-lg-6">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <NavLinkWithIcon label="Overview Nav Link"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                    </div>
 
-                    <div className="col-lg-6">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <NavLinkWithIcon label="Overview Nav Link"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                    </div>
-                  </div>
-                </div>
+                <NavMegaDropdown/>
               </li>
 
               <li>
                 <BsNav.Link className="ifx__nav-link" href="#" data-text="Nav Link 4">
                   Nav Link 4
                 </BsNav.Link>
-                <div className="w-100 ifx__nav-mega-dropdown">
-                  <div className="row">
-                    <div className="col-lg-6">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <NavLinkWithIcon label="Overview Nav Link"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                    </div>
 
-                    <div className="col-lg-6">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <NavLinkWithIcon label="Overview Nav Link"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <NavLinkWithIcon label="Navigationlink"/>
-                      </BsNav.Link>
-                    </div>
-                  </div>
-                </div>
+                <NavMegaDropdown/>
               </li>
 
               <li>
                 <BsNav.Link className="ifx__nav-link" href="#" data-text="Nav Link 5">
                   Nav Link 5
                 </BsNav.Link>
-                <div className="w-100 ifx__nav-mega-dropdown">
-                  <div className="row">
-                    <div className="col-6 col-lg-3">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <div>
-                          <span>Overview Nav Link</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                    </div>
 
-                    <div className="col-lg-3">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <div>
-                          <span>Overview Nav Link</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                    </div>
-                  </div>
-                </div>
+                <NavMegaDropdown/>
               </li>
             </ul>
           </div>
