@@ -22,10 +22,10 @@ a {
   }
 
   &:hover {
-    color: tokens.$color-secondary-400;
+    color: tokens.$color-secondary-600;
 
     & svg {
-      color: tokens.$color-secondary-400;
+      color: tokens.$color-secondary-600;
     }
   }
 
