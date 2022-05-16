@@ -12,7 +12,7 @@ const image = {
   alt: "infineon-logo",
 };
 
-const DefaultTemplate = (args) => (
+const SmallTemplate = (args) => (
   <Footer {...args}>
     <footer className="footer">
       <div className="d-md-flex justify-content-between flex-wrap ifx__footer-bottom">
@@ -31,7 +31,7 @@ const DefaultTemplate = (args) => (
   </Footer>
 );
 
-const MediumTemplate = (args) => (
+const DefaultTemplate = (args) => (
   <Footer {...args}>
     <footer className="footer">
       <div className="d-flex align-items-end ifx__footer-top">
@@ -233,8 +233,8 @@ const LargeTemplate = (args) => (
   </Footer>
 );
 
-export const Default = DefaultTemplate.bind({});
+export const Small = SmallTemplate.bind({});
 
-export const Medium = MediumTemplate.bind({});
+export const Default = DefaultTemplate.bind({});
 
 export const Large = LargeTemplate.bind({});
