@@ -7,12 +7,12 @@ export default {
 
 const DefaultTemplate = (args) => (
   <>
-    <h1><Badge {...args}>Badge</Badge></h1>
-    <h2><Badge {...args}>Badge</Badge></h2>
-    <h3><Badge {...args}>Badge</Badge></h3>
-    <h4><Badge {...args}>Badge</Badge></h4>
-    <h5><Badge {...args}>Badge</Badge></h5>
-    <h6><Badge {...args}>Badge</Badge></h6>
+    <h1><span class="badge rounded-pill" {...args}>H1 Badge</span></h1>
+    <h2><span class="badge rounded-pill" {...args}>H2 Badge</span></h2>
+    <h3><span class="badge rounded-pill" {...args}>H3 Badge</span></h3>
+    <h4><span class="badge rounded-pill" {...args}>H4 Badge</span></h4>
+    <h5><span class="badge rounded-pill" {...args}>H5 Badge</span></h5>
+    <h6><span class="badge rounded-pill" {...args}>H6 Badge</span></h6>
   </>
 );
 

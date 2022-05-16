@@ -1,6 +1,8 @@
 @use "@infineon/design-system-tokens/dist/tokens";
 
 .badge {
+  background-color: tokens.$color-info-200;
+  color: tokens.$color-black;
   font-size: 1em;
   font-weight: 600;
   line-height: 1.25;
