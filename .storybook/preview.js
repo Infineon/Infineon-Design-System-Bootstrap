@@ -73,6 +73,18 @@ export const parameters = {
   designToken: {
     files: tokenFiles,
   },
+  options: {
+    storySort: {
+      order: [ 'Components', [
+        'Accordion',
+        'Alert',
+        'Badge',
+        'Breadcrumb',
+        'Button',
+        'Button-group',
+      ]],
+    },
+  },
 };
 
 export const decorators = [PreviewImageDecorator];
