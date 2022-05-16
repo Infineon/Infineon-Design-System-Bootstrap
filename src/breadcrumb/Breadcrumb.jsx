@@ -5,7 +5,7 @@ export const Breadcrumb = () => {
     <BsBreadcrumb>
       <BsBreadcrumb.Item href="#">Home</BsBreadcrumb.Item>
       <BsBreadcrumb.Item href="#">Library</BsBreadcrumb.Item>
-      <BsBreadcrumb.Item href="#">Data</BsBreadcrumb.Item>
+      <BsBreadcrumb.Item href="#" active>Data</BsBreadcrumb.Item>
     </BsBreadcrumb>
   );
 };
