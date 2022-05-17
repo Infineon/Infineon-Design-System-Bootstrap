@@ -17,7 +17,7 @@
   "license": "UNLICENSED",
   "author": "Jonas Ulrich",
   "scripts": {
-    "copy-fonts": "cp -a node_modules/@infineon/design-system-tokens/dist/fonts .storybook",
+    "copy-fonts": "copyfiles -u 4 node_modules/@infineon/design-system-tokens/dist/fonts .storybook",
     "build-docs": "node tools/createMarkdownStories.js",
     "build-storybook": "build-storybook",
     "build": "yarn copy-fonts && yarn build-docs && yarn build-storybook",
@@ -27,11 +27,11 @@
     "start": "yarn copy-fonts && concurrently -r yarn:watch-*",
     "bundle-css": "sass --load-path=node_modules --style=compressed --no-source-map .storybook/index.scss dist/index.css",
     "bundle-js": "esbuild src/index.js --outfile=dist/index.js --bundle --platform=browser --minify",
-    "bundle-fonts": "cp -a node_modules/@infineon/design-system-tokens/dist/fonts dist",
-    "bundle-assets": "cp -a public/. dist",
+    "bundle-fonts": "copyfiles -u 4 ./node_modules/@infineon/design-system-tokens/dist/fonts/**/* dist",
+    "bundle-assets": "copyfiles -u 1 ./public/* dist",
     "bundle": "concurrently -r yarn:bundle-*",
-    "package-source": "cp -a src dist-sources",
-    "package-assets": "cp -a public dist-sources",
+    "package-source": "copyfiles -u ./src/* dist-sources && copyfiles -u ./src/**/* dist-sources",
+    "package-assets": "copyfiles -u ./public/* dist-sources",
     "package": "concurrently -r yarn:package-*"
   },
   "dependencies": {
@@ -55,6 +55,7 @@
     "babel-loader": "^8.2.3",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^6.4.0",
+    "copyfiles": "^2.4.1",
     "css-loader": "^6.5.1",
     "esbuild": "^0.14.38",
     "holderjs": "^2.9.9",
