@@ -4,9 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import BsNavBar from "react-bootstrap/Navbar";
 import BsNav from "react-bootstrap/Nav";
 import BsNavDropdown from "react-bootstrap/NavDropdown";
+import BsButton from "react-bootstrap/Button";
 import imageFile from "../../public/logo-desktop-en-2x.png";
 import { useEffect } from "react";
-import { initNavBar } from "./nav-bar";
+import { initNavBar, initVerticalNavBar } from "./nav-bar";
 
 export default {
   title: "Components/Nav Bar",
@@ -21,6 +22,7 @@ const image = {
 const JsWrapper = ({ children }) => {
   useEffect(() => {
     initNavBar();
+    initVerticalNavBar();
   }, [])
 
   return (
@@ -113,11 +115,11 @@ const DefaultTemplate = (args) => {
                     </BsNav.Link>
                   </li>
                   <li>
-                    <BsNavDropdown title="More +" id="basic-nav-dropdown" className="active" data-text="Action default">
-                      <BsNavDropdown.Item href="#action/3.1">Nav Link 3</BsNavDropdown.Item>
-                      <BsNavDropdown.Item href="#action/3.2">Nav Link 4</BsNavDropdown.Item>
-                      <BsNavDropdown.Item href="#action/3.3">Nav Link 5</BsNavDropdown.Item>
-                      <BsNavDropdown.Item href="#action/3.4">Nav Link 6</BsNavDropdown.Item>
+                    <BsNavDropdown title="More" id="basic-nav-dropdown" className="active" data-text="More">
+                      <BsNavDropdown.Item href="#">Nav Link 3</BsNavDropdown.Item>
+                      <BsNavDropdown.Item href="#">Nav Link 4</BsNavDropdown.Item>
+                      <BsNavDropdown.Item href="#">Nav Link 5</BsNavDropdown.Item>
+                      <BsNavDropdown.Item href="#">Nav Link 6</BsNavDropdown.Item>
                     </BsNavDropdown>
                   </li>
                 </ul>
@@ -206,29 +208,48 @@ const ExtendedTemplate = (args) => {
           <div className="d-lg-flex ifx__nav-link-wrapper ifx__desktop-show">
             <ul className="d-flex">
               <li>
-                <BsNav.Link href="#" data-text="Nav Link 1">
-                  Nav Link 1
-                </BsNav.Link>
+                <BsNavDropdown title="Nav Link 1" id="basic-nav-dropdown" className="active" data-text="Nav Link 1">
+                  <BsNavDropdown.Item href="#">Action default</BsNavDropdown.Item>
+                  <BsNavDropdown.Item href="#">Action default</BsNavDropdown.Item>
+                  <BsNavDropdown.Item href="#">Action default</BsNavDropdown.Item>
+                  <BsNavDropdown.Item href="#">Action default</BsNavDropdown.Item>
+                </BsNavDropdown>
               </li>
+
               <li>
-                <BsNav.Link href="#" data-text="Nav Link 2">
-                  Nav Link 2
-                </BsNav.Link>
+                <BsNavDropdown title="Nav Link 2" id="basic-nav-dropdown" className="active" data-text="Nav Link 2">
+                  <BsNavDropdown.Item href="#">Action default</BsNavDropdown.Item>
+                  <BsNavDropdown.Item href="#">Action default</BsNavDropdown.Item>
+                  <BsNavDropdown.Item href="#">Action default</BsNavDropdown.Item>
+                  <BsNavDropdown.Item href="#">Action default</BsNavDropdown.Item>
+                </BsNavDropdown>
               </li>
+
               <li>
-                <BsNav.Link href="#" data-text="Nav Link 3">
-                  Nav Link 3
-                </BsNav.Link>
+                <BsNavDropdown title="Nav Link 3" id="basic-nav-dropdown" className="active" data-text="Nav Link 3">
+                  <BsNavDropdown.Item href="#">Action default</BsNavDropdown.Item>
+                  <BsNavDropdown.Item href="#">Action default</BsNavDropdown.Item>
+                  <BsNavDropdown.Item href="#">Action default</BsNavDropdown.Item>
+                  <BsNavDropdown.Item href="#">Action default</BsNavDropdown.Item>
+                </BsNavDropdown>
               </li>
+
               <li>
-                <BsNav.Link href="#" data-text="Nav Link 4">
-                  Nav Link 4
-                </BsNav.Link>
+                <BsNavDropdown title="Nav Link 4" id="basic-nav-dropdown" className="active" data-text="Nav Link 4">
+                  <BsNavDropdown.Item href="#">Action default</BsNavDropdown.Item>
+                  <BsNavDropdown.Item href="#">Action default</BsNavDropdown.Item>
+                  <BsNavDropdown.Item href="#">Action default</BsNavDropdown.Item>
+                  <BsNavDropdown.Item href="#">Action default</BsNavDropdown.Item>
+                </BsNavDropdown>
               </li>
+
               <li>
-                <BsNav.Link href="#" data-text="Nav Link 5">
-                  Nav Link 5
-                </BsNav.Link>
+                <BsNavDropdown title="Nav Link 5" id="basic-nav-dropdown" className="active" data-text="Nav Link 5">
+                  <BsNavDropdown.Item href="#">Action default</BsNavDropdown.Item>
+                  <BsNavDropdown.Item href="#">Action default</BsNavDropdown.Item>
+                  <BsNavDropdown.Item href="#">Action default</BsNavDropdown.Item>
+                  <BsNavDropdown.Item href="#">Action default</BsNavDropdown.Item>
+                </BsNavDropdown>
               </li>
             </ul>
           </div>
@@ -293,7 +314,7 @@ const ExtendedLevel2Template = (args) => {
                     <div className="w-100 ifx__nav-mega-dropdown-mobile ifx__nav-wrapper">
                       <div className="ifx__nav-mega-dropdown-mobile-content">
                         <div>
-                        <BsNav.Link className="ifx__nav-mega-dropdown-last-layer" href="#" data-text="Nav Link 2">
+                        <BsNav.Link className="ifx__nav-mega-dropdown-last-layer" href="#" data-text="Nav Link 1">
                           <FontAwesomeIcon icon={["fal", "chevron-left"]}/>
                             Nav Link 1
                         </BsNav.Link>
@@ -1148,125 +1169,101 @@ const ExtendedLevel2Template = (args) => {
                   Nav Link 1
                 </BsNav.Link>
                 <div className="w-100 ifx__nav-mega-dropdown">
-                  <div>
+                  <div className="ifx__nav-wrapper">
                     <div className="row">
-                      <div className="col-6 col-lg-3">
+                      <div className="col-3">
                         <BsNav.Link href="#" data-text="Overview Nav Link">
-                          <div>
-                            <span>Overview Nav Link</span>
-                            <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                          </div>
+                          Overview Nav Link
                         </BsNav.Link>
                         <BsNav.Link href="#" data-text="Navigationlink">
-                          <div>
-                            <span>Navigationlink</span>
-                            <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                          </div>
+                          Navigationlink
                         </BsNav.Link>
                         <BsNav.Link href="#" data-text="Navigationlink">
-                          <div>
-                            <span>Navigationlink</span>
-                            <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                          </div>
+                          Navigationlink
                         </BsNav.Link>
                         <BsNav.Link href="#" data-text="Navigationlink">
-                          <div>
-                            <span>Navigationlink</span>
-                            <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                          </div>
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
                         </BsNav.Link>
                       </div>
 
-                      <div className="col-lg-3">
+                      <div className="col-3">
                         <BsNav.Link href="#" data-text="Overview Nav Link">
-                          <div>
-                            <span>Overview Nav Link</span>
-                            <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                          </div>
+                          Overview Nav Link
                         </BsNav.Link>
                         <BsNav.Link href="#" data-text="Navigationlink">
-                          <div>
-                            <span>Navigationlink</span>
-                            <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                          </div>
+                          Navigationlink
                         </BsNav.Link>
                         <BsNav.Link href="#" data-text="Navigationlink">
-                          <div>
-                            <span>Navigationlink</span>
-                            <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                          </div>
+                          Navigationlink
                         </BsNav.Link>
                         <BsNav.Link href="#" data-text="Navigationlink">
-                          <div>
-                            <span>Navigationlink</span>
-                            <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                          </div>
+                          Navigationlink
                         </BsNav.Link>
                         <BsNav.Link href="#" data-text="Navigationlink">
-                          <div>
-                            <span>Navigationlink</span>
-                            <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                          </div>
+                          Navigationlink
                         </BsNav.Link>
                         <BsNav.Link href="#" data-text="Navigationlink">
-                          <div>
-                            <span>Navigationlink</span>
-                            <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                          </div>
+                          Navigationlink
                         </BsNav.Link>
                         <BsNav.Link href="#" data-text="Navigationlink">
-                          <div>
-                            <span>Navigationlink</span>
-                            <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                          </div>
+                          Navigationlink
                         </BsNav.Link>
                       </div>
 
-                      <div className="col-lg-3">
+                      <div className="col-3">
                         <BsNav.Link href="#" data-text="Overview Nav Link">
-                          <div>
-                            <span>Overview Nav Link</span>
-                            <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                          </div>
+                          Overview Nav Link
                         </BsNav.Link>
                         <BsNav.Link href="#" data-text="Navigationlink">
-                          <div>
-                            <span>Navigationlink</span>
-                            <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                          </div>
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
                         </BsNav.Link>
                       </div>
 
-                      <div className="col-lg-3">
+                      <div className="col-3">
                         <BsNav.Link href="#" data-text="Overview Nav Link">
-                          <div>
-                            <span>Overview Nav Link</span>
-                            <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                          </div>
+                          Overview Nav Link
                         </BsNav.Link>
                         <BsNav.Link href="#" data-text="Navigationlink">
-                          <div>
-                            <span>Navigationlink</span>
-                            <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                          </div>
+                          Navigationlink
                         </BsNav.Link>
                         <BsNav.Link href="#" data-text="Navigationlink">
-                          <div>
-                            <span>Navigationlink</span>
-                            <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                          </div>
+                          Navigationlink
                         </BsNav.Link>
                         <BsNav.Link href="#" data-text="Navigationlink">
-                          <div>
-                            <span>Navigationlink</span>
-                            <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                          </div>
+                          Navigationlink
                         </BsNav.Link>
                         <BsNav.Link href="#" data-text="Navigationlink">
-                          <div>
-                            <span>Navigationlink</span>
-                            <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                          </div>
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
                         </BsNav.Link>
                       </div>
                     </div>
@@ -1279,185 +1276,103 @@ const ExtendedLevel2Template = (args) => {
                   Nav Link 2
                 </BsNav.Link>
                 <div className="w-100 ifx__nav-mega-dropdown">
-                  <div className="row">
-                    <div className="col-6 col-lg-3">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <div>
-                          <span>Overview Nav Link</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                    </div>
+                  <div className="ifx__nav-wrapper">
+                    <div className="row">
+                      <div className="col-3">
+                        <BsNav.Link href="#" data-text="Overview Nav Link">
+                          Overview Nav Link
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                      </div>
 
-                    <div className="col-lg-3">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <div>
-                          <span>Overview Nav Link</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                    </div>
+                      <div className="col-3">
+                        <BsNav.Link href="#" data-text="Overview Nav Link">
+                          Overview Nav Link
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                      </div>
 
-                    <div className="col-lg-3">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <div>
-                          <span>Overview Nav Link</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                    </div>
+                      <div className="col-3">
+                        <BsNav.Link href="#" data-text="Overview Nav Link">
+                          Overview Nav Link
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                      </div>
 
-                    <div className="col-lg-3">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <div>
-                          <span>Overview Nav Link</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
+                      <div className="col-3">
+                        <BsNav.Link href="#" data-text="Overview Nav Link">
+                          Overview Nav Link
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1468,185 +1383,103 @@ const ExtendedLevel2Template = (args) => {
                   Nav Link 3
                 </BsNav.Link>
                 <div className="w-100 ifx__nav-mega-dropdown">
-                  <div className="row">
-                    <div className="col-6 col-lg-3">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <div>
-                          <span>Overview Nav Link</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                    </div>
+                  <div className="ifx__nav-wrapper">
+                    <div className="row">
+                      <div className="col-3">
+                        <BsNav.Link href="#" data-text="Overview Nav Link">
+                          Overview Nav Link
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                      </div>
 
-                    <div className="col-lg-3">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <div>
-                          <span>Overview Nav Link</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                    </div>
+                      <div className="col-3">
+                        <BsNav.Link href="#" data-text="Overview Nav Link">
+                          Overview Nav Link
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                      </div>
 
-                    <div className="col-lg-3">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <div>
-                          <span>Overview Nav Link</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                    </div>
+                      <div className="col-3">
+                        <BsNav.Link href="#" data-text="Overview Nav Link">
+                          Overview Nav Link
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                      </div>
 
-                    <div className="col-lg-3">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <div>
-                          <span>Overview Nav Link</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
+                      <div className="col-3">
+                        <BsNav.Link href="#" data-text="Overview Nav Link">
+                          Overview Nav Link
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1657,185 +1490,103 @@ const ExtendedLevel2Template = (args) => {
                   Nav Link 4
                 </BsNav.Link>
                 <div className="w-100 ifx__nav-mega-dropdown">
-                  <div className="row">
-                    <div className="col-6 col-lg-3">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <div>
-                          <span>Overview Nav Link</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                    </div>
+                  <div className="ifx__nav-wrapper">
+                    <div className="row">
+                      <div className="col-3">
+                        <BsNav.Link href="#" data-text="Overview Nav Link">
+                          Overview Nav Link
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                      </div>
 
-                    <div className="col-lg-3">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <div>
-                          <span>Overview Nav Link</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                    </div>
+                      <div className="col-3">
+                        <BsNav.Link href="#" data-text="Overview Nav Link">
+                          Overview Nav Link
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                      </div>
 
-                    <div className="col-lg-3">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <div>
-                          <span>Overview Nav Link</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                    </div>
+                      <div className="col-3">
+                        <BsNav.Link href="#" data-text="Overview Nav Link">
+                          Overview Nav Link
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                      </div>
 
-                    <div className="col-lg-3">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <div>
-                          <span>Overview Nav Link</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
+                      <div className="col-3">
+                        <BsNav.Link href="#" data-text="Overview Nav Link">
+                          Overview Nav Link
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1846,185 +1597,103 @@ const ExtendedLevel2Template = (args) => {
                   Nav Link 5
                 </BsNav.Link>
                 <div className="w-100 ifx__nav-mega-dropdown">
-                  <div className="row">
-                    <div className="col-6 col-lg-3">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <div>
-                          <span>Overview Nav Link</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                    </div>
+                  <div className="ifx__nav-wrapper">
+                    <div className="row">
+                      <div className="col-3">
+                        <BsNav.Link href="#" data-text="Overview Nav Link">
+                          Overview Nav Link
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                      </div>
 
-                    <div className="col-lg-3">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <div>
-                          <span>Overview Nav Link</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                    </div>
+                      <div className="col-3">
+                        <BsNav.Link href="#" data-text="Overview Nav Link">
+                          Overview Nav Link
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                      </div>
 
-                    <div className="col-lg-3">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <div>
-                          <span>Overview Nav Link</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                    </div>
+                      <div className="col-3">
+                        <BsNav.Link href="#" data-text="Overview Nav Link">
+                          Overview Nav Link
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                      </div>
 
-                    <div className="col-lg-3">
-                      <BsNav.Link href="#" data-text="Overview Nav Link">
-                        <div>
-                          <span>Overview Nav Link</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
-                      <BsNav.Link href="#" data-text="Navigationlink">
-                        <div>
-                          <span>Navigationlink</span>
-                          <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-                        </div>
-                      </BsNav.Link>
+                      <div className="col-3">
+                        <BsNav.Link href="#" data-text="Overview Nav Link">
+                          Overview Nav Link
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                        <BsNav.Link href="#" data-text="Navigationlink">
+                          Navigationlink
+                        </BsNav.Link>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -3502,137 +3171,206 @@ const ExtendedLevel3Template = (args) => {
 
 const VerticalTemplate = (args) => {
   return (
-    <div className="ifx__nav-bar-vertical" {...args}>
-      <div>
-        <ul className="flex-column ifx__content-nav__border nav">
-          <p className="ifx__content-nav__divider">Category</p>
-          <BsNav.Item as="li">
-            <BsNav.Link href="#">
-              Navigationlink
-            </BsNav.Link>
-          </BsNav.Item>
-          <BsNav.Item as="li">
-            <BsNav.Link href="#">
-              Navigationlink
-            </BsNav.Link>
-          </BsNav.Item>
-          <BsNav.Item as="li">
-            <BsNav.Link href="#">
-              Navigationlink
-            </BsNav.Link>
-          </BsNav.Item>
-          <BsNav.Item as="li">
-            <BsNav.Link href="#">
-              Navigationlink
-            </BsNav.Link>
-          </BsNav.Item>
-          <BsNav.Item as="li">
-            <BsNav.Link href="#">
-              Navigationlink
-            </BsNav.Link>
-          </BsNav.Item>
-        </ul>
+    <JsWrapper>
+      <div className="ifx__nav-bar-vertical" {...args}>
+        <div>
+          <ul className="flex-column ifx__content-nav__border nav">
+            <p className="ifx__content-nav__divider">Category</p>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                Navigationlink
+              </BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                Navigationlink
+              </BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                Navigationlink
+              </BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                Navigationlink
+              </BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                Navigationlink
+              </BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                Navigationlink
+              </BsNav.Link>
+            </BsNav.Item>
+          </ul>
 
-        <ul className="flex-column ifx__content-nav__border nav">
-          <p className="ifx__content-nav__divider">Category</p>
-          <BsNav.Item as="li">
-            <BsNav.Link href="#">
-              Navigationlink
-            </BsNav.Link>
-          </BsNav.Item>
-          <BsNav.Item as="li">
-            <BsNav.Link href="#">
-              Navigationlink
-            </BsNav.Link>
-          </BsNav.Item>
-          <BsNav.Item as="li">
-            <BsNav.Link href="#">
-              Navigationlink
-            </BsNav.Link>
-          </BsNav.Item>
-          <BsNav.Item as="li">
-            <BsNav.Link href="#">
-              Navigationlink
-            </BsNav.Link>
-          </BsNav.Item>
-          <BsNav.Item as="li">
-            <BsNav.Link href="#">
-              Navigationlink
-            </BsNav.Link>
-          </BsNav.Item>
-        </ul>
+          <ul className="flex-column ifx__content-nav__border nav">
+            <p className="ifx__content-nav__divider">Category</p>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                Navigationlink
+              </BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                Navigationlink
+              </BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                Navigationlink
+              </BsNav.Link>
+            </BsNav.Item>
+          </ul>
+        </div>
       </div>
-    </div>
+
+      <div style={{height: "200vh"}}></div>
+    </JsWrapper>
+  );
+}
+
+const VerticalLevel2Template = (args) => {
+  return (
+    <JsWrapper>
+      <div className="ifx__nav-bar-vertical" {...args}>
+        <div>
+          <ul className="flex-column ifx__content-nav__border nav">
+            <p className="ifx__content-nav__divider">Category</p>
+
+            <BsNav.Item as="li">
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="#" data-text="Navigationlink">
+                <div>
+                  <span>Navigationlink</span>
+                  <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+                </div>
+                <NavMegaDropdownMobileLayer3/>
+              </BsNav.Link>
+            </BsNav.Item>
+
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                Navigationlink
+              </BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                Navigationlink
+              </BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                Navigationlink
+              </BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                Navigationlink
+              </BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                Navigationlink
+              </BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                Navigationlink
+              </BsNav.Link>
+            </BsNav.Item>
+          </ul>
+        </div>
+      </div>
+
+      <div style={{height: "200vh"}}></div>
+    </JsWrapper>
   );
 }
 
 const VerticalCollapsibleTemplate = (args) => {
   return (
-    <div className="d-flex ifx__nav-bar-vertical ifx__nav-bar-vertical-collapsible">
-      <div>
-        <ul className="flex-column ifx__content-nav__border nav" {...args}>
-          <p className="ifx__content-nav__divider">Category</p>
-          <BsNav.Item as="li">
-            <BsNav.Link href="#">
-              <FontAwesomeIcon icon={["fal", "globe"]} />
-              Nav link
-            </BsNav.Link>
-          </BsNav.Item>
-          <BsNav.Item as="li">
-            <BsNav.Link eventKey="link-1">
-              <FontAwesomeIcon icon={["fal", "compass"]} />
-            </BsNav.Link>
-          </BsNav.Item>
-          <BsNav.Item as="li">
-            <BsNav.Link eventKey="link-2">
-              <FontAwesomeIcon icon={["fal", "chart-column"]} />
-            </BsNav.Link>
-          </BsNav.Item>
-          <BsNav.Item as="li">
-            <BsNav.Link eventKey="link-3">
-              <FontAwesomeIcon icon={["fal", "house"]} />
-            </BsNav.Link>
-          </BsNav.Item>
-          <BsNav.Item as="li">
-            <BsNav.Link eventKey="link-4">
-              <FontAwesomeIcon icon={["fal", "gauge-min"]} />
-            </BsNav.Link>
-          </BsNav.Item>
-        </ul>
+    <JsWrapper>
+      <div className="d-flex ifx__navbar ifx__nav-bar-vertical ifx__nav-bar-vertical-collapsible">
+        <div>
+          <ul className="flex-column ifx__content-nav__border nav" {...args}>
+            <p className="ifx__content-nav__divider">Category</p>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                <FontAwesomeIcon icon={["fal", "globe"]} />
+                <span>Nav link</span>
+              </BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                <FontAwesomeIcon icon={["fal", "compass"]} />
+                <span>Nav link</span>
+              </BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                <FontAwesomeIcon icon={["fal", "chart-column"]} />
+                <span>Nav link</span>
+              </BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                <FontAwesomeIcon icon={["fal", "house"]} />
+                <span>Nav link</span>
+              </BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                <FontAwesomeIcon icon={["fal", "gauge-min"]} />
+                <span>Nav link</span>
+              </BsNav.Link>
+            </BsNav.Item>
+          </ul>
 
-        <ul className="flex-column ifx__content-nav__border nav" {...args}>
-          <p className="ifx__content-nav__divider">Category</p>
-          <BsNav.Item as="li">
-            <BsNav.Link href="#">
-              <FontAwesomeIcon icon={["fal", "globe"]} />
-            </BsNav.Link>
-          </BsNav.Item>
-          <BsNav.Item as="li">
-            <BsNav.Link eventKey="link-1">
-              <FontAwesomeIcon icon={["fal", "compass"]} />
-            </BsNav.Link>
-          </BsNav.Item>
-          <BsNav.Item as="li">
-            <BsNav.Link eventKey="link-2">
-              <FontAwesomeIcon icon={["fal", "chart-column"]} />
-            </BsNav.Link>
-          </BsNav.Item>
-          <BsNav.Item as="li">
-            <BsNav.Link eventKey="link-3">
-              <FontAwesomeIcon icon={["fal", "house"]} />
-            </BsNav.Link>
-          </BsNav.Item>
-          <BsNav.Item as="li">
-            <BsNav.Link eventKey="link-4">
-              <FontAwesomeIcon icon={["fal", "gauge-min"]} />
-            </BsNav.Link>
-          </BsNav.Item>
-        </ul>
+          <ul className="flex-column ifx__content-nav__border nav" {...args}>
+            <p className="ifx__content-nav__divider">Category</p>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                <FontAwesomeIcon icon={["fal", "globe"]} />
+                <span>Nav link</span>
+              </BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                <FontAwesomeIcon icon={["fal", "compass"]} />
+                <span>Nav link</span>
+              </BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                <FontAwesomeIcon icon={["fal", "chart-column"]} />
+                <span>Nav link</span>
+              </BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                <FontAwesomeIcon icon={["fal", "house"]} />
+                <span>Nav link</span>
+              </BsNav.Link>
+            </BsNav.Item>
+            <BsNav.Item as="li">
+              <BsNav.Link href="#">
+                <FontAwesomeIcon icon={["fal", "gauge-min"]} />
+                <span>Nav link</span>
+              </BsNav.Link>
+            </BsNav.Item>
+          </ul>
+        </div>
+        <BsButton className="d-inline-flex ifx__content-nav__border ifx__vertical-nav-icons-btn">
+          <FontAwesomeIcon icon={["fal", "chevron-right"]} />
+        </BsButton>
       </div>
-      <div className="d-inline-flex ifx__content-nav__border ifx__vertical-nav-icons-btn">
-        <FontAwesomeIcon icon={["fal", "chevron-right"]} />
-      </div>
-    </div>
+
+      <div style={{height: "200vh"}}></div>
+    </JsWrapper>
   );
 }
 
@@ -3645,5 +3383,7 @@ export const ExtendedLevel2 = ExtendedLevel2Template.bind({});
 export const ExtendedLevel3 = ExtendedLevel3Template.bind({});
 
 export const Vertical = VerticalTemplate.bind({});
+
+export const VerticalLevel2 = VerticalLevel2Template.bind({});
 
 export const VerticalCollapsible = VerticalCollapsibleTemplate.bind({});

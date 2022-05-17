@@ -1,33 +1,13 @@
 let navBar;
 let navBarHeight;
-let mobileShow;
 let currentContent;
 let desktopShow;
 let dropdowns;
 let navLinks;
+let verticalNavBtn;
+let navBarVerticalCollapsible;
 
-export function initNavBar() {
-  navBar = document.querySelector(".ifx__navbar");
-
-  if ( !navBar ) {
-    return
-  }
-
-  navBarHeight = navBar.offsetHeight;
-
-  function setShadow() {
-    const scrollY = window.scrollY;
-
-    if (scrollY >= navBarHeight) {
-      navBar.classList.add('scrolling');
-    } else {
-      navBar.classList.remove('scrolling');
-    }
-  }
-
-  document.addEventListener("scroll", setShadow, {passive: true});
-
-  mobileShow = document.querySelector('.ifx__nav-link-wrapper.ifx__mobile-show');
+function slideNav(mobileShow) {
   mobileShow.addEventListener('click', toggleMenu);
   window.addEventListener('resize', updateNavHeight, {passive: true});
 
@@ -70,6 +50,33 @@ export function initNavBar() {
         }
       }
     }
+  }
+}
+
+export function initNavBar() {
+  navBar = document.querySelector(".ifx__navbar");
+
+  if ( !navBar ) {
+    return
+  }
+
+  navBarHeight = navBar.offsetHeight;
+
+  function setShadow() {
+    const scrollY = window.scrollY;
+
+    if (scrollY >= navBarHeight) {
+      navBar.classList.add('scrolling');
+    } else {
+      navBar.classList.remove('scrolling');
+    }
+  }
+
+  document.addEventListener("scroll", setShadow, {passive: true});
+
+  const mobileShow = document.querySelector('.ifx__nav-link-wrapper.ifx__mobile-show');
+  if ( mobileShow ) {
+    slideNav(mobileShow);
   }
 
   desktopShow = document.querySelector('.ifx__nav-list');
@@ -130,5 +137,30 @@ export function initNavBar() {
         element.classList.remove("show");
       });
     }
+  }
+}
+
+export function initVerticalNavBar() {
+  const mobileShow = document.querySelector('.ifx__nav-link-wrapper.ifx__mobile-show');
+
+  if ( mobileShow ) {
+    slideNav(mobileShow);
+  }
+
+  verticalNavBtn = document.querySelector(".ifx__vertical-nav-icons-btn");
+  console.log(verticalNavBtn);
+  if (!verticalNavBtn) {
+    return
+  }
+
+  navBarVerticalCollapsible = document.querySelector(".ifx__nav-bar-vertical-collapsible");
+  if (!navBarVerticalCollapsible) {
+    return
+  }
+
+  verticalNavBtn.addEventListener("click", toggleVerticalNav);
+
+  function toggleVerticalNav() {
+    navBarVerticalCollapsible.classList.toggle("show");
   }
 }
