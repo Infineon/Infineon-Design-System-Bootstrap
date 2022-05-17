@@ -1,8 +1,8 @@
 import { createElement, useEffect } from "react";
 import { run as runHolder } from "holderjs/holder";
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faStar, faCoffee, faMapMarkerAlt, faChartPie, faBell, faCalendar } from '@fortawesome/free-solid-svg-icons'
-import { faInfoCircle, faCheckCircle, faTriangleExclamation, faCircleExclamation, faXmark, faCheck, faChevronUp, faChevronDown, faChevronLeft, faChevronsLeft, faChevronRight, faChevronsRight, faMagnifyingGlass, faUser, faGlobe, faShoppingCart, faCompass, faChartColumn, faHouse, faGaugeMin, faArrowRight, faCartShopping } from '@fortawesome/pro-light-svg-icons'
+import { faMapMarkerAlt, faChartPie, faBell } from '@fortawesome/free-solid-svg-icons'
+import { faInfoCircle, faCheckCircle, faTriangleExclamation, faCircleExclamation, faXmark, faCheck, faChevronUp, faChevronDown, faChevronLeft, faChevronsLeft, faChevronRight, faChevronsRight, faMagnifyingGlass, faUser, faGlobe, faShoppingCart, faCompass, faChartColumn, faHouse, faGaugeMin, faArrowRight, faCartShopping, faCalendar } from '@fortawesome/pro-light-svg-icons'
 import { faFacebook, faInstagram, faLinkedinIn, faTwitter, faXing, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import "../dist/index.css";
 
@@ -12,8 +12,6 @@ library.add(
   faTriangleExclamation,
   faCircleExclamation,
   faXmark,
-  faStar,
-  faCoffee,
   faCheck,
   faChevronUp,
   faChevronDown,
@@ -32,9 +30,9 @@ library.add(
   faMapMarkerAlt,
   faChartPie,
   faBell,
-  faCalendar,
   faArrowRight,
   faCartShopping,
+  faCalendar,
   faFacebook,
   faInstagram,
   faLinkedinIn,

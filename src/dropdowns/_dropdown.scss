@@ -8,19 +8,19 @@
   & .dropdown-toggle::after {
     border: none;
     vertical-align: -2px;
-    margin-left: 10.5px;
-    width: 13px;
-    height: 13px;
-    background-size: 13px;
+    margin-left: 10px;
+    width: 14px;
+    height: 14px;
+    background-size: 14px;
     background-position: center;
     background-repeat: no-repeat;
     transition: transform 0.2s ease-in-out;
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="%23FFF"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"/></svg>');
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFF' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M4.251 181.1C7.392 177.7 11.69 175.1 16 175.1c3.891 0 7.781 1.406 10.86 4.25l197.1 181.1l197.1-181.1c6.5-6 16.64-5.625 22.61 .9062c6 6.5 5.594 16.59-.8906 22.59l-208 192c-6.156 5.688-15.56 5.688-21.72 0l-208-192C-1.343 197.7-1.749 187.6 4.251 181.1z'/%3E%3C/svg%3E");
   }
 
   &.show .dropdown-toggle::after {
     transform: rotate(-180deg);
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="%23FFF"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"/></svg>');
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFF' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M4.251 181.1C7.392 177.7 11.69 175.1 16 175.1c3.891 0 7.781 1.406 10.86 4.25l197.1 181.1l197.1-181.1c6.5-6 16.64-5.625 22.61 .9062c6 6.5 5.594 16.59-.8906 22.59l-208 192c-6.156 5.688-15.56 5.688-21.72 0l-208-192C-1.343 197.7-1.749 187.6 4.251 181.1z'/%3E%3C/svg%3E");
   }
 
   & .dropdown-menu {
@@ -29,70 +29,82 @@
     border: none;
     border-radius: 1px;
     background-color: tokens.$color-info-100;
-    transform: translate3d(0px, calc(44px + 8px), 0px) !important;
-
-    .dropdown-header {
-      padding: 0.5rem 20px;
-      font-weight: 600;
-      font-size: 16px;
-      color: tokens.$color-black;
-    }
+    transform: translate3d(0px, calc(54px + 8px), 0px) !important;
 
     & .form-control, .form-select {
-      margin: 24.5px 20px 12.25px 20px;
+      margin: 16px;
     }
 
-    & .ifx__dropdown-search, .ifx__dropdown-select {
+    & .form-select {
+      color: tokens.$color-info-400;
+    }
+
+    & .inf__dropdown-search, .inf__dropdown-select {
       width: 160px;
     }
 
     & .dropdown-item {
-      font-size: 18px;
-      padding: 10.5px 20px;
+      font-size: 16px;
+      padding: 8px 16px;
       color: tokens.$color-black;
 
-      &.active {
+      &:focus {
+        background-color: tokens.$color-info-100;
+      }
+
+      &:focus-visible {
+        outline: none;
+        background-color: tokens.$color-info-100;
+        border: 3px solid #B4DDD8;
+        padding-left: calc(16px - 3px);
+        margin-left: 0;
+      }
+
+      &:hover {
+        font-weight: 600;
+        background-color: tokens.$color-info-200;
+
+        & svg {
+          color: tokens.$color-black;
+        }
+      }
+
+      &.active, &:active {
+        font-weight: 600;
         background-color: transparent;
-        border-left: 5px solid tokens.$color-secondary-600;
-        padding-left: calc(20px - 5px);
-        color: tokens.$color-secondary-600;
+        color: tokens.$color-secondary-500;
+
+        & svg {
+          color: tokens.$color-secondary-500;
+        }
       }
 
       & svg {
-        width: 15px;
-        height: 15px;
-        margin-right: 16px;
-        color: tokens.$color-secondary-500;
+        width: 13px;
+        height: 13px;
+        margin-right: 10px;
+        vertical-align: -0.5px;
       }
     }
 
-    .dropdown-divider {
-      margin: 0;
+    .form-check-label {
+      font-weight: 400;
     }
   }
 
   & .btn-sm {
     & + .dropdown-menu {
-      transform: translate3d(0px, calc(41px + 8px), 0px) !important;
+      transform: translate3d(0px, calc(48.75px + 8px), 0px) !important;
     }
   }
 
   & .btn-lg {
     & + .dropdown-menu {
-      transform: translate3d(0px, calc(50px + 8px), 0px) !important;
+      transform: translate3d(0px, calc(64.5px + 8px), 0px) !important;
     }
   }
 }
 
-.show > .btn-primary.dropdown-toggle {
-  background-color: tokens.$color-secondary-500;
-  border-color: tokens.$color-secondary-500;
-}
-
-.btn-check:checked + .btn-primary:focus,
-.btn-check:active + .btn-primary:focus,
-.btn-primary:active:focus,
-.btn-primary.active:focus,
-.show > .btn-primary.dropdown-toggle:focus {
+.show > .btn-secondary.dropdown-toggle:focus {
   box-shadow: none;
 }
