@@ -98,7 +98,7 @@ The resulting bundle is meant to be used like described in the beginning of this
 Generate a bundle that can be published on `npm`, adds result in `dist-sources/` folder: 
 
 ```bash
-yarn bundle-sources
+yarn package
 ```
 
 The resulting bundle is meant to be used in projects that need to consume sources directly. Import the needed component in your code like this (e.g.):
