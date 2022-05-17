@@ -1,95 +1,57 @@
 import { Card } from "./Card";
 import { Button } from "../button/Button";
+import BsBadge from "react-bootstrap/Badge";
 import { ListGroup } from "../list-group/ListGroup";
 import BsCard from "react-bootstrap/Card";
 import BsListGroup from "react-bootstrap/ListGroup";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Link } from "../link/Link";
+import imageSrc16_9 from "../../public/1920x1080_ratio-16-9.png";
+
+const image = {
+  src: imageSrc16_9,
+  alt: "16-9-s",
+};
 
 export default {
   title: "Components/Card",
   component: Card,
   args: {
+    image: true,
+    imageAspectRatio: "none",
+    badge: false,
+    skyline: false,
     title: "Card Title",
     text: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    headerText: "",
-    subtitleText: "",
-    footerText: "",
     button: true,
-    buttonIcon: false,
-    links: false,
-    image: true,
-    aspectRatio: "16:9",
-    direction: "vertical",
-    imagePosition: "left",
+    link: false
   }
 };
 
 const DefaultTemplate = (args) => (
-  <Card {...args}>
-    {args.headerText && <BsCard.Header>{args.headerText}</BsCard.Header>}
+  <Card {...args} style={{ width: '22rem' }}>
 
     <BsCard.Body>
-      {args.subtitleText && <BsCard.Subtitle>{args.subtitleText}</BsCard.Subtitle>}
+      {args.badge && <BsBadge pill bg="">Badge</BsBadge>}
+      {args.skyline && <BsCard.Subtitle>More Information</BsCard.Subtitle>}
+
       <BsCard.Title>{args.title}</BsCard.Title>
       <BsCard.Text>{args.text}</BsCard.Text>
 
-      {args.button &&
-        <Button color="secondary" variant="outline" href="#">Go somewhere
-        {args.buttonIcon &&
-          <FontAwesomeIcon icon={["fas", "star"]} className="ifx__btn-icon--after"/>
-        }
-        </Button>
-      }
-
-      {args.links &&
-        <div className="ifx__card-link-wrapper">
-          <BsCard.Link href="#">Card Link</BsCard.Link>
-          <BsCard.Link href="#">Another Link</BsCard.Link>
-        </div>
-      }
+      {args.button && <Button color="secondary" variant="solid" size="s" href="#">Go somewhere</Button>}
+      {args.link && <Link color="brand" underlineNone icon iconPosition="right" linkText="Go somewhere"></Link>}
     </BsCard.Body>
-
-    {args.footerText && <BsCard.Footer>{args.footerText}</BsCard.Footer>}
   </Card>
 );
 
-const CenterTemplate = (args) => (
-  <Card {...args}>
-    {args.headerText && <BsCard.Header className="text-center">{args.headerText}</BsCard.Header>}
-
-    <BsCard.Body className="d-flex justify-content-center flex-wrap text-center">
-      {args.subtitleText && <BsCard.Subtitle>{args.subtitleText}</BsCard.Subtitle>}
-      <BsCard.Title className="w-100">{args.title}</BsCard.Title>
-      <BsCard.Text className="w-100">{args.text}</BsCard.Text>
-
-      {args.button &&
-        <Button color="secondary" variant="outline" href="#">Go somewhere
-        {args.buttonIcon &&
-          <FontAwesomeIcon icon={["fas", "star"]} className="ifx__btn-icon--after"/>
-        }
-        </Button>
-      }
-
-      {args.links && 
-        <div className="ifx__card-link-wrapper">
-          <BsCard.Link href="#">Card Link</BsCard.Link>
-          <BsCard.Link href="#">Another Link</BsCard.Link>
-        </div>
-      }
-    </BsCard.Body>
-
-
-
-    {args.footerText && <BsCard.Footer className="text-center">{args.footerText}</BsCard.Footer>}
-  </Card>
-);
+export const Default = DefaultTemplate.bind({});
 
 const KitchenSinkTemplate = (args) => (
-  <Card {...args}>
-    {args.headerText && <BsCard.Header>{args.headerText}</BsCard.Header>}
+  <Card {...args} style={{ width: '22rem' }}>
 
     <BsCard.Body>
-      {args.subtitleText && <BsCard.Subtitle>{args.subtitleText}</BsCard.Subtitle>}
+      {args.badge && <BsBadge pill bg="">Badge</BsBadge>}
+      {args.skyline && <BsCard.Subtitle>More Information</BsCard.Subtitle>}
+
       <BsCard.Title>{args.title}</BsCard.Title>
       <BsCard.Text>{args.text}</BsCard.Text>
     </BsCard.Body>
@@ -100,24 +62,34 @@ const KitchenSinkTemplate = (args) => (
       <BsListGroup.Item>A third item</BsListGroup.Item>
     </ListGroup>
 
-    {args.links && 
-      <BsCard.Body>
-        <BsCard.Link href="#">Card Link</BsCard.Link>
-        <BsCard.Link href="#">Another Link</BsCard.Link>
-      </BsCard.Body>
-    }
-
-    {args.footerText && <BsCard.Footer>{args.footerText}</BsCard.Footer>}
+    <BsCard.Body>
+      {args.button && <Button color="secondary" variant="solid" size="s" href="#">Go somewhere</Button>}
+      {args.link && <Link color="brand" underlineNone icon iconPosition="right" linkText="Go somewhere"></Link>}
+    </BsCard.Body>
   </Card>
 );
-
-export const Default = DefaultTemplate.bind({});
-
-export const Center = CenterTemplate.bind({});
 
 export const KitchenSink = KitchenSinkTemplate.bind({});
 KitchenSink.args = {
   button: false,
-  buttonIcon: false,
-  links: true,
+  link: true,
 };
+
+const HorizontalTemplate = (args) => (
+  <div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img className="img-fluid" src={image.src} alt={image.alt}/>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+);
+
+export const Horizontal = HorizontalTemplate.bind({});
