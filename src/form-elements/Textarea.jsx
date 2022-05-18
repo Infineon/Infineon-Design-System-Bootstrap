@@ -19,7 +19,7 @@ export const Textarea = ({ label, size, ...props }) => {
     : undefined;
 
   return (
-    <BsForm.Group className="mb-3" controlId="inputTextarea">
+    <BsForm.Group controlId="inputTextarea">
       <BsForm.Label className="ifx__form-label--input">{label}</BsForm.Label>
       <BsForm.Control as="textarea" rows={5} placeholder="Placeholder" size={bsSize} {...props}></BsForm.Control>
     </BsForm.Group>
