@@ -37,7 +37,7 @@ const DefaultTemplate = (args) => {
     <JsWrapper>
       <div className="ifx__navbar">
         <NavBar {...args}>
-          <div className="d-flex">
+          <div className="d-flex align-items-center">
             <BsNavBar.Toggle aria-controls="basic-navbar-nav" />
 
             <BsNavBar.Brand href="#home">
@@ -47,27 +47,26 @@ const DefaultTemplate = (args) => {
           </div>
 
           <BsNavBar.Collapse id="basic-navbar-nav">
-            <div className="d-lg-flex justify-content-lg-between flex-lg-row-reverse w-100">
-              <div className="d-flex align-items-center">
+            <div className="ifx__mobile-margin-top align-items-lg-center ifx__nav-link-wrapper ifx__mobile-show">
+              <div className="ifx__searchbar-metalink-wrapper d-flex align-items-center flex-wrap">
                 <SearchBar className="ifx__nav-searchbar" size="s"></SearchBar>
 
-                <div className="ifx__nav-metalink-wrapper d-flex">
-                  <BsNav.Link className="ifx__nav-metalink" href="#">
-                    <div className="d-flex align-items-center">
-                      <span data-text="Metalink">Metalink</span>
-                      <FontAwesomeIcon icon={["fal", "user"]}/>
-                    </div>
-                  </BsNav.Link>
-                  <BsNav.Link className="ifx__nav-metalink" href="#">
-                    <div className="d-flex align-items-center">
-                      <span data-text="Metalink">Metalink</span>
-                      <FontAwesomeIcon icon={["fal", "globe"]}/>
-                    </div>
-                  </BsNav.Link>
-                </div>
+                <BsNav.Link className="ifx__nav-metalink" href="#">
+                  <div className="d-flex align-items-center">
+                    <span data-text="Metalink">Metalink</span>
+                    <FontAwesomeIcon icon={["fal", "user"]}/>
+                  </div>
+                </BsNav.Link>
+                <BsNav.Link className="ifx__nav-metalink" href="#">
+                  <div className="d-flex align-items-center">
+                    <span data-text="Metalink">Metalink</span>
+                    <FontAwesomeIcon icon={["fal", "globe"]}/>
+                  </div>
+                </BsNav.Link>
               </div>
 
-              <div className="align-items-lg-center ifx__nav-link-wrapper ifx__mobile-show">
+              <div className="ifx__nav-link-wrapper ifx__mobile-show">
+                <div className="ifx__menu">Menu</div>
                 <ul>
                   <li>
                     <BsNav.Link href="#" data-text="Nav Link 1">
@@ -101,28 +100,45 @@ const DefaultTemplate = (args) => {
                   </li>
                 </ul>
               </div>
+            </div>
 
-              <div className="d-lg-flex align-items-center ifx__nav-link-wrapper ifx__desktop-show">
-                <ul className="d-flex">
-                  <li>
-                    <BsNav.Link href="#" data-text="Nav Link 1">
-                      Nav Link 1
-                    </BsNav.Link>
-                  </li>
-                  <li>
-                    <BsNav.Link href="#" data-text="Nav Link 2">
-                      Nav Link 2
-                    </BsNav.Link>
-                  </li>
-                  <li>
-                    <BsNavDropdown title="More" id="basic-nav-dropdown" className="active" data-text="More">
-                      <BsNavDropdown.Item href="#">Nav Link 3</BsNavDropdown.Item>
-                      <BsNavDropdown.Item href="#">Nav Link 4</BsNavDropdown.Item>
-                      <BsNavDropdown.Item href="#">Nav Link 5</BsNavDropdown.Item>
-                      <BsNavDropdown.Item href="#">Nav Link 6</BsNavDropdown.Item>
-                    </BsNavDropdown>
-                  </li>
-                </ul>
+            <div className="w-100 d-lg-flex align-items-center justify-content-between ifx__nav-link-wrapper ifx__desktop-show">
+              <ul className="d-flex">
+                <li>
+                  <BsNav.Link href="#" data-text="Nav Link 1">
+                    Nav Link 1
+                  </BsNav.Link>
+                </li>
+                <li>
+                  <BsNav.Link href="#" data-text="Nav Link 2">
+                    Nav Link 2
+                  </BsNav.Link>
+                </li>
+                <li>
+                  <BsNavDropdown title="More" id="basic-nav-dropdown" className="active" data-text="More">
+                    <BsNavDropdown.Item href="#">Nav Link 3</BsNavDropdown.Item>
+                    <BsNavDropdown.Item href="#">Nav Link 4</BsNavDropdown.Item>
+                    <BsNavDropdown.Item href="#">Nav Link 5</BsNavDropdown.Item>
+                    <BsNavDropdown.Item href="#">Nav Link 6</BsNavDropdown.Item>
+                  </BsNavDropdown>
+                </li>
+              </ul>
+
+              <div className="ifx__searchbar-metalink-wrapper d-flex align-items-center flex-wrap">
+                <SearchBar className="ifx__nav-searchbar" size="s"></SearchBar>
+
+                <BsNav.Link className="ifx__nav-metalink" href="#">
+                  <div className="d-flex align-items-center">
+                    <span data-text="Metalink">Metalink</span>
+                    <FontAwesomeIcon icon={["fal", "user"]}/>
+                  </div>
+                </BsNav.Link>
+                <BsNav.Link className="ifx__nav-metalink" href="#">
+                  <div className="d-flex align-items-center">
+                    <span data-text="Metalink">Metalink</span>
+                    <FontAwesomeIcon icon={["fal", "globe"]}/>
+                  </div>
+                </BsNav.Link>
               </div>
             </div>
           </BsNavBar.Collapse>
@@ -149,32 +165,31 @@ const ExtendedTemplate = (args) => {
           </div>
 
           <BsNavBar.Collapse id="basic-navbar-nav">
-            <div className="d-flex justify-content-lg-between align-items-center">
+            <div className="ifx__searchbar-metalink-wrapper d-flex align-items-center flex-wrap">
               <SearchBar className="ifx__nav-searchbar" size="s"></SearchBar>
 
-              <div className="ifx__nav-metalink-wrapper d-flex">
-                <BsNav.Link className="ifx__nav-metalink" href="#">
-                  <div className="d-flex align-items-center">
-                    <span data-text="Metalink">Metalink</span>
-                    <FontAwesomeIcon icon={["fal", "user"]}/>
-                  </div>
-                </BsNav.Link>
-                <BsNav.Link className="ifx__nav-metalink" href="#">
-                  <div className="d-flex align-items-center">
-                    <span data-text="Metalink">Metalink</span>
-                    <FontAwesomeIcon icon={["fal", "globe"]}/>
-                  </div>
-                </BsNav.Link>
-                <BsNav.Link className="ifx__nav-metalink" href="#">
-                  <div className="d-flex align-items-center">
-                    <span data-text="Metalink">Metalink</span>
-                    <FontAwesomeIcon icon={["fal", "cart-shopping"]}/>
-                  </div>
-                </BsNav.Link>
-              </div>
+              <BsNav.Link className="ifx__nav-metalink" href="#">
+                <div className="d-flex align-items-center">
+                  <span data-text="Metalink">Metalink</span>
+                  <FontAwesomeIcon icon={["fal", "user"]}/>
+                </div>
+              </BsNav.Link>
+              <BsNav.Link className="ifx__nav-metalink" href="#">
+                <div className="d-flex align-items-center">
+                  <span data-text="Metalink">Metalink</span>
+                  <FontAwesomeIcon icon={["fal", "globe"]}/>
+                </div>
+              </BsNav.Link>
+              <BsNav.Link className="ifx__nav-metalink" href="#">
+                <div className="d-flex align-items-center">
+                  <span data-text="Metalink">Metalink</span>
+                  <FontAwesomeIcon icon={["fal", "cart-shopping"]}/>
+                </div>
+              </BsNav.Link>
             </div>
 
             <div className="ifx__nav-link-wrapper ifx__mobile-show">
+              <div className="ifx__menu">Menu</div>
               <ul>
                 <li>
                   <BsNav.Link href="#" data-text="Nav Link 1">
@@ -276,7 +291,7 @@ const ExtendedLevel2Template = (args) => {
           </div>
 
           <BsNavBar.Collapse id="basic-navbar-nav">
-            <div className="d-flex align-items-center flex-wrap">
+            <div className="ifx__searchbar-metalink-wrapper d-flex align-items-center flex-wrap">
               <SearchBar className="ifx__nav-searchbar" size="s"></SearchBar>
 
               <BsNav.Link className="ifx__nav-metalink" href="#">
@@ -300,7 +315,7 @@ const ExtendedLevel2Template = (args) => {
             </div>
 
             <div className="ifx__nav-link-wrapper ifx__mobile-show ifx__nav-wrapper">
-              <div>Menu</div>
+              <div className="ifx__menu">Menu</div>
               <div className="col-6">
                 <ul>
                   <li>
@@ -3020,7 +3035,7 @@ const NavMegaDropdown = () => (
 const ExtendedLevel3Template = (args) => {
   return (
     <JsWrapper>
-      <div className="ifx__navbar ifx__navbar-extended">
+      <div className="ifx__navbar ifx__navbar-extended ifx__navbar-extended-level3">
         <NavBar {...args}>
           <div className="d-flex align-items-center">
             <BsNavBar.Toggle aria-controls="basic-navbar-nav" />
@@ -3032,7 +3047,7 @@ const ExtendedLevel3Template = (args) => {
           </div>
 
           <BsNavBar.Collapse id="basic-navbar-nav">
-            <div className="d-flex align-items-center flex-wrap">
+            <div className="ifx__searchbar-metalink-wrapper d-flex align-items-center flex-wrap">
               <SearchBar className="ifx__nav-searchbar" size="s"></SearchBar>
 
               <BsNav.Link className="ifx__nav-metalink" href="#">
@@ -3056,7 +3071,7 @@ const ExtendedLevel3Template = (args) => {
             </div>
 
             <div className="ifx__nav-link-wrapper ifx__mobile-show ifx__nav-wrapper">
-              <div>Menu</div>
+              <div className="ifx__menu">Menu</div>
               <div className="col-6">
                 <ul>
                   <li>
