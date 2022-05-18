@@ -43,6 +43,10 @@
       width: 160px;
     }
 
+    & .ifx__search-icon-wrapper {
+      margin-right: calc(8px + 16px);
+    }
+
     & .dropdown-item {
       font-size: 16px;
       padding: 8px 16px;
