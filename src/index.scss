@@ -5,6 +5,8 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
+@import "./image-aspect-ratio/image-aspect-ratio";
+
 @import "./accordion/accordion";
 @import "./alert/alert";
 @import "./badge/badge";
@@ -30,5 +32,3 @@
 @import "./teaser/teaser";
 @import "./tooltip/tooltip";
 @import "./form-elements/form-elements";
-
-@import "./badge/heading";
