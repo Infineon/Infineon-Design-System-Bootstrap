@@ -1,6 +1,6 @@
 import { Footer } from "./Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import imageFile from "../../public/logo-desktop-en-2x.png";
+import imageFile from "../../public/Logo.svg";
 
 export default {
   title: "Components/Footer",
