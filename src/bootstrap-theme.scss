@@ -72,9 +72,8 @@ $line-height-lg: tokens.$font-line-height-l;
 //
 $border-color: tokens.$color-gray-200;
 
-$border-radius: 1px;
-$border-radius-sm: tokens.$border-radius-s;
-$border-radius-lg: tokens.$border-radius-l;
+$border-radius: tokens.$border-radius-default;
+$border-radius-pill: tokens.$border-radius-pill;
 
 // Breadcrumb
 //
@@ -94,8 +93,8 @@ $card-border-color: $border-color;
 // Badges
 //
 $badge-font-size: 1em;
-$badge-padding-y: .35em;
-$badge-padding-x: .9em;
+$badge-padding-y: .5em;
+$badge-padding-x: 1em;
 $badge-font-weight: tokens.$font-weight-semi-bold;
 $badge-color: $black;
 
