@@ -5,6 +5,8 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
+@import "./image-aspect-ratio/image-aspect-ratio";
+
 @import "./accordion/accordion";
 @import "./alert/alert";
 @import "./badge/badge";
@@ -16,18 +18,20 @@
 @import "./content-navigation/content-navigation";
 @import "./dropdowns/dropdown";
 @import "./footer/footer";
+@import "./hero-banner/hero-banner";
 @import "./link/link";
 @import "./list-group/list-group";
 @import "./modal/modal";
 @import "./nav-bar/nav-bar";
 @import "./pagination/pagination";
 @import "./paragraph/paragraph";
+@import "./paragraph/paragraph-with-images";
 @import "./popover/popover";
 @import "./progress-bar/progress-bar";
 @import "./spinner/spinner";
 @import "./table/table";
 @import "./teaser/teaser";
 @import "./tooltip/tooltip";
+@import "./typography/typography";
 @import "./form-elements/form-elements";
-
-@import "./badge/heading";
+@import "./list/list";

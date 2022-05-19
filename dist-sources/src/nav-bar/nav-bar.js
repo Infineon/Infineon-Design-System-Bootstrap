@@ -1,23 +1,15 @@
-export function initNavBar() {
-  const navBar = document.querySelector(".ifx__navbar");
-  let navBarHeight = navBar.offsetHeight;
+let navBar;
+let navBarHeight;
+let currentContent;
+let desktopShow;
+let dropdowns;
+let navLinks;
+let verticalNavBtn;
+let navBarVerticalCollapsible;
 
-  function setShadow() {
-    const scrollY = window.scrollY;
-
-    if (scrollY >= navBarHeight) {
-      navBar.classList.add('scrolling');
-    } else {
-      navBar.classList.remove('scrolling');
-    }
-  }
-
-  document.addEventListener("scroll", setShadow, {passive: true});
-
-  const mobileShow = document.querySelector('.ifx__nav-link-wrapper.ifx__mobile-show');
-  let currentContent;
+function slideNav(mobileShow) {
   mobileShow.addEventListener('click', toggleMenu);
-  window.addEventListener('resize', updateNavHeight);
+  window.addEventListener('resize', updateNavHeight, {passive: true});
 
   function updateNavHeight() {
     navBarHeight = navBar.offsetHeight;
@@ -59,17 +51,46 @@ export function initNavBar() {
       }
     }
   }
+}
 
-  const desktopShow = document.querySelector('.ifx__nav-list');
+export function initNavBar() {
+  navBar = document.querySelector(".ifx__navbar");
+
+  if ( !navBar ) {
+    return
+  }
+
+  navBarHeight = navBar.offsetHeight;
+
+  function setShadow() {
+    const scrollY = window.scrollY;
+
+    if (scrollY >= navBarHeight) {
+      navBar.classList.add('scrolling');
+    } else {
+      navBar.classList.remove('scrolling');
+    }
+  }
+
+  document.addEventListener("scroll", setShadow, {passive: true});
+
+  const mobileShow = document.querySelector('.ifx__nav-link-wrapper.ifx__mobile-show');
+  if ( mobileShow ) {
+    slideNav(mobileShow);
+  }
+
+  desktopShow = document.querySelector('.ifx__nav-list');
   if (!desktopShow) {
     return
   }
 
+  desktopShow.removeEventListener('click', toggleMenuDesktop);
   desktopShow.addEventListener('click', toggleMenuDesktop);
+
   desktopShow.addEventListener('focusout', toggleMenuItem);
 
-  const dropdowns = desktopShow.childNodes;
-  const navLinks = desktopShow.querySelectorAll('.nav-link');
+  dropdowns = desktopShow.childNodes;
+  navLinks = desktopShow.querySelectorAll('.nav-link');
 
   function toggleMenuDesktop(e) {
     const dropdownLink = e.target && e.target.closest(".ifx__nav-link");
@@ -116,5 +137,30 @@ export function initNavBar() {
         element.classList.remove("show");
       });
     }
+  }
+}
+
+export function initVerticalNavBar() {
+  const mobileShow = document.querySelector('.ifx__nav-link-wrapper.ifx__mobile-show');
+
+  if ( mobileShow ) {
+    slideNav(mobileShow);
+  }
+
+  verticalNavBtn = document.querySelector(".ifx__vertical-nav-icons-btn");
+  console.log(verticalNavBtn);
+  if (!verticalNavBtn) {
+    return
+  }
+
+  navBarVerticalCollapsible = document.querySelector(".ifx__nav-bar-vertical-collapsible");
+  if (!navBarVerticalCollapsible) {
+    return
+  }
+
+  verticalNavBtn.addEventListener("click", toggleVerticalNav);
+
+  function toggleVerticalNav() {
+    navBarVerticalCollapsible.classList.toggle("show");
   }
 }

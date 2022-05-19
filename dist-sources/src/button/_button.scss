@@ -40,8 +40,8 @@
     }
 
     &:hover {
-      background-color: tokens.$color-primary-400;
-      border-color: tokens.$color-primary-400;  
+      background-color: tokens.$color-primary-600;
+      border-color: tokens.$color-primary-600;  
     }
 
     &:active, &.active {
@@ -56,8 +56,8 @@
     }
 
     &:hover {
-      background-color: tokens.$color-primary-400;
-      border-color: tokens.$color-primary-400;  
+      background-color: tokens.$color-primary-600;
+      border-color: tokens.$color-primary-600;  
     }
 
     &:active, &.active {
@@ -73,8 +73,8 @@
     }
 
     &:hover {
-      background-color: tokens.$color-secondary-400;
-      border-color: tokens.$color-secondary-400;
+      background-color: tokens.$color-secondary-600;
+      border-color: tokens.$color-secondary-600;
     }
 
     &:active, &.active {
@@ -89,8 +89,8 @@
     }
 
     &:hover {
-      background-color: tokens.$color-secondary-400;
-      border-color: tokens.$color-secondary-400;  
+      background-color: tokens.$color-secondary-600;
+      border-color: tokens.$color-secondary-600;  
     }
 
     &:active, &.active {
@@ -106,8 +106,8 @@
     }
 
     &:hover {
-      background-color: tokens.$color-success-400;
-      border-color: tokens.$color-success-400;
+      background-color: tokens.$color-success-600;
+      border-color: tokens.$color-success-600;
     }
 
     &:active, &.active {
@@ -124,8 +124,8 @@
     }
 
     &:hover {
-      background-color: tokens.$color-success-400;
-      border-color: tokens.$color-success-400;  
+      background-color: tokens.$color-success-600;
+      border-color: tokens.$color-success-600;  
     }
 
     &:active, &.active {
@@ -141,8 +141,8 @@
     }
 
     &:hover {
-      background-color: tokens.$color-danger-400;
-      border-color: tokens.$color-danger-400;
+      background-color: tokens.$color-danger-600;
+      border-color: tokens.$color-danger-600;
     }
 
     &:active, &.active {
@@ -157,8 +157,8 @@
     }
 
     &:hover {
-      background-color: tokens.$color-danger-400;
-      border-color: tokens.$color-danger-400;  
+      background-color: tokens.$color-danger-600;
+      border-color: tokens.$color-danger-600;  
     }
 
     &:active, &.active {
@@ -174,8 +174,8 @@
     }
     
     &:hover {
-      background-color: tokens.$color-warning-400;
-      border-color: tokens.$color-warning-400;
+      background-color: tokens.$color-warning-600;
+      border-color: tokens.$color-warning-600;
     }
 
     &:active, &.active {
@@ -192,8 +192,8 @@
     }
 
     &:hover {
-      background-color: tokens.$color-warning-400;
-      border-color: tokens.$color-warning-400;  
+      background-color: tokens.$color-warning-600;
+      border-color: tokens.$color-warning-600;  
     }
 
     &:active, &.active {
@@ -216,18 +216,7 @@
     height: 14px;
   }
 
-  & .btn-badge {
-    font-size: 13px;
-    font-weight: 400;
-    padding: 3.5px 5.5px 1.5px 5.5px;
-    min-width: 18px;
-    min-height: 18px;
-    margin-left: 12px;
-    line-height: 10px;
-    color: tokens.$color-black;
-  }
-
-  & .spinner-border, .spinner-grow {
+  & .spinner-border {
     width: 14px;
     height: 14px;
     margin-right: 10px;
@@ -259,4 +248,48 @@
       margin-left: 10px;
     }
   }
+}
+
+.btn-badge {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 2px 8px;
+  min-width: 18px;
+  min-height: 18px;
+  margin-left: 12px;
+  color: tokens.$color-black;
+}
+
+.ifx__badge-on-icon {
+  font-size: 13px;
+
+  svg {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+  }
+
+  & .btn-badge {
+    position: absolute;
+    top: -13px;
+    right: -16px;
+    color: tokens.$color-white;
+    margin-left: 0;
+  }
+}
+
+.ifx__btn-back-to-top {
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+  width: 30px;
+  height: 30px;
+  display: none;
+  padding: 0;
+  border-radius: tokens.$border-radius-circle;
+}
+
+.ifx__btn-back-to-top.scroll-down {
+  display: block;
 }
