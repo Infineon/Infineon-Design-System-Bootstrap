@@ -188,6 +188,11 @@
 
 .form-select {
   font-size: 16px;
+  color: tokens.$color-info-400;
+}
+
+.form-select:focus {
+  color: tokens.$color-info-400;
 }
 
 .form-select.form-select-lg {
@@ -200,21 +205,46 @@
   color: tokens.$color-black;
 }
 
-.form-range::-moz-range-thumb {
+input[type=range] {
+  -webkit-appearance: none;
+}
+
+input[type=range]::-moz-range-thumb {
   width: 14px;
   height: 14px;
   background-color: tokens.$color-secondary-500;
 }
 
-.form-range::-moz-range-thumb:active {
+input[type=range]::-moz-range-thumb:active {
   background-color: tokens.$color-secondary-600;
 }
 
-.form-range:focus::-moz-range-thumb {
+input[type=range]:focus::-moz-range-thumb {
   box-shadow: 0 0 0 3px #59B29B66;
 }
 
-.form-range::-moz-range-track {
+input[type=range]::-moz-range-track {
+  height: 5px;
+  background-color: tokens.$color-info-200;
+  border-radius: 1px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  width: 14px;
+  height: 14px;
+  background-color: tokens.$color-secondary-500;
+}
+
+input[type=range]:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px #59B29B66;
+}
+
+input[type=range]::-webkit-slider-thumb:active {
+  background-color: tokens.$color-secondary-600;
+  box-shadow: 0 0 0 3px #59B29B66;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
   height: 5px;
   background-color: tokens.$color-info-200;
   border-radius: 1px;

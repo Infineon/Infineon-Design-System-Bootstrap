@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import BsNavBar from "react-bootstrap/Navbar";
 import BsNav from "react-bootstrap/Nav";
 import BsNavDropdown from "react-bootstrap/NavDropdown";
-import BsButton from "react-bootstrap/Button";
-import imageFile from "../../public/logo-desktop-en-2x.png";
+import imageFile from "../../public/Logo.svg";
 import { useEffect } from "react";
 import { initNavBar, initVerticalNavBar } from "./nav-bar";
+import { VerticalCollapsibleTemplate } from "./VerticalNavBar";
 
 export default {
   title: "Components/Nav Bar",
@@ -3306,83 +3306,10 @@ const VerticalLevel2Template = (args) => {
   );
 }
 
-const VerticalCollapsibleTemplate = (args) => {
+const VerticalCollapsibleComponent = (args) => {
   return (
     <JsWrapper>
-      <div className="d-flex ifx__navbar ifx__nav-bar-vertical ifx__nav-bar-vertical-collapsible">
-        <div>
-          <ul className="flex-column ifx__content-nav__border nav" {...args}>
-            <p className="ifx__content-nav__divider">Category</p>
-            <BsNav.Item as="li">
-              <BsNav.Link href="#">
-                <FontAwesomeIcon icon={["fal", "globe"]} />
-                <span>Nav link</span>
-              </BsNav.Link>
-            </BsNav.Item>
-            <BsNav.Item as="li">
-              <BsNav.Link href="#">
-                <FontAwesomeIcon icon={["fal", "compass"]} />
-                <span>Nav link</span>
-              </BsNav.Link>
-            </BsNav.Item>
-            <BsNav.Item as="li">
-              <BsNav.Link href="#">
-                <FontAwesomeIcon icon={["fal", "chart-column"]} />
-                <span>Nav link</span>
-              </BsNav.Link>
-            </BsNav.Item>
-            <BsNav.Item as="li">
-              <BsNav.Link href="#">
-                <FontAwesomeIcon icon={["fal", "house"]} />
-                <span>Nav link</span>
-              </BsNav.Link>
-            </BsNav.Item>
-            <BsNav.Item as="li">
-              <BsNav.Link href="#">
-                <FontAwesomeIcon icon={["fal", "gauge-min"]} />
-                <span>Nav link</span>
-              </BsNav.Link>
-            </BsNav.Item>
-          </ul>
-
-          <ul className="flex-column ifx__content-nav__border nav" {...args}>
-            <p className="ifx__content-nav__divider">Category</p>
-            <BsNav.Item as="li">
-              <BsNav.Link href="#">
-                <FontAwesomeIcon icon={["fal", "globe"]} />
-                <span>Nav link</span>
-              </BsNav.Link>
-            </BsNav.Item>
-            <BsNav.Item as="li">
-              <BsNav.Link href="#">
-                <FontAwesomeIcon icon={["fal", "compass"]} />
-                <span>Nav link</span>
-              </BsNav.Link>
-            </BsNav.Item>
-            <BsNav.Item as="li">
-              <BsNav.Link href="#">
-                <FontAwesomeIcon icon={["fal", "chart-column"]} />
-                <span>Nav link</span>
-              </BsNav.Link>
-            </BsNav.Item>
-            <BsNav.Item as="li">
-              <BsNav.Link href="#">
-                <FontAwesomeIcon icon={["fal", "house"]} />
-                <span>Nav link</span>
-              </BsNav.Link>
-            </BsNav.Item>
-            <BsNav.Item as="li">
-              <BsNav.Link href="#">
-                <FontAwesomeIcon icon={["fal", "gauge-min"]} />
-                <span>Nav link</span>
-              </BsNav.Link>
-            </BsNav.Item>
-          </ul>
-        </div>
-        <BsButton className="d-inline-flex ifx__content-nav__border ifx__vertical-nav-icons-btn">
-          <FontAwesomeIcon icon={["fal", "chevron-right"]} />
-        </BsButton>
-      </div>
+      <VerticalCollapsibleTemplate {...args}/>
 
       <div style={{height: "200vh"}}></div>
     </JsWrapper>
@@ -3401,4 +3328,4 @@ export const Vertical = VerticalTemplate.bind({});
 
 export const VerticalLevel2 = VerticalLevel2Template.bind({});
 
-export const VerticalCollapsible = VerticalCollapsibleTemplate.bind({});
+export const VerticalCollapsible = VerticalCollapsibleComponent.bind({});
