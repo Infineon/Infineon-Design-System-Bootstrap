@@ -24,7 +24,7 @@ const DefaultTemplate = (args) => {
   return (
     <Alert {...args}>
       <div className="ifx__alert-text">
-        <span className="ifx__alert-highlighted">{variantUppercase}!</span> A simple {args.variant} alert with <Link href="#" linkText="an example link"></Link>. Give it a click if you like.      
+        <span className="ifx__alert-highlighted">{variantUppercase}!</span> A simple {args.variant} alert with <Link href="javascript:void(0)" linkText="an example link"></Link>. Give it a click if you like.      
       </div>
     </Alert>
   );
