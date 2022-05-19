@@ -1,6 +1,9 @@
 import PropTypes from "prop-types";
 
 const propTypes = {
+  /** Set Icon */
+  icon: PropTypes.bool,
+
   /** Set Headline */
   headline: PropTypes.bool,
 
