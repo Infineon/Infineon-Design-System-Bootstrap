@@ -28,7 +28,7 @@ export default {
 };
 
 const DefaultTemplate = (args) => (
-  <Card {...args} style={{ width: '22rem' }}>
+  <Card image={args.image} imageAspectRatio={args.imageAspectRatio} style={{ width: '22rem' }}>
 
     <BsCard.Body>
       {args.badge && <BsBadge pill bg="">Badge</BsBadge>}
@@ -46,7 +46,7 @@ const DefaultTemplate = (args) => (
 export const Default = DefaultTemplate.bind({});
 
 const KitchenSinkTemplate = (args) => (
-  <Card {...args} style={{ width: '22rem' }}>
+  <Card image={args.image} imageAspectRatio={args.imageAspectRatio} style={{ width: '22rem' }}>
 
     <BsCard.Body>
       {args.badge && <BsBadge pill bg="">Badge</BsBadge>}

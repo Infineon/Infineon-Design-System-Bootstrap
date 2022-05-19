@@ -52,7 +52,8 @@ $font-size-lg: tokens.$font-size-l;
 
 $font-weight-light: tokens.$font-weight-light;
 $font-weight-normal: tokens.$font-weight-regular;
-$font-weight-bold: tokens.$font-weight-bold;
+$font-weight-bold: tokens.$font-weight-semi-bold;
+$font-weight-bolder: tokens.$font-weight-bold;
 
 $h1-font-size: tokens.$font-size-xxxxl;
 $h2-font-size: tokens.$font-size-xxxl;
@@ -63,6 +64,15 @@ $h6-font-size: tokens.$font-size-m;
 
 $headings-font-family: tokens.$font-family-heading;
 $headings-font-weight: tokens.$font-weight-semi-bold;
+
+$display-font-sizes: (
+  1: 4.25rem,
+  2: 3.5rem,
+  3: 3rem,
+  4: 2rem
+);
+
+$display-font-weight: $headings-font-weight;
 
 $line-height-base: tokens.$font-line-height-m;
 $line-height-sm: tokens.$font-line-height-s;
