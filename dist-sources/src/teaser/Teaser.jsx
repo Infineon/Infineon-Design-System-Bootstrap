@@ -83,7 +83,7 @@ export const Teaser = ({ image, aspectRatio, direction, imagePosition, children,
       if ( imagePosition === "left" ) {
         return (
           <BsCard className="ifx__teaser ifx__teaser-horizontal" {...props}>
-            <div className="row no-gutters">
+            <div className="row">
               <div className="col-md-6">
                 <Image aspectRatio={aspectRatio}/>
               </div>
@@ -97,13 +97,13 @@ export const Teaser = ({ image, aspectRatio, direction, imagePosition, children,
       } else {
         return (
           <BsCard className="ifx__teaser ifx__teaser-horizontal" {...props}>
-            <div className="row no-gutters">
-              <div className="col-md-6">
-                {children}
-              </div>
-
+            <div className="row flex-md-row-reverse">
               <div className="col-md-6">
                 <Image aspectRatio={aspectRatio}/>
+              </div>
+
+              <div className="col-md-6 d-flex">
+                {children}
               </div>
             </div>
           </BsCard>
@@ -113,7 +113,7 @@ export const Teaser = ({ image, aspectRatio, direction, imagePosition, children,
       return (
         <BsCard className="ifx__teaser ifx__teaser-vertical" {...props}>
           <Image aspectRatio={aspectRatio}/>
-          {children}
+            {children}
         </BsCard>
       )
     }

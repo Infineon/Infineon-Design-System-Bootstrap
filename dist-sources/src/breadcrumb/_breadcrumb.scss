@@ -4,10 +4,13 @@
   font-size: tokens.$font-size-s;
 }
 
+.breadcrumb-item.active {
+  color: tokens.$color-black;
+}
+
 .breadcrumb-item a {
   display: inline-block;
   font-weight: 400;
-  text-decoration: none;
 }
 
 .breadcrumb-item + .breadcrumb-item {

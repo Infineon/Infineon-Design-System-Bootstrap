@@ -5,7 +5,6 @@ export default {
   component: Spinner,
   args: {
     size: "m",
-    animation: "border",
   }
 };
 

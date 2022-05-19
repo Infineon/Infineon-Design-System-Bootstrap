@@ -32,19 +32,15 @@ export const Link = ({ linkText, color, underlineNone, icon, iconPosition, ...pr
     : iconPosition === "right" ? "ifx__link-icon--after"
     : "";
 
-  const IconLeft = () => (
-    icon ? <FontAwesomeIcon icon={["fa", "arrow-down"]} className={iconPositionClass}/> : null
-  );
-
-  const IconRight = () => (
-    icon ? <FontAwesomeIcon icon={["fa", "arrow-right"]} className={iconPositionClass}/> : null
+  const Icon = () => (
+    icon ? <FontAwesomeIcon icon={["fal", "arrow-right"]} className={iconPositionClass}/> : null
   );
 
   return (
     <>
       {iconPosition === "left" 
-        ? <><a className={colorClass + " " + underlineClass} href="#" {...props}><IconLeft/>{linkText}</a></>
-        : <><a className={colorClass + " " + underlineClass} href="#" {...props}>{linkText}<IconRight/></a></>
+        ? <><a className={colorClass + " " + underlineClass} href="#" {...props}><Icon/>{linkText}</a></>
+        : <><a className={colorClass + " " + underlineClass} href="#" {...props}>{linkText}<Icon/></a></>
       }
     </>
   );

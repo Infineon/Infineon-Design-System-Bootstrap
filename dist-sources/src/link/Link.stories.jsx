@@ -8,7 +8,7 @@ export default {
     color: "font",
     underlineNone: false,
     icon: false,
-    iconPosition: "left",
+    iconPosition: "right",
   }
 };
 
