@@ -1,13 +1,14 @@
 let navBar;
 let navBarHeight;
 let currentContent;
-let desktopShow;
-let dropdowns;
-let navLinks;
-let verticalNavBtn;
-let navBarVerticalCollapsible;
 
 function slideNav(mobileShow) {
+  if (mobileShow._ifx_slideNav_initialised) {
+    return
+  } else {
+    mobileShow._ifx_slideNav_initialised = true;
+  }
+
   mobileShow.addEventListener('click', toggleMenu);
   window.addEventListener('resize', updateNavHeight, {passive: true});
 
@@ -29,6 +30,7 @@ function slideNav(mobileShow) {
         const navMegaDropdownMobile = link.closest('.ifx__nav-mega-dropdown-mobile');
         const navMegaWrapper = link.closest(".ifx__nav-wrapper.open");
 
+        console.log(link);
         navMegaDropdownMobile.classList.remove('show');
 
         if (navMegaWrapper) {
@@ -56,8 +58,10 @@ function slideNav(mobileShow) {
 export function initNavBar() {
   navBar = document.querySelector(".ifx__navbar");
 
-  if ( !navBar ) {
+  if ( !navBar || navBar._ifx_NavBar_initialised) {
     return
+  } else {
+    navBar._ifx_NavBar_initialised = true;
   }
 
   navBarHeight = navBar.offsetHeight;
@@ -79,7 +83,7 @@ export function initNavBar() {
     slideNav(mobileShow);
   }
 
-  desktopShow = document.querySelector('.ifx__nav-list');
+  const desktopShow = document.querySelector('.ifx__nav-list');
   if (!desktopShow) {
     return
   }
@@ -89,8 +93,8 @@ export function initNavBar() {
 
   desktopShow.addEventListener('focusout', toggleMenuItem);
 
-  dropdowns = desktopShow.childNodes;
-  navLinks = desktopShow.querySelectorAll('.nav-link');
+  const dropdowns = desktopShow.childNodes;
+  const navLinks = desktopShow.querySelectorAll('.nav-link');
 
   function toggleMenuDesktop(e) {
     const dropdownLink = e.target && e.target.closest(".ifx__nav-link");
@@ -147,13 +151,16 @@ export function initVerticalNavBar() {
     slideNav(mobileShow);
   }
 
-  verticalNavBtn = document.querySelector(".ifx__vertical-nav-icons-btn");
+  const verticalNavBtn = document.querySelector(".ifx__vertical-nav-icons-btn");
   console.log(verticalNavBtn);
-  if (!verticalNavBtn) {
+
+  if ( !verticalNavBtn || verticalNavBtn._ifx_VerticalNavBar_initialised) {
     return
+  } else {
+    verticalNavBtn._ifx_VerticalNavBar_initialised = true;
   }
 
-  navBarVerticalCollapsible = document.querySelector(".ifx__nav-bar-vertical-collapsible");
+  const navBarVerticalCollapsible = document.querySelector(".ifx__nav-bar-vertical-collapsible");
   if (!navBarVerticalCollapsible) {
     return
   }
