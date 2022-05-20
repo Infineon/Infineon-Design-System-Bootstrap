@@ -2,6 +2,10 @@
 
 .tooltip {
   filter: drop-shadow(0px 5px 20px rgba(36, 34, 34, 0.2));
+
+  &.show {
+    opacity: 1;
+  }
 }
 
 .bs-tooltip-top .tooltip-arrow::before,

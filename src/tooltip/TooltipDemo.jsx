@@ -21,7 +21,7 @@ export const TooltipDemo = ({ position, text, buttonLabel }) => {
 
   return (
     <div ref={divRef} style={{margin: "20rem", marginTop: "10rem"}}>
-      <Button data-bs-toggle="tooltip" data-bs-placement={position} title={text}>
+      <Button color="secondary" data-bs-toggle="tooltip" data-bs-placement={position} title={text}>
         {buttonLabel}
       </Button>
     </div>
