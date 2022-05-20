@@ -1,7 +1,7 @@
 {
   "name": "@infineon/design-system-bootstrap",
   "version": "1.0.0-beta.0",
-  "private": true,
+  "private": false,
   "description": "Infineon design system bootstrap components",
   "homepage": "https://github.com/Infineon/IFX-Design-System-Bootstrap#readme",
   "bugs": {
