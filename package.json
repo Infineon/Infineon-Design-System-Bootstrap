@@ -26,7 +26,7 @@
     "watch-css": "chokidar \"src/**/*.scss\" -c \"yarn bundle-css\" --initial",
     "start": "yarn copy-fonts && concurrently -r yarn:watch-*",
     "bundle-css": "sass --load-path=node_modules --style=compressed --no-source-map .storybook/index.scss dist/index.css",
-    "bundle-js": "esbuild src/index.js --outfile=dist/index.js --bundle --platform=browser --minify",
+    "bundle-js": "esbuild src/index.js --outfile=dist/index.js --bundle --platform=browser --minify --target=es6",
     "bundle-fonts": "copyfiles -u 4 ./node_modules/@infineon/design-system-tokens/dist/fonts/**/* dist",
     "bundle-assets": "copyfiles -u 1 ./public/* dist",
     "bundle": "concurrently -r yarn:bundle-*",
