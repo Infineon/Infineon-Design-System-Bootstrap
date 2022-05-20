@@ -8,14 +8,14 @@ const propTypes = {
   /** Specifies a hoverable Table body */
   hover: PropTypes.bool,
 
-  /** Specifies a caption text */
-  caption: PropTypes.string,
+  /** Specifies a description text */
+  description: PropTypes.string,
 
   /** Specifies text alignment */
   textAlign: PropTypes.oneOf(["left", "right"]),
 };
 
-export const Table = ({ size, caption, textAlign, children, ...props }) => {
+export const Table = ({ size, description, textAlign, children, ...props }) => {
   const bsSize =
     size === "s" ? "sm" 
     : undefined;
@@ -56,7 +56,7 @@ export const Table = ({ size, caption, textAlign, children, ...props }) => {
           </tr>
         </tbody>
 
-        {caption ? <caption>{caption}</caption> : ""}
+        {description ? <caption>{description}</caption> : ""}
       </BsTable>
     </div>
   );
