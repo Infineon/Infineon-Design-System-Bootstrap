@@ -115,3 +115,6 @@ typings/
 
 # Local Netlify folder
 .netlify
+
+/.npmrc
+/dist/
