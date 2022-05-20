@@ -149,6 +149,7 @@
     padding: 0;
     font-weight: 400;
     color: tokens.$color-black;
+    transition: none;
 
     &:hover {
       font-weight: 600;
@@ -182,7 +183,7 @@
 
   .dropdown .dropdown-menu {
     transform: translate3d(-12px, 0px, 0px) !important;
-    margin-top: 8px;
+    margin-top: calc(21px + 8px);
   }
 }
 
@@ -195,6 +196,10 @@
 }
 
 .ifx__navbar-extended {
+  .dropdown .dropdown-menu {
+    margin-top: calc(8px + 8px);
+  }
+
   & .navbar > div:first-child {
     @media (min-width: 992px) {
       padding: 24px 0 11px 0;
