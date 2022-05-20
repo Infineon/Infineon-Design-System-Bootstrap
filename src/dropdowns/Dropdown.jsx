@@ -10,21 +10,27 @@ const propTypes = {
 
   /** Set the Dropdown text */
   label: PropTypes.string,
+
+  autoClose: PropTypes.oneOf([ "default", "outside" ]),
 };
 
-export const Dropdown = ({ size, label, children, ...props }) => {
+export const Dropdown = ({ size, label, children, autoClose = "default", ...props }) => {
   const bsSize =
     size === "s" ? "sm" 
     : size === "l" ? "lg" 
     : undefined;
 
+  const bsAutoClose =
+    autoClose === "default" ? true
+    : autoClose;
+
   return (
-    <BsDropdown>
-      <BsDropdown.Toggle size={bsSize} variant="secondary" {...props}>
+    <BsDropdown autoClose={bsAutoClose}>
+      <BsDropdown.Toggle size={bsSize} data-bs-toggle="dropdown" variant="secondary" {...props}>
         {label}
       </BsDropdown.Toggle>
 
-      <BsDropdown.Menu>
+      <BsDropdown.Menu renderOnMount>
         {children}
       </BsDropdown.Menu>
     </BsDropdown>
