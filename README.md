@@ -16,8 +16,6 @@ npm install --save @infineon/design-system-bootstrap
 yarn add @infineon/design-system-bootstrap
 ```
 
-<mark>Warning: while not published on npm, yet, use `ssh://git@github.com:Infineon/IFX-Design-System-Bootstrap.git` instead of `@infineon/design-system-bootstrap`. You need access to that repository, though!</mark>
-
 Now you can import the assets you need to consume. This currently includes:
 ```bash
 .
@@ -121,5 +119,3 @@ import "@infineon/design-system-tokens/dist-sources/src/index.js"
 ```css
 @import "@infineon/design-system-tokens/dist-sources/src/button/button"
 ```
-
-<mark>Warning: while not published on npm, yet, the `dist/` and `dist-sources` folder are removed from the `.gitignore` to make testing the npm integration through Github-URLs work. Those files would otherwise be excluded from being committed. This needs to be removed when publishing is established. `dist` and `dist-sources` need to be published independently, under distinct `npm` names, anyways for a smooth workflow.</mark>

@@ -1,6 +1,6 @@
 {
   "name": "@infineon/design-system-bootstrap",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.0",
   "private": true,
   "description": "Infineon design system bootstrap components",
   "homepage": "https://github.com/Infineon/IFX-Design-System-Bootstrap#readme",
@@ -14,7 +14,7 @@
   "files": [
     "dist"
   ],
-  "license": "UNLICENSED",
+  "license": "MIT",
   "author": "Infineon Technologies AG",
   "scripts": {
     "copy-fonts": "copyfiles -u 4 node_modules/@infineon/design-system-tokens/dist/fonts .storybook",
