@@ -29,6 +29,10 @@ a {
     }
   }
 
+  &:visited {
+    color: tokens.$color-black;
+  }
+
   > svg {
     width: 16px;
     height: 16px;
@@ -47,6 +51,10 @@ a {
 
 .ifx__link-color-brand {
   color: tokens.$color-secondary-500;
+
+  &:visited {
+    color: tokens.$color-secondary-600;
+  }
 }
 
 .ifx {  
