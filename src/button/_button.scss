@@ -28,9 +28,33 @@
 
   &:disabled, &.disabled {
     opacity: 1;
-    background-color: tokens.$color-info-200;
-    border-color: tokens.$color-info-200;
+    background-color: tokens.$color-info-300;
+    border-color: tokens.$color-info-300;
     color: tokens.$color-white;
+  }
+
+  &.btn-primary,
+  &.btn-secondary,
+  &.btn-success,
+  &.btn-danger,
+  &.btn-warning {
+    &.active {
+      & .btn-badge {
+        color: tokens.$color-black;
+      }
+    }
+  }
+
+  &.btn-outline-primary,
+  &.btn-outline-secondary,
+  &.btn-outline-success,
+  &.btn-outline-danger,
+  &.btn-outline-warning {
+    &:disabled, &.disabled {
+      & .spinner-border {
+        color: tokens.$color-white;
+      }
+    }
   }
 
   &.btn-primary {
@@ -50,19 +74,42 @@
     }
   }
 
-  &.btn-outline-primary {
+  &.btn-outline-primary:not(:disabled, .disabled) {
+    .btn-badge {
+      background-color: tokens.$color-primary-500;
+      color: tokens.$color-white;
+    }
+
     &:focus {
       background-color: transparent;
     }
 
     &:hover {
       background-color: tokens.$color-primary-600;
-      border-color: tokens.$color-primary-600;  
+      border-color: tokens.$color-primary-600;
+
+      .btn-badge {
+        background-color: tokens.$color-white;
+        color: tokens.$color-black;
+      }
+
+      & .spinner-border {
+        color: tokens.$color-white;
+      }
     }
 
     &:active, &.active {
       background-color: tokens.$color-primary-600;
-      border-color: tokens.$color-primary-600;  
+      border-color: tokens.$color-primary-600;
+
+      & .btn-badge {
+        background-color: tokens.$color-white;
+        color: tokens.$color-black;
+      }
+
+      & .spinner-border {
+        color: tokens.$color-white;
+      }
     }
   }
 
@@ -83,23 +130,50 @@
     }
   }
 
-  &.btn-outline-secondary {
+  &.btn-outline-secondary:not(:disabled, .disabled) {
+    .btn-badge {
+      background-color: tokens.$color-secondary-500;
+      color: tokens.$color-white;
+    }
+
     &:focus {
       background-color: transparent;
     }
 
     &:hover {
       background-color: tokens.$color-secondary-600;
-      border-color: tokens.$color-secondary-600;  
+      border-color: tokens.$color-secondary-600;
+
+      .btn-badge {
+        background-color: tokens.$color-white;
+        color: tokens.$color-black;
+      }
+
+      & .spinner-border {
+        color: tokens.$color-white;
+      }
     }
 
     &:active, &.active {
       background-color: tokens.$color-secondary-600;
-      border-color: tokens.$color-secondary-600;  
+      border-color: tokens.$color-secondary-600;
+
+      & .btn-badge {
+        background-color: tokens.$color-white;
+        color: tokens.$color-black;
+      }
+
+      & .spinner-border {
+        color: tokens.$color-white;
+      }
     }
   }
 
-  &.btn-success {
+  &.btn-success:not(:disabled, .disabled) {
+    & .spinner-border {
+      color: tokens.$color-black;
+    }
+    
     &:focus {
       background-color: tokens.$color-success-500;
       border-color: tokens.$color-success-500;
@@ -119,18 +193,41 @@
   &.btn-outline-success:not(:disabled, .disabled) {
     color: tokens.$color-black;
 
+    .btn-badge {
+      background-color: tokens.$color-success-500;
+      color: tokens.$color-white;
+    }
+
     &:focus {
       background-color: transparent;
     }
 
     &:hover {
       background-color: tokens.$color-success-600;
-      border-color: tokens.$color-success-600;  
+      border-color: tokens.$color-success-600;
+
+      .btn-badge {
+        background-color: tokens.$color-white;
+        color: tokens.$color-black;
+      }
+
+      & .spinner-border {
+        color: tokens.$color-black;
+      }
     }
 
     &:active, &.active {
       background-color: tokens.$color-success-600;
-      border-color: tokens.$color-success-600;  
+      border-color: tokens.$color-success-600;
+
+      & .btn-badge {
+        background-color: tokens.$color-white;
+        color: tokens.$color-black;
+      }
+
+      & .spinner-border {
+        color: tokens.$color-black;
+      }
     }
   }
   
@@ -151,23 +248,50 @@
     }
   }
 
-  &.btn-outline-danger {
+  &.btn-outline-danger:not(:disabled, .disabled) {
+    .btn-badge {
+      background-color: tokens.$color-danger-500;
+      color: tokens.$color-white;
+    }
+
     &:focus {
       background-color: transparent;
     }
 
     &:hover {
       background-color: tokens.$color-danger-600;
-      border-color: tokens.$color-danger-600;  
+      border-color: tokens.$color-danger-600;
+
+      .btn-badge {
+        background-color: tokens.$color-white;
+        color: tokens.$color-black;
+      }
+
+      & .spinner-border {
+        color: tokens.$color-white;
+      }
     }
 
     &:active, &.active {
       background-color: tokens.$color-danger-600;
-      border-color: tokens.$color-danger-600;  
+      border-color: tokens.$color-danger-600;
+
+      & .btn-badge {
+        background-color: tokens.$color-white;
+        color: tokens.$color-black;
+      }
+
+      & .spinner-border {
+        color: tokens.$color-white;
+      }
     }
   }
 
-  &.btn-warning{
+  &.btn-warning:not(:disabled, .disabled) {
+    & .spinner-border {
+      color: tokens.$color-black;
+    }
+
     &:focus {
       background-color: tokens.$color-warning-500;
       border-color: tokens.$color-warning-500;
@@ -187,18 +311,41 @@
   &.btn-outline-warning:not(:disabled, .disabled) {
     color: tokens.$color-black;
 
+    .btn-badge {
+      background-color: tokens.$color-warning-500;
+      color: tokens.$color-white;
+    }
+
     &:focus {
       background-color: transparent;
     }
 
     &:hover {
       background-color: tokens.$color-warning-600;
-      border-color: tokens.$color-warning-600;  
+      border-color: tokens.$color-warning-600;
+
+      .btn-badge {
+        background-color: tokens.$color-white;
+        color: tokens.$color-black;
+      }
+
+      & .spinner-border {
+        color: tokens.$color-black;
+      }
     }
 
     &:active, &.active {
       background-color: tokens.$color-warning-600;
-      border-color: tokens.$color-warning-600;  
+      border-color: tokens.$color-warning-600;
+
+      .btn-badge {
+        background-color: tokens.$color-white;
+        color: tokens.$color-black;
+      }
+      
+      & .spinner-border {
+        color: tokens.$color-black;
+      }
     }
   }
 
@@ -214,6 +361,16 @@
   &.btn-outline-warning svg.svg-inline--fa {
     width: 14px;
     height: 14px;
+  }
+
+  &.btn-outline-primary,
+  &.btn-outline-secondary,
+  &.btn-outline-success,
+  &.btn-outline-danger,
+  &.btn-outline-warning {
+    & .spinner-border {
+      color: tokens.$color-black;
+    }
   }
 
   & .spinner-border {
@@ -252,11 +409,13 @@
 
 .btn-badge {
   font-size: 16px;
+  line-height: 20px;
   font-weight: 600;
   padding: 2px 8px;
   min-width: 18px;
   min-height: 18px;
   margin-left: 12px;
+  background-color: tokens.$color-white;
   color: tokens.$color-black;
 }
 

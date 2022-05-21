@@ -28,7 +28,7 @@ const DefaultTemplate = (args) => (
 
 const ButtonBadgeTemplate = (args) => (
   <Button {...args}>
-    {args.label}<Badge bg="light" className="btn-badge">14</Badge>
+    {args.label}<Badge pill bg="" className="btn-badge">14</Badge>
   </Button>
 );
 
@@ -44,7 +44,7 @@ const BadgeOnIconTemplate = (args) => (
       {args.label}
       <FontAwesomeIcon icon={["fal", "cart-shopping"]}/>
     </div>
-    <Badge bg="secondary" className="btn-badge">4</Badge>
+    <Badge pill bg="secondary" className="btn-badge">4</Badge>
   </div>
 );
 
