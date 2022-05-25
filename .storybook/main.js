@@ -5,12 +5,11 @@ module.exports = {
     "@storybook/addon-essentials",
     "@whitespace/storybook-addon-html",
   ],
-  core: {
-    builder: "webpack5",
-  },
-  features: {
+  "features": {
     storyStoreV7: true,
+    "postcss": false,
   },
+
   framework: "@storybook/react",
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
