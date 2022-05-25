@@ -30,7 +30,7 @@ const DefaultTemplate = (args) => {
 const MessageTemplate = (args) => {
   const DemoComponent = ModalDemo(
     <>
-      <BsModal.Body>
+      <BsModal.Body className="ifx__modal-message">
         <Input labelPosition="top" label="Label"></Input>
         <Textarea label="Default"></Textarea>
       </BsModal.Body>
