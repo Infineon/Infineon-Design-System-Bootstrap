@@ -67,3 +67,27 @@
 .ifx__modal-message.modal-body {
   padding: 24px 24px 32px 24px;
 }
+
+.modal-dialog.ifx__modal-alert {
+  @media (min-width: 576px) { 
+    max-width: 50%;
+    min-width: calc(540px + 48px);
+  }
+}
+
+.ifx__modal-alert {
+  .modal-content {
+    flex-direction: initial;
+  }
+
+  .ifx__modal-alert-wrapper {
+    background-color: tokens.$color-primary-500;    
+    padding: 20px 12px;
+  }
+}
+
+.svg-inline--fa.ifx__modal-alert-icon {
+  width: 24px;
+  height: 24px;
+  color: tokens.$color-white;
+}
