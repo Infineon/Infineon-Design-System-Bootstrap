@@ -87,6 +87,24 @@ const NotificationTemplate = (args) => (
   </ListGroup>
 );
 
+const BulletpointDefaultTemplate = (args) => (
+  <ListGroup as="ul" className="ifx__list-group-bulletpoints" {...args}>
+    <BsListGroup.Item as="li">List Item Top</BsListGroup.Item>
+    <BsListGroup.Item as="li" active>List Item Middle</BsListGroup.Item>
+    <BsListGroup.Item as="li">List Item Middle</BsListGroup.Item>
+    <BsListGroup.Item as="li">List Item Bottom</BsListGroup.Item>
+  </ListGroup>
+);
+
+const BulletpointFlushTemplate = (args) => (
+  <ListGroup as="ul" {...args} variant="flush" className="ifx__list-group-bulletpoints">
+    <BsListGroup.Item as="li">List Item Flush</BsListGroup.Item>
+    <BsListGroup.Item as="li" active>List Item Flush</BsListGroup.Item>
+    <BsListGroup.Item as="li">List Item Flush</BsListGroup.Item>
+    <BsListGroup.Item as="li">List Item Flush</BsListGroup.Item>
+  </ListGroup>
+);
+
 export const Default = DefaultTemplate.bind({});
 
 export const Flush = FlushTemplate.bind({});
@@ -94,3 +112,7 @@ export const Flush = FlushTemplate.bind({});
 export const WithBadges = WithBadgesTemplate.bind({});
 
 export const Notification = NotificationTemplate.bind({});
+
+export const BulletpointDefault = BulletpointDefaultTemplate.bind({});
+
+export const BulletpointFlush = BulletpointFlushTemplate.bind({});

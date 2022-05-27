@@ -59,3 +59,10 @@
     padding: 16px;
   }
 }
+
+.list-group.ifx__list-group-bulletpoints {
+  & .list-group-item {
+    display: list-item;
+    list-style-position: inside;
+  }
+}
