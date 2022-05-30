@@ -1,6 +1,5 @@
 import { ContentNavigation } from "./ContentNavigation";
 import BsNav from "react-bootstrap/Nav";
-import BsNavDropdown from "react-bootstrap/NavDropdown";
 
 export default {
   title: "Components/Content Navigation",
@@ -18,13 +17,9 @@ const DefaultTemplate = (args) => (
     <BsNav.Item as="li">
       <BsNav.Link href="javascript:void(0)">Link default</BsNav.Link>
     </BsNav.Item>
-    <BsNavDropdown as="li" title="Link dropdown" id="nav-dropdown">
-      <BsNavDropdown.Item>Action</BsNavDropdown.Item>
-      <BsNavDropdown.Item>Another action</BsNavDropdown.Item>
-      <BsNavDropdown.Item>Something else here</BsNavDropdown.Item>
-      <BsNavDropdown.Divider />
-      <BsNavDropdown.Item>Separated link</BsNavDropdown.Item>
-    </BsNavDropdown>
+    <BsNav.Item as="li">
+      <BsNav.Link href="javascript:void(0)">Link default</BsNav.Link>
+    </BsNav.Item>
     <BsNav.Item as="li">
       <BsNav.Link href="javascript:void(0)" disabled>
         Disabled
@@ -44,13 +39,9 @@ const PillsTemplate = (args) => (
     <BsNav.Item as="li">
       <BsNav.Link href="javascript:void(0)">Link default</BsNav.Link>
     </BsNav.Item>
-    <BsNavDropdown as="li" title="Link dropdown" id="nav-dropdown">
-      <BsNavDropdown.Item>Action</BsNavDropdown.Item>
-      <BsNavDropdown.Item>Another action</BsNavDropdown.Item>
-      <BsNavDropdown.Item>Something else here</BsNavDropdown.Item>
-      <BsNavDropdown.Divider />
-      <BsNavDropdown.Item>Separated link</BsNavDropdown.Item>
-    </BsNavDropdown>
+    <BsNav.Item as="li">
+      <BsNav.Link href="javascript:void(0)">Link default</BsNav.Link>
+    </BsNav.Item>
     <BsNav.Item as="li">
       <BsNav.Link href="javascript:void(0)" disabled>
         Disabled
@@ -70,13 +61,9 @@ const DefaultVerticalTemplate = (args) => (
     <BsNav.Item as="li">
       <BsNav.Link href="javascript:void(0)">Link default</BsNav.Link>
     </BsNav.Item>
-    <BsNavDropdown as="li" title="Link dropdown" id="nav-dropdown">
-      <BsNavDropdown.Item>Action</BsNavDropdown.Item>
-      <BsNavDropdown.Item>Another action</BsNavDropdown.Item>
-      <BsNavDropdown.Item>Something else here</BsNavDropdown.Item>
-      <BsNavDropdown.Divider />
-      <BsNavDropdown.Item>Separated link</BsNavDropdown.Item>
-    </BsNavDropdown>
+    <BsNav.Item as="li">
+      <BsNav.Link href="javascript:void(0)">Link default</BsNav.Link>
+    </BsNav.Item>
     <BsNav.Item as="li">
       <BsNav.Link href="javascript:void(0)" disabled>
         Disabled
@@ -96,13 +83,9 @@ const PillsVerticalTemplate = (args) => (
     <BsNav.Item as="li">
       <BsNav.Link href="javascript:void(0)">Link default</BsNav.Link>
     </BsNav.Item>
-    <BsNavDropdown as="li" title="Link dropdown" id="nav-dropdown">
-      <BsNavDropdown.Item>Action</BsNavDropdown.Item>
-      <BsNavDropdown.Item>Another action</BsNavDropdown.Item>
-      <BsNavDropdown.Item>Something else here</BsNavDropdown.Item>
-      <BsNavDropdown.Divider />
-      <BsNavDropdown.Item>Separated link</BsNavDropdown.Item>
-    </BsNavDropdown>
+    <BsNav.Item as="li">
+      <BsNav.Link href="javascript:void(0)">Link default</BsNav.Link>
+    </BsNav.Item>
     <BsNav.Item as="li">
       <BsNav.Link href="javascript:void(0)" disabled>
         Disabled
