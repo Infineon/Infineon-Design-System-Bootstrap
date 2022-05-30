@@ -31,7 +31,7 @@ const DefaultTemplate = (args) => (
 const PillsTemplate = (args) => (
   <ContentNavigation {...args} variant="pills">
     <BsNav.Item as="li">
-      <BsNav.Link href="javascript:void(0)">Link Active</BsNav.Link>
+      <BsNav.Link href="javascript:void(0)" active>Link active</BsNav.Link>
     </BsNav.Item>
     <BsNav.Item as="li">
       <BsNav.Link href="javascript:void(0)">Link default</BsNav.Link>
@@ -53,7 +53,7 @@ const PillsTemplate = (args) => (
 const DefaultVerticalTemplate = (args) => (
   <ContentNavigation className="ifx__content-nav-default flex-column" {...args}>
     <BsNav.Item as="li">
-      <BsNav.Link href="javascript:void(0)">Link active</BsNav.Link>
+      <BsNav.Link href="javascript:void(0)" active>Link active</BsNav.Link>
     </BsNav.Item>
     <BsNav.Item as="li">
       <BsNav.Link href="javascript:void(0)">Link default</BsNav.Link>
@@ -75,7 +75,7 @@ const DefaultVerticalTemplate = (args) => (
 const PillsVerticalTemplate = (args) => (
   <ContentNavigation {...args} variant="pills flex-column">
     <BsNav.Item as="li">
-      <BsNav.Link href="javascript:void(0)">Link Active</BsNav.Link>
+      <BsNav.Link href="javascript:void(0)" active>Link active</BsNav.Link>
     </BsNav.Item>
     <BsNav.Item as="li">
       <BsNav.Link href="javascript:void(0)">Link default</BsNav.Link>
