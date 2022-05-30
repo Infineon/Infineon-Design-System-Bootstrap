@@ -29,7 +29,7 @@ const DefaultTemplate = (args) => (
         </ul>
       }
 
-      <Button color="primary" variant="solid" size="s" href="#">Go somewhere</Button>
+      <Button color="primary" variant="solid" size="s" href="javascript:void(0)">Go somewhere</Button>
     </div>
   </ParagraphWithImages>
 );

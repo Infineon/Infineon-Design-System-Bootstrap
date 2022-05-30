@@ -3,9 +3,9 @@ import BsBreadcrumb from "react-bootstrap/Breadcrumb";
 export const Breadcrumb = () => {
   return (
     <BsBreadcrumb>
-      <BsBreadcrumb.Item href="#">Home</BsBreadcrumb.Item>
-      <BsBreadcrumb.Item href="#">Library</BsBreadcrumb.Item>
-      <BsBreadcrumb.Item href="#" active>Data</BsBreadcrumb.Item>
+      <BsBreadcrumb.Item href="javascript:void(0)">Home</BsBreadcrumb.Item>
+      <BsBreadcrumb.Item href="javascript:void(0)">Library</BsBreadcrumb.Item>
+      <BsBreadcrumb.Item href="javascript:void(0)" active>Data</BsBreadcrumb.Item>
     </BsBreadcrumb>
   );
 };

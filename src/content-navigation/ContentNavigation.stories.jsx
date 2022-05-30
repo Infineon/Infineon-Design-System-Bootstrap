@@ -10,23 +10,23 @@ export default {
 const DefaultTemplate = (args) => (
   <ContentNavigation className="ifx__content-nav-default" {...args}>
     <BsNav.Item as="li">
-      <BsNav.Link href="/home">Link active</BsNav.Link>
+      <BsNav.Link href="javascript:void(0)" active>Link active</BsNav.Link>
     </BsNav.Item>
     <BsNav.Item as="li">
-      <BsNav.Link eventKey="link-1">Link default</BsNav.Link>
+      <BsNav.Link href="javascript:void(0)">Link default</BsNav.Link>
     </BsNav.Item>
     <BsNav.Item as="li">
-      <BsNav.Link eventKey="link-2">Link default</BsNav.Link>
+      <BsNav.Link href="javascript:void(0)">Link default</BsNav.Link>
     </BsNav.Item>
     <BsNavDropdown as="li" title="Link dropdown" id="nav-dropdown">
-      <BsNavDropdown.Item eventKey="4.1">Action</BsNavDropdown.Item>
-      <BsNavDropdown.Item eventKey="4.2">Another action</BsNavDropdown.Item>
-      <BsNavDropdown.Item eventKey="4.3">Something else here</BsNavDropdown.Item>
+      <BsNavDropdown.Item>Action</BsNavDropdown.Item>
+      <BsNavDropdown.Item>Another action</BsNavDropdown.Item>
+      <BsNavDropdown.Item>Something else here</BsNavDropdown.Item>
       <BsNavDropdown.Divider />
-      <BsNavDropdown.Item eventKey="4.4">Separated link</BsNavDropdown.Item>
+      <BsNavDropdown.Item>Separated link</BsNavDropdown.Item>
     </BsNavDropdown>
     <BsNav.Item as="li">
-      <BsNav.Link eventKey="disabled" disabled>
+      <BsNav.Link href="javascript:void(0)" disabled>
         Disabled
       </BsNav.Link>
     </BsNav.Item>
@@ -36,23 +36,23 @@ const DefaultTemplate = (args) => (
 const PillsTemplate = (args) => (
   <ContentNavigation {...args} variant="pills">
     <BsNav.Item as="li">
-      <BsNav.Link href="/home">Link Active</BsNav.Link>
+      <BsNav.Link href="javascript:void(0)">Link Active</BsNav.Link>
     </BsNav.Item>
     <BsNav.Item as="li">
-      <BsNav.Link eventKey="link-2">Link default</BsNav.Link>
+      <BsNav.Link href="javascript:void(0)">Link default</BsNav.Link>
     </BsNav.Item>
     <BsNav.Item as="li">
-      <BsNav.Link eventKey="link-2">Link default</BsNav.Link>
+      <BsNav.Link href="javascript:void(0)">Link default</BsNav.Link>
     </BsNav.Item>
     <BsNavDropdown as="li" title="Link dropdown" id="nav-dropdown">
-      <BsNavDropdown.Item eventKey="4.1">Action</BsNavDropdown.Item>
-      <BsNavDropdown.Item eventKey="4.2">Another action</BsNavDropdown.Item>
-      <BsNavDropdown.Item eventKey="4.3">Something else here</BsNavDropdown.Item>
+      <BsNavDropdown.Item>Action</BsNavDropdown.Item>
+      <BsNavDropdown.Item>Another action</BsNavDropdown.Item>
+      <BsNavDropdown.Item>Something else here</BsNavDropdown.Item>
       <BsNavDropdown.Divider />
-      <BsNavDropdown.Item eventKey="4.4">Separated link</BsNavDropdown.Item>
+      <BsNavDropdown.Item>Separated link</BsNavDropdown.Item>
     </BsNavDropdown>
     <BsNav.Item as="li">
-      <BsNav.Link eventKey="disabled" disabled>
+      <BsNav.Link href="javascript:void(0)" disabled>
         Disabled
       </BsNav.Link>
     </BsNav.Item>
@@ -62,23 +62,23 @@ const PillsTemplate = (args) => (
 const DefaultVerticalTemplate = (args) => (
   <ContentNavigation className="ifx__content-nav-default flex-column" {...args}>
     <BsNav.Item as="li">
-      <BsNav.Link href="/home">Link active</BsNav.Link>
+      <BsNav.Link href="javascript:void(0)">Link active</BsNav.Link>
     </BsNav.Item>
     <BsNav.Item as="li">
-      <BsNav.Link eventKey="link-1">Link default</BsNav.Link>
+      <BsNav.Link href="javascript:void(0)">Link default</BsNav.Link>
     </BsNav.Item>
     <BsNav.Item as="li">
-      <BsNav.Link eventKey="link-2">Link default</BsNav.Link>
+      <BsNav.Link href="javascript:void(0)">Link default</BsNav.Link>
     </BsNav.Item>
     <BsNavDropdown as="li" title="Link dropdown" id="nav-dropdown">
-      <BsNavDropdown.Item eventKey="4.1">Action</BsNavDropdown.Item>
-      <BsNavDropdown.Item eventKey="4.2">Another action</BsNavDropdown.Item>
-      <BsNavDropdown.Item eventKey="4.3">Something else here</BsNavDropdown.Item>
+      <BsNavDropdown.Item>Action</BsNavDropdown.Item>
+      <BsNavDropdown.Item>Another action</BsNavDropdown.Item>
+      <BsNavDropdown.Item>Something else here</BsNavDropdown.Item>
       <BsNavDropdown.Divider />
-      <BsNavDropdown.Item eventKey="4.4">Separated link</BsNavDropdown.Item>
+      <BsNavDropdown.Item>Separated link</BsNavDropdown.Item>
     </BsNavDropdown>
     <BsNav.Item as="li">
-      <BsNav.Link eventKey="disabled" disabled>
+      <BsNav.Link href="javascript:void(0)" disabled>
         Disabled
       </BsNav.Link>
     </BsNav.Item>
@@ -88,23 +88,23 @@ const DefaultVerticalTemplate = (args) => (
 const PillsVerticalTemplate = (args) => (
   <ContentNavigation {...args} variant="pills flex-column">
     <BsNav.Item as="li">
-      <BsNav.Link href="/home">Link Active</BsNav.Link>
+      <BsNav.Link href="javascript:void(0)">Link Active</BsNav.Link>
     </BsNav.Item>
     <BsNav.Item as="li">
-      <BsNav.Link eventKey="link-2">Link default</BsNav.Link>
+      <BsNav.Link href="javascript:void(0)">Link default</BsNav.Link>
     </BsNav.Item>
     <BsNav.Item as="li">
-      <BsNav.Link eventKey="link-2">Link default</BsNav.Link>
+      <BsNav.Link href="javascript:void(0)">Link default</BsNav.Link>
     </BsNav.Item>
     <BsNavDropdown as="li" title="Link dropdown" id="nav-dropdown">
-      <BsNavDropdown.Item eventKey="4.1">Action</BsNavDropdown.Item>
-      <BsNavDropdown.Item eventKey="4.2">Another action</BsNavDropdown.Item>
-      <BsNavDropdown.Item eventKey="4.3">Something else here</BsNavDropdown.Item>
+      <BsNavDropdown.Item>Action</BsNavDropdown.Item>
+      <BsNavDropdown.Item>Another action</BsNavDropdown.Item>
+      <BsNavDropdown.Item>Something else here</BsNavDropdown.Item>
       <BsNavDropdown.Divider />
-      <BsNavDropdown.Item eventKey="4.4">Separated link</BsNavDropdown.Item>
+      <BsNavDropdown.Item>Separated link</BsNavDropdown.Item>
     </BsNavDropdown>
     <BsNav.Item as="li">
-      <BsNav.Link eventKey="disabled" disabled>
+      <BsNav.Link href="javascript:void(0)" disabled>
         Disabled
       </BsNav.Link>
     </BsNav.Item>

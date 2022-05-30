@@ -39,8 +39,8 @@ export const Link = ({ linkText, color, underlineNone, icon, iconPosition, ...pr
   return (
     <>
       {iconPosition === "left" 
-        ? <><a className={colorClass + " " + underlineClass} href="#" {...props}><Icon/>{linkText}</a></>
-        : <><a className={colorClass + " " + underlineClass} href="#" {...props}>{linkText}<Icon/></a></>
+        ? <><a className={colorClass + " " + underlineClass} href="javascript:void(0)" {...props}><Icon/>{linkText}</a></>
+        : <><a className={colorClass + " " + underlineClass} href="javascript:void(0)" {...props}>{linkText}<Icon/></a></>
       }
     </>
   );

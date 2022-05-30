@@ -37,7 +37,7 @@ const DefaultTemplate = (args) => (
       <BsCard.Title>{args.title}</BsCard.Title>
       <BsCard.Text>{args.text}</BsCard.Text>
 
-      {args.button && <Button color="secondary" variant="solid" size="s" href="#">Go somewhere</Button>}
+      {args.button && <Button color="secondary" variant="solid" size="s" href="javascript:void(0)">Go somewhere</Button>}
       {args.link && <Link color="brand" underlineNone icon iconPosition="right" linkText="Go somewhere"></Link>}
     </BsCard.Body>
   </Card>
@@ -63,7 +63,7 @@ const KitchenSinkTemplate = (args) => (
     </ListGroup>
 
     <BsCard.Body>
-      {args.button && <Button color="secondary" variant="solid" size="s" href="#">Go somewhere</Button>}
+      {args.button && <Button color="secondary" variant="solid" size="s" href="javascript:void(0)">Go somewhere</Button>}
       {args.link && <Link color="brand" underlineNone icon iconPosition="right" linkText="Go somewhere"></Link>}
     </BsCard.Body>
   </Card>

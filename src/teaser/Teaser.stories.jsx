@@ -23,7 +23,7 @@ const DefaultTemplate = (args) => (
     </BsCard.Body>
 
     <BsCard.Body className="ifx__card-link-wrapper">
-      <Link href="#" linkText="Link with Icon default" color="brand" underlineNone icon iconPosition="right">an example link</Link>
+      <Link linkText="Link with Icon default" color="brand" underlineNone icon iconPosition="right">an example link</Link>
     </BsCard.Body>
   </Teaser>
 );
@@ -33,7 +33,7 @@ const EventTemplate = (args) => (
     <Teaser {...args}>
       <BsCard.Body>
         {args.subtitleText && <BsCard.Subtitle>{args.subtitleText}</BsCard.Subtitle>}
-        <Link href="#" linkText="Link with Icon default" color="brand" underlineNone icon iconPosition="right">an example link</Link>
+        <Link linkText="Link with Icon default" color="brand" underlineNone icon iconPosition="right">an example link</Link>
       </BsCard.Body>
     </Teaser>
   </div>

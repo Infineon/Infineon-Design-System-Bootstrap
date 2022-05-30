@@ -21,7 +21,7 @@ const MainpageTemplate = (args) => (
           <div className="ifx__hero-banner-sub-headline">Skyline</div>
           <div className="ifx__hero-banner-headline">Headline for the hero image</div>
           <div className="ifx__hero-banner-headline">with two rows!</div>
-          <Button size="s" href="#">Primary</Button>
+          <Button size="s" href="javascript:void(0)">Primary</Button>
         </div>
       </div>
 
@@ -32,7 +32,7 @@ const MainpageTemplate = (args) => (
             <div className="ifx__hero-banner-sub-headline">Skyline</div>
             <div className="ifx__hero-banner-headline">Headline for the hero image</div>
             <div className="ifx__hero-banner-headline">with two rows!</div>
-            <Button href="#">Primary</Button>
+            <Button href="javascript:void(0)">Primary</Button>
           </div>
         </div>
       </div>
