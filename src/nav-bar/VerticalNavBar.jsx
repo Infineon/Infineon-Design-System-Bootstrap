@@ -73,8 +73,6 @@ export const VerticalCollapsibleTemplate = (args) => (
         </BsNav.Item>
       </ul>
     </div>
-    <BsButton className="d-inline-flex ifx__content-nav__border ifx__vertical-nav-icons-btn">
-      <FontAwesomeIcon icon={["fal", "chevron-right"]} />
-    </BsButton>
+    <BsButton className="d-inline-flex ifx__content-nav__border ifx__vertical-nav-icons-btn"></BsButton>
   </div>
 )
