@@ -2,7 +2,7 @@
 
 .ifx__content-nav-default {
   flex-wrap: nowrap;
-  overflow-x: scroll;
+  overflow-x: auto;
   font-size: 13px;
 
   @media (min-width: 576px) { 
@@ -59,7 +59,7 @@
 
 .nav-pills {
   flex-wrap: nowrap;
-  overflow-x: scroll;
+  overflow-x: auto;
   font-size: 13px;
 
   @media (min-width: 576px) { 
