@@ -8,6 +8,7 @@ export default {
   args: {
     imagePosition: "right",
     imageAspectRatio: "none",
+    imageSlant: "true",
     headline: "The standard lorem ipsum headline",
     text: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.",
     listWithIcons: "true",
@@ -16,7 +17,7 @@ export default {
 };
 
 const DefaultTemplate = (args) => (
-  <ParagraphWithImages imageAspectRatio={args.imageAspectRatio} imagePosition={args.imagePosition} alignItems={args.alignItems}>
+  <ParagraphWithImages imageAspectRatio={args.imageAspectRatio} imagePosition={args.imagePosition} alignItems={args.alignItems} imageSlant={args.imageSlant}>
     <div className="col-md-5">
       <p className="fw-bold">Category</p>
       <h2>{args.headline}</h2>
