@@ -235,6 +235,24 @@ const LargeTemplate = (args) => (
 
 export const Small = SmallTemplate.bind({});
 
+Small.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
 export const Default = DefaultTemplate.bind({});
 
+Default.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
 export const Large = LargeTemplate.bind({});
+
+Large.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};

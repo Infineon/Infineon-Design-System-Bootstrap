@@ -96,8 +96,32 @@ const PillsVerticalTemplate = (args) => (
 
 export const Default = DefaultTemplate.bind({});
 
+Default.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
 export const Pills = PillsTemplate.bind({});
+
+Pills.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
 
 export const DefaultVertical = DefaultVerticalTemplate.bind({});
 
+DefaultVertical.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
 export const PillsVertical = PillsVerticalTemplate.bind({});
+
+PillsVertical.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};

@@ -11,6 +11,12 @@ const DefaultTemplate = (args) => (
 
 export const Default = DefaultTemplate.bind({});
 
+Default.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
 const HeadingsTemplate = (args) => (
   <>
     <h1>Heading h1 <span class="badge rounded-pill" {...args}>Badge</span></h1>
@@ -23,3 +29,9 @@ const HeadingsTemplate = (args) => (
 );
 
 export const Headings = HeadingsTemplate.bind({});
+
+Headings.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};

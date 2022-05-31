@@ -105,8 +105,32 @@ const AlertTemplate = (args) => {
 
 export const Default = DefaultTemplate.bind({});
 
+Default.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
 export const Message = MessageTemplate.bind({});
+
+Message.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
 
 export const Small = SmallTemplate.bind({});
 
+Small.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
 export const Alert = AlertTemplate.bind({});
+
+Alert.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};

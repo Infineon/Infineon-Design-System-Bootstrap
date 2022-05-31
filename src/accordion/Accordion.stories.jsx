@@ -10,3 +10,9 @@ const DefaultTemplate = (args) => (
 );
 
 export const Default = DefaultTemplate.bind({});
+
+Default.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};

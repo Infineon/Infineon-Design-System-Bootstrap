@@ -53,4 +53,16 @@ const SubpageTemplate = (args) => (
 
 export const Mainpage = MainpageTemplate.bind({});
 
+Mainpage.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
 export const Subpage = SubpageTemplate.bind({});
+
+Subpage.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};

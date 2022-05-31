@@ -107,12 +107,48 @@ const BulletpointFlushTemplate = (args) => (
 
 export const Default = DefaultTemplate.bind({});
 
+Default.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
 export const Flush = FlushTemplate.bind({});
+
+Flush.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
 
 export const WithBadges = WithBadgesTemplate.bind({});
 
+WithBadges.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
 export const Notification = NotificationTemplate.bind({});
+
+Notification.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
 
 export const BulletpointDefault = BulletpointDefaultTemplate.bind({});
 
+BulletpointDefault.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
 export const BulletpointFlush = BulletpointFlushTemplate.bind({});
+
+BulletpointFlush.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};

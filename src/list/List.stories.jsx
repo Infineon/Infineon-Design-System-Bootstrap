@@ -23,6 +23,12 @@ const UnorderedTemplate = (args) => (
 
 export const Unordered = UnorderedTemplate.bind({});
 
+Unordered.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
 
 
 const OrdereredTemplate = (args) => (
@@ -43,6 +49,12 @@ const OrdereredTemplate = (args) => (
 
 export const Orderered = OrdereredTemplate.bind({});
 
+Orderered.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
 
 
 const IconCheckTemplate = (args) => (
@@ -62,3 +74,9 @@ const IconCheckTemplate = (args) => (
 );
 
 export const IconCheck = IconCheckTemplate.bind({});
+
+IconCheck.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};

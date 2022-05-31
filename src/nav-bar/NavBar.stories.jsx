@@ -3018,14 +3018,56 @@ const VerticalCollapsibleComponent = (args) => {
 
 export const Default = DefaultTemplate.bind({});
 
+Default.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
 export const Extended = ExtendedTemplate.bind({});
+
+Extended.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
 
 export const ExtendedLevel2 = ExtendedLevel2Template.bind({});
 
+ExtendedLevel2.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
 export const ExtendedLevel3 = ExtendedLevel3Template.bind({});
+
+ExtendedLevel3.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
 
 export const Vertical = VerticalTemplate.bind({});
 
+Vertical.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
 export const VerticalLevel2 = VerticalLevel2Template.bind({});
 
+VerticalLevel2.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
 export const VerticalCollapsible = VerticalCollapsibleComponent.bind({});
+
+VerticalCollapsible.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
