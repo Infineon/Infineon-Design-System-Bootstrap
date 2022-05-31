@@ -9,7 +9,7 @@ a {
     outline: none;
   }
 
-  &:focus-visible {
+  &:focus-visible:not(.btn) {
     display: inline-block;
     color: tokens.$color-secondary-600;
     background-color: #B4DDD8;
