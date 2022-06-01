@@ -5,7 +5,7 @@ import { ListGroup } from "../list-group/ListGroup";
 import BsCard from "react-bootstrap/Card";
 import BsListGroup from "react-bootstrap/ListGroup";
 import { Link } from "../link/Link";
-import imageSrc16_9 from "../../public/1920x1080_ratio-16-9.png";
+import imageSrc16_9 from "../../public-storybook/1920x1080_ratio-16-9.png";
 
 const image = {
   src: imageSrc16_9,
