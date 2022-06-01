@@ -6,14 +6,6 @@
 
 // Color system
 //
-$primary: tokens.$color-primary-500;
-$secondary: tokens.$color-secondary-500;
-
-$white: tokens.$color-white;
-$black: tokens.$color-black;
-
-$body-color: $black;
-
 $gray-100: tokens.$color-gray-100;
 $gray-200: tokens.$color-gray-200;
 $gray-300: tokens.$color-gray-300;
@@ -31,11 +23,25 @@ $pink: #d63384;
 $red: tokens.$color-danger-500;
 $orange: #fd7e14;
 $yellow: tokens.$color-warning-500;
-$green: tokens.$color-success-500;
+$green: tokens.$color-success-600;
 $teal: tokens.$color-primary-500;
 $cyan: tokens.$color-info-500;
 
 $min-contrast-ratio: 3.5;
+
+$primary: tokens.$color-primary-500;
+$secondary: tokens.$color-secondary-500;
+
+$white: tokens.$color-white;
+$black: tokens.$color-black;
+
+$body-color: $black;
+
+$disabled-color: tokens.$color-info-300;
+
+// Options
+//
+$enable-validation-icons: false;
 
 // Links
 //
@@ -112,3 +118,53 @@ $badge-color: $black;
 //
 $list-group-item-padding-y: tokens.$spacing-s;
 $list-group-item-padding-x: tokens.$spacing-m;
+
+// Buttons
+//
+$input-btn-focus-color: #B4DDD8;
+$input-btn-focus-width: 3px;
+
+// Forms
+//
+$form-label-color: tokens.$color-info-500;
+$form-label-margin-bottom: tokens.$spacing-xs;
+
+$form-text-color: $body-color;
+$form-text-font-size: $font-size-sm;
+$form-text-margin-top: tokens.$spacing-xs;
+
+$input-padding-y: tokens.$spacing-s;
+$input-padding-x: tokens.$spacing-m;
+$input-font-family: $font-family-sans-serif;
+$input-font-size: $font-size-base;
+
+$input-padding-y-sm: $input-padding-y;
+$input-padding-x-sm: $input-padding-x;
+$input-font-size-sm: $font-size-sm;
+
+$input-padding-y-lg: $input-padding-y;
+$input-padding-x-lg: $input-padding-x;
+$input-font-size-lg: $font-size-lg;
+
+$input-bg: $white;
+$input-disabled-bg: $white;
+$input-disabled-border-color: $disabled-color;
+
+$input-color: $body-color;
+$input-border-color: tokens.$color-info-400;
+$input-border-width: 1px;
+$input-box-shadow: none;
+
+$input-border-radius: $border-radius;
+$input-border-radius-sm: $border-radius;
+$input-border-radius-lg: $border-radius;
+
+$input-focus-bg: $input-bg;
+$input-focus-border-color: $input-border-color;
+$input-focus-color: $input-color;
+
+$input-placeholder-color: tokens.$color-info-400;
+
+$form-file-button-color: $black;
+$form-file-button-bg: tokens.$color-info-100;
+$form-file-button-hover-bg: tokens.$color-info-200;

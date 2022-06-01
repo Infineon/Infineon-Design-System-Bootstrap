@@ -1,0 +1,9 @@
+.form-control {
+  &::file-selector-button {
+    font-weight: $font-weight-bold;
+  }
+
+  &:disabled::file-selector-button {
+    color: $disabled-color;
+  }
+}
