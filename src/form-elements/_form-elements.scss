@@ -143,22 +143,6 @@
   color: tokens.$color-black;
 }
 
-.form-select.form-select-sm {
-  font-size: 13px;
-}
-
-.form-select {
-  font-size: 16px;
-
-  option[disabled]:first-child {
-  	display: none;
-  }
-}
-
-.form-select.form-select-lg {
-  font-size: 22px;
-}
-
 input[type=range] {
   -webkit-appearance: none;
 }

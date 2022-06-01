@@ -7,6 +7,7 @@ export default {
     label: "Label",
     size: "m",
     disabled: false,
+    state: "default"
   }
 };
 
