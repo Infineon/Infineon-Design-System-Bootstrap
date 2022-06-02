@@ -10,18 +10,28 @@ const propTypes = {
 
   /** Set a disabled Textarea field */
   disabled: PropTypes.bool,
+
+  /** Set an Input field state */
+  state: PropTypes.oneOf(["default", "success", "error"]),
 };
 
-export const Textarea = ({ label, size, ...props }) => {
+export const Textarea = ({ label, size, disabled, state, ...props }) => {
   const bsSize =
     size === "s" ? "sm" 
     : size === "l" ? "lg" 
     : undefined;
 
+  const stateClass =
+    state === "success" ? "is-valid"
+    : state === "error" ? "is-invalid"
+    : "";
+
+  const disabledClass = disabled === true ? "ifx--disabled" : "";
+
   return (
-    <BsForm.Group className="mb-3" controlId="inputTextarea">
-      <BsForm.Label className="ifx__form-label--input">{label}</BsForm.Label>
-      <BsForm.Control as="textarea" rows={5} placeholder="Placeholder" size={bsSize} {...props}></BsForm.Control>
+    <BsForm.Group controlId="inputTextarea">
+      <BsForm.Label className={disabledClass}>{label}</BsForm.Label>
+      <BsForm.Control as="textarea" rows={5} placeholder="Placeholder" className={stateClass} size={bsSize} disabled={disabled} {...props}></BsForm.Control>
     </BsForm.Group>
   );
 };

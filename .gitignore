@@ -89,8 +89,8 @@ typings/
 .nuxt
 
 # TODO re-add this, when modules is published for real
-# dist
-# dist-sources
+dist
+dist-sources
 
 # Gatsby files
 .cache/
@@ -115,3 +115,6 @@ typings/
 
 # Local Netlify folder
 .netlify
+
+.npmrc
+/dist/

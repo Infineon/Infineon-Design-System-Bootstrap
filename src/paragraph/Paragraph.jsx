@@ -1,8 +1,11 @@
 import PropTypes from "prop-types";
 
 const propTypes = {
-  /** Set the Paragraph title */
-  title: PropTypes.string,
+  /** Set Headline */
+  headline: PropTypes.bool,
+
+  /** Set the Headline text */
+  headlineText: PropTypes.string,
 
   /** Set the Paragraph text */
   text: PropTypes.string,

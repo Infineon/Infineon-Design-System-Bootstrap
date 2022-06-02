@@ -25,19 +25,13 @@ const DefaultTemplate = (args) => (
 
 const ButtonBadgeTemplate = (args) => (
   <Button {...args}>
-    {args.label}<Badge bg="light" className="btn-badge">4</Badge>
+    {args.label}<Badge pill bg="" className="btn-badge">14</Badge>
   </Button>
 );
 
 const BorderSpinnerTemplate = (args) => (
   <Button {...args}>
     <Spinner size="s" animation="border"></Spinner>{args.label}
-  </Button>
-);
-
-const GrowingSpinnerTemplate = (args) => (
-  <Button {...args}>
-    <Spinner size="s" animation="grow"></Spinner>{args.label}
   </Button>
 );
 
@@ -51,10 +45,5 @@ ButtonBadge.args = {
 
 export const BorderSpinner = BorderSpinnerTemplate.bind({});
 BorderSpinner.args = {
-  color: "secondary",
-};
-
-export const GrowingSpinner = GrowingSpinnerTemplate.bind({});
-GrowingSpinner.args = {
   color: "secondary",
 };

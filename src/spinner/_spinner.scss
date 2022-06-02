@@ -1,14 +1,12 @@
 @use "@infineon/design-system-tokens/dist/tokens";
 
-.spinner-border,
-.spinner-grow {
+.spinner-border {
   width: 44px;
   height: 44px;
   color: tokens.$color-secondary-500;
 }
 
-.spinner-border-sm,
-.spinner-grow-sm {
+.spinner-border-sm {
   width: 26px;
   height: 26px;
 }

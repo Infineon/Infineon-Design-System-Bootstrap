@@ -7,7 +7,7 @@
 
 ## Usage
 
-Add this repository to your dependencies in `package.json`:
+Add this to your dependencies in `package.json`:
 ```bash
 npm install --save @infineon/design-system-bootstrap
 ```
@@ -16,14 +16,8 @@ npm install --save @infineon/design-system-bootstrap
 yarn add @infineon/design-system-bootstrap
 ```
 
-<mark>Warning: while not published on npm, yet, use `ssh://git@github.com:Infineon/IFX-Design-System-Bootstrap.git` instead of `@infineon/design-system-bootstrap`. You need access to that repository, though!</mark>
-
 Now you can import the assets you need to consume. This currently includes:
 ```bash
-.
-├── 1080x1080_ratio-1-1.png
-├── 1440x1080_ratio-4-3.png
-├── 1920x1080_ratio-16-9.png
 ├── fonts
 │   └── source-sans-pro-v18-latin
 │       ├── source-sans-pro-v18-latin-600.woff
@@ -34,28 +28,26 @@ Now you can import the assets you need to consume. This currently includes:
 │       └── source-sans-pro-v18-latin-regular.woff2
 ├── index.css
 ├── index.js
-└── logo-desktop-en-2x.png
-
-2 directories, 12 files
+└── Logo.svg
 ```
 
-Include / import `index.css` to get the correct style for markup copied from Storybook. You'll additionally have to copy the fonts assets (`fonts/`) themselves to your publicly available root folder (often times it's called `static/` or `public/`).
+Include / import `index.css` to get the correct style for markup copied from Storybook. You'll additionally have to copy the font assets (`fonts/`) themselves to your publicly available root folder (often times it's called `static/` or `public/`).
 
 An import could, depending on your local setup, for example look like this:
 
 *CSS:*
 ```css
-@import "@infineon/design-system-tokens/dist/index.css";
+@import "./node_modules/@infineon/design-system-bootstrap/dist/index.css";
 ```
 
 To get the correct behaviour for the components, you'll additionally need to include the provided JavaScript, too:
 
 *JavaScript:*
 ```js
-import "@infineon/design-system-tokens/dist/index.js";
+import "@infineon/design-system-bootstrap/dist/index.js";
 ```
 
-## Development
+## Local Development
 
 ### Installation
 
@@ -98,28 +90,26 @@ The resulting bundle is meant to be used like described in the beginning of this
 Generate a bundle that can be published on `npm`, adds result in `dist-sources/` folder: 
 
 ```bash
-yarn bundle-sources
+yarn package
 ```
 
 The resulting bundle is meant to be used in projects that need to consume sources directly. Import the needed component in your code like this (e.g.):
 
 **General Theme**:
 
-*CSS:*
-```css
-@import "@infineon/design-system-tokens/dist-sources/src/bootstrap-theme.scss"
+*SCSS:*
+```scss
+@import "@infineon/design-system-bootstrap/dist-sources/src/bootstrap-theme.scss"
 ```
 
 *JavaScript:*
 ```js
-import "@infineon/design-system-tokens/dist-sources/src/index.js"
+import "@infineon/design-system-bootstrap/dist-sources/src/index.js"
 ```
 
 **Specific Component (`Button`)**:
 
-*CSS:*
-```css
-@import "@infineon/design-system-tokens/dist-sources/src/button/button"
+*SCSS:*
+```scss
+@import "@infineon/design-system-bootstrap/dist-sources/src/button/button"
 ```
-
-<mark>Warning: while not published on npm, yet, the `dist/` and `dist-sources` folder are removed from the `.gitignore` to make testing the npm integration through Github-URLs work. Those files would otherwise be excluded from being committed. This needs to be removed when publishing is established. `dist` and `dist-sources` need to be published independently, under distinct `npm` names, anyways for a smooth workflow.</mark>

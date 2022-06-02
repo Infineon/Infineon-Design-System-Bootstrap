@@ -6,7 +6,7 @@ export default {
   args: {
     size: "m",
     hover: false,
-    caption: "",
+    description: "",
     textAlign: "left",
   }
 };

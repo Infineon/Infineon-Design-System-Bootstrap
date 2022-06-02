@@ -9,7 +9,7 @@ a {
     outline: none;
   }
 
-  &:focus-visible {
+  &:focus-visible:not(.btn) {
     display: inline-block;
     color: tokens.$color-secondary-600;
     background-color: #B4DDD8;
@@ -22,10 +22,10 @@ a {
   }
 
   &:hover {
-    color: tokens.$color-secondary-400;
+    color: tokens.$color-secondary-600;
 
     & svg {
-      color: tokens.$color-secondary-400;
+      color: tokens.$color-secondary-600;
     }
   }
 
@@ -47,6 +47,10 @@ a {
 
 .ifx__link-color-brand {
   color: tokens.$color-secondary-500;
+
+  &:visited {
+    color: tokens.$color-secondary-600;
+  }
 }
 
 .ifx {  

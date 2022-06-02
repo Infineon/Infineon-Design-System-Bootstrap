@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import BsDropdown from "react-bootstrap/Dropdown";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const propTypes = {
   /** Specifies a large or small Dropdown */
@@ -12,30 +11,26 @@ const propTypes = {
   /** Set the Dropdown text */
   label: PropTypes.string,
 
-  /** Set icon */
-  icon: PropTypes.oneOf([
-    "none",
-    "coffee",
-    "star",
-  ]),
+  autoClose: PropTypes.oneOf([ "default", "outside" ]),
 };
 
-export const Dropdown = ({ size, label, icon, children, ...props }) => {
+export const Dropdown = ({ size, label, children, autoClose = "default", ...props }) => {
   const bsSize =
     size === "s" ? "sm" 
     : size === "l" ? "lg" 
     : undefined;
 
+  const bsAutoClose =
+    autoClose === "default" ? true
+    : autoClose;
+
   return (
-    <BsDropdown>
-      <BsDropdown.Toggle className="btn-secondary" size={bsSize} {...props}>
-        <span>
-          {icon ? <FontAwesomeIcon icon={icon}></FontAwesomeIcon> : ""}
-          {label}
-        </span>
+    <BsDropdown autoClose={bsAutoClose}>
+      <BsDropdown.Toggle size={bsSize} data-bs-toggle="dropdown" variant="secondary" {...props}>
+        {label}
       </BsDropdown.Toggle>
 
-      <BsDropdown.Menu>
+      <BsDropdown.Menu renderOnMount>
         {children}
       </BsDropdown.Menu>
     </BsDropdown>

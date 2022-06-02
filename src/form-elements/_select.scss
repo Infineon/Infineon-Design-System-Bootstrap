@@ -1,0 +1,22 @@
+.form-select {
+  &:valid:focus,
+  &.is-valid:focus {
+    border-color: $input-border-color;
+    box-shadow: $input-btn-focus-box-shadow;
+  }
+  
+  &:invalid:focus,
+  &.is-invalid:focus {
+    border-color: $input-border-color;
+    box-shadow: $input-btn-focus-box-shadow;
+  }
+
+  &:disabled {
+    color: $disabled-color;
+    background-image: escape-svg($form-select-disabled-indicator);
+  }
+
+  option[disabled]:first-child {
+  	display: none;
+  }
+}

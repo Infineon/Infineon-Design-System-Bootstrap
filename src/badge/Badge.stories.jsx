@@ -6,14 +6,32 @@ export default {
 };
 
 const DefaultTemplate = (args) => (
-  <>
-    <h1><Badge {...args}>Badge</Badge></h1>
-    <h2><Badge {...args}>Badge</Badge></h2>
-    <h3><Badge {...args}>Badge</Badge></h3>
-    <h4><Badge {...args}>Badge</Badge></h4>
-    <h5><Badge {...args}>Badge</Badge></h5>
-    <h6><Badge {...args}>Badge</Badge></h6>
-  </>
+  <Badge pill bg="">Badge</Badge>
 );
 
 export const Default = DefaultTemplate.bind({});
+
+Default.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
+const HeadingsTemplate = (args) => (
+  <>
+    <h1>Heading h1 <span class="badge rounded-pill" {...args}>Badge</span></h1>
+    <h2>Heading h2 <span class="badge rounded-pill" {...args}>Badge</span></h2>
+    <h3>Heading h3 <span class="badge rounded-pill" {...args}>Badge</span></h3>
+    <h4>Heading h4 <span class="badge rounded-pill" {...args}>Badge</span></h4>
+    <h5>Heading h5 <span class="badge rounded-pill" {...args}>Badge</span></h5>
+    <h6>Heading h6 <span class="badge rounded-pill" {...args}>Badge</span></h6>
+  </>
+);
+
+export const Headings = HeadingsTemplate.bind({});
+
+Headings.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};

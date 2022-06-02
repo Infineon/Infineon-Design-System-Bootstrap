@@ -2,7 +2,7 @@
 
 .ifx__content-nav-default {
   flex-wrap: nowrap;
-  overflow-x: scroll;
+  overflow-x: auto;
   font-size: 13px;
 
   @media (min-width: 576px) { 
@@ -12,41 +12,30 @@
   & .nav-link {
     white-space: nowrap;
     color: tokens.$color-black;
-    padding: 4px 8px;
+    padding: 4px calc(8px + 4px);
 
     @media (min-width: 576px) {
-      padding: 8px 16px;
+      padding: 8px calc(16px + 4px);
     }
 
     &:hover {
-      color: tokens.$color-secondary-400;
+      color: tokens.$color-secondary-500;
       background-color: tokens.$color-info-200;
     }
 
     &.active {
       color: tokens.$color-secondary-500;
       background-color: tokens.$color-white;
+      padding: 4px 8px;
+
+      @media (min-width: 576px) {
+        padding: 8px 16px;
+      }
     }
   }
 
   & .nav-link.disabled {
     color: tokens.$color-info-200;
-  }
-
-  & .dropdown.show .dropdown-toggle::after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231D1D1D' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M4.251 181.1C7.392 177.7 11.69 175.1 16 175.1c3.891 0 7.781 1.406 10.86 4.25l197.1 181.1l197.1-181.1c6.5-6 16.64-5.625 22.61 .9062c6 6.5 5.594 16.59-.8906 22.59l-208 192c-6.156 5.688-15.56 5.688-21.72 0l-208-192C-1.343 197.7-1.749 187.6 4.251 181.1z'/%3E%3C/svg%3E");
-
-  }
-
-  & .dropdown .dropdown-toggle::after {
-    border: none;
-    width: 10px;
-    height: 5.5px;
-    background-size: 10px;
-    background-position: center;
-    background-repeat: no-repeat;
-    vertical-align: 3px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231D1D1D' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M4.251 181.1C7.392 177.7 11.69 175.1 16 175.1c3.891 0 7.781 1.406 10.86 4.25l197.1 181.1l197.1-181.1c6.5-6 16.64-5.625 22.61 .9062c6 6.5 5.594 16.59-.8906 22.59l-208 192c-6.156 5.688-15.56 5.688-21.72 0l-208-192C-1.343 197.7-1.749 187.6 4.251 181.1z'/%3E%3C/svg%3E");
   }
 }
 
@@ -70,7 +59,7 @@
 
 .nav-pills {
   flex-wrap: nowrap;
-  overflow-x: scroll;
+  overflow-x: auto;
   font-size: 13px;
 
   @media (min-width: 576px) { 
@@ -98,12 +87,12 @@
 
     & .nav-link {
       white-space: nowrap;
-      padding: 6px 22px;
+      padding: 8px 16px;
       color: tokens.$color-black;
       border-radius: 100px;
 
       &:hover {
-        color: tokens.$color-secondary-400;
+        color: tokens.$color-secondary-500;
         background-color: tokens.$color-info-200;
       }
     }
@@ -116,21 +105,6 @@
     & .nav-link.disabled {
       color: tokens.$color-info-200;
     }
-  }
-
-  & .dropdown.show .dropdown-toggle::after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231D1D1D' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M4.251 181.1C7.392 177.7 11.69 175.1 16 175.1c3.891 0 7.781 1.406 10.86 4.25l197.1 181.1l197.1-181.1c6.5-6 16.64-5.625 22.61 .9062c6 6.5 5.594 16.59-.8906 22.59l-208 192c-6.156 5.688-15.56 5.688-21.72 0l-208-192C-1.343 197.7-1.749 187.6 4.251 181.1z'/%3E%3C/svg%3E");
-  }
-
-  & .dropdown .dropdown-toggle::after {
-    border: none;
-    width: 10px;
-    height: 5.5px;
-    background-size: 10px;
-    background-position: center;
-    background-repeat: no-repeat;
-    vertical-align: 3px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231D1D1D' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M4.251 181.1C7.392 177.7 11.69 175.1 16 175.1c3.891 0 7.781 1.406 10.86 4.25l197.1 181.1l197.1-181.1c6.5-6 16.64-5.625 22.61 .9062c6 6.5 5.594 16.59-.8906 22.59l-208 192c-6.156 5.688-15.56 5.688-21.72 0l-208-192C-1.343 197.7-1.749 187.6 4.251 181.1z'/%3E%3C/svg%3E");
   }
 }
 

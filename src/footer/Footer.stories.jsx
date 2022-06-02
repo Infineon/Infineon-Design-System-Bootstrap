@@ -1,6 +1,6 @@
 import { Footer } from "./Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import imageFile from "../../public/logo-desktop-en-2x.png";
+import imageFile from "../../public/Logo.svg";
 
 export default {
   title: "Components/Footer",
@@ -12,15 +12,15 @@ const image = {
   alt: "infineon-logo",
 };
 
-const DefaultTemplate = (args) => (
+const SmallTemplate = (args) => (
   <Footer {...args}>
     <footer className="footer">
       <div className="d-md-flex justify-content-between flex-wrap ifx__footer-bottom">
         <ul className="list-unstyled d-sm-flex">
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Imprint</a></li>
-          <li><a href="#">Privacy policy</a></li>
-          <li><a href="#">Glossary</a></li>
+          <li><a href="javascript:void(0)">Terms</a></li>
+          <li><a href="javascript:void(0)">Imprint</a></li>
+          <li><a href="javascript:void(0)">Privacy policy</a></li>
+          <li><a href="javascript:void(0)">Glossary</a></li>
         </ul>
 
         <div className="ifx__footer-bottom__copyright">
@@ -31,29 +31,29 @@ const DefaultTemplate = (args) => (
   </Footer>
 );
 
-const MediumTemplate = (args) => (
+const DefaultTemplate = (args) => (
   <Footer {...args}>
     <footer className="footer">
       <div className="d-flex align-items-end ifx__footer-top">
         <div className="d-flex justify-content-between align-items-center flex-wrap w-100">
           <img src={image.src} alt={image.alt} width="110" height="48"/>
           <div className='ifx__footer-top__social-media'>
-            <a href="">
+            <a href="javascript:void(0)">
               <FontAwesomeIcon icon={["fab", "facebook"]} />
             </a>
-            <a href="">
+            <a href="javascript:void(0)">
               <FontAwesomeIcon icon={["fab", "instagram"]} />
             </a>
-            <a href="">
+            <a href="javascript:void(0)">
               <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
             </a>
-            <a href="">
+            <a href="javascript:void(0)">
               <FontAwesomeIcon icon={["fab", "twitter"]} />
             </a>
-            <a href="">
+            <a href="javascript:void(0)">
               <FontAwesomeIcon icon={["fab", "xing"]} />
             </a>
-            <a href="">
+            <a href="javascript:void(0)">
               <FontAwesomeIcon icon={["fab", "youtube"]} />
             </a>
           </div>
@@ -62,10 +62,10 @@ const MediumTemplate = (args) => (
 
       <div className="d-md-flex justify-content-between align-items-center flex-wrap ifx__footer-bottom">
         <ul className="list-unstyled d-sm-flex">
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Imprint</a></li>
-          <li><a href="#">Privacy policy</a></li>
-          <li><a href="#">Glossary</a></li>
+          <li><a href="javascript:void(0)">Terms</a></li>
+          <li><a href="javascript:void(0)">Imprint</a></li>
+          <li><a href="javascript:void(0)">Privacy policy</a></li>
+          <li><a href="javascript:void(0)">Glossary</a></li>
         </ul>
 
         <div className="ifx__footer-bottom__copyright">
@@ -87,61 +87,61 @@ const LargeTemplate = (args) => (
             <div className="col-6">
               <p>Mainlink</p>
               <ul className="list-unstyled">
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
               </ul>
             </div>
 
             <div className="col-6">
               <p>Mainlink</p>
               <ul className="list-unstyled">
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
               </ul>
             </div>
 
             <div className="col-6">
               <p>Mainlink</p>
               <ul className="list-unstyled">
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
               </ul>
             </div>
 
             <div className="col-6">
               <p>Mainlink</p>
               <ul className="list-unstyled">
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
               </ul>
             </div>
           </div>
 
           <div className='ifx__footer-top__social-media'>
-            <a href="">
+            <a href="javascript:void(0)">
               <FontAwesomeIcon icon={["fab", "facebook"]} />
             </a>
-            <a href="">
+            <a href="javascript:void(0)">
               <FontAwesomeIcon icon={["fab", "instagram"]} />
             </a>
-            <a href="">
+            <a href="javascript:void(0)">
               <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
             </a>
-            <a href="">
+            <a href="javascript:void(0)">
               <FontAwesomeIcon icon={["fab", "twitter"]} />
             </a>
-            <a href="">
+            <a href="javascript:void(0)">
               <FontAwesomeIcon icon={["fab", "xing"]} />
             </a>
-            <a href="">
+            <a href="javascript:void(0)">
               <FontAwesomeIcon icon={["fab", "youtube"]} />
             </a>
           </div>
@@ -152,40 +152,40 @@ const LargeTemplate = (args) => (
             <div className="col-6 col-md-2">
               <p>Mainlink</p>
               <ul className="list-unstyled">
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
               </ul>
             </div>
 
             <div className="col-6 col-md-2">
               <p>Mainlink</p>
               <ul className="list-unstyled">
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
               </ul>
             </div>
 
             <div className="col-6 col-md-2">
               <p>Mainlink</p>
               <ul className="list-unstyled">
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
               </ul>
             </div>
 
             <div className="col-6 col-md-2">
               <p>Mainlink</p>
               <ul className="list-unstyled">
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
-                <li><a href="#">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
+                <li><a href="javascript:void(0)">Footer Link</a></li>
               </ul>
             </div>
           </div>
@@ -194,22 +194,22 @@ const LargeTemplate = (args) => (
             <img src={image.src} alt={image.alt} width="110" height="48"/>
 
             <div className='ifx__footer-top__social-media'>
-              <a href="">
+              <a href="javascript:void(0)">
                 <FontAwesomeIcon icon={["fab", "facebook"]} />
               </a>
-              <a href="">
+              <a href="javascript:void(0)">
                 <FontAwesomeIcon icon={["fab", "instagram"]} />
               </a>
-              <a href="">
+              <a href="javascript:void(0)">
                 <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
               </a>
-              <a href="">
+              <a href="javascript:void(0)">
                 <FontAwesomeIcon icon={["fab", "twitter"]} />
               </a>
-              <a href="">
+              <a href="javascript:void(0)">
                 <FontAwesomeIcon icon={["fab", "xing"]} />
               </a>
-              <a href="">
+              <a href="javascript:void(0)">
                 <FontAwesomeIcon icon={["fab", "youtube"]} />
               </a>
             </div>
@@ -219,10 +219,10 @@ const LargeTemplate = (args) => (
 
       <div className="d-md-flex justify-content-between flex-wrap ifx__footer-bottom">
         <ul className="list-unstyled d-sm-flex">
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Imprint</a></li>
-          <li><a href="#">Privacy policy</a></li>
-          <li><a href="#">Glossary</a></li>
+          <li><a href="javascript:void(0)">Terms</a></li>
+          <li><a href="javascript:void(0)">Imprint</a></li>
+          <li><a href="javascript:void(0)">Privacy policy</a></li>
+          <li><a href="javascript:void(0)">Glossary</a></li>
         </ul>
 
         <div className="ifx__footer-bottom__copyright">
@@ -233,8 +233,26 @@ const LargeTemplate = (args) => (
   </Footer>
 );
 
+export const Small = SmallTemplate.bind({});
+
+Small.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
 export const Default = DefaultTemplate.bind({});
 
-export const Medium = MediumTemplate.bind({});
+Default.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
 
 export const Large = LargeTemplate.bind({});
+
+Large.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};

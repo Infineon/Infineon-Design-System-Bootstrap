@@ -1,5 +1,4 @@
 import { ListGroup } from "./ListGroup";
-import { Badge } from "../badge/Badge";
 import BsListGroup from "react-bootstrap/ListGroup";
 
 export default {
@@ -8,106 +7,148 @@ export default {
 };
 
 const DefaultTemplate = (args) => (
-  <ListGroup {...args}>
-    <BsListGroup.Item>Bear claw cake biscuit</BsListGroup.Item>
-    <BsListGroup.Item active>Bonbon toffee muffin</BsListGroup.Item>
-    <BsListGroup.Item>Jujubes cookie donut carrot cake</BsListGroup.Item>
-    <BsListGroup.Item>Tart tiramisu cake</BsListGroup.Item>
-    <BsListGroup.Item>Carrot cake marshmallow sweet roll</BsListGroup.Item>
-    <BsListGroup.Item>Ice cream pastry pudding</BsListGroup.Item>
+  <ListGroup as="ul" {...args}>
+    <BsListGroup.Item as="li">List Item Top</BsListGroup.Item>
+    <BsListGroup.Item as="li" active>List Item Middle</BsListGroup.Item>
+    <BsListGroup.Item as="li">List Item Middle</BsListGroup.Item>
+    <BsListGroup.Item as="li">List Item Bottom</BsListGroup.Item>
   </ListGroup>
 );
 
 const FlushTemplate = (args) => (
-  <ListGroup {...args} variant="flush">
-    <BsListGroup.Item>Bear claw cake biscuit</BsListGroup.Item>
-    <BsListGroup.Item active>Bonbon toffee muffin</BsListGroup.Item>
-    <BsListGroup.Item>Jujubes cookie donut carrot cake</BsListGroup.Item>
-    <BsListGroup.Item>Tart tiramisu cake</BsListGroup.Item>
-    <BsListGroup.Item>Carrot cake marshmallow sweet roll</BsListGroup.Item>
-    <BsListGroup.Item>Ice cream pastry pudding</BsListGroup.Item>
+  <ListGroup as="ul" {...args} variant="flush">
+    <BsListGroup.Item as="li">List Item Flush</BsListGroup.Item>
+    <BsListGroup.Item as="li" active>List Item Flush</BsListGroup.Item>
+    <BsListGroup.Item as="li">List Item Flush</BsListGroup.Item>
+    <BsListGroup.Item as="li">List Item Flush</BsListGroup.Item>
   </ListGroup>
 );
 
 const WithBadgesTemplate = (args) => (
-  <ListGroup {...args}>
-    <BsListGroup.Item className="d-flex justify-content-between align-items-center">
+  <ListGroup as="ul" {...args}>
+    <BsListGroup.Item as="li" className="d-flex justify-content-between align-items-center">
       <div>
-        Bear claw cake biscuit
+        List Item Top with badge
       </div>
-      <Badge>14</Badge>
+      <span class="badge rounded-pill bg-secondary">4</span>
     </BsListGroup.Item>
-    <BsListGroup.Item className="d-flex justify-content-between align-items-center" active>
+    <BsListGroup.Item as="li" className="d-flex justify-content-between align-items-center" active>
       <div>
-        Bonbon toffee muffin
+        List Item Middle with badge
       </div>
-      <Badge bg="light">14</Badge>
+      <span class="badge rounded-pill bg-light">14</span>
     </BsListGroup.Item>
-    <BsListGroup.Item className="d-flex justify-content-between align-items-center">
+    <BsListGroup.Item as="li" className="d-flex justify-content-between align-items-center">
       <div>
-        Jujubes cookie donut carrot cake
+        List Item Middle with badge
       </div>
-      <Badge>14</Badge>
+      <span class="badge rounded-pill bg-secondary">140</span>
     </BsListGroup.Item>
-    <BsListGroup.Item className="d-flex justify-content-between align-items-center">
+    <BsListGroup.Item as="li" className="d-flex justify-content-between align-items-center">
       <div>
-        Tart tiramisu cake
+        List Item Bottom with badge
       </div>
-      <Badge>14</Badge>
-    </BsListGroup.Item>
-    <BsListGroup.Item className="d-flex justify-content-between align-items-center">
-      <div>
-        Carrot cake marshmallow sweet roll
-      </div>
-      <Badge>14</Badge>
-    </BsListGroup.Item>
-    <BsListGroup.Item className="d-flex justify-content-between align-items-center">
-      <div>
-        Ice cream pastry pudding
-      </div>
-      <Badge>14</Badge>
+      <span class="badge rounded-pill bg-secondary">1400</span>
     </BsListGroup.Item>
   </ListGroup>
 );
 
-const CustomContentTemplate = (args) => (
-  <ListGroup {...args}>
-    <BsListGroup.Item active>
-      <div className="d-flex justify-content-between align-items-center">
+const NotificationTemplate = (args) => (
+  <ListGroup as="ul" className="ifx__list-group-notification" {...args}>
+    <BsListGroup.Item as="li" active>
+      <div className="d-flex justify-content-between">
         <div className="ifx__list-group-heading">List group item heading</div>
         <div className="ifx__list-group-date">3 days ago</div>
       </div>
       <div>
-        Jelly beans carrot cake cake cupcake sweet topping cookie brownie. Apple pie candy powder gummi bears tootsie roll gummi bears.
+        Notification
       </div>
     </BsListGroup.Item>
     
-    <BsListGroup.Item>
-      <div className="d-flex justify-content-between align-items-center">
+    <BsListGroup.Item as="li">
+      <div className="d-flex justify-content-between">
         <div className="ifx__list-group-heading">List group item heading</div>
         <div className="ifx__list-group-date">3 days ago</div>
       </div>
       <div>
-        Jelly beans carrot cake cake cupcake sweet topping cookie brownie.
+        Notification
       </div>
     </BsListGroup.Item>
 
-    <BsListGroup.Item>
-      <div className="d-flex justify-content-between align-items-center">
+    <BsListGroup.Item as="li">
+      <div className="d-flex justify-content-between">
         <div className="ifx__list-group-heading">List group item heading</div>
         <div className="ifx__list-group-date">3 days ago</div>
       </div>
       <div>
-        Content
+        Notification
       </div>
     </BsListGroup.Item>
+  </ListGroup>
+);
+
+const BulletpointDefaultTemplate = (args) => (
+  <ListGroup as="ul" className="ifx__list-group-bulletpoints" {...args}>
+    <BsListGroup.Item as="li">List Item Top</BsListGroup.Item>
+    <BsListGroup.Item as="li" active>List Item Middle</BsListGroup.Item>
+    <BsListGroup.Item as="li">List Item Middle</BsListGroup.Item>
+    <BsListGroup.Item as="li">List Item Bottom</BsListGroup.Item>
+  </ListGroup>
+);
+
+const BulletpointFlushTemplate = (args) => (
+  <ListGroup as="ul" {...args} variant="flush" className="ifx__list-group-bulletpoints">
+    <BsListGroup.Item as="li">List Item Flush</BsListGroup.Item>
+    <BsListGroup.Item as="li" active>List Item Flush</BsListGroup.Item>
+    <BsListGroup.Item as="li">List Item Flush</BsListGroup.Item>
+    <BsListGroup.Item as="li">List Item Flush</BsListGroup.Item>
   </ListGroup>
 );
 
 export const Default = DefaultTemplate.bind({});
 
+Default.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
 export const Flush = FlushTemplate.bind({});
+
+Flush.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
 
 export const WithBadges = WithBadgesTemplate.bind({});
 
-export const CustomContent = CustomContentTemplate.bind({});
+WithBadges.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
+export const Notification = NotificationTemplate.bind({});
+
+Notification.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
+export const BulletpointDefault = BulletpointDefaultTemplate.bind({});
+
+BulletpointDefault.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};
+
+export const BulletpointFlush = BulletpointFlushTemplate.bind({});
+
+BulletpointFlush.parameters = {
+  controls: { 
+    hideNoControlsWarning: true,
+  },
+};

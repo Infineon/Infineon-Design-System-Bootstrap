@@ -1,157 +1,28 @@
 @use "@infineon/design-system-tokens/dist/tokens";
 
-.row .card-header {
-  margin: 0;
-  --bs-gutter-x: 0;
-}
-
-.ifx {
-  &__image {
-    max-width: 100%;
-  }
-
-  &__card-vertical {
-    max-width: 348px;
-  }
-
-  &__card-horizontal {
-    &__image {
-      max-width: 100%;
+.card {
+  .list-group {
+    .list-group-item {
+      padding-left: $card-spacer-x;
+      padding-right: $card-spacer-x;
     }
   }
 }
 
-.ifx {
-  &__card-horizontal
-  &__aspect-ratio {
-    &__box-wrapper, .ifx__img {
-      width: 100%;
-    }
-
-    &__box {
-      position: relative;
-      height: 0;
-
-      &__in {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-      }
-      
-      img {
-        max-width: 100%;
-        object-fit: cover;
-      }
-    }
-
-    &--4-3 {
-      padding-bottom: 75%;
-    }
-
-    &--16-9 {
-      padding-bottom: 56.25%;
-    }
-
-    &--1-1 {
-      padding-bottom: 100%;
-    }
-  }
+.card-subtitle {
+  font-size: $font-size-base;
+  font-weight: tokens.$font-weight-regular;
+  color: $gray-800;
+  margin-top: 0;
+  margin-bottom: tokens.$spacing-xs;
 }
 
-.ifx {
-  &__card-vertical
-  &__aspect-ratio {
-    &__box-wrapper, .ifx__img {
-      max-width: 348px;
-      width: 100%;
-    }
-
-    &__box {
-      position: relative;
-      height: 0;
-
-      &__in {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-      }
-      
-      img {
-        max-width: 100%;
-        object-fit: cover;
-      }
-    }
-
-    &--4-3 {
-      padding-bottom: 75%;
-    }
-
-    &--16-9 {
-      padding-bottom: 56.25%;
-    }
-
-    &--1-1 {
-      padding-bottom: 100%;
-    }
-  }
+.card-title {
+  font-size: tokens.$font-size-xl;
 }
 
-.ifx__card {
-  border: 1px solid tokens.$color-info-200;
-  border-radius: 1px;
-
-  .card-body {
-    padding: 24px 32px;
-  }
-
-  .card-subtitle {
-    font-size: 16px;
-    font-weight: 400;
-    color: tokens.$color-info-500;
-    margin-bottom: 4px;
-  }
-
-  .card-title {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 16px;
-    color: tokens.$color-black;
-  }
-
-  .card-text {
-    line-height: 28px;
-    color: tokens.$color-black;
-    margin-bottom: 0;
-  }
-
-  .list-group-item {
-    padding: 8px 32px;
-  }
-
-  .btn {
-    font-size: 14px;
-    margin-top: 20px;
-  }
-
-  .ifx__card-link-wrapper {
-    margin-top: 16px;
-  }
-
-  .card-link {
-    text-decoration: none;
-    font-weight: 600;
-    color: tokens.$color-secondary-500;
-  }
-
-  .card-footer {
-    font-size: 13px;
-    border-top: 1px solid tokens.$color-info-200;
-    background-color: tokens.$color-white;
-    color: tokens.$color-black;
-    padding: 6px 32px;
+.card-body {
+  .badge {
+    margin-bottom: tokens.$spacing-m;
   }
 }
