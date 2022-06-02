@@ -1,4 +1,4 @@
-@import "@infineon/design-system-tokens/dist/fonts";
+@import "../node_modules/@infineon/design-system-tokens/dist/fonts";
 @import "bootstrap-theme";
 
 @import "../node_modules/bootstrap/scss/functions";
@@ -21,7 +21,6 @@
 @import "./content-navigation/content-navigation";
 @import "./dropdowns/dropdown";
 @import "./footer/footer";
-@import "./hero-banner/hero-banner";
 @import "./link/link";
 @import "./list-group/list-group";
 @import "./modal/modal";
@@ -36,5 +35,7 @@
 @import "./tooltip/tooltip";
 @import "./typography/typography";
 @import "./form-elements/form-elements";
+@import "./form-elements/file-input";
+@import "./form-elements/select";
 @import "./list/list";
 @import "./image/image";

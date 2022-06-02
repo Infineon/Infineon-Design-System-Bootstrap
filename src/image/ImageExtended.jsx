@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import {Slant} from "../slant/Slant";
-import imageSrc16_9 from "../../public/1920x1080_ratio-16-9.png";
+import imageSrc16_9 from "../../public-storybook/1920x1080_ratio-16-9.png";
 
 const image = {
   src: imageSrc16_9,

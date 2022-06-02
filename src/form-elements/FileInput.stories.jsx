@@ -6,6 +6,7 @@ export default {
   args: {
     size: "m",
     disabled: false,
+    state: "default",
   }
 };
 

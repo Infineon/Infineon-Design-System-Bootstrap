@@ -7,17 +7,25 @@ const propTypes = {
 
   /** Set a disabled File Input field */
   disabled: PropTypes.bool,
+
+  /** Set an File Input field state */
+  state: PropTypes.oneOf(["default", "success", "error"]),
 };
 
-export const FileInput = ({ size, ...props }) => {
+export const FileInput = ({ size, state, ...props }) => {
   const bsSize =
     size === "s" ? "sm" 
     : size === "l" ? "lg" 
     : undefined;
 
+  const stateClass =
+    state === "success" ? "is-valid"
+    : state === "error" ? "is-invalid"
+    : "";
+
   return (
     <BsForm.Group className="mb-3" controlId="fileInput">
-      <BsForm.Control type="file" size={bsSize} {...props}></BsForm.Control>
+      <BsForm.Control type="file" size={bsSize} className={stateClass} {...props}></BsForm.Control>
     </BsForm.Group>
   );
 };

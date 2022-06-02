@@ -1,6 +1,6 @@
 import { HeroBanner } from "./HeroBanner";
 import { Button } from "../button/Button";
-import imageSrc16_9 from "../../public/1920x1080_ratio-16-9.png";
+import imageSrc16_9 from "../../public-storybook/1920x1080_ratio-16-9.png";
 
 export default {
   title: "Components/Hero Banner",
