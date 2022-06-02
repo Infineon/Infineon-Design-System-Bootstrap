@@ -49,7 +49,7 @@ const DefaultTemplate = (args) => {
           <BsNavBar.Collapse id="basic-navbar-nav">
             <div className="ifx__mobile-margin-top align-items-lg-center ifx__nav-link-wrapper ifx__mobile-show">
               <div className="ifx__searchbar-metalink-wrapper d-flex align-items-center flex-wrap">
-                <SearchBar className="ifx__nav-searchbar" size="s"></SearchBar>
+                <SearchBar size="s"></SearchBar>
 
                 <BsNav.Link className="ifx__nav-metalink" href="javascript:void(0)">
                   <div className="d-flex align-items-center">
@@ -125,7 +125,7 @@ const DefaultTemplate = (args) => {
               </ul>
 
               <div className="ifx__searchbar-metalink-wrapper d-flex align-items-center flex-wrap">
-                <SearchBar className="ifx__nav-searchbar" size="s"></SearchBar>
+                <SearchBar size="s"></SearchBar>
 
                 <BsNav.Link className="ifx__nav-metalink" href="javascript:void(0)">
                   <div className="d-flex align-items-center">
@@ -166,7 +166,7 @@ const ExtendedTemplate = (args) => {
 
           <BsNavBar.Collapse id="basic-navbar-nav">
             <div className="ifx__searchbar-metalink-wrapper d-flex align-items-center flex-wrap">
-              <SearchBar className="ifx__nav-searchbar" size="s"></SearchBar>
+              <SearchBar size="s"></SearchBar>
 
               <BsNav.Link className="ifx__nav-metalink" href="javascript:void(0)">
                 <div className="d-flex align-items-center">
@@ -292,7 +292,7 @@ const ExtendedLevel2Template = (args) => {
 
           <BsNavBar.Collapse id="basic-navbar-nav">
             <div className="ifx__searchbar-metalink-wrapper d-flex align-items-center flex-wrap">
-              <SearchBar className="ifx__nav-searchbar" size="s"></SearchBar>
+              <SearchBar size="s"></SearchBar>
 
               <BsNav.Link className="ifx__nav-metalink" href="javascript:void(0)">
                 <div className="d-flex align-items-center">
@@ -1135,7 +1135,7 @@ const ExtendedLevel3Template = (args) => {
 
           <BsNavBar.Collapse id="basic-navbar-nav">
             <div className="ifx__searchbar-metalink-wrapper d-flex align-items-center flex-wrap">
-              <SearchBar className="ifx__nav-searchbar" size="s"></SearchBar>
+              <SearchBar size="s"></SearchBar>
 
               <BsNav.Link className="ifx__nav-metalink" href="javascript:void(0)">
                 <div className="d-flex align-items-center">
