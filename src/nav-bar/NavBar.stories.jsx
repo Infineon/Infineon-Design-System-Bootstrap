@@ -220,7 +220,7 @@ const ExtendedTemplate = (args) => {
             </div>
           </BsNavBar.Collapse>
 
-          <div className="d-lg-flex ifx__nav-link-wrapper ifx__desktop-show">
+          <div className="d-lg-flex w-100 ifx__nav-link-wrapper ifx__desktop-show">
             <ul className="d-flex">
               <li>
                 <BsNavDropdown title="Nav Link 1" id="basic-nav-dropdown" className="active" data-text="Nav Link 1">
@@ -426,98 +426,6 @@ const ExtendedLevel2Template = (args) => {
                         <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
                       </div>
                     </BsNav.Link>
-
-                    <div className="w-100 ifx__nav-mega-dropdown-mobile ifx__nav-wrapper">
-                      <div className="ifx__nav-mega-dropdown-mobile-content">
-                        <div>
-                        <BsNav.Link className="ifx__nav-mega-dropdown-last-layer" href="javascript:void(0)" data-text="Nav Link 2">
-                          <FontAwesomeIcon icon={["fal", "chevron-left"]}/>
-                            Nav Link 2
-                        </BsNav.Link>
-                        </div>
-                        <div className="row">
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-
-                          <div className="col-sm-6">
-                            <ul>
-                              <li>
-                                <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                                  Overview Nav Link
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                              <li>
-                                <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                                  Navigationlink
-                                </BsNav.Link>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </li>
 
                   <li>
@@ -919,8 +827,6 @@ const NavMegaDropdownMobile = ({label}) => (
                   <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
                 </div>
               </BsNav.Link>
-
-              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
             </li>
             <li>
               <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="javascript:void(0)" data-text="Navigationlink">
@@ -929,8 +835,6 @@ const NavMegaDropdownMobile = ({label}) => (
                   <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
                 </div>
               </BsNav.Link>
-
-              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
             </li>
             <li>
               <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="javascript:void(0)" data-text="Navigationlink">
@@ -939,8 +843,6 @@ const NavMegaDropdownMobile = ({label}) => (
                   <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
                 </div>
               </BsNav.Link>
-
-              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
             </li>
             <li>
               <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="javascript:void(0)" data-text="Navigationlink">
@@ -949,8 +851,6 @@ const NavMegaDropdownMobile = ({label}) => (
                   <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
                 </div>
               </BsNav.Link>
-
-              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
             </li>
             <li>
               <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="javascript:void(0)" data-text="Navigationlink">
@@ -959,8 +859,6 @@ const NavMegaDropdownMobile = ({label}) => (
                   <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
                 </div>
               </BsNav.Link>
-
-              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
             </li>
             <li>
               <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="javascript:void(0)" data-text="Navigationlink">
@@ -969,8 +867,6 @@ const NavMegaDropdownMobile = ({label}) => (
                   <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
                 </div>
               </BsNav.Link>
-
-              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
             </li>
           </ul>
         </div>
@@ -984,8 +880,6 @@ const NavMegaDropdownMobile = ({label}) => (
                   <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
                 </div>
               </BsNav.Link>
-
-              <NavMegaDropdownMobileLayer3 label="Overview Nav Link"/>
             </li>
             <li>
               <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="javascript:void(0)" data-text="Navigationlink">
@@ -994,8 +888,6 @@ const NavMegaDropdownMobile = ({label}) => (
                   <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
                 </div>
               </BsNav.Link>
-
-              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
             </li>
             <li>
               <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="javascript:void(0)" data-text="Navigationlink">
@@ -1004,8 +896,6 @@ const NavMegaDropdownMobile = ({label}) => (
                   <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
                 </div>
               </BsNav.Link>
-
-              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
             </li>
             <li>
               <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="javascript:void(0)" data-text="Navigationlink">
@@ -1014,8 +904,6 @@ const NavMegaDropdownMobile = ({label}) => (
                   <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
                 </div>
               </BsNav.Link>
-
-              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
             </li>
             <li>
               <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="javascript:void(0)" data-text="Navigationlink">
@@ -1024,8 +912,6 @@ const NavMegaDropdownMobile = ({label}) => (
                   <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
                 </div>
               </BsNav.Link>
-
-              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
             </li>
             <li>
               <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="javascript:void(0)" data-text="Navigationlink">
@@ -1034,8 +920,6 @@ const NavMegaDropdownMobile = ({label}) => (
                   <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
                 </div>
               </BsNav.Link>
-
-              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
             </li>
             <li>
               <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="javascript:void(0)" data-text="Navigationlink">
@@ -1044,8 +928,6 @@ const NavMegaDropdownMobile = ({label}) => (
                   <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
                 </div>
               </BsNav.Link>
-
-              <NavMegaDropdownMobileLayer3 label="Navigationlink"/>
             </li>
           </ul>
         </div>
@@ -1184,688 +1066,52 @@ const NavMegaDropdown = () => (
 
           <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
             <NavLinkWithIcon label="Navigationlink"/>
-            <div className="w-100 ifx__nav-mega-dropdown-level-3">
-              <div className="w-100">
-                <div className="row">
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-                </div>
-              </div>
-            </div>
           </BsNav.Link>
 
           <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
             <NavLinkWithIcon label="Navigationlink"/>
-            <div className="w-100 ifx__nav-mega-dropdown-level-3">
-              <div className="w-100">
-                <div className="row">
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-                </div>
-              </div>
-            </div>
           </BsNav.Link>
 
           <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
             <NavLinkWithIcon label="Navigationlink"/>
-            <div className="w-100 ifx__nav-mega-dropdown-level-3">
-              <div className="w-100">
-                <div className="row">
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-                </div>
-              </div>
-            </div>
           </BsNav.Link>
 
           <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
             <NavLinkWithIcon label="Navigationlink"/>
-            <div className="w-100 ifx__nav-mega-dropdown-level-3">
-              <div className="w-100">
-                <div className="row">
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-                </div>
-              </div>
-            </div>
           </BsNav.Link>
 
           <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
             <NavLinkWithIcon label="Navigationlink"/>
-            <div className="w-100 ifx__nav-mega-dropdown-level-3">
-              <div className="w-100">
-                <div className="row">
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-                </div>
-              </div>
-            </div>
           </BsNav.Link>
         </div>
 
         <div className="col-lg-6">
           <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
             <NavLinkWithIcon label="Overview Nav Link"/>
-            <div className="w-100 ifx__nav-mega-dropdown-level-3">
-              <div className="w-100">
-                <div className="row">
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-                </div>
-              </div>
-            </div>
           </BsNav.Link>
 
           <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
             <NavLinkWithIcon label="Navigationlink"/>
-            <div className="w-100 ifx__nav-mega-dropdown-level-3">
-              <div className="w-100">
-                <div className="row">
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-                </div>
-              </div>
-            </div>
           </BsNav.Link>
 
           <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
             <NavLinkWithIcon label="Navigationlink"/>
-            <div className="w-100 ifx__nav-mega-dropdown-level-3">
-              <div className="w-100">
-                <div className="row">
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-                </div>
-              </div>
-            </div>
           </BsNav.Link>
 
           <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
             <NavLinkWithIcon label="Navigationlink"/>
-            <div className="w-100 ifx__nav-mega-dropdown-level-3">
-              <div className="w-100">
-                <div className="row">
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-                </div>
-              </div>
-            </div>
           </BsNav.Link>
 
           <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
             <NavLinkWithIcon label="Navigationlink"/>
-            <div className="w-100 ifx__nav-mega-dropdown-level-3">
-              <div className="w-100">
-                <div className="row">
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-                </div>
-              </div>
-            </div>
           </BsNav.Link>
 
           <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
             <NavLinkWithIcon label="Navigationlink"/>
-            <div className="w-100 ifx__nav-mega-dropdown-level-3">
-              <div className="w-100">
-                <div className="row">
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-                </div>
-              </div>
-            </div>
           </BsNav.Link>
 
           <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
             <NavLinkWithIcon label="Navigationlink"/>
-            <div className="w-100 ifx__nav-mega-dropdown-level-3">
-              <div className="w-100">
-                <div className="row">
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-
-                  <div className="col-lg-6">
-                    <BsNav.Link href="javascript:void(0)" data-text="Overview Nav Link">
-                      Overview Nav Link
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                    <BsNav.Link href="javascript:void(0)" data-text="Navigationlink">
-                      Navigationlink
-                    </BsNav.Link>
-                  </div>
-                </div>
-              </div>
-            </div>
           </BsNav.Link>
         </div>
       </div>
@@ -1933,8 +1179,6 @@ const ExtendedLevel3Template = (args) => {
                         <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
                       </div>
                     </BsNav.Link>
-
-                    <NavMegaDropdownMobile label="Nav Link 2"/>
                   </li>
 
                   <li>
