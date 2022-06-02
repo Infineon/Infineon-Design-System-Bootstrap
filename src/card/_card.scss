@@ -1,9 +1,11 @@
 @use "@infineon/design-system-tokens/dist/tokens";
 
 .card {
-  .list-group-item {
-    padding-left: $card-spacer-x;
-    padding-right: $card-spacer-x;
+  .list-group {
+    .list-group-item {
+      padding-left: $card-spacer-x;
+      padding-right: $card-spacer-x;
+    }
   }
 }
 
