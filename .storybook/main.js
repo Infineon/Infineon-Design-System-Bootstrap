@@ -23,5 +23,5 @@ module.exports = {
 
     return config;
   },
-  publicDirs: ["../public", "../public-storybook"]
+  staticDirs: ["../public", "../public-storybook"]
 };
