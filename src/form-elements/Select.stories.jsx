@@ -1,4 +1,6 @@
 import { Select } from "./Select";
+import { useEffect } from "react";
+import { initSelect } from "./SelectElement";
 
 export default {
   title: "Forms/Select",
@@ -11,8 +13,12 @@ export default {
   }
 };
 
-const DefaultTemplate = (args) => (
-  <Select {...args}></Select>
-);
+const DefaultTemplate = (args) => {
+  useEffect(() => { initSelect() });
+
+  return (
+    <Select {...args}></Select>
+  )
+};
 
 export const Default = DefaultTemplate.bind({});
