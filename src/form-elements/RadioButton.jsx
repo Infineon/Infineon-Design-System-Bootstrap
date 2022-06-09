@@ -12,7 +12,7 @@ const propTypes = {
 export const RadioButton = ({ label, children, ...props }) => {
   return (
     <BsForm>
-      <BsForm.Check type="radio" id="radioButton-1" label={label} name="group-1" {...props}></BsForm.Check>
+      <BsForm.Check type="radio" id="radioButton-1" label={label} name="group-1"  {...props} defaultChecked></BsForm.Check>
       <BsForm.Check type="radio" id="radioButton-2" label={label} name="group-1" {...props}></BsForm.Check>
       <BsForm.Check type="radio" id="radioButton-3" label={label} name="group-1" {...props}></BsForm.Check>
     </BsForm>

@@ -11,8 +11,8 @@
 .form-check-input:disabled {
   &,
   &:hover {
-    background-color: tokens.$color-info-300;
-    border-color: tokens.$color-info-300;
+    background-color: $disabled-color;
+    border-color: $disabled-color;
   }
 }
 
@@ -21,8 +21,11 @@
 }
 
 .form-check-input:checked[type="radio"] {
-  background-color: tokens.$color-white;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2.5' fill='%23378375'/%3E%3C/svg%3E");
+  background-color: $white;
+}
+
+.form-check-input:disabled:checked[type="radio"] {
+  background-image: escape-svg($form-check-radio-checked-disabled-bg-image);
 }
 
 
