@@ -6,6 +6,7 @@ export default {
   args: {
     label: "Label",
     disabled: false,
+    state: "default"
   }
 };
 
