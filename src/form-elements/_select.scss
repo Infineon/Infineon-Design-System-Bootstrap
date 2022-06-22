@@ -1,4 +1,10 @@
 .form-select {
+  color: $disabled-color;
+
+  &.ifx__form-select--selected {
+    color: $input-color;
+  }
+
   &:valid:focus,
   &.is-valid:focus {
     border-color: $input-border-color;

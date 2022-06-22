@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import BsNavBar from "react-bootstrap/Navbar";
 import BsNav from "react-bootstrap/Nav";
 import BsNavDropdown from "react-bootstrap/NavDropdown";
-import imageFile from "../../public/Logo.svg";
 import { useEffect } from "react";
 import { initNavBar, initVerticalNavBar } from "./nav-bar";
 import { VerticalCollapsibleTemplate } from "./VerticalNavBar";
@@ -15,7 +14,7 @@ export default {
 };
 
 const image = {
-  src: imageFile,
+  src: "/Logo.svg",
   alt: 'infineon-logo',
 };
 

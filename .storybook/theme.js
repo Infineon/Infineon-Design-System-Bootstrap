@@ -31,9 +31,9 @@ export default create({
   inputBg: '#FFFFFF',
   inputBorder: '#DCD5D7',
   inputTextColor: '#333333',
-  inputBorderRadius: 4,
+  inputBorderRadius: 1,
 
   brandTitle: 'Infineon Technologies AG',
-  brandUrl: 'https://infineon.com',
-  brandImage: 'static/media/public/Logo.svg',
+  brandUrl: '/',
+  brandImage: '/Logo.svg',
 });

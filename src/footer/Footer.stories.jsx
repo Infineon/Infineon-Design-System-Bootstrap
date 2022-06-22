@@ -1,6 +1,5 @@
 import { Footer } from "./Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import imageFile from "../../public/Logo.svg";
 
 export default {
   title: "Components/Footer",
@@ -8,7 +7,7 @@ export default {
 };
 
 const image = {
-  src: imageFile,
+  src: "/Logo.svg",
   alt: "infineon-logo",
 };
 
