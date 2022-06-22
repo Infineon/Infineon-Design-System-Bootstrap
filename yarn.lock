@@ -4783,9 +4783,9 @@
   "resolved" "https://registry.npmjs.org/es6-shim/-/es6-shim-0.35.6.tgz"
   "version" "0.35.6"
 
-"esbuild-linux-64@0.14.42":
-  "integrity" "sha512-2L0HbzQfbTuemUWfVqNIjOfaTRt9zsvjnme6lnr7/MO9toz/MJ5tZhjqrG6uDWDxhsaHI2/nsDgrv8uEEN2eoA=="
-  "resolved" "https://registry.npmjs.org/esbuild-linux-64/-/esbuild-linux-64-0.14.42.tgz"
+"esbuild-windows-64@0.14.42":
+  "integrity" "sha512-j3cdK+Y3+a5H0wHKmLGTJcq0+/2mMBHPWkItR3vytp/aUGD/ua/t2BLdfBIzbNN9nLCRL9sywCRpOpFMx3CxzA=="
+  "resolved" "https://registry.npmjs.org/esbuild-windows-64/-/esbuild-windows-64-0.14.42.tgz"
   "version" "0.14.42"
 
 "esbuild@^0.14.38":
