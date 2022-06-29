@@ -1,4 +1,12 @@
 # Infineon Design System Bootstrap Components
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+As part of the Infineon brand guidelines, the Infineon Digital Design System supports designers, developers and project managers to build user interfaces faster and better – with the ultimate goal to create a coherent and optimal user journey across all internal and external Infineon digital touchpoints.
+
+This repository contains an Bootstrap implementation of Infineons Digital Design System and it's Storybook sourcecode.
+
+Use it to build & run storybook and distribute the Bootstrap SCSS.
 
 ## Requirements
 
