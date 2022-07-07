@@ -67,7 +67,8 @@ yarn install
 Start Storybook in local dev mode, including file watchers to hot-reload on code change:
 
 ```bash
-yarn start
+npm run storybook-prepare
+npm run storybook-start
 ```
 
 ### Build Storybook
@@ -117,3 +118,4 @@ import "@infineon/design-system-bootstrap/dist-sources/src/index.js"
 ```scss
 @import "@infineon/design-system-bootstrap/dist-sources/src/button/button"
 ```
+
