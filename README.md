@@ -69,6 +69,7 @@ Start Storybook in local dev mode, including file watchers to hot-reload on code
 npm run storybook-prepare
 npm run storybook-start
 test test test
+more test test test
 ```
 
 ### Build Storybook
