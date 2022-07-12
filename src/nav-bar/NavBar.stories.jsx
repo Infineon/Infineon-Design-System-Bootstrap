@@ -163,7 +163,7 @@ const ExtendedTemplate = (args) => {
             </div>
           </BsNavBar.Collapse>
 
-          <div className="d-lg-flex w-100 ifx__nav-link-wrapper ifx__desktop-show">
+          <div className="w-100 d-lg-flex ifx__nav-link-wrapper ifx__desktop-show">
             <ul className="d-flex ifx__first-level-nav ifx__nav-list">
               <li>
                 <BsDropdown as={BsNavItem}>
@@ -283,7 +283,7 @@ const ExtendedLevel2Template = (args) => {
             </div>
           </BsNavBar.Collapse>
 
-          <div className="w-100 ifx__nav-link-wrapper ifx__desktop-show">
+          <div className="w-100 d-lg-flex ifx__nav-link-wrapper ifx__desktop-show">
             <ul className="ifx__first-level-nav ifx__nav-list d-flex">
               <li>
                 <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 1">
@@ -750,7 +750,7 @@ const ExtendedLevel3Template = (args) => {
             </div>
           </BsNavBar.Collapse>
 
-          <div className="w-100 ifx__nav-link-wrapper ifx__desktop-show">
+          <div className="w-100 d-lg-flex ifx__nav-link-wrapper ifx__desktop-show">
             <ul className="ifx__first-level-nav ifx__nav-list d-flex">
               <li>
                 <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 1">
