@@ -134,12 +134,21 @@
       list-style: none;
     }
 
-    & :not(.ifx__nav-mega-dropdown) li + li {
+    & .ifx__first-level-nav li + li {
       margin-top: 8px;
 
       @media (min-width: 992px) {
         margin-top: 0;
         margin-left: 24px;
+      }
+    }
+
+    & .ifx__second-level-nav.ifx__nav-mega-dropdown li + li {
+      margin-top: 8px;
+
+      @media (min-width: 992px) {
+        margin-top: 0;
+        margin-left: 0;
       }
     }
   }
@@ -197,6 +206,25 @@
     font-size: 20px;
     color: tokens.$color-black;
     margin: 0;
+  }
+}
+
+.ifx__first-level-nav,
+.ifx__second-level-nav {
+  & a div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.ifx__navbar-default {
+  .ifx__searchbar-metalink-wrapper {
+    flex-wrap: wrap;
+
+    @media (min-width: 992px) { 
+      flex-wrap: nowrap;
+    }
   }
 }
 
@@ -292,12 +320,6 @@
     & .ifx__nav-mega-dropdown-next-layer svg {
       color: tokens.$color-info-300;
     }
-
-    & a div {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
   }
 
   & .ifx__nav-link-wrapper.ifx__desktop-show {
@@ -308,10 +330,10 @@
       padding-bottom: 8px;
     }
 
-    & li.show a + div {
+    & li.show a + .ifx__second-level-nav {
       display: block;
 
-      & > div {
+      & > li {
         animation: fadeInDown .2s ease-in;
       }
     }
@@ -378,12 +400,6 @@
       margin-top: 8px;
     }
 
-    & .ifx__nav-link-with-icon {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
     svg {
       color: tokens.$color-info-300;
     }
@@ -409,17 +425,17 @@
       }
     }
 
+    .show > .ifx__nav-mega-dropdown-level-3 {
+      display: block;
+
+      & .w-100 {
+        animation: fadeInDown .2s ease-in;
+      }
+    }
+
     & .nav-link.show {      
       & .ifx__nav-link-with-icon {
         font-weight: 600;
-      }
-
-      .ifx__nav-mega-dropdown-level-3 {
-        display: block;
-
-        & .w-100 {
-          animation: fadeInDown .2s ease-in;
-        }
       }
     }
   }
