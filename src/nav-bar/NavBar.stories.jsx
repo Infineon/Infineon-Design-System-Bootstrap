@@ -45,11 +45,49 @@ const JsWrapper = ({ children }) => {
 
       <template id="ifx__link-last-layer" dangerouslySetInnerHTML={{ __html: renderToStaticMarkup(
         <div>
-        <BsNav.Link className="ifx__nav-mega-dropdown-last-layer" href="javascript:void(0)">
-          <FontAwesomeIcon icon={["fal", "chevron-left"]}/>
+          <BsNav.Link className="ifx__nav-mega-dropdown-last-layer" href="javascript:void(0)">
+            <FontAwesomeIcon icon={["fal", "chevron-left"]}/>
             <span className="ifx__link-last-layer-label"></span>
-        </BsNav.Link>
-      </div>
+          </BsNav.Link>
+        </div>
+      )}}>
+      </template>
+      
+      <template id="ifx__sub-lvl-col" dangerouslySetInnerHTML={{ __html: renderToStaticMarkup(
+        <div className="col-sm-6">
+          <ul>
+          </ul>
+        </div>
+      )}}>
+      </template>
+      
+      <template id="ifx__first-level-nav" dangerouslySetInnerHTML={{ __html: renderToStaticMarkup(
+        <ul className="ifx__first-level-nav">
+          <li>
+            <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="javascript:void(0)" data-text="Nav Link 1">
+              Nav Link 1
+            </BsNav.Link>
+          </li>
+        </ul>
+      )}}>
+      </template>
+
+      <template id="ifx__sub-level-nav" dangerouslySetInnerHTML={{ __html: renderToStaticMarkup(
+        <ul className="w-100 ifx__nav-mega-dropdown-mobile ifx__nav-wrapper">
+          <div className="ifx__nav-mega-dropdown-mobile-content">
+            <div className="row">
+            </div>
+          </div>
+        </ul>
+      )}}>
+      </template>
+
+      <template id="ifx__nav-wrapper" dangerouslySetInnerHTML={{ __html: renderToStaticMarkup(
+        <div className="ifx__mobile-show ifx__nav-wrapper ifx__mobile-clone ifx__nav-link-wrapper">
+          <div class="ifx__menu">Menu</div>
+            <div className="row">
+            </div>
+        </div>
       )}}>
       </template>
 
@@ -671,17 +709,9 @@ const NavMegaDropdown = () => (
           <li>
             <NavLinkWithIcon label="Navigationlink"/>
           </li>
-
-          <li>
-            <NavLinkWithIcon label="Navigationlink"/>
-          </li>
         </div>
 
         <div className="ifx__second-lvl-col col-lg-6">
-          <li>
-            <NavLinkWithIcon label="Navigationlink"/>
-          </li>
-
           <li>
             <NavLinkWithIcon label="Navigationlink"/>
           </li>
@@ -874,7 +904,6 @@ const VerticalLevel2Template = (args) => {
                   <span>Navigationlink</span>
                   <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
                 </div>
-                <NavMegaDropdownMobileLayer3/>
               </BsNav.Link>
             </BsNav.Item>
 

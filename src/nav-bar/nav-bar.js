@@ -34,6 +34,9 @@ function slideNav(mobileShow) {
 
         if (navMegaWrapper) {
           navMegaWrapper.classList.remove('open');
+          currentContent = navMegaWrapper.firstElementChild;
+        } else {
+          currentContent = undefined;
         }
 
         currentContent = undefined;

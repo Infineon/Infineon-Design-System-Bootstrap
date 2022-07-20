@@ -15,6 +15,9 @@ export function initMobileNav() {
     mobileClone.parentElement.removeChild(mobileClone);
   }
 
+
+
+  // #ifx__sublvl-link Template
   var subLvlLinkTemplate = document.querySelector("#ifx__sublvl-link");
   
   function createSubLvlLink(labelText) {
@@ -24,7 +27,11 @@ export function initMobileNav() {
 
     return a;
   }
+  // #ifx__sublvl-link Template End
 
+
+
+  // #ifx__link-last-layer Template
   var LinkLastLayerTemplate = document.querySelector("#ifx__link-last-layer");
 
   function createLinkLastLayer(labelText) {
@@ -34,7 +41,47 @@ export function initMobileNav() {
 
     return div;
   }
+  // #ifx__link-last-layer Template End
 
+
+
+  // #ifx__sub-level-nav Template
+  var subLvlNavTemplate = document.querySelector("#ifx__sub-level-nav");
+
+  function createSubLvlNav(className) {
+    const subLvlNav = subLvlNavTemplate.content.cloneNode(true).firstElementChild;
+    subLvlNav.classList.add(className);
+    return subLvlNav;
+  }
+  // #ifx__sub-level-nav Template End
+
+
+
+  // #ifx__sub-lvl-col Template
+  var subLvlColTemplate = document.querySelector("#ifx__sub-lvl-col");
+
+  function createSubLvlCol() {
+    const subLvlCol = subLvlColTemplate.content.cloneNode(true).firstElementChild;
+
+    return subLvlCol;
+  }
+  // #ifx__sub-lvl-col Template End
+
+
+
+  // #ifx__nav-wrapper Template
+  var navWrapperTemplate = document.querySelector("#ifx__nav-wrapper");
+
+  function createNavWrapper() {
+    const navWrapper = navWrapperTemplate.content.cloneNode(true).firstElementChild;
+
+    return navWrapper;
+  }
+  // #ifx__nav-wrapper Template End
+
+
+  
+  // createDirectLink Template
   function createDirectLink(Link) {
     const a = document.createElement("a");
     a.classList.add("nav-link", "ifx__nav-mega-dropdown-next-layer");
@@ -43,38 +90,32 @@ export function initMobileNav() {
 
     return a;
   }
-  
+  // createDirectLink Template End
+
 
 
   /*
     THIRD LEVEL NAVIGATION
   */
   function thirdFunction(oldUls, aTextContent) {
-    let ulThirdLevelNav = document.createElement("ul");
-    ulThirdLevelNav.classList.add("w-100", "ifx__third-level-nav", "ifx__nav-mega-dropdown-mobile", "ifx__nav-wrapper");
+    let ulThirdLevelNav = createSubLvlNav("ifx__third-level-nav");
 
-    let divNavMegaDropdownMobileContent = document.createElement("div");
-    ulThirdLevelNav.appendChild(divNavMegaDropdownMobileContent);
-    divNavMegaDropdownMobileContent.classList.add("ifx__nav-mega-dropdown-mobile-content");
+    let divNavMegaDropdownMobileContent = ulThirdLevelNav.firstElementChild;
+
+    let divrow = ulThirdLevelNav.querySelector(".row");
 
     let lastLayer = createLinkLastLayer(aTextContent);
 
-    divNavMegaDropdownMobileContent.appendChild(lastLayer);
-
-    let divrow = document.createElement("div");
-    divNavMegaDropdownMobileContent.appendChild(divrow);
-    divrow.classList.add("row");
+    divNavMegaDropdownMobileContent.insertBefore(lastLayer, divrow);
 
     oldUls.forEach(function(oldUl) {
       const thirdLvlCols = oldUl.querySelectorAll(".ifx__third-lvl-col");
 
       thirdLvlCols.forEach(function(thirdLvlCol) {
-        const divcolSm6 = document.createElement("div");
-        divcolSm6.classList.add("col-sm-6");
+        const divcolSm6 = createSubLvlCol();
         divrow.appendChild(divcolSm6);
 
-        let ul = document.createElement("ul");
-        divcolSm6.appendChild(ul);
+        let ul = divcolSm6.firstElementChild;
 
         const thirdvlLinks = thirdLvlCol.querySelectorAll(".ifx__third-lvl-link");
         thirdvlLinks.forEach(function(thirdLvlLink) {
@@ -96,31 +137,24 @@ export function initMobileNav() {
     SECOND LEVEL NAVIGATION
   */
   function secondFunction(oldUls, aTextContent) {
-    let ulSecondLevelNav = document.createElement("ul");
-    ulSecondLevelNav.classList.add("w-100", "ifx__second-level-nav", "ifx__nav-mega-dropdown-mobile", "ifx__nav-wrapper");
+    let ulSecondLevelNav = createSubLvlNav("ifx__second-level-nav");
 
-    let divNavMegaDropdownMobileContent = document.createElement("div");
-    ulSecondLevelNav.appendChild(divNavMegaDropdownMobileContent);
-    divNavMegaDropdownMobileContent.classList.add("ifx__nav-mega-dropdown-mobile-content");
+    let divNavMegaDropdownMobileContent = ulSecondLevelNav.firstElementChild;
+
+    let divrow = ulSecondLevelNav.querySelector(".row");
 
     let lastLayer = createLinkLastLayer(aTextContent);
 
-    divNavMegaDropdownMobileContent.appendChild(lastLayer);
-
-    let divrow = document.createElement("div");
-    divNavMegaDropdownMobileContent.appendChild(divrow);
-    divrow.classList.add("row");
+    divNavMegaDropdownMobileContent.insertBefore(lastLayer, divrow);
 
     oldUls.forEach(function(oldUl) {
       const secondLvlCols = oldUl.querySelectorAll(".ifx__second-lvl-col");
 
       secondLvlCols.forEach(function(secondLvlCol) {
-        const divcolSm6 = document.createElement("div");
-        divcolSm6.classList.add("col-sm-6");
+        const divcolSm6 = createSubLvlCol();
         divrow.appendChild(divcolSm6);
 
-        let ul = document.createElement("ul");
-        divcolSm6.appendChild(ul);
+        let ul = divcolSm6.firstElementChild;
 
         const secondLvlLinks = secondLvlCol.querySelectorAll(".ifx__second-lvl-link");
         secondLvlLinks.forEach(function(secondLvlLink) {
@@ -154,8 +188,7 @@ export function initMobileNav() {
   /*
     FIRST LEVEL NAVIGATION
   */
-  function firstFunction(oldUl) {
-    let ulFirstLevelNav = document.createElement("ul");
+  function firstFunction(oldUl, ulFirstLevelNav) {
     ulFirstLevelNav.classList.add("ifx__first-level-nav");
 
     const FirstLvlLinks = oldUl.querySelectorAll(".ifx__first-lvl-link");
@@ -185,26 +218,18 @@ export function initMobileNav() {
   }
 
   let SearchBarMetalinkWrapper = document.querySelector(".ifx__searchbar-metalink-wrapper");
-  let mobileShow = document.createElement("div");
-  mobileShow.classList.add("ifx__mobile-show", "ifx__nav-wrapper", "ifx__mobile-clone", "ifx__nav-link-wrapper");
+  let mobileShow = createNavWrapper();
   SearchBarMetalinkWrapper.after(mobileShow);
 
-  let menuLayer = document.createElement("div");
-  menuLayer.classList.add("ifx__menu");
-  let menuText = document.createTextNode("Menu");
-  menuLayer.appendChild(menuText);
-  mobileShow.appendChild(menuLayer);
+  const firstLvlRow = mobileShow.querySelector(".row");
 
-  const firstLvlRow = document.createElement("div");
-  firstLvlRow.classList.add("row");
-  mobileShow.appendChild(firstLvlRow);
-
-  const firstLvlCol = document.createElement("div");
-  firstLvlCol.classList.add("col-sm-6");
+  const firstLvlCol = createSubLvlCol();
   firstLvlRow.appendChild(firstLvlCol);
 
+  const ulFirstLevelNav = firstLvlCol.firstElementChild;
+
   const desktopFirstLvlUl = document.querySelector(".ifx__desktop-show .ifx__first-level-nav");
-  const mobileFirstLvlUl = firstFunction(desktopFirstLvlUl);
+  const mobileFirstLvlUl = firstFunction(desktopFirstLvlUl, ulFirstLevelNav);
   firstLvlCol.appendChild(mobileFirstLvlUl);
 }
 
