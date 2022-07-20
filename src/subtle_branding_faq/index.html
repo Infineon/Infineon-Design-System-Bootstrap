@@ -3,23 +3,35 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Subtle Branding Start Template</title>
+    <title>Subtle Branding FAQ</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' href='../../dist/index.css'>
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' type='text/css' media='screen' href='../../dist/index.css'>
+    <!-- Bootstrap JS -->
+    <script src="../../dist/index.js" defer></script>
 
     <style>
-
-        * {
+         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        .content__wrapper h5 {
-            line-height: 25px;
+        body {
+          height: 2000px;
         }
 
-    
+        .subheader__wrapper {
+          position: relative;
+          z-index: -100;
+        }
+
+        .search__wrapper {
+          position: absolute;
+          z-index: -50;
+        }
+
+
         @media (min-width: 320px) {
             .subheader__head {
                 font-size: 28px; 
@@ -31,9 +43,32 @@
                 background-repeat: no-repeat; 
                 background-size: 100% 100%;  
                 min-height: 300px;
-                /* padding-bottom: 2rem; */
             }
 
+            .search__wrapper h3 {
+                font-size: 16px;
+                line-height: 28px;
+            }
+
+            .search__wrapper {
+                position: relative;
+                width: 100%;
+                border: 1px solid #EBE9E9;
+                border-radius: 1px;
+                padding: 32px 32px 28px 32px;
+                background-color: #fff;
+                transform: translateY(-30%); 
+                position: absolute;
+            }
+
+            .search__wrapper input {
+                width: 100%;
+            }
+
+            .qna__wrapper .ifx__content-nav-default {
+                margin-bottom: 28px;
+                margin-top: 135px;
+            }
         }
 
         @media (min-width: 768px) {
@@ -44,17 +79,45 @@
 
             .subheader__wrapper {
                 background-image: url('../../assets/subpage.png'); 
-                /* background-color: #F5F5F5; */
                 background-repeat: no-repeat; 
                 background-size: 100% 100%;  
                 min-height: 400px;
             }
+
+            .search__wrapper h3 {
+                font-size: 24px;
+                line-height: 30px;
+            }
+
+            .search__wrapper {
+                width: 571px;
+                border: 1px solid #EBE9E9;
+                border-radius: 1px;
+                padding: 32px 32px 28px 32px;
+                background-color: #fff;
+                transform: translateY(-90%);
+               
+            }
+
+            .search__wrapper input {
+                width: 507px;
+            }
+
+            .qna__wrapper {
+              width: 825px;
+            }
+
+            .qna__wrapper .ifx__content-nav-default {
+                margin-bottom: 28px;
+                margin-top: 79px;
+            }
         }
+
 
     </style>
 </head>
 <body>
-    
+
     <!-- Navbar -->
     <div class="ifx__navbar">
         <div class="container">
@@ -287,18 +350,130 @@
                 </ol>
             </nav>
             <div>
-                <h1 class="subheader__head">Start Template</h1>
-                <p>Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.</p>
+                <h1 class="subheader__head">Support</h1>
+                <p>If you have any question, you can ask below or enter what you are looking for.</p>
             </div>
         </div>
     </section>
-    <!-- Content -->
-    <section class="content__wrapper my-5">
+    <!-- Search input -->
+    <section class="d-flex justify-content-center">
+        <form class="search__wrapper">
+            <h3>Have a question?</h3>
+            <input type="text" placeholder="Search" class="ifx__searchbar form-control" />
+        </form>
+    </section>
+    <!-- Q&A -->
+    <section class="d-flex justify-content-center mb-5">
         <div class="container">
-           <div class="text-center">
-                <h5 class="mb-3">Add your page content here</h5>
-                <button class="btn btn-primary">Go to components</button>
-           </div>
+            <div class="qna__wrapper">
+                <!-- content navigation -->
+                <ul class="ifx__content-nav-default nav">
+                    <li class="nav-item">
+                      <a
+                        href="javascript:void(0)"
+                        data-rr-ui-event-key="javascript:void(0)"
+                        class="nav-link active"
+                      >
+                        Link active
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="javascript:void(0)"
+                        data-rr-ui-event-key="javascript:void(0)"
+                        class="nav-link"
+                      >
+                        Link default
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="javascript:void(0)"
+                        data-rr-ui-event-key="javascript:void(0)"
+                        class="nav-link"
+                      >
+                        Link default
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- accordion -->
+                  <div class="accordion accordion-flush">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          type="button"
+                          aria-expanded="false"
+                          class="accordion-button collapsed"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                        >
+                          Accordion Item
+                        </button>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="collapseOne">
+                        <div class="accordion-body">
+                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                          eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                          voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                          amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                          ipsum dolor sit amet.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          type="button"
+                          aria-expanded="false"
+                          class="accordion-button collapsed"
+                        >
+                          Accordion Item
+                        </button>
+                      </h2>
+                      <div class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                          eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                          voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                          amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                          ipsum dolor sit amet.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          type="button"
+                          aria-expanded="false"
+                          class="accordion-button collapsed"
+                        >
+                          Accordion Item
+                        </button>
+                      </h2>
+                      <div class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                          eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                          voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                          amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                          ipsum dolor sit amet.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
         </div>
     </section>
     <!-- Footer -->
@@ -317,9 +492,9 @@
             </div>
         </div>
     </footer>
-      
-     
-      
+
+
+    
 
 
 

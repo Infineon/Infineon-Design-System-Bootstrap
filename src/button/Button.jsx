@@ -38,22 +38,16 @@ const propTypes = {
 };
 
 export const Button = ({ label, variant, color, size, disabled, icon, iconPosition, children, ...props }) => {
-  const bsVariant =
-    variant === "outline" ? `outline-${color}`
-    : color;
+  const bsVariant = variant === "outline" ? `outline-${color}` : color;
 
-  const bsSize =
-    size === "s" ? "sm" 
-    : size === "l" ? "lg" 
-    : undefined;
+  const bsSize = size === "s" ? "sm" : size === "l" ? "lg" : undefined;
 
-  const iconPositionClass =
-    iconPosition === "left" ? "ifx__btn-icon--before"
-    : iconPosition === "right" ? "ifx__btn-icon--after"
-    : undefined;
+  const iconPositionClass = iconPosition === "left" 
+  ? "ifx__btn-icon--before" 
+  : iconPosition === "right" ? "ifx__btn-icon--after" : undefined;
 
   const Icon = () => (
-    icon ? <FontAwesomeIcon icon={["fal", "check"]} className={iconPositionClass}/> : null
+    icon ? <FontAwesomeIcon icon={["fal", "check"]} className={iconPositionClass} /> : null
   );
 
   return (
