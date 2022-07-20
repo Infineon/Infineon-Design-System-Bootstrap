@@ -25,6 +25,12 @@
 
 // MOBILE NAV-BAR
 .navbar {
+  overflow: hidden;
+
+  @include media-breakpoint-up(lg) { 
+    overflow: visible;
+  }
+
   .ifx__mobile-show { // Javascript class
     @include media-breakpoint-up(lg) { 
       display: none;
@@ -38,7 +44,7 @@
   }
 
   & .ifx__nav-link-wrapper.ifx__mobile-show {
-    margin-top: 16px;
+    margin-top: tokens.$spacing-m;
   }
 }
 // MOBILE NAV-BAR END
@@ -417,11 +423,12 @@
       background-color: tokens.$color-info-100;
       
       & .w-100 {
-        padding: 60px 60px 60px 0;
+        padding: 60px 60px 60px 50px;
       }
 
       .row {
         align-items: flex-start;
+        --bs-gutter-x: 50px;
       }
 
       & .col-lg-6 {
