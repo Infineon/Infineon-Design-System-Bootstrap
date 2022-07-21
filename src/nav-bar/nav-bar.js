@@ -39,7 +39,6 @@ function slideNav(mobileShow) {
           currentContent = undefined;
         }
 
-        currentContent = undefined;
         updateNavHeight();
 
       } else if(link.matches('.ifx__nav-mega-dropdown-next-layer')) {
