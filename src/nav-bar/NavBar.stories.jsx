@@ -29,7 +29,7 @@ const JsWrapper = ({ children }) => {
     initMobileNav();
     initNavBar();
     initVerticalNavBar();
-  }, [])
+  }, []);
 
   return (
     <>
