@@ -1,5 +1,3 @@
-import { initNavBar } from "./nav-bar";
-
 export function initMobileNav() {
   let desktopShowNav = document.querySelector(".ifx__desktop-show");
 
@@ -232,5 +230,3 @@ export function initMobileNav() {
   const mobileFirstLvlUl = firstFunction(desktopFirstLvlUl, ulFirstLevelNav);
   firstLvlCol.appendChild(mobileFirstLvlUl);
 }
-
-initNavBar();
