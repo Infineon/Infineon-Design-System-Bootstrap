@@ -12,5 +12,3 @@ initNavBar();
 initVerticalNavBar();
 initBackToTopButton();
 initSelect();
-initBackToTopButton();
-initSelect();
