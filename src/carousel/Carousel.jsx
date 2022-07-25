@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import BsCarousel from "react-bootstrap/Carousel";
 import imageSrc4_3 from "../../public-storybook/1440x1080_ratio-4-3.png";
 // import imageSrc16_9 from "../../public-storybook/1920x1080_ratio-16-9.png";
-import imageSrc16_9 from "../../public-storybook/updated_carousel_bg";
+import imageSrc16_9 from "../../public-storybook/updated_carousel_bg.png";
 import imageSrc1_1 from "../../public-storybook/1080x1080_ratio-1-1.png";
 
 const image4_3 = {
