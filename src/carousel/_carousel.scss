@@ -114,7 +114,8 @@
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   opacity: 1;
-  // transition: opacity .6s ease;
+  // transition: background-color .6s ease;
+  //do you want to have this transition effect between colors?
 }
 
 .carousel-indicators .active {
