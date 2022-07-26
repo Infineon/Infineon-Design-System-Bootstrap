@@ -16,6 +16,10 @@
     "/src/**/*.scss",
     "/src/**/*.js"
   ],
+  "source": "./dist/index.js",
+  "sass": "./src/index.scss",
+  "style": "./dist/index.css",
+  "main": "./index.js",
   "license": "MIT",
   "author": "Infineon Technologies AG",
   "scripts": {
