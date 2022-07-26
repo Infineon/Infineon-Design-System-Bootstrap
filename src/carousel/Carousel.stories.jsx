@@ -7,23 +7,15 @@ export default {
   args: {
     controls: true,
     indicators: true,
-    aspectRatio: "4:3",
+    aspectRatio: "16:9",
   }
 };
 
 const DefaultTemplate = (args) => (
   <Carousel {...args}></Carousel>
-);
-
-const TextTemplate = (args) => (
-  <Carousel {...args}>
-    <BsCarousel.Caption>
-      <h3>Slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </BsCarousel.Caption>
-  </Carousel>
+  // <h6>Image Headline</h6>
+  // <p>Further Description of the Image of Graphic</p>
 );
 
 export const Default = DefaultTemplate.bind({});
 
-export const Text = TextTemplate.bind({});
