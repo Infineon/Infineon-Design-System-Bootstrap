@@ -15,6 +15,12 @@ Use it to build & run storybook and distribute the Bootstrap SCSS.
 
 ## Usage
 
+### FontAwesome Pro
+As this project uses FontAwesome Pro you need to add your FontAwesome Pro key to your project. If you are an Infineon Employee you can obtain one by emailing dds@infineon.com.
+
+See https://fontawesome.com/docs/web/setup/packages#_1-configure-access on how to configure your project.
+
+### Installation
 Add this to your dependencies in `package.json`:
 ```bash
 npm install --save @infineon/design-system-bootstrap
@@ -54,10 +60,6 @@ To get the correct behaviour for the components, you'll additionally need to inc
 ```js
 import "@infineon/design-system-bootstrap/dist/index.js";
 ```
-
-As this project uses FontAwesome Pro you need to add your FontAwesome Pro key to your project. If you are an Infineon Employee you can obtain one by emailing dds@infineon.com.
-
-See https://fontawesome.com/docs/web/setup/packages#_1-configure-access on how to configure your project.
 
 ## Local Development
 
