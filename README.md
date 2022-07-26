@@ -15,51 +15,31 @@ Use it to build & run storybook and distribute the Bootstrap SCSS.
 
 ## Usage
 
-### FontAwesome Pro
-As this project uses FontAwesome Pro you need to add your FontAwesome Pro key to your project. If you are an Infineon Employee you can obtain one by emailing dds@infineon.com.
-
-See https://fontawesome.com/docs/web/setup/packages#_1-configure-access on how to configure your project.
-
-### Installation
-Add this to your dependencies in `package.json`:
+### Quick Start Vue.JS
+1. Install using NPM
 ```bash
 npm install --save @infineon/design-system-bootstrap
 ```
 
-```bash
-yarn add @infineon/design-system-bootstrap
-```
-
-Now you can import the assets you need to consume. This currently includes:
-```bash
-├── fonts
-│   └── source-sans-pro-v18-latin
-│       ├── source-sans-pro-v18-latin-600.woff
-│       ├── source-sans-pro-v18-latin-600.woff2
-│       ├── source-sans-pro-v18-latin-700.woff
-│       ├── source-sans-pro-v18-latin-700.woff2
-│       ├── source-sans-pro-v18-latin-regular.woff
-│       └── source-sans-pro-v18-latin-regular.woff2
-├── index.css
-├── index.js
-└── Logo.svg
-```
-
-Include / import `index.css` to get the correct style for markup copied from Storybook. You'll additionally have to copy the font assets (`fonts/`) themselves to your publicly available root folder (often times it's called `static/` or `public/`).
-
-An import could, depending on your local setup, for example look like this:
-
-*CSS:*
-```css
-@import "./node_modules/@infineon/design-system-bootstrap/dist/index.css";
-```
-
-To get the correct behaviour for the components, you'll additionally need to include the provided JavaScript, too:
-
+2. Add the import to your main.js:
 *JavaScript:*
 ```js
-import "@infineon/design-system-bootstrap/dist/index.js";
+import "@infineon/design-system-bootstrap";
 ```
+
+3. Use Storybook to explore our components (available only in intranet)
+
+https://storybook-bootstrap.icp.infineon.com
+
+4. Install FontAwesome Pro Icons (optional)
+
+Mail to dds@infineon.com to get an fontawesome pro token if you are an Infineon employee. Then execute these two commands:
+```bash
+npm config set "@fortawesome:registry" https://npm.fontawesome.com/
+npm config set "//npm.fontawesome.com/:_authToken" FONT-AWESOME-PACKAGE-TOKEN
+```
+
+After that follow the installation instructions for vue at https://fontawesome.com/v6/docs/web/use-with/vue/#contentHeader
 
 ## Local Development
 
