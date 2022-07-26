@@ -16,12 +16,15 @@ const MainpageTemplate = (args) => (
   <HeroBanner {...args}>
     <div>
       <div className="ifx__hero-banner ifx__hero-banner-mobile">
-        <img className="ifx__slanted" src={image.src} alt={image.alt}/>
+        <div>
+          <img className="ifx__slanted" src={image.src} alt={image.alt}/>
+          <div className="ifx__hero-banner-overlay"></div>
+        </div>
         <div className="ifx__hero-banner-body">
           <div className="ifx__hero-banner-sub-headline">Skyline</div>
           <div className="ifx__hero-banner-headline">Headline for the hero image</div>
           <div className="ifx__hero-banner-headline">with two rows!</div>
-          <Button size="s" href="javascript:void(0)">Primary</Button>
+          <Button size="s" href="javascript:void(0)">Go to topic</Button>
         </div>
       </div>
 
@@ -29,10 +32,12 @@ const MainpageTemplate = (args) => (
         <div className="position-relative">
           <img src={image.src} alt={image.alt}/>
           <div className="ifx__hero-banner-overlay">
-            <div className="ifx__hero-banner-sub-headline">Skyline</div>
-            <div className="ifx__hero-banner-headline">Headline for the hero image</div>
-            <div className="ifx__hero-banner-headline">with two rows!</div>
-            <Button href="javascript:void(0)">Primary</Button>
+            <div className="ifx__hero-banner-sub-headline"><span className="test">Skyline</span></div>
+            <div className="ifx__hero-banner-headline"><span className="test">Headline for the hero image</span></div>
+            <div className="ifx__hero-banner-headline"><span className="test">with two rows!</span></div>
+            <div>
+              <Button href="javascript:void(0)">Go to topic</Button>
+            </div>
           </div>
         </div>
       </div>
