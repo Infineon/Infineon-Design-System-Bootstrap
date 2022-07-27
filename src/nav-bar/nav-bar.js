@@ -94,13 +94,13 @@ export function initNavBar() {
 
   desktopShow.addEventListener('focusout', toggleMenuItem);
 
-  const dropdowns = desktopShow.childNodes;
+  const dropdowns = desktopShow.querySelectorAll(':scope > li');
   const navLinks = desktopShow.querySelectorAll('.nav-link');
 
   const secondLvlCols = desktopShow.querySelectorAll('.ifx__second-lvl-col');
   const thirdLvlTrigger = Array.from(secondLvlCols)
     .map(function(secondLvlCol) {
-      return Array.from(secondLvlCol.childNodes);
+      return Array.from(secondLvlCol.querySelectorAll(':scope > ul > li'));
     })
     .flat();
   

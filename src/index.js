@@ -7,10 +7,8 @@ import {
   initSelect
 } from "./form-elements/SelectElement";
 
-setTimeout(( ) => {
-  initMobileNav();
-  initNavBar();
-  initVerticalNavBar();
-  initBackToTopButton();
-  initSelect();
-}, 100)
+initMobileNav();
+initNavBar();
+initVerticalNavBar();
+initBackToTopButton();
+initSelect();
