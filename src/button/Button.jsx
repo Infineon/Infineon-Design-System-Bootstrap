@@ -59,8 +59,14 @@ export const Button = ({ label, variant, color, size, disabled, icon, iconPositi
   return (
     <BsButton variant={bsVariant} size={bsSize} disabled={disabled} children={children || label} {...props}>
       {iconPosition === "left" 
-        ? <><Icon/>{children}</>
-        : <>{children}<Icon/></>
+        ? <>
+            <Icon/>
+            {children}
+          </>
+        : <>
+            {children}
+            <Icon/>
+          </>
       }
     </BsButton>
   );
