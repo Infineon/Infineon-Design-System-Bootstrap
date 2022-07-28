@@ -54,7 +54,6 @@
   border-radius: 100%;
   top: 50%;
   transform: translate(0, -50%);
-  //background-color: #f1010166;
   background-color: #ffffff;
   opacity: 1;
 
@@ -92,13 +91,6 @@
 }
 
 .carousel-indicators [data-bs-target] {
-  // width: 8px;
-  // height: 8px;
-  // margin: 0 5px 0 5px;
-  // border-radius: 100%;
-  // border-top: none;
-  // border-bottom: none;
-
   box-sizing: content-box;
   flex: 0 1 auto;
   width: 130px;
@@ -118,7 +110,6 @@
 }
 
 .carousel-indicators .active {
-  // opacity: 1;
   background-color: #378375;
 }
 

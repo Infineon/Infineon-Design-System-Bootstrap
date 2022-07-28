@@ -1,6 +1,8 @@
 import { Carousel } from "./Carousel";
 import BsCarousel from "react-bootstrap/Carousel";
 
+import { CarouselSlider } from './CarouselSlider'
+
 export default {
   title: "Components/Carousel",
   component: Carousel,
@@ -8,27 +10,25 @@ export default {
     controls: true,
     indicators: true,
     aspectRatio: "16:9",
-  }
+  },
 };
 
-const DefaultTemplate = (args) => (
+const DefaultTemplate = (args) => {
+  return (
+    <>
+      <Carousel {...args}></Carousel>
+      <h6 className="mb-0 mt-3">Image Headline</h6>
+      <p className="m-0">Further Description of the Image of Graphic</p>
+    </>
+  );
+}
+
+const HeroBannerTemplate = (args) => (
   <>
-    <Carousel {...args}></Carousel>
-    <h6 className="mb-0 mt-3">Image Headline</h6>
-    <p className="m-0">Further Description of the Image of Graphic</p>
+   <CarouselSlider {...args}></CarouselSlider>
   </>
 );
 
-const HeroBannerTemplate = (args) => (
-  <Carousel {...args}>
-    <BsCarousel.Caption>
-      <div>
-        <h3>Slide label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </BsCarousel.Caption>
-  </Carousel>
-);
 
 export const Default = DefaultTemplate.bind({});
 export const HeroBanner = HeroBannerTemplate.bind({});
