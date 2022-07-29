@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import BsCarousel from "react-bootstrap/Carousel";
-<<<<<<< HEAD
 import imageSrc4_3 from "../../public-storybook/1440x1080_ratio-4-3.png";
 import imageSrc16_9 from "../../public-storybook/1920x1080_ratio-16-9.png";
 
@@ -14,9 +13,6 @@ const image_none = {
   alt: "4-3-s",
 };
 
-=======
-import { ImageAspectRatio } from "../image-aspect-ratio/ImageAspectRatio";
->>>>>>> 960d65ebb670cafbe1868dd4c2133a3b0bd1917e
 
 const propTypes = {
   /** Specifies Carousel controls */
