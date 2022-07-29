@@ -9,8 +9,13 @@ export default {
   args: {
     controls: true,
     indicators: true,
+<<<<<<< HEAD
     aspectRatio: "16:9",
   },
+=======
+    imageAspectRatio: "16:9",
+  }
+>>>>>>> 960d65ebb670cafbe1868dd4c2133a3b0bd1917e
 };
 
 const DefaultTemplate = (args) => {
