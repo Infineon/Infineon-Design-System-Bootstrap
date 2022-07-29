@@ -1,5 +1,6 @@
 @use "@infineon/design-system-tokens/dist/tokens";
 
+
 .ifx {
   &__carousel
   &__aspect-ratio {
@@ -76,6 +77,22 @@
   height: 1rem;
 }
 
+.carousel-slider-prev,
+.carousel-slider-next {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-slider-prev:hover,
+.carousel-slider-next:hover {
+  cursor: pointer;
+  background-color: tokens.$color-gray-300;
+}
+
 .carousel-control-next {
   right: 24px;
 }
@@ -129,3 +146,11 @@
   }
 }
 
+.thumbnail__img {
+  cursor: pointer;
+}
+
+.act {
+  border: 2px solid #378375;
+  border-radius: 4px;
+}

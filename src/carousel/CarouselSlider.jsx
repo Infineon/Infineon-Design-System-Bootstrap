@@ -2,9 +2,15 @@ import PropTypes from "prop-types";
 import BsCarousel from "react-bootstrap/Carousel";
 import imageSrc4_3 from "../../public-storybook/1440x1080_ratio-4-3.png";
 import imageSrc16_9 from "../../public-storybook/1920x1080_ratio-16-9.png";
-import heroBanner from '../../public-storybook/updated_carousel_bg.png'
-import heroBanner2 from '../../public-storybook/updated_carousel_bg2.png'
-import heroBanner3 from '../../public-storybook/updated_carousel_bg3.png'
+
+import heroBanner from '../../public-storybook/carousel_slider_1.png'
+import heroBanner2 from '../../public-storybook/carousel_slider_2.png'
+import heroBanner3 from '../../public-storybook/carousel_slider_3.png'
+import heroBanner4 from '../../public-storybook/carousel_slider_4.png'
+import heroBanner5 from '../../public-storybook/carousel_slider_5.png'
+import heroBanner6 from '../../public-storybook/carousel_slider_6.png'
+import heroBanner7 from '../../public-storybook/carousel_slider_7.png'
+
 
 import { useState } from "react";
 
@@ -63,30 +69,42 @@ const Image = ({ aspectRatio }) => {
 
 export const CarouselSlider = ({ aspectRatio, children, ...props }) => {
 
-    const img = [
-        {id:0, value: heroBanner},
-        {id: 1, value: heroBanner2},
-        {id: 2, value: heroBanner3},
+    const imgs = [
+      {id: 0, value: heroBanner},
+      {id: 1, value: heroBanner2},
+      {id: 3, value: heroBanner3},
+      {id: 4, value: heroBanner4},
+      {id: 5, value: heroBanner5},
+      {id: 6, value: heroBanner6},
+      {id: 7, value: heroBanner7},
     ]
 
-    const [activeImg, setActiveImg] = useState(img)
     const [index, setIndex] = useState(0)
+    const [activeImg, setActiveImg] = useState(0)
+    
 
-    console.log(img.length)
+    const handleActiveImg = (i) => {
+      setIndex(i)
+      setActiveImg(i)
+    }
+
 
   return (
     <div>
-       <div className="w-100" style={{minHeight: '650px'}}>
-        <img src={activeImg[index].value} alt="img" className="w-100 h-100" />
+       <div className="w-100" >
+        <img src={imgs[index].value} alt="img" className="w-100 h-100" />
        </div>
-       <div className="mt-3 bg-secondary">
+       <div className="mt-3 w-100 d-flex justify-content-center">
             <div className="d-flex align-items-center">
-                <span className="carousel-control-prev-icon" onClick={()=>setIndex(index === 0 ? 0 : index-1)}></span>
-                <img src={heroBanner} alt="" width={150} onClick={(e) => setActiveImg(e.target.src)} className='me-2'/>
-                <img src={heroBanner2} alt="" width={150} onClick={(e) => setActiveImg(e.target.src)} className='me-2'/>
-                <img src={heroBanner3} alt="" width={150} onClick={(e) => setActiveImg(e.target.src)}/>
-                {/* for each image, i need to change either the ID or the index */}
-                <span className="carousel-control-next-icon" onClick={()=>setIndex(index === img.length-1 ? img.length-1 : index+1)}></span>
+                <span className="carousel-slider-prev justify-self-start" onClick={()=> handleActiveImg(index === 0 ? 0 : index-1)}>
+                  <span className="carousel-control-prev-icon"></span>
+                </span>
+                {imgs.map((item, i) => 
+                <img className={`mx-1 thumbnail__img ${i === activeImg ? 'act' : ""}`} src={item.value} key={i} width={100} onClick={(e) => handleActiveImg(i)} />
+                )}
+                <span className="carousel-slider-next justify-self-end" onClick={()=> handleActiveImg(index === imgs.length-1 ? imgs.length-1 : index+1)}>
+                  <span className="carousel-control-next-icon"></span>
+                </span>
             </div>
        </div>
     </div>

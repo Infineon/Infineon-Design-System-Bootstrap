@@ -24,9 +24,7 @@ const DefaultTemplate = (args) => {
 }
 
 const HeroBannerTemplate = (args) => (
-  <>
-   <CarouselSlider {...args}></CarouselSlider>
-  </>
+  <CarouselSlider {...args}></CarouselSlider>
 );
 
 
