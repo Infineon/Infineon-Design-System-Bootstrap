@@ -1,10 +1,6 @@
 @use "@infineon/design-system-tokens/dist/tokens";
 
 .ifx__hero-banner {
-  &.ifx__slanted, & .ifx__slanted {
-    clip-path: polygon(0px 0px, 100% 0px, 100.00% 85%, 0% 100%);
-  }
-
   &.ifx__hero-banner-mobile {
     @media (min-width: 1200px) { 
       display: none;
@@ -24,77 +20,124 @@
   }
 }
 
+.ifx__hero-banner-mainpage {
+  .btn {
+    margin-top: 6px;
+
+    @media (min-width: 1200px) { 
+      margin-top: 16px;
+    }
+  }
+}
+
 .ifx__hero-banner.ifx__hero-banner-mobile {
+  & .ifx__hero-banner-overlay {
+    &::after {
+      content: "";
+      background-image: url("../public/CS_Herobanner_Mainpage_mobile.svg");
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: contain;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   & .ifx__hero-banner-body {
-    padding: 61px 18px 24px 18px;
+    padding: 24px 16px 24px 16px;
   }
 
   & .ifx__hero-banner-sub-headline {
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
   }
 
   & .ifx__hero-banner-headline {
     font-size: 28px;
     font-weight: 600;
-    line-height: 35px;
+    line-height: 36px;
   }
+}
 
-  & .ifx__hero-banner-headline:last-of-type {
-    margin-bottom: 8px;
-  }
+.ifx__hero-banner-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(29, 29, 29, 0.1);
 }
 
 .ifx__hero-banner.ifx__hero-banner-desktop {
   & .ifx__hero-banner-overlay {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     padding: 100px 165px 262px 165px;
+
+    &::after {
+      @media (min-width: 992px) { 
+        content: "";
+        background-image: url("../public/CS_Herobanner_Mainpage.svg");
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: contain;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 
   & .ifx__hero-banner-sub-headline {
     display: inline-block;
-    padding: 4px 16px;
-    background-color: rgba(55, 131, 117, 0.55);
     color: tokens.$color-white;
     font-size: 24px;
     font-weight: 600;
-    line-height: 30px;
-    margin-bottom: 8px;
+    line-height: 32px;
+    margin-bottom: 6px;
+  }
+
+  .ifx__hero-banner-span {
+    display: inline-block;
+    background-color: rgba(55, 131, 117, .75);
+    padding: 4px 16px;
+    white-space: nowrap;
   }
 
   & .ifx__hero-banner-headline {
     display: inline-block;
-    padding: 4px 16px;
-    background-color: rgba(55, 131, 117, 0.55);
     color: tokens.$color-white;
     font-size: 68px;
     font-weight: 600;
-    line-height: 75px;
-    margin-bottom: 8px;
+    line-height: 76px;
+    margin-bottom: 6px;
   }
 }
 
 .ifx__hero-banner.ifx__hero-banner-subpage--desktop {
   position: relative;
   background-color: #F5F5F5;
-  padding: 60px 18px 134px 18px;
+  padding: 60px 16px 132px 41px;
 
   @media (min-width: 992px) { 
-    padding: 100px 165px 152px 165px;
+    padding: 100px 164px 152px 165px;
   }
 
   &::before {
     @media (min-width: 992px) { 
       content: "";
-      background-image: url("CS_Herobanner_Subpage2.svg");
+      background-image: url("../public/CS_Herobanner_Subpage2.svg");
       background-repeat: no-repeat;
       background-position: left center;
       background-size: contain;
@@ -110,7 +153,7 @@
 
   &::after {
     content: "";
-    background-image: url("CS_Herobanner_Subpage_Mobile.svg");
+    background-image: url("../public/CS_Herobanner_Subpage_Mobile.svg");
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
@@ -123,7 +166,7 @@
     height: 100%;
 
     @media (min-width: 992px) { 
-      background-image: url("CS_Herobanner_Subpage1.svg");
+      background-image: url("../public/CS_Herobanner_Subpage1.svg");
     }
   }
 
