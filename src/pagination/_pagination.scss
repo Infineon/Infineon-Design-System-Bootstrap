@@ -1,6 +1,6 @@
 @use "@infineon/design-system-tokens/dist/tokens";
 
-.page-item:not(:first-child) .page-link {
+.page-item:not(:first-of-type) .page-link {
   margin-left: 0;
 }
 
@@ -57,17 +57,17 @@
   }
 }
 
-.pagination-sm .page-item:first-child .page-link {
+.pagination-sm .page-item:first-of-type .page-link {
   border-top-left-radius: 1px;
   border-bottom-left-radius: 1px;
 }
 
-.page-item:first-child .page-link {
+.page-item:first-of-type .page-link {
   border-top-left-radius: 1px;
   border-bottom-left-radius: 1px;
 }
 
-.pagination-lg .page-item:first-child .page-link {
+.pagination-lg .page-item:first-of-type .page-link {
   border-top-left-radius: 1px;
   border-bottom-left-radius: 1px;
 }

@@ -77,6 +77,11 @@ export const CarouselSlider = ({ aspectRatio, children, ...props }) => {
       {id: 5, value: heroBanner5},
       {id: 6, value: heroBanner6},
       {id: 7, value: heroBanner7},
+
+      {id: 8, value: heroBanner4},
+      {id: 9, value: heroBanner5},
+      {id: 10, value: heroBanner6},
+      {id: 11, value: heroBanner7},
     ]
 
     const [index, setIndex] = useState(0)
@@ -94,17 +99,38 @@ export const CarouselSlider = ({ aspectRatio, children, ...props }) => {
        <div className="w-100" >
         <img src={imgs[index].value} alt="img" className="w-100 h-100" />
        </div>
-       <div className="mt-3 w-100 d-flex justify-content-center">
+       <div className="mt-2 w-100 d-flex justify-content-center">
             <div className="d-flex align-items-center">
-                <span className="carousel-slider-prev justify-self-start" onClick={()=> handleActiveImg(index === 0 ? 0 : index-1)}>
-                  <span className="carousel-control-prev-icon"></span>
-                </span>
-                {imgs.map((item, i) => 
-                <img className={`mx-1 thumbnail__img ${i === activeImg ? 'act' : ""}`} src={item.value} key={i} width={100} onClick={(e) => handleActiveImg(i)} />
-                )}
-                <span className="carousel-slider-next justify-self-end" onClick={()=> handleActiveImg(index === imgs.length-1 ? imgs.length-1 : index+1)}>
-                  <span className="carousel-control-next-icon"></span>
-                </span>
+              {/* desktop */}
+                <div className="d-lg-flex align-items-center justify-content-center d-none w-100">
+                  <div>
+                    <span className="carousel-slider-prev" onClick={()=> handleActiveImg(index === 0 ? 0 : index-1)}>
+                      <span className="carousel-control-prev-icon"></span>
+                    </span>
+                  </div>
+                  <div className="d-flex gap-2 flex-wrap mx-2">
+                    {imgs.map((item, i) => 
+                    <div key={i}>
+                      <img className={`thumbnail__img ${i === activeImg ? 'act' : ""}`} src={item.value}  width={100} onClick={(e) => handleActiveImg(i)} />
+                    </div>
+                    )}
+                  </div>
+                  <div>
+                    <span className="carousel-slider-next justify-self-end" onClick={()=> handleActiveImg(index === imgs.length-1 ? imgs.length-1 : index+1)}>
+                      <span className="carousel-control-next-icon"></span>
+                    </span>
+                  </div>
+                </div>
+                {/* mobile */}
+                <div className="row g-0 align-items-center justify-content-center d-lg-none w-100">
+                  <div className="col-11 d-flex g-0 justify-content-center flex-wrap">
+                  {imgs.map((item, i) => 
+                    <div key={i} className="d-flex mb-3">
+                      <span className={`mobile-slide-indicator mx-1 ${i === activeImg ? 'active' : ""}`}  key={i} onClick={(e) => handleActiveImg(i)} />
+                    </div>
+                  )}
+                  </div>
+                </div>
             </div>
        </div>
     </div>

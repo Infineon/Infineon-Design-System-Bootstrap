@@ -126,13 +126,27 @@
   transition: background-color .6s ease;
 }
 
-.carousel-indicators .active {
+.carousel-indicators .active, .mobile-slide-indicator.active {
   background-color: #378375;
+}
+
+.mobile-slide-indicator {
+  width: 45px;
+  height: 2px;
+  background-color: #EBE9E9;
+  border-radius: 1px;
+  cursor: pointer;
 }
 
 .carousel-caption {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+@media (min-width: 480px) {
+  .mobile-slide-indicator {
+    width: 45px;
+  }
 }
 
 @media (min-width: 576px) { 
@@ -148,9 +162,11 @@
 
 .thumbnail__img {
   cursor: pointer;
+  border: 2px solid transparent;
 }
 
 .act {
+  // box-sizing: border-box;
   border: 2px solid #378375;
   border-radius: 4px;
 }
