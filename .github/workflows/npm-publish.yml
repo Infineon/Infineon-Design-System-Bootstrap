@@ -1,0 +1,27 @@
+# On each new tag deploy to npm
+# this also means that new tags should always have a new version number in package.json
+# they are best created with npm version
+# For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
+
+name: Deploy to NPM on new Tag
+
+on:
+  push:
+    # Pattern matched against refs/tags
+    tags:        
+      - '*'   
+
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/
+      - run: npm ci
+      - run: npm bundle
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
