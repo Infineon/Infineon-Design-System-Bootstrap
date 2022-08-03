@@ -15,43 +15,39 @@ const image = {
 
 const MainpageTemplate = (args) => (
   <HeroBanner {...args}>
-    <div>
-      <div className="ifx__hero-banner ifx__hero-banner-mainpage ifx__hero-banner-mobile">
-        <Slant slant="bottom-right_to_left position-relative">
-          <img src={image.src} alt={image.alt}/>
-          <div className="ifx__hero-banner-overlay"></div>
-        </Slant>
-        <div className="ifx__hero-banner-body">
-          <div className="ifx__hero-banner-sub-headline">Skyline</div>
-          <div className="ifx__hero-banner-headline">Headline for the hero image</div>
-          <div className="ifx__hero-banner-headline">with two rows!</div>
+    <div className="ifx__hero-banner">
+      <Slant slant="bottom-right_to_left ifx__hero-banner-image">
+        <img src={image.src} alt={image.alt} class="img-fluid" />
+        <div className="ifx__hero-banner-overlay"></div>
+      </Slant>
+
+      <div className="ifx__hero-banner-body container">
+        <div className="col-lg-8">
+          <div className="ifx__hero-banner-sub-headline">
+            <span class="ifx__hero-banner-padded-text">
+              Skyline
+            </span>
+          </div>
+          <h1 className="ifx__hero-banner-headline">
+            <span class="ifx__hero-banner-padded-text">
+              Headline for the hero image with two rows!
+            </span>
+          </h1>
           <Button size="s" href="javascript:void(0)">Primary</Button>
         </div>
       </div>
-
-      <Slant slant="bottom-right_to_left ifx__hero-banner ifx__hero-banner-mainpage ifx__hero-banner-desktop">
-        <div className="position-relative">
-          <img src={image.src} alt={image.alt}/>
-          <div className="ifx__hero-banner-overlay">
-            <div className="ifx__hero-banner-sub-headline"><span className="ifx__hero-banner-span">Skyline</span></div>
-            <div className="ifx__hero-banner-headline"><span className="ifx__hero-banner-span">Headline for the hero image</span></div>
-            <div className="ifx__hero-banner-headline"><span className="ifx__hero-banner-span">with two rows!</span></div>
-            <div>
-              <Button href="javascript:void(0)">Primary</Button>
-            </div>
-          </div>
-        </div>
-      </Slant>
     </div>
   </HeroBanner>
 );
 
 const SubpageTemplate = (args) => (
   <HeroBanner {...args}>
-    <Slant slant="bottom-right_to_left ifx__hero-banner ifx__hero-banner-subpage--desktop">
-      <div className="col-9 col-lg-8">
-        <div className="ifx__hero-banner-headline">Headline</div>
-        <div className="ifx__hero-banner-text">Are you looking for reference designs, recommended boards or products that best fit your application? Infineon Technologies offers a wide range of ready to go semiconductor design solutions and reference schematics used in automotive, industrial power control, power management, sensing solutions and security in IoT applications.</div>
+    <Slant slant="bottom-right_to_left ifx__hero-banner-subpage"> 
+      <div className="ifx__hero-banner-subpage-body container">
+        <div className="col-9 col-lg-8">
+          <h1>Headline</h1>
+          <p>Are you looking for reference designs, recommended boards or products that best fit your application? Infineon Technologies offers a wide range of ready to go semiconductor design solutions and reference schematics used in automotive, industrial power control, power management, sensing solutions and security in IoT applications.</p>
+        </div>
       </div>
     </Slant>
   </HeroBanner>
