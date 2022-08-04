@@ -30,7 +30,11 @@ export const Carousel = ({ imageAspectRatio, children, ...props }) => {
   return (
     <BsCarousel className="ifx__carousel" {...props}>
       <BsCarousel.Item>
-        <ImageAspectRatio aspectRatio={imageAspectRatio}/>
+        <ImageAspectRatio aspectRatio={imageAspectRatio}/> 
+        <BsCarousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </BsCarousel.Caption>
         {children}
       </BsCarousel.Item>
       <BsCarousel.Item>
