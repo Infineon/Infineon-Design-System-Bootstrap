@@ -104,7 +104,9 @@
 }
 
 .carousel-indicators {
-  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  bottom: 3.6rem;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -124,6 +126,23 @@
   border-bottom: 10px solid transparent;
   opacity: 1;
   transition: background-color .6s ease;
+}
+
+.hero-banner {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.hero-banner .carousel-control-prev, 
+.hero-banner .carousel-control-next {
+  width: 30px;
+  height: 30px;
+}
+
+.thumbnail-indicator {
+  width: 100px;
+  height: 50px;
 }
 
 .carousel-indicators .active, .mobile-slide-indicator.active {
@@ -166,7 +185,21 @@
 }
 
 .act {
-  // box-sizing: border-box;
   border: 2px solid #378375;
   border-radius: 4px;
+}
+
+.ifx__caption {
+  position: relative;
+  margin-top: 12px;
+}
+
+.ifx__caption p { 
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  /* or 154% */
+  letter-spacing: 0.2px;
 }
