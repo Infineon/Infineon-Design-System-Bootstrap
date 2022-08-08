@@ -11,9 +11,13 @@
   }
 }
 
-.ifx__navbar {
+.ifx__header-main {
   position: sticky;
   top: 0;
+  z-index: 1000;
+}
+
+.ifx__navbar {
   background-color: tokens.$color-white;
 
   &.scrolling {
@@ -21,7 +25,26 @@
   }
 }
 
+.ifx__container {  
+  @include media-breakpoint-down(lg) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
 
+.ifx__mobile-container {
+  @include media-breakpoint-down(lg) {
+    @include make-container();
+  }
+
+  @include media-breakpoint-between(sm, md) {
+    max-width: map-get( $container-max-widths, sm );
+  }
+
+  @include media-breakpoint-between(md, lg) {
+    max-width: map-get( $container-max-widths, md );
+  }
+}
 
 // MOBILE NAV-BAR
 .navbar {
@@ -80,7 +103,8 @@
   }
 
   & > div:first-child {
-    padding: 15px 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .navbar-brand {
