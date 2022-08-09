@@ -1187,6 +1187,13 @@
   "resolved" "https://registry.npmjs.org/@gar/promisify/-/promisify-1.1.3.tgz"
   "version" "1.1.3"
 
+"@infineon/design-system-bootstrap@^1.0.2":
+  "integrity" "sha512-N3HDd3JkdWAgRM/9btQVKxxXeg/p8EF5vNPrbIDChMGERo71J/hWIiVHAEzP/jXiRrL2TACQBrRE66FVtYFdxQ=="
+  "resolved" "https://registry.npmjs.org/@infineon/design-system-bootstrap/-/design-system-bootstrap-1.0.2.tgz"
+  "version" "1.0.2"
+  dependencies:
+    "@infineon/design-system-tokens" "^1.0.1"
+
 "@infineon/design-system-tokens@^1.0.1":
   "integrity" "sha512-dqsJn3MesdpurXPgNBAh5Cn2dbWhgHmBGkwLk8nMT0T9lEuM6T6eTjmV0Vg/+8hmscm1TmR206uxk/skCKleag=="
   "resolved" "https://registry.npmjs.org/@infineon/design-system-tokens/-/design-system-tokens-1.0.4.tgz"
@@ -3306,7 +3313,7 @@
   "resolved" "https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz"
   "version" "1.0.0"
 
-"bootstrap@^5.2.0":
+"bootstrap@^5.1.3", "bootstrap@^5.2.0":
   "integrity" "sha512-qlnS9GL6YZE6Wnef46GxGv1UpGGzAwO0aPL1yOjzDIJpeApeMvqV24iL+pjr2kU4dduoBA9fINKWKgMToobx9A=="
   "resolved" "https://registry.npmjs.org/bootstrap/-/bootstrap-5.2.0.tgz"
   "version" "5.2.0"
