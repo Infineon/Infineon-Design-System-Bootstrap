@@ -79,7 +79,7 @@
     display: none;
   }
 
-  & > div:first-child {
+  & > div:first-of-type {
     padding: 15px 0;
   }
 
@@ -239,6 +239,7 @@
   .dropdown .dropdown-menu {
     margin-top: calc(8px + 8px);
   }
+
 
   & .navbar > div:first-child {
     @include media-breakpoint-up(lg) {
