@@ -2098,9 +2098,9 @@
     "webpack-virtual-modules" "^0.2.2"
 
 "@storybook/mdx1-csf@canary":
-  "integrity" "sha512-LRQ086H27/Ro8jQPoXb3hb0LgYokurqqFf4eDNSv/EqvzUihGrurvpiIGfTJ6JDzWZbiX1NIsqe8dx4jKpEGMw=="
-  "resolved" "https://registry.npmjs.org/@storybook/mdx1-csf/-/mdx1-csf-0.0.2-canary.5.6cee405.0.tgz"
-  "version" "0.0.2-canary.5.6cee405.0"
+  "integrity" "sha512-K4wqrObf2Yu3djRMR5hnorTBA9VIl19qpGbna3TsJNA7WzADHKdEMXrURkZOkEN5YPTui4irfw06mo/D3+eeIg=="
+  "resolved" "https://registry.npmjs.org/@storybook/mdx1-csf/-/mdx1-csf-0.0.5-canary.13.9ce928a.0.tgz"
+  "version" "0.0.5-canary.13.9ce928a.0"
   dependencies:
     "@babel/generator" "^7.12.11"
     "@babel/parser" "^7.12.11"
@@ -9774,18 +9774,24 @@
     "webpack-sources" "^1.4.3"
 
 "terser@^4.1.2", "terser@^4.6.3":
-  "integrity" "sha512-EAPipTNeWsb/3wLPeup1tVPaXfIaU68xMnVdPafIL1TV05OhASArYyIfFvnvJCNrR2NIOvDVNNTFRa+Re2MWyw=="
-  "resolved" "https://registry.npmjs.org/terser/-/terser-4.8.0.tgz"
-  "version" "4.8.0"
+  "integrity" "sha512-4GnLC0x667eJG0ewJTa6z/yXrbLGv80D9Ru6HIpCQmO+Q4PfEtBFi0ObSckqwL6VyQv/7ENJieXHo2ANmdQwgw=="
+  "resolved" "https://registry.npmjs.org/terser/-/terser-4.8.1.tgz"
+  "version" "4.8.1"
   dependencies:
     "commander" "^2.20.0"
     "source-map" "~0.6.1"
     "source-map-support" "~0.5.12"
 
 "terser@^5.3.4":
+<<<<<<< .merge_file_a00800
   "integrity" "sha512-+ahUAE+iheqBTDxXhTisdA8hgvbEG1hHOQ9xmNjeUJSoi6DU/gMrKNcfZjHkyY6Alnuyc+ikYJaxxfHkT3+WuQ=="
   "resolved" "https://registry.npmjs.org/terser/-/terser-5.14.1.tgz"
   "version" "5.14.1"
+=======
+  "integrity" "sha512-oL0rGeM/WFQCUd0y2QrWxYnq7tfSuKBiqTjRPWrRgB46WD/kiwHwF8T23z78H6Q6kGCuuHcPB+KULHRdxvVGQA=="
+  "resolved" "https://registry.npmjs.org/terser/-/terser-5.14.2.tgz"
+  "version" "5.14.2"
+>>>>>>> .merge_file_a10312
   dependencies:
     "@jridgewell/source-map" "^0.3.2"
     "acorn" "^8.5.0"
