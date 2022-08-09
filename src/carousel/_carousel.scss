@@ -1,62 +1,25 @@
 @use "@infineon/design-system-tokens/dist/tokens";
 
-
-.ifx {
-  &__carousel
-  &__aspect-ratio {
-    &__box-wrapper {
-      width: 100%;
-    }
-
-    &__box {
-      position: relative;
-      height: 0;
-
-      &__in {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-      }
-      
-      img {
-        max-width: 100%;
-        object-fit: cover;
-      }
-    }
-
-    &--4-3 {
-      padding-bottom: 75%;
-    }
-
-    &--16-9 {
-      padding-bottom: 56.25%;
-    }
-
-    &--1-1 {
-      padding-bottom: 100%;
-    }
-  }
-}
-
-.ifx {
-  &__carousel {
-    &__image {
-      max-width: 100%;
-    }
+.carousel-item {
+  img {
+    width: 100%;
   }
 }
 
 .carousel-control-prev, 
 .carousel-control-next {
-  width: 30px;
-  height: 30px;
+  width: tokens.$sizing-l;
+  height: tokens.$sizing-l;
   border-radius: 100%;
   top: 50%;
   transform: translate(0, -50%);
-  background-color: #ffffff;
+  background-color: tokens.$color-white;
   opacity: 1;
+
+  @include media-breakpoint-up(lg) {
+    width: tokens.$sizing-xl;
+    height: tokens.$sizing-xl;
+  }
 
   &:hover {
     background-color: tokens.$color-gray-300;
@@ -68,95 +31,47 @@
 }
 
 .carousel-control-prev {
-  left: 24px;
-}
+  left: tokens.$spacing-s;
 
-.carousel-control-prev-icon {
-  background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M234.8 36.25c3.438 3.141 5.156 7.438 5.156 11.75c0 3.891-1.406 7.781-4.25 10.86L53.77 256l181.1 197.1c6 6.5 5.625 16.64-.9062 22.61c-6.5 6-16.59 5.594-22.59-.8906l-192-208c-5.688-6.156-5.688-15.56 0-21.72l192-208C218.2 30.66 228.3 30.25 234.8 36.25z"/></svg>'); 
-  width: 1rem;
-  height: 1rem;
-}
-
-.carousel-slider-prev,
-.carousel-slider-next {
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel-slider-prev:hover,
-.carousel-slider-next:hover {
-  cursor: pointer;
-  background-color: tokens.$color-gray-300;
+  @include media-breakpoint-up(lg) {
+    left: tokens.$spacing-l;
+  }
 }
 
 .carousel-control-next {
-  right: 24px;
-}
+  right: tokens.$spacing-s;
 
-.carousel-control-next-icon {
-  background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M85.14 475.8c-3.438-3.141-5.156-7.438-5.156-11.75c0-3.891 1.406-7.781 4.25-10.86l181.1-197.1L84.23 58.86c-6-6.5-5.625-16.64 .9062-22.61c6.5-6 16.59-5.594 22.59 .8906l192 208c5.688 6.156 5.688 15.56 0 21.72l-192 208C101.7 481.3 91.64 481.8 85.14 475.8z"/></svg>'); 
-  width: 1rem;
-  height: 1rem;
-}
-
-.carousel-indicators {
-  margin-bottom: 16px;
+  @include media-breakpoint-up(lg) {
+    right: tokens.$spacing-l;
+  }
 }
 
 .carousel-indicators [data-bs-target] {
-  box-sizing: content-box;
   flex: 0 1 auto;
-  width: 130px;
-  height: 4px;
-  padding: 0;
-  margin-right: 3px;
-  margin-left: 3px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: #FAFAFA;
-  background-clip: padding-box;
-  border: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  opacity: 1;
-  transition: background-color .6s ease;
+  background-color: tokens.$color-gray-100;
+
+  &.active {
+    background-color: $secondary;
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 4px;
+    margin-right: 8px;
+    margin-left: 8px;
+  }
 }
 
-.carousel-indicators .active, .mobile-slide-indicator.active {
-  background-color: #378375;
+.ifx__carousel-caption {
+  margin-top: tokens.$spacing-s;
+  font-size: tokens.$font-size-s;
 }
 
-.mobile-slide-indicator {
-  width: 45px;
-  height: 2px;
-  background-color: #EBE9E9;
-  border-radius: 1px;
-  cursor: pointer;
-}
 
-.carousel-caption {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
+
 
 @media (min-width: 480px) {
   .mobile-slide-indicator {
     width: 45px;
-  }
-}
-
-@media (min-width: 576px) { 
-  .carousel-indicators {
-    margin-bottom: 24px;
-  }
-
-  .carousel-caption {
-    padding-top: 63px;
-    padding-bottom: 63px;
   }
 }
 
