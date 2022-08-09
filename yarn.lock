@@ -9783,21 +9783,9 @@
     "source-map-support" "~0.5.12"
 
 "terser@^5.3.4":
-<<<<<<< .merge_file_a19056
-<<<<<<< .merge_file_a00800
-  "integrity" "sha512-+ahUAE+iheqBTDxXhTisdA8hgvbEG1hHOQ9xmNjeUJSoi6DU/gMrKNcfZjHkyY6Alnuyc+ikYJaxxfHkT3+WuQ=="
-  "resolved" "https://registry.npmjs.org/terser/-/terser-5.14.1.tgz"
-  "version" "5.14.1"
-=======
-  "integrity" "sha512-oL0rGeM/WFQCUd0y2QrWxYnq7tfSuKBiqTjRPWrRgB46WD/kiwHwF8T23z78H6Q6kGCuuHcPB+KULHRdxvVGQA=="
-  "resolved" "https://registry.npmjs.org/terser/-/terser-5.14.2.tgz"
-  "version" "5.14.2"
->>>>>>> .merge_file_a10312
-=======
-  "integrity" "sha512-oL0rGeM/WFQCUd0y2QrWxYnq7tfSuKBiqTjRPWrRgB46WD/kiwHwF8T23z78H6Q6kGCuuHcPB+KULHRdxvVGQA=="
-  "resolved" "https://registry.npmjs.org/terser/-/terser-5.14.2.tgz"
-  "version" "5.14.2"
->>>>>>> .merge_file_a17640
+  "integrity" "sha512-JC6qfIEkPBd9j1SMO3Pfn+A6w2kQV54tv+ABQLgZr7dA3k/DL/OBoYSWxzVpZev3J+bUHXfr55L8Mox7AaNo6g=="
+  "resolved" "https://registry.npmjs.org/terser/-/terser-5.14.0.tgz"
+  "version" "5.14.0"
   dependencies:
     "@jridgewell/source-map" "^0.3.2"
     "acorn" "^8.5.0"
