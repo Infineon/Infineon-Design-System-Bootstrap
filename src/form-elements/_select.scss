@@ -22,7 +22,7 @@
     background-image: escape-svg($form-select-disabled-indicator);
   }
 
-  option[disabled]:first-child {
+  option[disabled]:first-of-type {
   	display: none;
   }
 }
