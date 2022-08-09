@@ -1,7 +1,4 @@
 import { Carousel } from "./Carousel";
-import BsCarousel from "react-bootstrap/Carousel";
-
-import { CarouselSlider } from './CarouselSlider'
 
 export default {
   title: "Components/Carousel",
@@ -23,10 +20,4 @@ const DefaultTemplate = (args) => {
   );
 }
 
-const HeroBannerTemplate = (args) => (
-  <CarouselSlider {...args}></CarouselSlider>
-);
-
-
 export const Default = DefaultTemplate.bind({});
-export const HeroBanner = HeroBannerTemplate.bind({});
