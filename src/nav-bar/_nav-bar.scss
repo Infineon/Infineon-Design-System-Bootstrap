@@ -51,7 +51,7 @@
     }
   }
 
-  & > div:first-child {
+  & > div:first-of-type {
     padding: 15px 0;
   }
 
@@ -205,7 +205,7 @@
     margin-top: calc(8px + 8px);
   }
 
-  & .navbar > div:first-child {
+  & .navbar > div:first-of-type {
     @media (min-width: 992px) {
       padding: 24px 0 11px 0;
     }

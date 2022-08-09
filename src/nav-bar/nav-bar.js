@@ -29,8 +29,7 @@ function slideNav(mobileShow) {
       if(link.matches('.ifx__nav-mega-dropdown-last-layer')) {
         const navMegaDropdownMobile = link.closest('.ifx__nav-mega-dropdown-mobile');
         const navMegaWrapper = link.closest(".ifx__nav-wrapper.open");
-
-        console.log(link);
+        
         navMegaDropdownMobile.classList.remove('show');
 
         if (navMegaWrapper) {
@@ -152,7 +151,6 @@ export function initVerticalNavBar() {
   }
 
   const verticalNavBtn = document.querySelector(".ifx__vertical-nav-icons-btn");
-  console.log(verticalNavBtn);
 
   if ( !verticalNavBtn || verticalNavBtn._ifx_VerticalNavBar_initialised) {
     return

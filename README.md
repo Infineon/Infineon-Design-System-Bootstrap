@@ -1,55 +1,45 @@
 # Infineon Design System Bootstrap Components
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+As part of the Infineon brand guidelines, the Infineon Digital Design System supports designers, developers and project managers to build user interfaces faster and better – with the ultimate goal to create a coherent and optimal user journey across all internal and external Infineon digital touchpoints.
+
+This repository contains an Bootstrap implementation of Infineons Digital Design System and it's Storybook sourcecode.
+
+Use it to build & run storybook and distribute the Bootstrap SCSS.
 
 ## Requirements
 
 - [Node](https://nodejs.org/en/) >= v14 – if you have [nvm](https://github.com/creationix/nvm#node-version-manager---) installed, you can just run `nvm use` to select the right node version.
-- [Yarn](https://classic.yarnpkg.com/en/) >= `1.22.10` or [npm](https://www.npmjs.com/) >= `6.14.13`
+- [Yarn](https://classic.yarnpkg.com/en/) >= `1.22.10` or [npm](https://www.npmjs.com/) >= `6.14.13` 
 
 ## Usage
 
-Add this to your dependencies in `package.json`:
+### Quick Start Vue.JS
+1. Install using NPM
 ```bash
 npm install --save @infineon/design-system-bootstrap
 ```
 
-```bash
-yarn add @infineon/design-system-bootstrap
-```
-
-Now you can import the assets you need to consume. This currently includes:
-```bash
-├── fonts
-│   └── source-sans-pro-v18-latin
-│       ├── source-sans-pro-v18-latin-600.woff
-│       ├── source-sans-pro-v18-latin-600.woff2
-│       ├── source-sans-pro-v18-latin-700.woff
-│       ├── source-sans-pro-v18-latin-700.woff2
-│       ├── source-sans-pro-v18-latin-regular.woff
-│       └── source-sans-pro-v18-latin-regular.woff2
-├── index.css
-├── index.js
-└── Logo.svg
-```
-
-Include / import `index.css` to get the correct style for markup copied from Storybook. You'll additionally have to copy the font assets (`fonts/`) themselves to your publicly available root folder (often times it's called `static/` or `public/`).
-
-An import could, depending on your local setup, for example look like this:
-
-*CSS:*
-```css
-@import "./node_modules/@infineon/design-system-bootstrap/dist/index.css";
-```
-
-To get the correct behaviour for the components, you'll additionally need to include the provided JavaScript, too:
-
+2. Add the import to your main.js:
 *JavaScript:*
 ```js
-import "@infineon/design-system-bootstrap/dist/index.js";
+import "@infineon/design-system-bootstrap";
 ```
 
-As this project uses FontAwesome Pro you need to add your FontAwesome Pro key to your project. If you are an Infineon Employee you can obtain one by emailing dds@infineon.com.
+3. Use Storybook to explore our components (available only in intranet)
 
-See https://fontawesome.com/docs/web/setup/packages#_1-configure-access on how to configure your project.
+https://storybook-bootstrap.icp.infineon.com
+
+4. Install FontAwesome Pro Icons (optional)
+
+Mail to dds@infineon.com to get an fontawesome pro token if you are an Infineon employee. Then execute these two commands:
+```bash
+npm config set "@fortawesome:registry" https://npm.fontawesome.com/
+npm config set "//npm.fontawesome.com/:_authToken" FONT-AWESOME-PACKAGE-TOKEN
+```
+
+After that follow the installation instructions for vue at https://fontawesome.com/v6/docs/web/use-with/vue/#contentHeader
 
 ## Local Development
 
@@ -67,7 +57,7 @@ yarn install
 Start Storybook in local dev mode, including file watchers to hot-reload on code change:
 
 ```bash
-yarn start
+yarn start 
 ```
 
 ### Build Storybook
