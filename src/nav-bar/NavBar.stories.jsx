@@ -83,10 +83,12 @@ const JsWrapper = ({ children }) => {
       </template>
 
       <template id="ifx__nav-wrapper" dangerouslySetInnerHTML={{ __html: renderToStaticMarkup(
-        <div className="ifx__mobile-show ifx__nav-wrapper ifx__mobile-clone ifx__nav-link-wrapper">
-          <div class="ifx__menu">Menu</div>
-            <div className="row">
-            </div>
+        <div className="ifx__mobile-overflow-hidden">
+          <div className="ifx__mobile-show ifx__nav-wrapper ifx__mobile-clone ifx__nav-link-wrapper">
+            <div class="ifx__menu">Menu</div>
+              <div className="row">
+              </div>
+          </div>
         </div>
       )}}>
       </template>
@@ -101,8 +103,8 @@ const DefaultTemplate = (args) => {
     <JsWrapper>
       <header className="ifx__header-main">
         <div className="ifx__navbar ifx__navbar-default">
-          <div className="container-lg ifx__container">
-            <NavBar {...args}>
+          <NavBar {...args}>
+            <div className="container-lg ifx__container">
               <div className="d-flex align-items-center ifx__mobile-container">
                 <BsNavBar.Toggle data-bs-target="#basic-navbar-nav" data-bs-toggle="collapse" aria-controls="basic-navbar-nav"/>
 
@@ -158,8 +160,8 @@ const DefaultTemplate = (args) => {
                   </div>
                 </div>
               </BsNavBar.Collapse>
-            </NavBar>
-          </div>
+            </div>
+          </NavBar>
         </div>
       </header>
 
@@ -173,8 +175,8 @@ const ExtendedTemplate = (args) => {
     <JsWrapper>
       <header className="ifx__header-main">
         <div className="ifx__navbar ifx__navbar-extended">
-          <div className="container-lg ifx__container">
-            <NavBar {...args}>
+          <NavBar {...args}>
+            <div className="container-lg ifx__container">
               <div className="d-flex align-items-center ifx__mobile-container">
                 <BsNavBar.Toggle data-bs-target="#basic-navbar-nav" data-bs-toggle="collapse" aria-controls="basic-navbar-nav"/>
 
@@ -210,82 +212,86 @@ const ExtendedTemplate = (args) => {
                   </div>
                 </div>
               </BsNavBar.Collapse>
+            </div>
 
-              <div className="w-100 d-lg-flex ifx__nav-link-wrapper ifx__desktop-show">
-                <ul className="d-flex ifx__first-level-nav ifx__nav-list">
-                  <li>
-                    <BsDropdown as={BsNavItem}>
-                      <BsDropdown.Toggle data-bs-toggle="dropdown" as={BsNavLink} className="ifx__first-lvl-link">Nav Link 1</BsDropdown.Toggle>
-                      <BsDropdown.Menu className="ifx__second-level-nav" renderOnMount>
-                        <div className="ifx__second-lvl-col">
-                          <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
-                          <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
-                          <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
-                          <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
-                        </div>
-                      </BsDropdown.Menu>
-                    </BsDropdown>
-                  </li>
+            <div className="w-100 position-relative">
+              <div className="container-lg">
+                <div className="w-100 d-lg-flex ifx__nav-link-wrapper ifx__desktop-show">
+                  <ul className="d-flex ifx__first-level-nav ifx__nav-list">
+                    <li>
+                      <BsDropdown as={BsNavItem}>
+                        <BsDropdown.Toggle data-bs-toggle="dropdown" as={BsNavLink} className="ifx__first-lvl-link">Nav Link 1</BsDropdown.Toggle>
+                        <BsDropdown.Menu className="ifx__second-level-nav" renderOnMount>
+                          <div className="ifx__second-lvl-col">
+                            <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
+                            <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
+                            <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
+                            <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
+                          </div>
+                        </BsDropdown.Menu>
+                      </BsDropdown>
+                    </li>
 
-                  <li>
-                    <BsDropdown as={BsNavItem}>
-                      <BsDropdown.Toggle data-bs-toggle="dropdown" as={BsNavLink} className="ifx__first-lvl-link">Nav Link 2</BsDropdown.Toggle>
-                      <BsDropdown.Menu className="ifx__second-level-nav" renderOnMount>
-                        <div className="ifx__second-lvl-col">
-                          <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
-                          <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
-                          <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
-                          <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
-                        </div>
-                      </BsDropdown.Menu>
-                    </BsDropdown>
-                  </li>
+                    <li>
+                      <BsDropdown as={BsNavItem}>
+                        <BsDropdown.Toggle data-bs-toggle="dropdown" as={BsNavLink} className="ifx__first-lvl-link">Nav Link 2</BsDropdown.Toggle>
+                        <BsDropdown.Menu className="ifx__second-level-nav" renderOnMount>
+                          <div className="ifx__second-lvl-col">
+                            <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
+                            <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
+                            <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
+                            <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
+                          </div>
+                        </BsDropdown.Menu>
+                      </BsDropdown>
+                    </li>
 
-                  <li>
-                    <BsDropdown as={BsNavItem}>
-                      <BsDropdown.Toggle data-bs-toggle="dropdown" as={BsNavLink} className="ifx__first-lvl-link">Nav Link 3</BsDropdown.Toggle>
-                      <BsDropdown.Menu className="ifx__second-level-nav" renderOnMount>
-                        <div className="ifx__second-lvl-col">
-                          <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
-                          <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
-                          <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
-                          <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
-                        </div>
-                      </BsDropdown.Menu>
-                    </BsDropdown>
-                  </li>
+                    <li>
+                      <BsDropdown as={BsNavItem}>
+                        <BsDropdown.Toggle data-bs-toggle="dropdown" as={BsNavLink} className="ifx__first-lvl-link">Nav Link 3</BsDropdown.Toggle>
+                        <BsDropdown.Menu className="ifx__second-level-nav" renderOnMount>
+                          <div className="ifx__second-lvl-col">
+                            <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
+                            <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
+                            <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
+                            <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
+                          </div>
+                        </BsDropdown.Menu>
+                      </BsDropdown>
+                    </li>
 
-                  <li>
-                    <BsDropdown as={BsNavItem}>
-                      <BsDropdown.Toggle data-bs-toggle="dropdown" as={BsNavLink} className="ifx__first-lvl-link">Nav Link 4</BsDropdown.Toggle>
-                      <BsDropdown.Menu className="ifx__second-level-nav" renderOnMount>
-                        <div className="ifx__second-lvl-col">
-                          <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
-                          <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
-                          <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
-                          <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
-                        </div>
-                      </BsDropdown.Menu>
-                    </BsDropdown>
-                  </li>
+                    <li>
+                      <BsDropdown as={BsNavItem}>
+                        <BsDropdown.Toggle data-bs-toggle="dropdown" as={BsNavLink} className="ifx__first-lvl-link">Nav Link 4</BsDropdown.Toggle>
+                        <BsDropdown.Menu className="ifx__second-level-nav" renderOnMount>
+                          <div className="ifx__second-lvl-col">
+                            <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
+                            <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
+                            <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
+                            <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
+                          </div>
+                        </BsDropdown.Menu>
+                      </BsDropdown>
+                    </li>
 
-                  <li>
-                    <BsDropdown as={BsNavItem}>
-                      <BsDropdown.Toggle data-bs-toggle="dropdown" as={BsNavLink} className="ifx__first-lvl-link">Nav Link 5</BsDropdown.Toggle>
-                      <BsDropdown.Menu className="ifx__second-level-nav" renderOnMount>
-                        <div className="ifx__second-lvl-col">
-                          <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
-                          <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
-                          <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
-                          <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
-                        </div>
-                      </BsDropdown.Menu>
-                    </BsDropdown>
-                  </li>
-                </ul>
+                    <li>
+                      <BsDropdown as={BsNavItem}>
+                        <BsDropdown.Toggle data-bs-toggle="dropdown" as={BsNavLink} className="ifx__first-lvl-link">Nav Link 5</BsDropdown.Toggle>
+                        <BsDropdown.Menu className="ifx__second-level-nav" renderOnMount>
+                          <div className="ifx__second-lvl-col">
+                            <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
+                            <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
+                            <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
+                            <BsDropdown.Item className="ifx__second-lvl-link" href="javascript:void(0)">Action default</BsDropdown.Item>
+                          </div>
+                        </BsDropdown.Menu>
+                      </BsDropdown>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </NavBar>
-          </div>
+            </div>
+          </NavBar>
         </div>
       </header>
 
@@ -299,8 +305,8 @@ const ExtendedLevel2Template = (args) => {
     <JsWrapper>
       <header className="ifx__header-main">
         <div className="ifx__navbar ifx__navbar-extended">
-          <div className="container-lg ifx__container">
-            <NavBar {...args}>
+          <NavBar {...args}>
+            <div className="container-lg ifx__container">
               <div className="d-flex align-items-center ifx__mobile-container">
                 <BsNavBar.Toggle data-bs-target="#basic-navbar-nav" data-bs-toggle="collapse" aria-controls="basic-navbar-nav"/>
 
@@ -336,244 +342,256 @@ const ExtendedLevel2Template = (args) => {
                   </div>
                 </div>
               </BsNavBar.Collapse>
+            </div>
 
-              <div className="w-100 d-lg-flex ifx__nav-link-wrapper ifx__desktop-show">
-                <ul className="ifx__first-level-nav ifx__nav-list d-flex">
-                  <li>
-                    <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 1">
-                      Nav Link 1
-                    </BsNav.Link>
-                    <ul className="ifx__second-level-nav ifx__nav-mega-dropdown w-100">
-                      <li className="ifx__nav-wrapper">
-                        <div className="row">
-                          <div className="ifx__second-lvl-col col-3">
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
-                              Overview Nav Link
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                          </div>
+            <div className="w-100 position-relative">
+              <div className="container-lg">
+                <div className="w-100 d-lg-flex ifx__nav-link-wrapper ifx__desktop-show">
+                  <ul className="ifx__first-level-nav ifx__nav-list d-flex">
+                    <li>
+                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 1">
+                        Nav Link 1
+                      </BsNav.Link>
+                      <ul className="ifx__second-level-nav ifx__nav-mega-dropdown w-100">
+                        <li className="container">
+                          <ul>
+                            <li className="ifx__nav-wrapper">
+                              <div className="row">
+                                <div className="ifx__second-lvl-col col-3">
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
+                                    Overview Nav Link
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                </div>
 
-                          <div className="ifx__second-lvl-col col-3">
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
-                              Overview Nav Link
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                          </div>
+                                <div className="ifx__second-lvl-col col-3">
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
+                                    Overview Nav Link
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                </div>
 
-                          <div className="ifx__second-lvl-col col-3">
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
-                              Overview Nav Link
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                          </div>
+                                <div className="ifx__second-lvl-col col-3">
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
+                                    Overview Nav Link
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                </div>
 
-                          <div className="ifx__second-lvl-col col-3">
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
-                              Overview Nav Link
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
+                                <div className="ifx__second-lvl-col col-3">
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
+                                    Overview Nav Link
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
 
-                  <li>
-                    <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 2">
-                      Nav Link 2
-                    </BsNav.Link>
-                    <ul className="ifx__second-level-nav ifx__nav-mega-dropdown w-100">
-                      <div className="ifx__nav-wrapper">
-                      <div className="row">
-                          <div className="ifx__second-lvl-col col-3">
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
-                              Overview Nav Link
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                          </div>
+                    <li>
+                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 2">
+                        Nav Link 2
+                      </BsNav.Link>
+                      <ul className="ifx__second-level-nav ifx__nav-mega-dropdown w-100">
+                        <li className="container">
+                          <ul>
+                            <li className="ifx__nav-wrapper">
+                              <div className="row">
+                                <div className="ifx__second-lvl-col col-3">
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
+                                    Overview Nav Link
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                </div>
 
-                          <div className="ifx__second-lvl-col col-3">
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
-                              Overview Nav Link
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                          </div>
+                                <div className="ifx__second-lvl-col col-3">
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
+                                    Overview Nav Link
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                </div>
 
-                          <div className="ifx__second-lvl-col col-3">
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
-                              Overview Nav Link
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                          </div>
+                                <div className="ifx__second-lvl-col col-3">
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
+                                    Overview Nav Link
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                </div>
 
-                          <div className="ifx__second-lvl-col col-3">
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
-                              Overview Nav Link
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                            <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                              Navigationlink
-                            </BsNav.Link>
-                          </div>
-                        </div>
-                      </div>
-                    </ul>
-                  </li>
+                                <div className="ifx__second-lvl-col col-3">
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
+                                    Overview Nav Link
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                  <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                                    Navigationlink
+                                  </BsNav.Link>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
 
-                  <li>
-                    <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 3">
-                      Nav Link 3
-                    </BsNav.Link>
-                  </li>
+                    <li>
+                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 3">
+                        Nav Link 3
+                      </BsNav.Link>
+                    </li>
 
-                  <li>
-                    <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 4">
-                      Nav Link 4
-                    </BsNav.Link>
-                  </li>
+                    <li>
+                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 4">
+                        Nav Link 4
+                      </BsNav.Link>
+                    </li>
 
-                  <li>
-                    <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 5">
-                      Nav Link 5
-                    </BsNav.Link>
-                  </li>
-                </ul>
+                    <li>
+                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 5">
+                        Nav Link 5
+                      </BsNav.Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </NavBar>
-          </div>
+            </div>
+          </NavBar>
         </div>
       </header>
 
@@ -595,170 +613,174 @@ const NavLinkWithIcon = ({label}) => (
 // Desktop
 const NavMegaDropdown = () => (
   <ul className="ifx__second-level-nav w-100 ifx__nav-mega-dropdown">
-    <li className="ifx__nav-wrapper">
-      <div className="row">
-        <div className="ifx__second-lvl-col col-lg-6">
-          <ul>
-            <li>
-              <NavLinkWithIcon label="Overview Nav Link"/>
-              <ul className="ifx__third-level-nav ifx__nav-mega-dropdown-level-3 w-100">
-                <li className="w-100">
-                  <div className="row">
-                    <div className="ifx__third-lvl-col col-lg-6">
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
-                        Overview Nav Link
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                    </div>
+    <li className="container">
+      <ul>
+        <li className="ifx__nav-wrapper">
+          <div className="row">
+            <div className="ifx__second-lvl-col col-lg-6">
+              <ul>
+                <li>
+                  <NavLinkWithIcon label="Overview Nav Link"/>
+                  <ul className="ifx__third-level-nav ifx__nav-mega-dropdown-level-3 w-100">
+                    <li className="w-100">
+                      <div className="row">
+                        <div className="ifx__third-lvl-col col-lg-6">
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
+                            Overview Nav Link
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                        </div>
 
-                    <div className="ifx__third-lvl-col col-lg-6">
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
-                        Overview Nav Link
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                    </div>
-                  </div>
+                        <div className="ifx__third-lvl-col col-lg-6">
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
+                            Overview Nav Link
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <NavLinkWithIcon label="Navigationlink"/>
+                  <ul className="ifx__third-level-nav ifx__nav-mega-dropdown-level-3 w-100">
+                    <li className="w-100">
+                      <div className="row">
+                        <div className="ifx__third-lvl-col col-lg-6">
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
+                            Overview Nav Link
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                        </div>
+
+                        <div className="ifx__third-lvl-col col-lg-6">
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
+                            Overview Nav Link
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                          <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+                            Navigationlink
+                          </BsNav.Link>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <NavLinkWithIcon label="Navigationlink"/>
+                </li>
+
+                <li>
+                  <NavLinkWithIcon label="Navigationlink"/>
+                </li>
+
+                <li>
+                  <NavLinkWithIcon label="Navigationlink"/>
+                </li>
+
+                <li>
+                  <NavLinkWithIcon label="Navigationlink"/>
                 </li>
               </ul>
-            </li>
+            </div>
 
-            <li>
-              <NavLinkWithIcon label="Navigationlink"/>
-              <ul className="ifx__third-level-nav ifx__nav-mega-dropdown-level-3 w-100">
-                <li className="w-100">
-                  <div className="row">
-                    <div className="ifx__third-lvl-col col-lg-6">
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
-                        Overview Nav Link
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                    </div>
+            <div className="ifx__second-lvl-col col-lg-6">
+              <ul>
+                <li>
+                  <NavLinkWithIcon label="Navigationlink"/>
+                </li>
 
-                    <div className="ifx__third-lvl-col col-lg-6">
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
-                        Overview Nav Link
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                      <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
-                        Navigationlink
-                      </BsNav.Link>
-                    </div>
-                  </div>
+                <li>
+                  <NavLinkWithIcon label="Navigationlink"/>
+                </li>
+
+                <li>
+                  <NavLinkWithIcon label="Navigationlink"/>
+                </li>
+
+                <li>
+                  <NavLinkWithIcon label="Navigationlink"/>
+                </li>
+
+                <li>
+                  <NavLinkWithIcon label="Navigationlink"/>
+                </li>
+
+                <li>
+                  <NavLinkWithIcon label="Navigationlink"/>
                 </li>
               </ul>
-            </li>
-
-            <li>
-              <NavLinkWithIcon label="Navigationlink"/>
-            </li>
-
-            <li>
-              <NavLinkWithIcon label="Navigationlink"/>
-            </li>
-
-            <li>
-              <NavLinkWithIcon label="Navigationlink"/>
-            </li>
-
-            <li>
-              <NavLinkWithIcon label="Navigationlink"/>
-            </li>
-          </ul>
-        </div>
-
-        <div className="ifx__second-lvl-col col-lg-6">
-          <ul>
-            <li>
-              <NavLinkWithIcon label="Navigationlink"/>
-            </li>
-
-            <li>
-              <NavLinkWithIcon label="Navigationlink"/>
-            </li>
-
-            <li>
-              <NavLinkWithIcon label="Navigationlink"/>
-            </li>
-
-            <li>
-              <NavLinkWithIcon label="Navigationlink"/>
-            </li>
-
-            <li>
-              <NavLinkWithIcon label="Navigationlink"/>
-            </li>
-
-            <li>
-              <NavLinkWithIcon label="Navigationlink"/>
-            </li>
-          </ul>
-        </div>
-      </div>
+            </div>
+          </div>
+        </li>
+      </ul>
     </li>
   </ul>
 )
@@ -768,8 +790,8 @@ const ExtendedLevel3Template = (args) => {
     <JsWrapper>
       <header className="ifx__header-main">
         <div className="ifx__navbar ifx__navbar-extended ifx__navbar-extended-level3">
-          <div className="container-lg ifx__container">
-            <NavBar {...args}>
+          <NavBar {...args}>
+            <div className="container-lg ifx__container">
               <div className="d-flex align-items-center ifx__mobile-container">
                 <BsNavBar.Toggle data-bs-target="#basic-navbar-nav" data-bs-toggle="collapse" aria-controls="basic-navbar-nav"/>
 
@@ -805,46 +827,50 @@ const ExtendedLevel3Template = (args) => {
                   </div>
                 </div>
               </BsNavBar.Collapse>
+            </div>
 
-              <div className="w-100 d-lg-flex ifx__nav-link-wrapper ifx__desktop-show">
-                <ul className="ifx__first-level-nav ifx__nav-list d-flex">
-                  <li>
-                    <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 1">
-                      Nav Link 1
-                    </BsNav.Link>
+            <div className="w-100 position-relative">
+              <div className="container-lg">
+                <div className="w-100 d-lg-flex ifx__nav-link-wrapper ifx__desktop-show">
+                  <ul className="ifx__first-level-nav ifx__nav-list d-flex">
+                    <li>
+                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 1">
+                        Nav Link 1
+                      </BsNav.Link>
 
-                    <NavMegaDropdown/>
-                  </li>
+                      <NavMegaDropdown/>
+                    </li>
 
-                  <li>
-                    <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 2">
-                      Nav Link 2
-                    </BsNav.Link>
+                    <li>
+                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 2">
+                        Nav Link 2
+                      </BsNav.Link>
 
-                    <NavMegaDropdown/>
-                  </li>
+                      <NavMegaDropdown/>
+                    </li>
 
-                  <li>
-                    <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 3">
-                      Nav Link 3
-                    </BsNav.Link>
-                  </li>
+                    <li>
+                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 3">
+                        Nav Link 3
+                      </BsNav.Link>
+                    </li>
 
-                  <li>
-                    <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 4">
-                      Nav Link 4
-                    </BsNav.Link>
-                  </li>
+                    <li>
+                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 4">
+                        Nav Link 4
+                      </BsNav.Link>
+                    </li>
 
-                  <li>
-                    <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 5">
-                      Nav Link 5
-                    </BsNav.Link>
-                  </li>
-                </ul>
+                    <li>
+                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 5">
+                        Nav Link 5
+                      </BsNav.Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </NavBar>
-          </div>
+            </div>
+          </NavBar>
         </div>
       </header>
 
