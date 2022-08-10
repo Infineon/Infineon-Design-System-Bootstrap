@@ -53,8 +53,6 @@
   justify-content: center;
   bottom: 3.6rem;
 
-  border: 1px solid red;
-
   @include media-breakpoint-up(lg) {
     right: tokens.$spacing-l;
   }

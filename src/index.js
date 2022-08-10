@@ -11,8 +11,6 @@ initNavBar();
 initVerticalNavBar();
 initBackToTopButton();
 initSelect();
-<<<<<<< HEAD
 
-=======
 initCarousel();
->>>>>>> develop
+

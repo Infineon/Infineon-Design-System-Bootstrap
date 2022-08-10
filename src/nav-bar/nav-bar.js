@@ -29,11 +29,7 @@ function slideNav(mobileShow) {
       if(link.matches('.ifx__nav-mega-dropdown-last-layer')) {
         const navMegaDropdownMobile = link.closest('.ifx__nav-mega-dropdown-mobile');
         const navMegaWrapper = link.closest(".ifx__nav-wrapper.open");
-<<<<<<< HEAD
-        
-=======
 
->>>>>>> develop
         navMegaDropdownMobile.classList.remove('show');
 
         if (navMegaWrapper) {
