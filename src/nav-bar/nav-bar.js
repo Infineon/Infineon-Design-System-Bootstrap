@@ -29,14 +29,20 @@ function slideNav(mobileShow) {
       if(link.matches('.ifx__nav-mega-dropdown-last-layer')) {
         const navMegaDropdownMobile = link.closest('.ifx__nav-mega-dropdown-mobile');
         const navMegaWrapper = link.closest(".ifx__nav-wrapper.open");
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> develop
         navMegaDropdownMobile.classList.remove('show');
 
         if (navMegaWrapper) {
           navMegaWrapper.classList.remove('open');
+          currentContent = navMegaWrapper.firstElementChild;
+        } else {
+          currentContent = undefined;
         }
 
-        currentContent = undefined;
         updateNavHeight();
 
       } else if(link.matches('.ifx__nav-mega-dropdown-next-layer')) {
@@ -92,9 +98,16 @@ export function initNavBar() {
 
   desktopShow.addEventListener('focusout', toggleMenuItem);
 
-  const dropdowns = desktopShow.childNodes;
+  const dropdowns = desktopShow.querySelectorAll(':scope > li');
   const navLinks = desktopShow.querySelectorAll('.nav-link');
 
+  const secondLvlCols = desktopShow.querySelectorAll('.ifx__second-lvl-col');
+  const thirdLvlTrigger = Array.from(secondLvlCols)
+    .map(function(secondLvlCol) {
+      return Array.from(secondLvlCol.querySelectorAll(':scope > ul > li'));
+    })
+    .flat();
+  
   function toggleMenuDesktop(e) {
     const dropdownLink = e.target && e.target.closest(".ifx__nav-link");
 
@@ -120,8 +133,7 @@ export function initNavBar() {
 
     if (subMenuLink) {
       const currentNavLink = subMenuLink.parentElement;
-
-      navLinks.forEach( function(element) {
+      thirdLvlTrigger.forEach( function(element) {
         if(element !== currentNavLink) {
           element.classList.remove("show");
         }
@@ -137,6 +149,10 @@ export function initNavBar() {
 
     if (!desktopShow.contains(newTarget)) {
       dropdowns.forEach( function(element) {
+        element.classList.remove("show");
+      });
+
+      thirdLvlTrigger.forEach( function(element) {
         element.classList.remove("show");
       });
     }

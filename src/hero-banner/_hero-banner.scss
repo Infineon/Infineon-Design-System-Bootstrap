@@ -133,6 +133,15 @@
 
     @include media-breakpoint-up(lg) {
       padding-top: tokens.$spacing-xxl * 1.5;
+<<<<<<< HEAD
+=======
+    }
+  }
+
+  p {
+    @include media-breakpoint-down(lg) {
+      font-size: tokens.$font-size-s;
+>>>>>>> develop
     }
   }
 
