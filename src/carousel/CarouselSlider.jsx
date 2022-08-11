@@ -105,7 +105,6 @@ export const CarouselSlider = ({ aspectRatio, children, ...props }) => {
             <div className="d-flex align-items-center">
               {/* desktop */}
                 <div className="d-lg-flex align-items-center justify-content-center d-none w-100">
-                  
                   <div>
                     <button className="carousel-slider-prev" onClick={()=> handleActiveImg(index === 0 ? 0 : index-1)}>
                       <span className="carousel-control-prev-icon"></span>
