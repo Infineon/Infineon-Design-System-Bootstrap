@@ -22,7 +22,7 @@ const DefaultTemplate = (args) => {
 
 const DefaultTemplateDemo = (args) => {
   useEffect(() => {
-    initCarousel();
+    //initCarousel();
   }, [])
 
   return (

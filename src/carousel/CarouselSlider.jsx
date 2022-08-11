@@ -10,6 +10,8 @@ import heroBanner5 from '../../public-storybook/carousel_slider_5.png'
 import heroBanner6 from '../../public-storybook/carousel_slider_6.png'
 import heroBanner7 from '../../public-storybook/carousel_slider_7.png'
 
+import { HeroBanner } from "../hero-banner/HeroBanner";
+
 
 import { useState } from "react";
 
@@ -77,10 +79,10 @@ export const CarouselSlider = ({ aspectRatio, children, ...props }) => {
       {id: 6, value: heroBanner6},
       {id: 7, value: heroBanner7},
 
-      {id: 8, value: heroBanner4},
-      {id: 9, value: heroBanner5},
-      {id: 10, value: heroBanner6},
-      {id: 11, value: heroBanner7},
+      // {id: 8, value: heroBanner4},
+      // {id: 9, value: heroBanner5},
+      // {id: 10, value: heroBanner6},
+      // {id: 11, value: heroBanner7},
     ]
 
     const [index, setIndex] = useState(0)
@@ -96,17 +98,20 @@ export const CarouselSlider = ({ aspectRatio, children, ...props }) => {
   return (
     <div>
        <div className="w-100" >
-        <img src={imgs[index].value} alt="img" className="w-100 h-100" />
+        {/* <img src={imgs[index].value} alt="img" className="w-100 h-100" /> */}
+        <HeroBanner />
        </div>
        <div className="mt-2 w-100 d-flex justify-content-center">
             <div className="d-flex align-items-center">
               {/* desktop */}
                 <div className="d-lg-flex align-items-center justify-content-center d-none w-100">
+                  
                   <div>
-                    <span className="carousel-slider-prev" onClick={()=> handleActiveImg(index === 0 ? 0 : index-1)}>
+                    <button className="carousel-slider-prev" onClick={()=> handleActiveImg(index === 0 ? 0 : index-1)}>
                       <span className="carousel-control-prev-icon"></span>
-                    </span>
+                    </button>
                   </div>
+                  
                   <div className="d-flex gap-2 flex-wrap mx-2">
                     {imgs.map((item, i) => 
                     <div key={i}>
@@ -114,10 +119,11 @@ export const CarouselSlider = ({ aspectRatio, children, ...props }) => {
                     </div>
                     )}
                   </div>
+
                   <div>
-                    <span className="carousel-slider-next justify-self-end" onClick={()=> handleActiveImg(index === imgs.length-1 ? imgs.length-1 : index+1)}>
+                    <button className="carousel-slider-next justify-self-end" onClick={()=> handleActiveImg(index === imgs.length-1 ? imgs.length-1 : index+1)}>
                       <span className="carousel-control-next-icon"></span>
-                    </span>
+                    </button>
                   </div>
                 </div>
                 {/* mobile */}
