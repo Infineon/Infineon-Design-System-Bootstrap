@@ -54,25 +54,6 @@
   height: 1rem;
 }
 
-// .carousel-control-next-icon:hover, 
-// .carousel-control-prev-icon:hover {
-//   width: tokens.$sizing-l;
-//   height: tokens.$sizing-l;
-//   border-radius: 100%;
-//   transform: translate(0, -50%);
-//   opacity: 1;
-//   background-color: tokens.$color-gray-300;
-
-//   @include media-breakpoint-up(lg) {
-//     width: tokens.$sizing-xl;
-//     height: tokens.$sizing-xl;
-//   }
-
-//   &:active {
-//     background-color: tokens.$color-gray-100;
-//   }
-// }
-
 .carousel-indicators {
   display: flex;
   justify-content: center;
@@ -191,5 +172,68 @@
 
   &:active {
     background-color: tokens.$color-gray-100;
+  }
+}
+
+.ifx__slider-controls {
+  position: static;
+  width: tokens.$sizing-l;
+  height: tokens.$sizing-l;
+  border-radius: 100%;
+
+  transform: translate(0, 0);
+  background-color: tokens.$color-white;
+  opacity: 1;
+
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  width: $carousel-control-width;
+  padding: 0;
+  color: $carousel-control-color;
+  text-align: center;
+  // background: none;
+  border: 0;
+  opacity: $carousel-control-opacity;
+  // @include transition($carousel-control-transition);
+
+  @include media-breakpoint-up(lg) {
+    width: tokens.$sizing-xl;
+    height: tokens.$sizing-xl;
+  }
+
+  &:hover {
+    background-color: tokens.$color-gray-300;
+  }
+
+  &:active {
+    background-color: tokens.$color-gray-100;
+  }
+
+}
+
+//The button indicators wrapper
+.ifx__slider-indicators {
+  position: static;
+  margin: 0;
+  align-items: center;
+}
+
+
+//the container of the controls wrapper
+// .controls-wrapper {
+//   justify-content: center;
+// }
+
+.ifx__slider-indicators [data-bs-target] {
+  width: 100px;
+  height: 50px;
+  border: 2px solid transparent;
+  margin-left: 4px;
+  margin-right: 4px;
+
+  &.active {
+    border: 2px solid #378375;
+    border-radius: 2px;
   }
 }

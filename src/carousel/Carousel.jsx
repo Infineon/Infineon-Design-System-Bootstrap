@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import imageSrc4_3 from "../../public-storybook/1440x1080_ratio-4-3.png";
 import imageSrc16_9 from "../../public-storybook/1920x1080_ratio-16-9.png";
 import { ImageAspectRatio } from '../image-aspect-ratio/ImageAspectRatio'
+import { HeroBanner } from "./Carousel.stories";
 //import '../../dist/index'
 
 const image16_9 = {
@@ -29,7 +30,6 @@ const propTypes = {
 export const Carousel = ({ imageAspectRatio, children, ...props }) => {
  
   return (
-
     <div id="myCarousel" className="carousel slide" data-bs-ride="true">
       <div className="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>

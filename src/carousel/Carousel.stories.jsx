@@ -1,7 +1,7 @@
 import { Carousel } from "./Carousel";
 
 import { CarouselSlider } from './CarouselSlider'
-
+import { HeroBannerSlider } from "./HeroBannerSlider";
 import { initCarousel } from "./default-carousel";
 import { useEffect } from "react";
 import "bootstrap";
@@ -37,8 +37,13 @@ const HeroBannerTemplate = (args) => (
   <CarouselSlider {...args}></CarouselSlider>
 );
 
+const HeroBannerSliderTemplate = (args) => (
+  <HeroBannerSlider {...args}></HeroBannerSlider>
+);
+
 
 export const Default = DefaultTemplate.bind({});
 export const HeroBanner = HeroBannerTemplate.bind({});
+export const HeroBanner2 = HeroBannerSliderTemplate.bind({});
 
 

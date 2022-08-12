@@ -9,7 +9,7 @@ const image = {
 };
 
 export const HeroBanner = () => {
-  console.log("INVOKED")
+
   return (
     <>
       <div className="ifx__hero-banner">
