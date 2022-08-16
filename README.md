@@ -21,9 +21,6 @@ Use it to build & run storybook and distribute the Bootstrap SCSS.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
 - [Node](https://nodejs.org/en/) v14 or older.
@@ -39,13 +36,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. ```yarn add @infineon/design-system-bootstrap```
 
-2. Add the import to your ```main.js``` file in the ```.storybook``` folder.
-
-```js
-import "@infineon/design-system-bootstrap";
-```
-
-3. Send an email to dds@infineon.com to get the fontawesome token key. Then execute these two commands:
+2. Send an email to dds@infineon.com to get the fontawesome token key. Then execute these two commands:
 ```bash
 npm config set "@fortawesome:registry" https://npm.fontawesome.com/
 npm config set "//npm.fontawesome.com/:_authToken" <PASTE KEY HERE>
@@ -100,7 +91,7 @@ npm build-storybook
 
 This will generate a static Storybook in the ```storybook-static``` directory.
 
-### Build Storybook
+### Start Storybook
 
 To start storybook, simply run the inbuild command ```start-storybook``` with ```npm``` or ```yarn```.
 
@@ -113,6 +104,8 @@ or
 ```bash
 npm start-storybook
 ```
+
+```start-storybook``` also executes ```watch-css``` and ```watch-storybook``` which automatically update storybook on code change.
 
 
 <!-- CONTACT -->
