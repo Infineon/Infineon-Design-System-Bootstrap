@@ -67,9 +67,10 @@ export function initNavBar() {
 
   navBarHeight = navBar.offsetHeight;
 
+  console.log('navBar', navBar)
+
   function setShadow() {
     const scrollY = window.scrollY;
-
     if (scrollY >= navBarHeight) {
       navBar.classList.add('scrolling');
     } else {
@@ -98,12 +99,15 @@ export function initNavBar() {
   const navLinks = desktopShow.querySelectorAll('.nav-link');
 
   const secondLvlCols = desktopShow.querySelectorAll('.ifx__second-lvl-col');
+  
   const thirdLvlTrigger = Array.from(secondLvlCols)
     .map(function(secondLvlCol) {
       return Array.from(secondLvlCol.querySelectorAll(':scope > ul > li'));
     })
     .flat();
-  
+    
+    console.log('second lvl col', thirdLvlTrigger)
+
   function toggleMenuDesktop(e) {
     const dropdownLink = e.target && e.target.closest(".ifx__nav-link");
 
