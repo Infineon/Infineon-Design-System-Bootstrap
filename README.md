@@ -1,6 +1,14 @@
-### Built With
+# Infineon Design System Bootstrap Components
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+As part of the Infineon brand guidelines, the Infineon Digital Design System supports designers, developers and project managers to build user interfaces faster and better – with the ultimate goal to create a coherent and optimal user journey across all internal and external Infineon digital touchpoints.
+
+This repository contains an Bootstrap implementation of Infineons Digital Design System and it's Storybook sourcecode.
+
+Use it to build & run storybook and distribute the Bootstrap SCSS.
+
+### Built With
 
 * [![React][React.js]][React-url]
 * [![Vue][Vue.js]][Vue-url]
@@ -18,30 +26,35 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+- [Node](https://nodejs.org/en/) v14 or older.
+- [Yarn](https://classic.yarnpkg.com/en/) v1.22.10 or older, or [Npm](https://www.npmjs.com/) v6.14.13 or older.
 
-  ```sh
-  npm install npm@latest -g
-  ```
+### Installation on React, Vue or Angular
 
-### Installation
+#### With NPM
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+1. ```npm install --save @infineon/design-system-bootstrap```
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+#### With Yarn
+
+1. ```yarn add @infineon/design-system-bootstrap```
+
+2. Add the import to your ```main.js``` file in the ```.storybook``` folder.
+
+```js
+import "@infineon/design-system-bootstrap";
+```
+
+3. Send an email to dds@infineon.com to get the fontawesome token key. Then execute these two commands:
+```bash
+npm config set "@fortawesome:registry" https://npm.fontawesome.com/
+npm config set "//npm.fontawesome.com/:_authToken" <PASTE KEY HERE>
+```
+Additional Fontawesome installation instructions can be found here: 
+
+For Angular: https://fontawesome.com/v5/docs/web/use-with/angular <br />
+For Vue https://fontawesome.com/v6/docs/web/use-with/vue/ <br />
+For React: https://fontawesome.com/v6/docs/web/use-with/react/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -49,52 +62,69 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Explore our components in Storybook.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+https://storybook-bootstrap.icp.infineon.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Local Development
 
-<!-- CONTRIBUTING -->
-## Contributing
+### Installation
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Install all the modules and dependencies listed on the ```package.json``` file with:
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+```bash
+yarn install
+```
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+or
+```bash
+npm install
+```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Build Storybook
+
+To deploy Storybook, we first need to export it as a static web app.
+To do so, we can use the inbuild ```build-storybook``` command with ```npm``` or ```yarn```.
+
+```bash
+yarn build-storybook
+```
+
+or
+
+```bash
+npm build-storybook
+```
+
+This will generate a static Storybook in the ```storybook-static``` directory.
+
+### Build Storybook
+
+To start storybook, simply run the inbuild command ```start-storybook``` with ```npm``` or ```yarn```.
+
+```bash
+yarn start-storybook
+```
+
+or
+
+```bash
+npm start-storybook
+```
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+### WebEx
+Yanchev Tihomir <br />
+Werther Kai
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+### Email
+tihomir.yanchev-EE@infineon.com <br />
+kai.werther@infineon.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
