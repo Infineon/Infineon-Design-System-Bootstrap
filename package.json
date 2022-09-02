@@ -48,6 +48,7 @@
     "@infineon/design-system-tokens": "^1.0.1"
   },
   "devDependencies": {
+    "auto": "^10.37.4",
     "bootstrap": "^5.1.3",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
@@ -81,5 +82,12 @@
     "storybook-design-token": "^2.2.0",
     "style-dictionary": "^3.0.3",
     "style-loader": "^2"
+  },
+  "auto": {
+    "plugins": [
+      "npm",
+      "released"
+    ],
+    "onlyPublishWithReleaseLabel": true
   }
 }
