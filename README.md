@@ -11,7 +11,7 @@ Use it to build & run storybook and distribute the Bootstrap SCSS.
 ## Requirements
 
 - [Node](https://nodejs.org/en/) >= v14 – if you have [nvm](https://github.com/creationix/nvm#node-version-manager---) installed, you can just run `nvm use` to select the right node version.
-- [Yarn](https://classic.yarnpkg.com/en/) >= `1.22.10` or [npm](https://www.npmjs.com/) >= `6.14.13`
+- [Yarn](https://classic.yarnpkg.com/en/) >= `1.22.10` or [npm](https://www.npmjs.com/) >= `6.14.13` 
 
 ## Usage
 
@@ -57,7 +57,8 @@ yarn install
 Start Storybook in local dev mode, including file watchers to hot-reload on code change:
 
 ```bash
-yarn start
+npm run storybook-prepare
+npm run storybook-start
 ```
 
 ### Build Storybook

@@ -14,7 +14,7 @@
   margin-bottom: 0;
 }
 
-.table > :not(:first-child) {
+.table > :not(:first-of-type) {
   border-top: none;
 }
 
