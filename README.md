@@ -1,8 +1,33 @@
 # Infineon Design System Bootstrap Components
+
+<!-- TABLE OF CONTENTS -->
+<details id="tableContent">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-=======
 
 As part of the Infineon brand guidelines, the Infineon Digital Design System supports designers, developers and project managers to build user interfaces faster and better – with the ultimate goal to create a coherent and optimal user journey across all internal and external Infineon digital touchpoints.
 
@@ -24,7 +49,7 @@ Use it to build & run storybook and distribute the Bootstrap SCSS.
 * [![Angular][Angular.io]][Angular-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#tableContent">back to top</a></p>
 
 
 <!-- GETTING STARTED -->
@@ -49,7 +74,7 @@ Use it to build & run storybook and distribute the Bootstrap SCSS.
 ```bash
 npm config set "@fortawesome:registry" https://npm.fontawesome.com/
 npm config set "//npm.fontawesome.com/:_authToken" <PASTE KEY HERE>
-=======
+
 ### Quick Start Vue.JS
 1. Install using NPM
 ```bash
@@ -78,7 +103,7 @@ Explore our components in Storybook.
 https://storybook-bootstrap.icp.infineon.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-=======
+
 3. Use Storybook to explore our components (available only in intranet)
 
 https://storybook-bootstrap.icp.infineon.com
@@ -155,8 +180,6 @@ kai.werther@infineon.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
@@ -188,7 +211,7 @@ kai.werther@infineon.com
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
-=======
+
 **Specific Component (`Button`)**:
 
 *SCSS:*
