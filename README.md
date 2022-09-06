@@ -2,11 +2,20 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+=======
+
 As part of the Infineon brand guidelines, the Infineon Digital Design System supports designers, developers and project managers to build user interfaces faster and better – with the ultimate goal to create a coherent and optimal user journey across all internal and external Infineon digital touchpoints.
 
 This repository contains an Bootstrap implementation of Infineons Digital Design System and it's Storybook sourcecode.
 
 Use it to build & run storybook and distribute the Bootstrap SCSS.
+
+As part of the Infineon brand guidelines, the Infineon Digital Design System supports designers, developers and project managers to build user interfaces faster and better – with the ultimate goal to create a coherent and optimal user journey across all internal and external Infineon digital touchpoints.
+
+This repository contains an Bootstrap implementation of Infineons Digital Design System and it's Storybook sourcecode.
+
+Use it to build & run storybook and distribute the Bootstrap SCSS.
+
 
 ### Built With
 
@@ -40,15 +49,26 @@ Use it to build & run storybook and distribute the Bootstrap SCSS.
 ```bash
 npm config set "@fortawesome:registry" https://npm.fontawesome.com/
 npm config set "//npm.fontawesome.com/:_authToken" <PASTE KEY HERE>
+=======
+### Quick Start Vue.JS
+1. Install using NPM
+```bash
+npm install --save @infineon/design-system-bootstrap
+```
+
+2. Add the import to your main.js:
+*JavaScript:*
+```js
+import "@infineon/design-system-bootstrap";
 ```
 Additional Fontawesome installation instructions can be found here: 
+
 
 For Angular: https://fontawesome.com/v5/docs/web/use-with/angular <br />
 For Vue https://fontawesome.com/v6/docs/web/use-with/vue/ <br />
 For React: https://fontawesome.com/v6/docs/web/use-with/react/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -58,6 +78,20 @@ Explore our components in Storybook.
 https://storybook-bootstrap.icp.infineon.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+=======
+3. Use Storybook to explore our components (available only in intranet)
+
+https://storybook-bootstrap.icp.infineon.com
+
+4. Install FontAwesome Pro Icons (optional)
+
+Mail to dds@infineon.com to get an fontawesome pro token if you are an Infineon employee. Then execute these two commands:
+```bash
+npm config set "@fortawesome:registry" https://npm.fontawesome.com/
+npm config set "//npm.fontawesome.com/:_authToken" FONT-AWESOME-PACKAGE-TOKEN
+```
+
+After that follow the installation instructions for vue at https://fontawesome.com/v6/docs/web/use-with/vue/#contentHeader
 
 ## Local Development
 
@@ -154,3 +188,11 @@ kai.werther@infineon.com
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+=======
+**Specific Component (`Button`)**:
+
+*SCSS:*
+```scss
+@import "@infineon/design-system-bootstrap/dist-sources/src/button/button"
+```
+

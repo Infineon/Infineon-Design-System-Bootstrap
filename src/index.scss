@@ -1,9 +1,7 @@
-@import "../node_modules/@infineon/design-system-tokens/dist/fonts";
+@import "@infineon/design-system-tokens/dist/fonts";
 @import "bootstrap-theme";
 
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
+@import "bootstrap/scss/bootstrap";
 
 @import "./image-aspect-ratio/image-aspect-ratio";
 @import "./slant/slant";
