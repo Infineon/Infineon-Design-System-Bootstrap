@@ -1,5 +1,12 @@
 # Infineon Design System Bootstrap Components
-https://img.shields.io/github/issues/Infineon/Infineon-Design-System-Bootstrap?style=plastic
+[![GitHub Repo Issues](https://img.shields.io/github/issues/Infineon/Infineon-Design-System-Bootstrap?style=plastic)](https://github.com/Infineon/Infineon-Design-System-Bootstrap/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr-raw/Infineon/Infineon-Design-System-Bootstrap?style=plastic)](https://github.com/Infineon/Infineon-Design-System-Bootstrap/pulls)
+[![GitHub Repo Version](https://img.shields.io/github/package-json/v/Infineon/Infineon-Design-System-Bootstrap?style=plastic)](https://github.com/Infineon/Infineon-Design-System-Bootstrap/blob/master/package.json)
+[![GitHub Master Branch Weekly Commits](https://img.shields.io/github/commit-activity/w/Infineon/Infineon-Design-System-Bootstrap/master?style=plastic)](https://github.com/Infineon/Infineon-Design-System-Bootstrap/tree/master)
+[![GitHub Repo Contributors](https://img.shields.io/github/contributors/Infineon/Infineon-Design-System-Bootstrap?style=plastic)](https://github.com/Infineon/Infineon-Design-System-Bootstrap/graphs/contributors)
+[![GitHub Repo Discussions](https://img.shields.io/github/discussions/Infineon/Infineon-Design-System-Bootstrap)](https://github.com/Infineon/Infineon-Design-System-Bootstrap/)
+
+
 
 <!-- TABLE OF CONTENTS -->
 <details id="tableContent">
@@ -33,18 +40,9 @@ This repository contains an Bootstrap implementation of Infineons Digital Design
 
 Use it to build & run storybook and distribute the Bootstrap SCSS.
 
-As part of the Infineon brand guidelines, the Infineon Digital Design System supports designers, developers and project managers to build user interfaces faster and better – with the ultimate goal to create a coherent and optimal user journey across all internal and external Infineon digital touchpoints.
-
-This repository contains an Bootstrap implementation of Infineons Digital Design System and it's Storybook sourcecode.
-
-Use it to build & run storybook and distribute the Bootstrap SCSS.
-
-
 ### Built With
 
 * [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 
 <p align="right"><a href="#tableContent">back to top</a></p>
@@ -72,20 +70,8 @@ Use it to build & run storybook and distribute the Bootstrap SCSS.
 ```bash
 npm config set "@fortawesome:registry" https://npm.fontawesome.com/
 npm config set "//npm.fontawesome.com/:_authToken" <PASTE KEY HERE>
-
-### Quick Start Vue.JS
-1. Install using NPM
-```bash
-npm install --save @infineon/design-system-bootstrap
-```
-
-2. Add the import to your main.js:
-*JavaScript:*
-```js
-import "@infineon/design-system-bootstrap";
 ```
 Additional Fontawesome installation instructions can be found here: 
-
 
 For Angular: https://fontawesome.com/v5/docs/web/use-with/angular <br />
 For Vue https://fontawesome.com/v6/docs/web/use-with/vue/ <br />
@@ -99,20 +85,6 @@ For React: https://fontawesome.com/v6/docs/web/use-with/react/
 Explore our components in Storybook.
 
 https://storybook-bootstrap.icp.infineon.com
-
-3. Use Storybook to explore our components (available only in intranet)
-
-https://storybook-bootstrap.icp.infineon.com
-
-4. Install FontAwesome Pro Icons (optional)
-
-Mail to dds@infineon.com to get an fontawesome pro token if you are an Infineon employee. Then execute these two commands:
-```bash
-npm config set "@fortawesome:registry" https://npm.fontawesome.com/
-npm config set "//npm.fontawesome.com/:_authToken" FONT-AWESOME-PACKAGE-TOKEN
-```
-
-After that follow the installation instructions for vue at https://fontawesome.com/v6/docs/web/use-with/vue/#contentHeader
 
 <p align="right"><a href="#tableContent">back to top</a></p>
 
