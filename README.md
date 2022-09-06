@@ -1,4 +1,5 @@
 # Infineon Design System Bootstrap Components
+https://img.shields.io/github/issues/Infineon/Infineon-Design-System-Bootstrap?style=plastic
 
 <!-- TABLE OF CONTENTS -->
 <details id="tableContent">
