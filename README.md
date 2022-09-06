@@ -102,8 +102,6 @@ Explore our components in Storybook.
 
 https://storybook-bootstrap.icp.infineon.com
 
-<p align="right"><a href="#tableContent">back to top</a></p>
-
 3. Use Storybook to explore our components (available only in intranet)
 
 https://storybook-bootstrap.icp.infineon.com
@@ -117,6 +115,8 @@ npm config set "//npm.fontawesome.com/:_authToken" FONT-AWESOME-PACKAGE-TOKEN
 ```
 
 After that follow the installation instructions for vue at https://fontawesome.com/v6/docs/web/use-with/vue/#contentHeader
+
+<p align="right"><a href="#tableContent">back to top</a></p>
 
 ## Local Development
 
@@ -166,6 +166,7 @@ npm start-storybook
 
 ```start-storybook``` also executes ```watch-css``` and ```watch-storybook``` which automatically update storybook on code change.
 
+<p align="right"><a href="#tableContent">back to top</a></p>
 
 <!-- CONTACT -->
 ## Contact
@@ -211,11 +212,3 @@ kai.werther@infineon.com
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
-
-**Specific Component (`Button`)**:
-
-*SCSS:*
-```scss
-@import "@infineon/design-system-bootstrap/dist-sources/src/button/button"
-```
-
