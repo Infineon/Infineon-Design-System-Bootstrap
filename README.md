@@ -93,7 +93,7 @@ For Angular: https://fontawesome.com/v5/docs/web/use-with/angular <br />
 For Vue https://fontawesome.com/v6/docs/web/use-with/vue/ <br />
 For React: https://fontawesome.com/v6/docs/web/use-with/react/
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#tableContent">back to top</a></p>
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -102,7 +102,7 @@ Explore our components in Storybook.
 
 https://storybook-bootstrap.icp.infineon.com
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#tableContent">back to top</a></p>
 
 3. Use Storybook to explore our components (available only in intranet)
 
@@ -178,7 +178,7 @@ Werther Kai
 tihomir.yanchev-EE@infineon.com <br />
 kai.werther@infineon.com
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#tableContent">back to top</a></p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
