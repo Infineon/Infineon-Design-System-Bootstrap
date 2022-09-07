@@ -167,7 +167,7 @@
     "semver" "^5.4.1"
     "source-map" "^0.5.0"
 
-"@babel/generator@^7.12.11", "@babel/generator@^7.12.5", "@babel/generator@^7.14.8", "@babel/generator@^7.18.2":
+"@babel/generator@^7.12.11", "@babel/generator@^7.12.5", "@babel/generator@^7.13.9", "@babel/generator@^7.18.2":
   "integrity" "sha512-W1lG5vUwFvfMd8HVXqdfbuG7RuaSrTCCD8cl8fP8wOivdbtbIg2Db3IWUcgvfxKbbn6ZBGYRW/Zk1MIwK49mgw=="
   "resolved" "https://registry.npmjs.org/@babel/generator/-/generator-7.18.2.tgz"
   "version" "7.18.2"
@@ -401,7 +401,7 @@
     "chalk" "^2.0.0"
     "js-tokens" "^4.0.0"
 
-"@babel/parser@^7.12.11", "@babel/parser@^7.12.7", "@babel/parser@^7.14.7", "@babel/parser@^7.14.8", "@babel/parser@^7.16.7", "@babel/parser@^7.18.5":
+"@babel/parser@^7.12.11", "@babel/parser@^7.12.7", "@babel/parser@^7.13.12", "@babel/parser@^7.14.7", "@babel/parser@^7.16.7", "@babel/parser@^7.18.5":
   "integrity" "sha512-YZWVaglMiplo7v8f1oMQ5ZPQr0vn7HPeZXxXWsxXJRjGVrzUFn9OxFQl1sb5wzfootjA/yChhW84BV+383FSOw=="
   "resolved" "https://registry.npmjs.org/@babel/parser/-/parser-7.18.5.tgz"
   "version" "7.18.5"
@@ -1893,7 +1893,7 @@
     "global" "^4.4.0"
     "regenerator-runtime" "^0.13.7"
 
-"@storybook/api@^6.3.6", "@storybook/api@6.5.4":
+"@storybook/api@^6.1.21", "@storybook/api@6.5.4":
   "integrity" "sha512-nZAf7/6bcOMb6yDYsCr2rWZuKtGfHQhyVvlW7uD1uPVytQ0OHS/D215C2odTNvIRxTiG67dQ4zeXcZPHHar+qQ=="
   "resolved" "https://registry.npmjs.org/@storybook/api/-/api-6.5.4.tgz"
   "version" "6.5.4"
@@ -2076,7 +2076,7 @@
     "core-js" "^3.8.2"
     "global" "^4.4.0"
 
-"@storybook/components@^6.3.12", "@storybook/components@^6.3.6", "@storybook/components@6.5.4":
+"@storybook/components@^6.1.21", "@storybook/components@^6.3.12", "@storybook/components@6.5.4":
   "integrity" "sha512-FCJJm2r/OzW3QvavTCdHZeTubJkbNJeoiGKeZs9kMYSgDZAr4cDUr1xUl30Hw57Uy3TCY9gnYdtGZgCP1tQiLw=="
   "resolved" "https://registry.npmjs.org/@storybook/components/-/components-6.5.4.tgz"
   "version" "6.5.4"
@@ -2948,16 +2948,17 @@
     "@webassemblyjs/wast-parser" "1.9.0"
     "@xtuc/long" "4.2.2"
 
-"@whitespace/storybook-addon-html@git+https://github.com/lmestel/storybook-addon-html.git":
-  "resolved" "git+ssh://git@github.com/lmestel/storybook-addon-html.git#7789c0c51d9608ad97d03ca05176f4717b813b6b"
-  "version" "5.3.0"
+"@whitespace/storybook-addon-html@^5.0.0":
+  "integrity" "sha512-1OkgqEGNcXFzeOCGtJsEcPPswVy+mDRgDOFClXWX/f2SG/JBfkltXoFnCj2EfGwhIQaVGxjT7k1gqANKy5VeJQ=="
+  "resolved" "https://registry.npmjs.org/@whitespace/storybook-addon-html/-/storybook-addon-html-5.0.0.tgz"
+  "version" "5.0.0"
   dependencies:
-    "@babel/generator" "^7.14.8"
-    "@babel/parser" "^7.14.8"
-    "@storybook/api" "^6.3.6"
-    "@storybook/components" "^6.3.6"
-    "prettier" "^2.3.2"
-    "react-syntax-highlighter" "^15.4.4"
+    "@babel/generator" "^7.13.9"
+    "@babel/parser" "^7.13.12"
+    "@storybook/api" "^6.1.21"
+    "@storybook/components" "^6.1.21"
+    "prettier" "^2.2.1"
+    "react-syntax-highlighter" "^15.4.3"
 
 "@xtuc/ieee754@^1.2.0":
   "integrity" "sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA=="
@@ -8682,7 +8683,7 @@
   "resolved" "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.1.2.tgz"
   "version" "1.1.2"
 
-"prettier@^2.3.2":
+"prettier@^2.2.1":
   "integrity" "sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g=="
   "resolved" "https://registry.npmjs.org/prettier/-/prettier-2.7.1.tgz"
   "version" "2.7.1"
@@ -9033,7 +9034,7 @@
   "resolved" "https://registry.npmjs.org/react-storage-hooks/-/react-storage-hooks-4.0.1.tgz"
   "version" "4.0.1"
 
-"react-syntax-highlighter@^15.4.4", "react-syntax-highlighter@^15.4.5":
+"react-syntax-highlighter@^15.4.3", "react-syntax-highlighter@^15.4.5":
   "integrity" "sha512-+zq2myprEnQmH5yw6Gqc8lD55QHnpKaU8TOcFeC/Lg/MQSs8UknEA0JC4nTZGFAXC2J2Hyj/ijJ7NlabyPi2gg=="
   "resolved" "https://registry.npmjs.org/react-syntax-highlighter/-/react-syntax-highlighter-15.5.0.tgz"
   "version" "15.5.0"
