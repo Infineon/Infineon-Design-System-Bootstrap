@@ -36,7 +36,7 @@
     "bundle-js": "esbuild src/index.js --outfile=dist/index.js --bundle --platform=browser --minify --target=es6",
     "bundle-fonts": "copyfiles -u 4 ./node_modules/@infineon/design-system-tokens/dist/fonts/**/* dist",
     "bundle-assets": "copyfiles -u 1 ./public/* dist && copyfiles -u 1 ./public/**/* dist",
-    "bundle": "rimraf ./dist && concurrently -r yarn:bundle-*",
+    "bundle": "rimraf ./dist && npm run bundle-css && npm run bundle-js && npm run bundle-fonts && npm run bundle-assets",
     "package-source": "copyfiles -u ./src/* dist-sources && copyfiles -u ./src/**/* dist-sources",
     "package-assets": "copyfiles -u ./public/* dist-sources",
     "package": "rimraf ./dist-sources && concurrently -r yarn:package-*"
