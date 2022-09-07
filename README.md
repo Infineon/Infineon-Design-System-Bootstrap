@@ -66,11 +66,19 @@ Use it to build & run storybook and distribute the Bootstrap SCSS.
 
 1. ```yarn add @infineon/design-system-bootstrap```
 
-2. Send an email to dds@infineon.com to get the fontawesome token key. Then execute these two commands:
+#### Add to main.js
+
+```import "@infineon/design-system-bootstrap";```
+
+#### Installation Fontawesome
+
+1. Send an email to dds@infineon.com to get the fontawesome token key. Then execute these two commands:
 ```bash
+
 npm config set "@fortawesome:registry" https://npm.fontawesome.com/
 npm config set "//npm.fontawesome.com/:_authToken" <PASTE KEY HERE>
 ```
+
 Additional Fontawesome installation instructions can be found here: 
 
 For Angular: https://fontawesome.com/v5/docs/web/use-with/angular <br />
