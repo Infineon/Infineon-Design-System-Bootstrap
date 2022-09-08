@@ -4,9 +4,9 @@
 [![GitHub Repo Version](https://img.shields.io/github/package-json/v/Infineon/Infineon-Design-System-Bootstrap?style=plastic)](https://github.com/Infineon/Infineon-Design-System-Bootstrap/blob/master/package.json)
 [![GitHub Master Branch Weekly Commits](https://img.shields.io/github/commit-activity/w/Infineon/Infineon-Design-System-Bootstrap/master?style=plastic)](https://github.com/Infineon/Infineon-Design-System-Bootstrap/tree/master)
 [![GitHub Repo Contributors](https://img.shields.io/github/contributors/Infineon/Infineon-Design-System-Bootstrap?style=plastic)](https://github.com/Infineon/Infineon-Design-System-Bootstrap/graphs/contributors)
-[![GitHub Repo Discussions](https://img.shields.io/github/discussions/Infineon/Infineon-Design-System-Bootstrap)](https://github.com/Infineon/Infineon-Design-System-Bootstrap/)
-
-
+[![GitHub Repo Discussions](https://img.shields.io/github/discussions/Infineon/Infineon-Design-System-Bootstrap?style=plastic)](https://github.com/Infineon/Infineon-Design-System-Bootstrap/)
+[![GitHub Repo Forks](https://img.shields.io/github/forks/Infineon/Infineon-Design-System-Bootstrap?style=plastic)](https://github.com/Infineon/Infineon-Design-System-Bootstrap/)
+[![GitHub Repo License](https://img.shields.io/github/license/Infineon/Infineon-Design-System-Bootstrap?style=plastic)](https://github.com/Infineon/Infineon-Design-System-Bootstrap/blob/master/LICENSE)
 
 <!-- TABLE OF CONTENTS -->
 <details id="tableContent">
@@ -56,7 +56,7 @@ Use it to build & run storybook and distribute the Bootstrap SCSS.
 - [Node](https://nodejs.org/en/) v14 or older.
 - [Yarn](https://classic.yarnpkg.com/en/) v1.22.10 or older, or [Npm](https://www.npmjs.com/) v6.14.13 or older.
 
-### Installation on React, Vue or Angular
+### Installing Bootstrap
 
 #### With NPM
 
@@ -66,7 +66,9 @@ Use it to build & run storybook and distribute the Bootstrap SCSS.
 
 1. ```yarn add @infineon/design-system-bootstrap```
 
-2. Send an email to dds@infineon.com to get the fontawesome token key. Then execute these two commands:
+### Installing Font Awesome
+
+1. Send an email to dds@infineon.com to get the fontawesome token key. Then execute these two commands:
 ```bash
 npm config set "@fortawesome:registry" https://npm.fontawesome.com/
 npm config set "//npm.fontawesome.com/:_authToken" <PASTE KEY HERE>
@@ -77,18 +79,17 @@ For Angular: https://fontawesome.com/v5/docs/web/use-with/angular <br />
 For Vue https://fontawesome.com/v6/docs/web/use-with/vue/ <br />
 For React: https://fontawesome.com/v6/docs/web/use-with/react/
 
-<p align="right"><a href="#tableContent">back to top</a></p>
+### Importing Bootstrap
 
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Explore our components in Storybook.
-
-https://storybook-bootstrap.icp.infineon.com
+After you install the Infineon Bootstrap module, you have to import it by copying the following line into your entry point file:
+```bash
+import "@infineon/design-system-bootstrap"
+```
 
 <p align="right"><a href="#tableContent">back to top</a></p>
 
 ## Local Development
+If you have cloned the repository to your local machine, you don't need to install and import the Infineon Design System Bootstrap module, but you do have to install the necessary dependencies and modules not included in the repository.
 
 ### Installation
 
@@ -106,35 +107,44 @@ npm install
 ### Build Storybook
 
 To deploy Storybook, we first need to export it as a static web app.
-To do so, we can use the inbuild ```build-storybook``` command with ```npm``` or ```yarn```.
+To do so, we can use the inbuild ```build-storybook``` command, or the ```storybook-prepare``` shorthand command, with ```npm``` or ```yarn```.
 
 ```bash
-yarn build-storybook
+yarn build-storybook or yarn storybook-prepare
 ```
 
 or
 
 ```bash
-npm build-storybook
+npm build-storybook or npm storybook-prepare
 ```
 
 This will generate a static Storybook in the ```storybook-static``` directory.
 
 ### Start Storybook
 
-To start storybook, simply run the inbuild command ```start-storybook``` with ```npm``` or ```yarn```.
+To start storybook, simply run the inbuild command ```start-storybook```, or the ```storybook-start``` shorthand command with ```npm``` or ```yarn```.
 
 ```bash
-yarn start-storybook
+yarn start-storybook or yarn storybook-start
 ```
 
 or
 
 ```bash
-npm start-storybook
+npm start-storybook or npm storybook-start
 ```
 
 ```start-storybook``` also executes ```watch-css``` and ```watch-storybook``` which automatically update storybook on code change.
+
+<p align="right"><a href="#tableContent">back to top</a></p>
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+Explore our components in Storybook.
+
+https://storybook-bootstrap.icp.infineon.com
 
 <p align="right"><a href="#tableContent">back to top</a></p>
 
