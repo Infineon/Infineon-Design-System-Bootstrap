@@ -118,3 +118,5 @@ dist-sources
 
 .npmrc
 /dist/
+
+/yarn.lock
