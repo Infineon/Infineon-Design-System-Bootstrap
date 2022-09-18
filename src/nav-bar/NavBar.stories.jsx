@@ -64,7 +64,7 @@ const JsWrapper = ({ children }) => {
       <template id="ifx__first-level-nav" dangerouslySetInnerHTML={{ __html: renderToStaticMarkup(
         <ul className="ifx__first-level-nav">
           <li>
-            <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="javascript:void(0)" data-text="Nav Link 1">
+            <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="javascript:void(0)">
               Nav Link 1
             </BsNav.Link>
           </li>
@@ -134,43 +134,43 @@ const NavMegaDropdown2ndLvlCol3_ExtendedLvl2 = () => (
   <div className="ifx__second-lvl-col col-3">
     <ul>
       <li>
-        <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
+        <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)">
           Overview Nav Link
         </BsNav.Link>
       </li>
 
       <li>
-        <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+        <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)">
           Navigationlink
         </BsNav.Link>
       </li>
 
       <li>
-        <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+        <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)">
           Navigationlink
         </BsNav.Link>
       </li>
 
       <li>
-        <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+        <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)">
           Navigationlink
         </BsNav.Link>
       </li>
 
       <li>
-        <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+        <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)">
           Navigationlink
         </BsNav.Link>
       </li>
 
       <li>
-        <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+        <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)">
           Navigationlink
         </BsNav.Link>
       </li>
 
       <li>
-        <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+        <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)">
           Navigationlink
         </BsNav.Link>
       </li>
@@ -210,25 +210,25 @@ const NavMegaDropdown2ndLvl_ExtendedLvl2 = () => (
 // ExtendedLvl3 Desktop 3rdLvl Col-lg-6 Template
 const NavMegaDropdown3rdLvlColLg6_ExtendedLvl3 = () => (
   <div className="ifx__third-lvl-col col-lg-6">
-    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Overview Nav Link">
+    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)">
       Overview Nav Link
     </BsNav.Link>
-    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)">
       Navigationlink
     </BsNav.Link>
-    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)">
       Navigationlink
     </BsNav.Link>
-    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)">
       Navigationlink
     </BsNav.Link>
-    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)">
       Navigationlink
     </BsNav.Link>
-    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)">
       Navigationlink
     </BsNav.Link>
-    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)" data-text="Navigationlink">
+    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)">
       Navigationlink
     </BsNav.Link>
   </div>
@@ -338,12 +338,12 @@ const DefaultTemplate = (args) => {
                 <div className="w-100 d-lg-flex align-items-center justify-content-between ifx__nav-link-wrapper ifx__desktop-show">
                   <ul className="ifx__first-level-nav d-flex">
                     <li>
-                      <BsNav.Link className="ifx__first-lvl-link" href="javascript:void(0)" data-text="Nav Link 1">
+                      <BsNav.Link className="ifx__first-lvl-link" href="javascript:void(0)">
                         Nav Link 1
                       </BsNav.Link>
                     </li>
                     <li>
-                      <BsNav.Link className="ifx__first-lvl-link" href="javascript:void(0)" data-text="Nav Link 2">
+                      <BsNav.Link className="ifx__first-lvl-link" href="javascript:void(0)">
                         Nav Link 2
                       </BsNav.Link>
                     </li>
@@ -367,13 +367,13 @@ const DefaultTemplate = (args) => {
 
                     <BsNav.Link className="ifx__nav-metalink" href="javascript:void(0)">
                       <div className="d-flex align-items-center">
-                        <span data-text="Metalink">Metalink</span>
+                        <span>Metalink</span>
                         <FontAwesomeIcon icon={["fal", "user"]}/>
                       </div>
                     </BsNav.Link>
                     <BsNav.Link className="ifx__nav-metalink" href="javascript:void(0)">
                       <div className="d-flex align-items-center">
-                        <span data-text="Metalink">Metalink</span>
+                        <span>Metalink</span>
                         <FontAwesomeIcon icon={["fal", "globe"]}/>
                       </div>
                     </BsNav.Link>
@@ -413,19 +413,19 @@ const ExtendedTemplate = (args) => {
 
                     <BsNav.Link className="ifx__nav-metalink" href="javascript:void(0)">
                       <div className="d-flex align-items-center">
-                        <span data-text="Metalink">Metalink</span>
+                        <span>Metalink</span>
                         <FontAwesomeIcon icon={["fal", "user"]}/>
                       </div>
                     </BsNav.Link>
                     <BsNav.Link className="ifx__nav-metalink" href="javascript:void(0)">
                       <div className="d-flex align-items-center">
-                        <span data-text="Metalink">Metalink</span>
+                        <span>Metalink</span>
                         <FontAwesomeIcon icon={["fal", "globe"]}/>
                       </div>
                     </BsNav.Link>
                     <BsNav.Link className="ifx__nav-metalink" href="javascript:void(0)">
                       <div className="d-flex align-items-center">
-                        <span data-text="Metalink">Metalink</span>
+                        <span>Metalink</span>
                         <FontAwesomeIcon icon={["fal", "cart-shopping"]}/>
                       </div>
                     </BsNav.Link>
@@ -493,19 +493,19 @@ const ExtendedLevel2Template = (args) => {
 
                     <BsNav.Link className="ifx__nav-metalink" href="javascript:void(0)">
                       <div className="d-flex align-items-center">
-                        <span data-text="Metalink">Metalink</span>
+                        <span>Metalink</span>
                         <FontAwesomeIcon icon={["fal", "user"]}/>
                       </div>
                     </BsNav.Link>
                     <BsNav.Link className="ifx__nav-metalink" href="javascript:void(0)">
                       <div className="d-flex align-items-center">
-                        <span data-text="Metalink">Metalink</span>
+                        <span>Metalink</span>
                         <FontAwesomeIcon icon={["fal", "globe"]}/>
                       </div>
                     </BsNav.Link>
                     <BsNav.Link className="ifx__nav-metalink" href="javascript:void(0)">
                       <div className="d-flex align-items-center">
-                        <span data-text="Metalink">Metalink</span>
+                        <span>Metalink</span>
                         <FontAwesomeIcon icon={["fal", "cart-shopping"]}/>
                       </div>
                     </BsNav.Link>
@@ -519,7 +519,7 @@ const ExtendedLevel2Template = (args) => {
                 <div className="w-100 d-lg-flex ifx__nav-link-wrapper ifx__desktop-show">
                   <ul className="ifx__first-level-nav ifx__nav-list d-flex">
                     <li>
-                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 1">
+                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)">
                         Nav Link 1
                       </BsNav.Link>
 
@@ -527,7 +527,7 @@ const ExtendedLevel2Template = (args) => {
                     </li>
 
                     <li>
-                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 2">
+                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)">
                         Nav Link 2
                       </BsNav.Link>
 
@@ -535,19 +535,19 @@ const ExtendedLevel2Template = (args) => {
                     </li>
 
                     <li>
-                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 3">
+                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)">
                         Nav Link 3
                       </BsNav.Link>
                     </li>
 
                     <li>
-                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 4">
+                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)">
                         Nav Link 4
                       </BsNav.Link>
                     </li>
 
                     <li>
-                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 5">
+                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)">
                         Nav Link 5
                       </BsNav.Link>
                     </li>
@@ -587,19 +587,19 @@ const ExtendedLevel3Template = (args) => {
 
                     <BsNav.Link className="ifx__nav-metalink" href="javascript:void(0)">
                       <div className="d-flex align-items-center">
-                        <span data-text="Metalink">Metalink</span>
+                        <span>Metalink</span>
                         <FontAwesomeIcon icon={["fal", "user"]}/>
                       </div>
                     </BsNav.Link>
                     <BsNav.Link className="ifx__nav-metalink" href="javascript:void(0)">
                       <div className="d-flex align-items-center">
-                        <span data-text="Metalink">Metalink</span>
+                        <span>Metalink</span>
                         <FontAwesomeIcon icon={["fal", "globe"]}/>
                       </div>
                     </BsNav.Link>
                     <BsNav.Link className="ifx__nav-metalink" href="javascript:void(0)">
                       <div className="d-flex align-items-center">
-                        <span data-text="Metalink">Metalink</span>
+                        <span>Metalink</span>
                         <FontAwesomeIcon icon={["fal", "cart-shopping"]}/>
                       </div>
                     </BsNav.Link>
@@ -613,7 +613,7 @@ const ExtendedLevel3Template = (args) => {
                 <div className="w-100 d-lg-flex ifx__nav-link-wrapper ifx__desktop-show">
                   <ul className="ifx__first-level-nav ifx__nav-list d-flex">
                     <li>
-                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 1">
+                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)">
                         Nav Link 1
                       </BsNav.Link>
 
@@ -621,7 +621,7 @@ const ExtendedLevel3Template = (args) => {
                     </li>
 
                     <li>
-                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 2">
+                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)">
                         Nav Link 2
                       </BsNav.Link>
 
@@ -629,19 +629,19 @@ const ExtendedLevel3Template = (args) => {
                     </li>
 
                     <li>
-                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 3">
+                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)">
                         Nav Link 3
                       </BsNav.Link>
                     </li>
 
                     <li>
-                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 4">
+                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)">
                         Nav Link 4
                       </BsNav.Link>
                     </li>
 
                     <li>
-                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)" data-text="Nav Link 5">
+                      <BsNav.Link className="ifx__first-lvl-link ifx__nav-link" href="javascript:void(0)">
                         Nav Link 5
                       </BsNav.Link>
                     </li>
@@ -732,7 +732,7 @@ const VerticalLevel2Template = (args) => {
             <p className="ifx__content-nav__divider">Category</p>
 
             <BsNav.Item as="li">
-              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="javascript:void(0)" data-text="Navigationlink">
+              <BsNav.Link className="ifx__nav-mega-dropdown-next-layer" href="javascript:void(0)">
                 <div>
                   <span>Navigationlink</span>
                   <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
