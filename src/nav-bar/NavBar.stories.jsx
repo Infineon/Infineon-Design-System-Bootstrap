@@ -99,15 +99,14 @@ const JsWrapper = ({ children }) => {
 }
 
 
-/* ///////////////////////////////////////////////////////////////////////////////////////////////////
-  /// TEMPLATES FOR NAV-BARS ON DESKTOP (DEFAULT, EXTENDED, EXTENDED LEVEL 2, EXTENDED LEVEL 3)
-*/ ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-/* /////////////////////
-  /// EXTENDED TEMPLATES
-*/ /////////////////////
-// Extended Desktop 2ndLvl Template
-const NavDropdown2ndLvl_Extended = ({label}) => (
+//
+// Templates for Desktop Nav-Bars (ExtendedTemplate, ExtendedLevel2Template, ExtendedLevel3Template)
+//
+
+// ExtendedTemplate
+//
+const EXTENDED__Lvl2 = ({label}) => (
   <BsDropdown as={BsNavItem}>
     <BsDropdown.Toggle data-bs-toggle="dropdown" as={BsNavLink} className="ifx__first-lvl-link">{label}</BsDropdown.Toggle>
     <BsDropdown.Menu className="ifx__second-level-nav" renderOnMount>
@@ -120,201 +119,145 @@ const NavDropdown2ndLvl_Extended = ({label}) => (
     </BsDropdown.Menu>
   </BsDropdown>
 )
-/* /////////////////////
-  /// EXTENDED TEMPLATES END
-*/ /////////////////////
 
+// ExtendedLevel2Template
+//
+const EXTENDED_LVL2__Lvl2_Col3_Li = ({label}) => (
+  <li>
+    <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)">
+      {label}
+    </BsNav.Link>
+  </li>
+)
 
-
-/* /////////////////////
-  /// EXTENDED LEVEL 2 TEMPLATES
-*/ /////////////////////
-// ExtendedLvl2 Desktop 2ndLvl Col3 Template
-const NavMegaDropdown2ndLvlCol3_ExtendedLvl2 = () => (
+const EXTENDED_LVL2__Lvl2_Col3 = () => (
   <div className="ifx__second-lvl-col col-3">
     <ul>
-      <li>
-        <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)">
-          Overview Nav Link
-        </BsNav.Link>
-      </li>
+      <EXTENDED_LVL2__Lvl2_Col3_Li label="Overview Nav Link"/>
 
-      <li>
-        <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)">
-          Navigationlink
-        </BsNav.Link>
-      </li>
+      <EXTENDED_LVL2__Lvl2_Col3_Li label="Navigationlink"/>
 
-      <li>
-        <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)">
-          Navigationlink
-        </BsNav.Link>
-      </li>
+      <EXTENDED_LVL2__Lvl2_Col3_Li label="Navigationlink"/>
 
-      <li>
-        <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)">
-          Navigationlink
-        </BsNav.Link>
-      </li>
+      <EXTENDED_LVL2__Lvl2_Col3_Li label="Navigationlink"/>
 
-      <li>
-        <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)">
-          Navigationlink
-        </BsNav.Link>
-      </li>
+      <EXTENDED_LVL2__Lvl2_Col3_Li label="Navigationlink"/>
 
-      <li>
-        <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)">
-          Navigationlink
-        </BsNav.Link>
-      </li>
+      <EXTENDED_LVL2__Lvl2_Col3_Li label="Navigationlink"/>
 
-      <li>
-        <BsNav.Link className="ifx__second-lvl-link" href="javascript:void(0)">
-          Navigationlink
-        </BsNav.Link>
-      </li>
+      <EXTENDED_LVL2__Lvl2_Col3_Li label="Navigationlink"/>
     </ul>
   </div>
 )
 
-// ExtendedLvl2 Desktop 2ndLvl Template
-const NavMegaDropdown2ndLvl_ExtendedLvl2 = () => (
+const EXTENDED_LVL2__Lvl2 = () => (
   <ul className="ifx__second-level-nav w-100 ifx__nav-mega-dropdown">
     <li className="container">
       <ul>
         <li className="ifx__nav-wrapper">
           <div className="row">
-            <NavMegaDropdown2ndLvlCol3_ExtendedLvl2/>
+            <EXTENDED_LVL2__Lvl2_Col3/>
 
-            <NavMegaDropdown2ndLvlCol3_ExtendedLvl2/>
+            <EXTENDED_LVL2__Lvl2_Col3/>
 
-            <NavMegaDropdown2ndLvlCol3_ExtendedLvl2/>
+            <EXTENDED_LVL2__Lvl2_Col3/>
 
-            <NavMegaDropdown2ndLvlCol3_ExtendedLvl2/>
+            <EXTENDED_LVL2__Lvl2_Col3/>
           </div>
         </li>
       </ul>
     </li>
   </ul>
 )
-/* /////////////////////
-  /// EXTENDED LEVEL 2 TEMPLATES END
-*/ /////////////////////
 
+// ExtendedLevel3Template
+//
+const EXTENDED_LVL3__Lvl3_Col6_Li = ({label}) => (
+  <li>
+    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)">
+      {label}
+    </BsNav.Link>
+  </li>
+)
 
+const EXTENDED_LVL3__Lvl3_Col6 = () => (
+  <div className="ifx__third-lvl-col col-6">
+    <ul>
+      <EXTENDED_LVL3__Lvl3_Col6_Li label="Overview Nav Link"/>
 
-/* /////////////////////
-  /// EXTENDED LEVEL 3 TEMPLATES
-*/ /////////////////////
-// ExtendedLvl3 Desktop 3rdLvl Col-lg-6 Template
-const NavMegaDropdown3rdLvlColLg6_ExtendedLvl3 = () => (
-  <div className="ifx__third-lvl-col col-lg-6">
-    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)">
-      Overview Nav Link
-    </BsNav.Link>
-    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)">
-      Navigationlink
-    </BsNav.Link>
-    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)">
-      Navigationlink
-    </BsNav.Link>
-    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)">
-      Navigationlink
-    </BsNav.Link>
-    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)">
-      Navigationlink
-    </BsNav.Link>
-    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)">
-      Navigationlink
-    </BsNav.Link>
-    <BsNav.Link className="ifx__third-lvl-link" href="javascript:void(0)">
-      Navigationlink
-    </BsNav.Link>
+      <EXTENDED_LVL3__Lvl3_Col6_Li label="Navigationlink"/>
+
+      <EXTENDED_LVL3__Lvl3_Col6_Li label="Navigationlink"/>
+
+      <EXTENDED_LVL3__Lvl3_Col6_Li label="Navigationlink"/>
+
+      <EXTENDED_LVL3__Lvl3_Col6_Li label="Navigationlink"/>
+
+      <EXTENDED_LVL3__Lvl3_Col6_Li label="Navigationlink"/>
+
+      <EXTENDED_LVL3__Lvl3_Col6_Li label="Navigationlink"/>
+    </ul>
   </div>
 )
 
-// ExtendedLvl3 Desktop 3rdLvl Template
-const NavMegaDropdown3rdLvl_ExtendedLvl3 = () => (
+const EXTENDED_LVL3__Lvl3 = () => (
   <ul className="ifx__third-level-nav ifx__nav-mega-dropdown-level-3 w-100">
     <li className="w-100">
       <div className="row">
-        <NavMegaDropdown3rdLvlColLg6_ExtendedLvl3/>
+        <EXTENDED_LVL3__Lvl3_Col6/>
         
-        <NavMegaDropdown3rdLvlColLg6_ExtendedLvl3/>
+        <EXTENDED_LVL3__Lvl3_Col6/>
       </div>
     </li>
   </ul>
 )
 
-// ExtendedLvl3 Desktop 2ndLvl NavLinkWithIcon Template
-const NavLinkWithIcon = ({label}) => (
-  <BsNav.Link className="ifx__second-lvl-link ifx__nav-link-with-icon" href="javascript:void(0)">
-    <div>
-      <span>{label}</span>
-      <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
-    </div>
-  </BsNav.Link>
+const EXTENDED_LVL3__Lvl2_Col6_Li = ({label}) => (
+  <li>
+    <BsNav.Link className="ifx__second-lvl-link ifx__nav-link-with-icon" href="javascript:void(0)">
+      <div>
+        <span>{label}</span>
+        <FontAwesomeIcon icon={["fal", "chevron-right"]}/>
+      </div>
+    </BsNav.Link>
+
+    <EXTENDED_LVL3__Lvl3/>
+  </li>
 )
 
-// ExtendedLvl3 Desktop 2ndLvl Col-lg-6 Template
-const NavMegaDropdown2ndLvlColLg6_ExtendedLvl3 = () => (
-  <div className="ifx__second-lvl-col col-lg-6">
+const EXTENDED_LVL3__Lvl2_Col6 = () => (
+  <div className="ifx__second-lvl-col col-6">
     <ul>
-      <li>
-        <NavLinkWithIcon label="Overview Nav Link"/>
+      <EXTENDED_LVL3__Lvl2_Col6_Li label="Overview Nav Link"/>
 
-        <NavMegaDropdown3rdLvl_ExtendedLvl3/>
-      </li>
+      <EXTENDED_LVL3__Lvl2_Col6_Li label="Navigationlink"/>
 
-      <li>
-        <NavLinkWithIcon label="Navigationlink"/>
+      <EXTENDED_LVL3__Lvl2_Col6_Li label="Navigationlink"/>
 
-        <NavMegaDropdown3rdLvl_ExtendedLvl3/>
-      </li>
+      <EXTENDED_LVL3__Lvl2_Col6_Li label="Navigationlink"/>
 
-      <li>
-        <NavLinkWithIcon label="Navigationlink"/>
-      </li>
+      <EXTENDED_LVL3__Lvl2_Col6_Li label="Navigationlink"/>
 
-      <li>
-        <NavLinkWithIcon label="Navigationlink"/>
-      </li>
-
-      <li>
-        <NavLinkWithIcon label="Navigationlink"/>
-      </li>
-
-      <li>
-        <NavLinkWithIcon label="Navigationlink"/>
-      </li>
+      <EXTENDED_LVL3__Lvl2_Col6_Li label="Navigationlink"/>
     </ul>
   </div>
 )
 
-// ExtendedLvl3 Desktop 2ndLvl Template
-const NavMegaDropdown2ndLvl_ExtendedLvl3 = () => (
+const EXTENDED_LVL3__Lvl2 = () => (
   <ul className="ifx__second-level-nav w-100 ifx__nav-mega-dropdown">
     <li className="container">
       <ul>
         <li className="ifx__nav-wrapper">
           <div className="row">
-            <NavMegaDropdown2ndLvlColLg6_ExtendedLvl3/>
+            <EXTENDED_LVL3__Lvl2_Col6/>
 
-            <NavMegaDropdown2ndLvlColLg6_ExtendedLvl3/>
+            <EXTENDED_LVL3__Lvl2_Col6/>
           </div>
         </li>
       </ul>
     </li>
   </ul>
 )
-/* /////////////////////
-  /// EXTENDED LEVEL 3 TEMPLATES END
-*/ /////////////////////
-
-/* ///////////////////////////////////////////////////////////////////////////////////////////////////
-  /// TEMPLATES FOR NAV-BARS ON DESKTOP (DEFAULT, EXTENDED, EXTENDED LEVEL 2, EXTENDED LEVEL 3) END
-*/ ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -439,23 +382,23 @@ const ExtendedTemplate = (args) => {
                 <div className="w-100 d-lg-flex ifx__nav-link-wrapper ifx__desktop-show">
                   <ul className="d-flex ifx__first-level-nav ifx__nav-list">
                     <li>
-                      <NavDropdown2ndLvl_Extended label="Nav Link 1"/>
+                      <EXTENDED__Lvl2 label="Nav Link 1"/>
                     </li>
 
                     <li>
-                      <NavDropdown2ndLvl_Extended label="Nav Link 2"/>
+                      <EXTENDED__Lvl2 label="Nav Link 2"/>
                     </li>
 
                     <li>
-                      <NavDropdown2ndLvl_Extended label="Nav Link 3"/>
+                      <EXTENDED__Lvl2 label="Nav Link 3"/>
                     </li>
 
                     <li>
-                      <NavDropdown2ndLvl_Extended label="Nav Link 4"/>
+                      <EXTENDED__Lvl2 label="Nav Link 4"/>
                     </li>
 
                     <li>
-                      <NavDropdown2ndLvl_Extended label="Nav Link 5"/>
+                      <EXTENDED__Lvl2 label="Nav Link 5"/>
                     </li>
                   </ul>
                 </div>
@@ -523,7 +466,7 @@ const ExtendedLevel2Template = (args) => {
                         Nav Link 1
                       </BsNav.Link>
 
-                      <NavMegaDropdown2ndLvl_ExtendedLvl2/>
+                      <EXTENDED_LVL2__Lvl2/>
                     </li>
 
                     <li>
@@ -531,7 +474,7 @@ const ExtendedLevel2Template = (args) => {
                         Nav Link 2
                       </BsNav.Link>
 
-                      <NavMegaDropdown2ndLvl_ExtendedLvl2/>
+                      <EXTENDED_LVL2__Lvl2/>
                     </li>
 
                     <li>
@@ -617,7 +560,7 @@ const ExtendedLevel3Template = (args) => {
                         Nav Link 1
                       </BsNav.Link>
 
-                      <NavMegaDropdown2ndLvl_ExtendedLvl3/>
+                      <EXTENDED_LVL3__Lvl2/>
                     </li>
 
                     <li>
@@ -625,7 +568,7 @@ const ExtendedLevel3Template = (args) => {
                         Nav Link 2
                       </BsNav.Link>
 
-                      <NavMegaDropdown2ndLvl_ExtendedLvl3/>
+                      <EXTENDED_LVL3__Lvl2/>
                     </li>
 
                     <li>
