@@ -1,4 +1,4 @@
-name: CI
+name: Deploy Bootstrap Library to NPM
 
 on:
   pull_request:
