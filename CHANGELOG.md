@@ -1,3 +1,15 @@
+# v1.1.0 (Wed Sep 21 2022)
+
+#### 🚀 Enhancement
+
+- Added actions for automatic deployment to github pages [#24](https://github.com/Infineon/Infineon-Design-System-Bootstrap/pull/24) ([@kaiwerther](https://github.com/kaiwerther))
+
+#### Authors: 1
+
+- Kai Werther ([@kaiwerther](https://github.com/kaiwerther))
+
+---
+
 # v1.0.4 (Wed Sep 07 2022)
 
 #### 🐛 Bug Fix
