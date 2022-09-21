@@ -116,7 +116,6 @@ dist-sources
 # Local Netlify folder
 .netlify
 
-.npmrc
 /dist/
 
 /yarn.lock

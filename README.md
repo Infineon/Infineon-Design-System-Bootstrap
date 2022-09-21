@@ -38,12 +38,11 @@ As part of the Infineon brand guidelines, the Infineon Digital Design System sup
 
 This repository contains an Bootstrap implementation of Infineons Digital Design System and it's Storybook sourcecode.
 
-Use it to build & run storybook and distribute the Bootstrap SCSS.
+Use it to build & run storybook and distribute the Infineons Bootstrap SCSS.
 
 ### Built With
 
-* [![React][React.js]][React-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+[![React][React.js]][React-url] [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 
 <p align="right"><a href="#tableContent">back to top</a></p>
 
@@ -53,101 +52,67 @@ Use it to build & run storybook and distribute the Bootstrap SCSS.
 
 ### Prerequisites
 
-- [Node](https://nodejs.org/en/) v14 or older.
-- [Yarn](https://classic.yarnpkg.com/en/) v1.22.10 or older, or [Npm](https://www.npmjs.com/) v6.14.13 or older.
+- [Node](https://nodejs.org/en/) v14
+- [Npm](https://www.npmjs.com/) v6.14.13
 
-### Installing Bootstrap
+### Installing Infineon Design System Bootstrap
 
 #### With NPM
 
-1. ```npm install --save @infineon/design-system-bootstrap```
-
-#### With Yarn
-
-1. ```yarn add @infineon/design-system-bootstrap```
-
+```npm install --save @infineon/design-system-bootstrap```
 
 ### Installing Font Awesome
 
-1. Send an email to dds@infineon.com to get the fontawesome token key. Then execute these two commands:
+If you are an infineon employee send an email to dds@infineon.com to get a fontawesome token key. Then execute this commands to configure your access to fontawesome pro.
 ```bash
-
-npm config set "@fortawesome:registry" https://npm.fontawesome.com/
 npm config set "//npm.fontawesome.com/:_authToken" <PASTE KEY HERE>
 ```
 
-Additional Fontawesome installation instructions can be found here: 
+After that you can follow your technology specific installation instractions that can be found here: 
 
-For Angular: https://fontawesome.com/v5/docs/web/use-with/angular <br />
-For Vue https://fontawesome.com/v6/docs/web/use-with/vue/ <br />
+For Angular: https://fontawesome.com/v5/docs/web/use-with/angular
+For Vue https://fontawesome.com/v6/docs/web/use-with/vue/
 For React: https://fontawesome.com/v6/docs/web/use-with/react/
 
-### Importing Bootstrap
+### Importing Infineon Design System Bootstrap
 
 After you install the Infineon Bootstrap module, you have to import it by copying the following line into your entry point file:
 ```bash
 import "@infineon/design-system-bootstrap"
 ```
 
-<p align="right"><a href="#tableContent">back to top</a></p>
-
-## Local Development
-If you have cloned the repository to your local machine, you don't need to install and import the Infineon Design System Bootstrap module, but you do have to install the necessary dependencies and modules not included in the repository.
-
-### Installation
-
-Install all the modules and dependencies listed on the ```package.json``` file with:
-
-```bash
-yarn install
-```
-
-or
-```bash
-npm install
-```
-
-### Build Storybook
-
-To deploy Storybook, we first need to export it as a static web app.
-To do so, we can use the inbuild ```build-storybook``` command, or the ```storybook-prepare``` shorthand command, with ```npm``` or ```yarn```.
-
-```bash
-yarn build-storybook or yarn storybook-prepare
-```
-
-or
-
-```bash
-npm build-storybook or npm storybook-prepare
-```
-
-This will generate a static Storybook in the ```storybook-static``` directory.
-
-### Start Storybook
-
-To start storybook, simply run the inbuild command ```start-storybook```, or the ```storybook-start``` shorthand command with ```npm``` or ```yarn```.
-
-```bash
-yarn start-storybook or yarn storybook-start
-```
-
-or
-
-```bash
-npm start-storybook or npm storybook-start
-```
-
-```start-storybook``` also executes ```watch-css``` and ```watch-storybook``` which automatically update storybook on code change.
-
-<p align="right"><a href="#tableContent">back to top</a></p>
-
 <!-- USAGE EXAMPLES -->
 ## Usage
 
 Explore our components in Storybook.
-
 https://storybook-bootstrap.icp.infineon.com
+
+Simply copy & paste the sourcecode of any component into your application.
+
+<p align="right"><a href="#tableContent">back to top</a></p>
+
+## Contributing
+If you want to contribute to this library first fork + clone it. Start local development and create a pull request to ```master``` from your fork.
+
+### Start Storybook
+
+For local testing you can start storybook on it's dev webserver. This will enable you to quickly develop with features like hot code replacement.
+
+```bash
+npm install
+npm storybook-prepare
+npm storybook-start
+```
+
+### Build Storybook
+
+Use this script to build a storybook containg all components in this library. The result of this build will be placed in the ```.storybook-static``` folder and can be deployed on any simple webserver.
+
+```bash
+npm install
+npm storybook-prepare
+npm storybook-build
+```
 
 <p align="right"><a href="#tableContent">back to top</a></p>
 
