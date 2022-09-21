@@ -1,8 +1,15 @@
-name: CI
+name: Deploy Bootstrap Library to NPM
 
 on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
   push:
-    branches: [ "master" ]
+    branches:
+      - master
 
 jobs:
   release:
