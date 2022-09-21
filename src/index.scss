@@ -1,9 +1,7 @@
-@import "../node_modules/@infineon/design-system-tokens/dist/fonts";
+@import "@infineon/design-system-tokens/dist/fonts";
 @import "bootstrap-theme";
 
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
+@import "bootstrap/scss/bootstrap";
 
 @import "./image-aspect-ratio/image-aspect-ratio";
 @import "./slant/slant";
@@ -17,9 +15,11 @@
 @import "./button-back-to-top/button-back-to-top";
 @import "./button-badge-on-icon/button-badge-on-icon";
 @import "./card/card";
+@import "./carousel/carousel";
 @import "./content-navigation/content-navigation";
 @import "./dropdowns/dropdown";
 @import "./footer/footer";
+@import "./hero-banner/hero-banner";
 @import "./link/link";
 @import "./list-group/list-group";
 @import "./modal/modal";
