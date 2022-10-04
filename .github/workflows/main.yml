@@ -45,6 +45,7 @@ jobs:
       - name: Npm Publish # takes version number from package.json, canary releases will not be published to NPM
         uses: JS-DevTools/npm-publish@v1
         with:
+          registry: "https://registry.npmjs.org"
           token: ${{ secrets.NPM_TOKEN }}
           
 
