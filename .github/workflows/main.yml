@@ -14,12 +14,12 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
+    if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')" # job will not run, if triggered via ship-it
     steps:
       - name: checkout
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          fetch-depth: 0 # fetch all tags for ship-it
 
       - name: download + setup auto
         uses: auto-it/setup-auto@v1
@@ -28,15 +28,23 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 16
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@infineon"
           cache: 'npm'
           cache-dependency-path: package-lock.json
 
       - name: Create Release 
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          npm config set '//npm.fontawesome.com/:_authToken' "${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}"
+          npm config set '//npm.fontawesome.com/:_authToken' "${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}" 
           npm install
           npm run bundle
           auto shipit
+      - name: Npm Publish # takes version number from package.json, canary releases will not be published to NPM
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          
+
