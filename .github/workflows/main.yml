@@ -42,6 +42,14 @@ jobs:
           npm install
           npm run bundle
           auto shipit
+      - name: Switch registry to npmjs.org
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+          registry-url: "https://registry.npmjs.org"
+          scope: "@infineon"
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
       - name: Npm Publish # takes version number from package.json, canary releases will not be published to NPM
         uses: JS-DevTools/npm-publish@v1
         with:
