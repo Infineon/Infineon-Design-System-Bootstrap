@@ -1,3 +1,16 @@
+# v1.2.0 (Thu Oct 06 2022)
+
+#### 🚀 Enhancement
+
+- Github actions modification, so canary release goes to github and doe… [#28](https://github.com/Infineon/Infineon-Design-System-Bootstrap/pull/28) (lechneve@ISCN5CG1201S7M.infineon.com [@verena-ifx](https://github.com/verena-ifx))
+
+#### Authors: 2
+
+- [@verena-ifx](https://github.com/verena-ifx)
+- Verena Lechner (lechneve@ISCN5CG1201S7M.infineon.com)
+
+---
+
 # v1.1.0 (Wed Sep 21 2022)
 
 #### 🚀 Enhancement
