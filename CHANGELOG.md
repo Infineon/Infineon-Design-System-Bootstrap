@@ -1,3 +1,16 @@
+# v1.2.1 (Thu Oct 06 2022)
+
+#### 🐛 Bug Fix
+
+- repository name url fixed in package.json [#29](https://github.com/Infineon/Infineon-Design-System-Bootstrap/pull/29) ([@verena-ifx](https://github.com/verena-ifx) [@kaiwerther](https://github.com/kaiwerther))
+
+#### Authors: 2
+
+- [@verena-ifx](https://github.com/verena-ifx)
+- Kai Werther ([@kaiwerther](https://github.com/kaiwerther))
+
+---
+
 # v1.2.0 (Thu Oct 06 2022)
 
 #### 🚀 Enhancement
