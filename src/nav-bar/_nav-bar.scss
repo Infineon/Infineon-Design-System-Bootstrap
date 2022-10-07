@@ -336,7 +336,7 @@
   }
 
   & .ifx__nav-link-wrapper.ifx__desktop-show {
-    margin-left: calc(110px + tokens.$spacing-m);
+    padding-left: calc(110px + tokens.$spacing-m);
 
     & a {
       padding-bottom: tokens.$sizing-s;
