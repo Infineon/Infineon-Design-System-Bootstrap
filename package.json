@@ -15,7 +15,8 @@
     "dist",
     "/src/**/*.scss",
     "/src/**/*.js",
-    "index.js"
+    "index.js",
+    "/public/**"
   ],
   "source": "./dist/index.js",
   "sass": "./src/index.scss",
