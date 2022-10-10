@@ -123,7 +123,7 @@ yarn build-storybook
 or
 
 ```bash
-npm build-storybook
+npm run storybook-build
 ```
 
 This will generate a static Storybook in the ```storybook-static``` directory.
@@ -139,7 +139,7 @@ yarn start-storybook
 or
 
 ```bash
-npm start-storybook
+npm run storybook-start
 ```
 
 ```start-storybook``` also executes ```watch-css``` and ```watch-storybook``` which automatically update storybook on code change.
