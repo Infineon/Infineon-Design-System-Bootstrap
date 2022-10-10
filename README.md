@@ -130,7 +130,7 @@ This will generate a static Storybook in the ```storybook-static``` directory.
 
 ### Start Storybook
 
-To start storybook, simply run the inbuild command ```start-storybook``` with ```npm``` or ```yarn```.
+To start storybook, simply run the inbuild command ```storybook-start``` with ```npm``` or ```yarn```.
 
 ```bash
 yarn start-storybook
