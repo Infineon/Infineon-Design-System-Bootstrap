@@ -21,7 +21,7 @@
 
     &:after {
       content: "";
-      background-image: url("../public/CS_Herobanner_Mainpage_mobile.svg");
+      background-image: url("../../public/CS_Herobanner_Mainpage_mobile.svg");
       background-repeat: no-repeat;
       background-position: right center;
       background-size: contain;
@@ -34,7 +34,7 @@
       height: 100%;
 
       @include media-breakpoint-up(lg) {
-        background-image: url("../public/CS_Herobanner_Mainpage.svg");
+        background-image: url("../../public/CS_Herobanner_Mainpage.svg");
       }
     }
   }
@@ -113,17 +113,17 @@
 
   &::before {
     @include media-breakpoint-up(xxl) {
-      background-image: url("../public/CS_Herobanner_Subpage2.svg");
+      background-image: url("../../public/CS_Herobanner_Subpage2.svg");
       background-position: left center;
     }
   }
 
   &::after {
-    background-image: url("../public/CS_Herobanner_Subpage_Mobile.svg");
+    background-image: url("../../public/CS_Herobanner_Subpage_Mobile.svg");
     background-position: right center;
     
     @include media-breakpoint-up(lg) {
-      background-image: url("../public/CS_Herobanner_Subpage1.svg");
+      background-image: url("../../public/CS_Herobanner_Subpage1.svg");
     }
   }
 
