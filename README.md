@@ -54,7 +54,7 @@ Use it to build & run storybook and distribute the Bootstrap SCSS.
 ### Prerequisites
 
 - [Node](https://nodejs.org/en/) v14 or older.
-- [Yarn](https://classic.yarnpkg.com/en/) v1.22.10 or older, or [Npm](https://www.npmjs.com/) v6.14.13 or older.
+- [Npm](https://www.npmjs.com/) v6.14.13 or older.
 
 ### Installation on React, Vue or Angular
 
