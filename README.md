@@ -120,6 +120,7 @@ npm install
 To deploy Storybook, we first need to export it as a static web app.
 To do so, we can use the inbuild ```build-storybook``` command with ```npm``` or ```yarn```.
 
+```bash
 yarn storybook-build
 ```
 
