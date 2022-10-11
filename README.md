@@ -60,7 +60,7 @@ Use it to build & run storybook and distribute the Bootstrap SCSS.
 
 #### With NPM
 
-1. ```npm install --save @infineon/design-system-bootstrap```
+```npm install --save @infineon/design-system-bootstrap```
 
 #### Add to main.js
 
@@ -68,7 +68,7 @@ Use it to build & run storybook and distribute the Bootstrap SCSS.
 
 #### Installation Fontawesome
 
-1. Send an email to dds@infineon.com to get the fontawesome token key. Then execute these two commands:
+Send an email to dds@infineon.com to get the fontawesome token key. Then execute these two commands:
 ```bash
 
 npm config set "@fortawesome:registry" https://npm.fontawesome.com/
