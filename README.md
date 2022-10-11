@@ -62,10 +62,6 @@ Use it to build & run storybook and distribute the Bootstrap SCSS.
 
 1. ```npm install --save @infineon/design-system-bootstrap```
 
-#### With Yarn
-
-1. ```yarn add @infineon/design-system-bootstrap```
-
 #### Add to main.js
 
 ```import "@infineon/design-system-bootstrap";```
@@ -87,6 +83,11 @@ For React: https://fontawesome.com/v6/docs/web/use-with/react/
 
 <p align="right"><a href="#tableContent">back to top</a></p>
 
+#### !Important! Using Infineon-Design-System-Bootstrap with React:
+
+After running ```npm install```, you'll additionally have to copy the folder "node_modules/@infineon/design-system-bootstrap/public" to "node_modules/@infineon/design-system-bootstrap/src" in order to successfully start your React application.
+
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 
@@ -103,24 +104,13 @@ https://storybook-bootstrap.icp.infineon.com
 Install all the modules and dependencies listed on the ```package.json``` file with:
 
 ```bash
-yarn install
-```
-
-or
-```bash
 npm install
 ```
 
 ### Build Storybook
 
 To deploy Storybook, we first need to export it as a static web app.
-To do so, we can use the inbuild ```build-storybook``` command with ```npm``` or ```yarn```.
-
-```bash
-yarn build-storybook
-```
-
-or
+To do so, we can use the inbuild ```build-storybook``` command with ```npm``` 
 
 ```bash
 npm run storybook-build
@@ -130,13 +120,7 @@ This will generate a static Storybook in the ```storybook-static``` directory.
 
 ### Start Storybook
 
-To start storybook, simply run the inbuild command ```storybook-start``` with ```npm``` or ```yarn```.
-
-```bash
-yarn start-storybook
-```
-
-or
+To start storybook, simply run the inbuild command ```storybook-start``` with ```npm``` 
 
 ```bash
 npm run storybook-start
