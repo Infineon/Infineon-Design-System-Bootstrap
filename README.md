@@ -54,10 +54,13 @@ Use it to build & run storybook and distribute the Bootstrap SCSS.
 ### Prerequisites
 
 - [Node](https://nodejs.org/en/) v14 or older.
-- [Npm](https://www.npmjs.com/) v6.14.13 or older.
+- [Yarn](https://classic.yarnpkg.com/en/) v1.22.10 or older, or [Npm](https://www.npmjs.com/) v6.14.13 or older.
 
 ### Installation on React, Vue or Angular
 
+#### With Yarn
+
+```yarn add @infineon/design-system-bootstrap```
 #### With NPM
 
 ```npm install --save @infineon/design-system-bootstrap```
@@ -85,7 +88,7 @@ For React: https://fontawesome.com/v6/docs/web/use-with/react/
 
 #### !Important! Using Infineon-Design-System-Bootstrap with React:
 
-After running ```npm install```, you'll additionally have to copy the folder "node_modules/@infineon/design-system-bootstrap/public" to "node_modules/@infineon/design-system-bootstrap/src" in order to successfully start your React application.
+After running ```yarn install``` or ```npm install```, you'll additionally have to copy the folder "node_modules/@infineon/design-system-bootstrap/public" to "node_modules/@infineon/design-system-bootstrap/src" in order to successfully start your React application.
 
 
 <!-- USAGE EXAMPLES -->
@@ -104,13 +107,23 @@ https://storybook-bootstrap.icp.infineon.com
 Install all the modules and dependencies listed on the ```package.json``` file with:
 
 ```bash
+yarn install
+```
+
+or
+```bash
 npm install
 ```
 
 ### Build Storybook
 
 To deploy Storybook, we first need to export it as a static web app.
-To do so, we can use the inbuild ```build-storybook``` command with ```npm``` 
+To do so, we can use the inbuild ```build-storybook``` command with ```npm``` or ```yarn```.
+
+yarn storybook-build
+```
+
+or
 
 ```bash
 npm run storybook-build
@@ -120,7 +133,11 @@ This will generate a static Storybook in the ```storybook-static``` directory.
 
 ### Start Storybook
 
-To start storybook, simply run the inbuild command ```storybook-start``` with ```npm``` 
+To start storybook, simply run the inbuild command ```storybook-start``` with ```npm``` or ```yarn```.
+
+```bash
+yarn storybook-start
+```
 
 ```bash
 npm run storybook-start
