@@ -1,3 +1,16 @@
+# v1.2.3 (Wed Oct 12 2022)
+
+#### 🐛 Bug Fix
+
+- removed closed from PR types that trigger a new canary release as it … [#32](https://github.com/Infineon/Infineon-Design-System-Bootstrap/pull/32) (lechneve@ISCN5CG1201S7M.infineon.com [@verena-ifx](https://github.com/verena-ifx))
+
+#### Authors: 2
+
+- [@verena-ifx](https://github.com/verena-ifx)
+- Verena Lechner (lechneve@ISCN5CG1201S7M.infineon.com)
+
+---
+
 # v1.2.2 (Mon Oct 10 2022)
 
 #### 🐛 Bug Fix
