@@ -5,8 +5,7 @@ on:
     types:
       - opened
       - reopened
-      - synchronize
-      - closed
+      - synchronize # canary on new commit
   push:
     branches:
       - master
