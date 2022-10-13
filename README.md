@@ -66,11 +66,15 @@ Use it to build & run storybook and distribute the Bootstrap SCSS.
 
 1. ```yarn add @infineon/design-system-bootstrap```
 
-#### Add to main.js
+#### Import the module inside your entry point file.
+
+For React: <b>index.js</b> <br />
+For Vue: <b>main.js</b> <br />
+For Angular: <b>main.ts</b>
 
 ```import "@infineon/design-system-bootstrap";```
 
-#### Installation Fontawesome
+#### Installation of Fontawesome
 
 1. Send an email to dds@infineon.com to get the fontawesome token key. Then execute these two commands:
 ```bash
@@ -84,6 +88,22 @@ Additional Fontawesome installation instructions can be found here:
 For Angular: https://fontawesome.com/v5/docs/web/use-with/angular <br />
 For Vue https://fontawesome.com/v6/docs/web/use-with/vue/ <br />
 For React: https://fontawesome.com/v6/docs/web/use-with/react/
+
+#### Installation of SASS
+For React projects only, run: 
+```bash
+npm install sass
+```
+
+#### Change Public folder as a temporary solution for React only
+Copy (<b>not move!</b>) the:
+
+node_modules -> @infineon -> design-system-bootstrap -> <b>public</b> folder
+
+inside
+
+node_modules -> @infineon -> design-system-bootstrap -> <b>src</b> folder
+
 
 <p align="right"><a href="#tableContent">back to top</a></p>
 
@@ -117,32 +137,32 @@ To deploy Storybook, we first need to export it as a static web app.
 To do so, we can use the inbuild ```build-storybook``` command with ```npm``` or ```yarn```.
 
 ```bash
-yarn build-storybook
+yarn storybook-build
 ```
 
 or
 
 ```bash
-npm build-storybook
+npm storybook-build
 ```
 
 This will generate a static Storybook in the ```storybook-static``` directory.
 
 ### Start Storybook
 
-To start storybook, simply run the inbuild command ```start-storybook``` with ```npm``` or ```yarn```.
+To start storybook, simply run the inbuild command ```storybook-start``` with ```npm``` or ```yarn```.
 
 ```bash
-yarn start-storybook
+yarn storybook-start
 ```
 
 or
 
 ```bash
-npm start-storybook
+npm storybook-start
 ```
 
-```start-storybook``` also executes ```watch-css``` and ```watch-storybook``` which automatically update storybook on code change.
+```storybook-start``` also executes ```watch-css``` and ```watch-storybook``` which automatically update storybook on code change.
 
 <p align="right"><a href="#tableContent">back to top</a></p>
 
