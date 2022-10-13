@@ -1,3 +1,15 @@
+# v1.2.4 (Thu Oct 13 2022)
+
+#### 🐛 Bug Fix
+
+- Update README.md [#37](https://github.com/Infineon/Infineon-Design-System-Bootstrap/pull/37) ([@tishoyanchev](https://github.com/tishoyanchev))
+
+#### Authors: 1
+
+- Tisho Yanchev ([@tishoyanchev](https://github.com/tishoyanchev))
+
+---
+
 # v1.2.3 (Wed Oct 12 2022)
 
 #### 🐛 Bug Fix
