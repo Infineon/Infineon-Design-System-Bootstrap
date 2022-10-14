@@ -1,3 +1,15 @@
+# v1.2.6 (Fri Oct 14 2022)
+
+#### 🐛 Bug Fix
+
+- update buttons color naming for storybook controls [#39](https://github.com/Infineon/Infineon-Design-System-Bootstrap/pull/39) ([@tishoyanchev](https://github.com/tishoyanchev))
+
+#### Authors: 1
+
+- Tisho Yanchev ([@tishoyanchev](https://github.com/tishoyanchev))
+
+---
+
 # v1.2.5 (Thu Oct 13 2022)
 
 #### ⚠️ Pushed to `master`
