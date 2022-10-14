@@ -8,7 +8,7 @@ export default {
   args: {
     label: "Button",
     variant: "solid",
-    color: "primary",
+    color: "default",
     size: "m",
     active: false,
     disabled: false,
@@ -40,10 +40,10 @@ export const Default = DefaultTemplate.bind({});
 export const ButtonBadge = ButtonBadgeTemplate.bind({});
 ButtonBadge.args = {
   label: "Notifications",
-  color: "secondary",
+  color: "highlight",
 };
 
 export const BorderSpinner = BorderSpinnerTemplate.bind({});
 BorderSpinner.args = {
-  color: "secondary",
+  color: "highlight",
 };

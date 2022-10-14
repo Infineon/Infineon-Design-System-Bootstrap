@@ -8,8 +8,8 @@ const propTypes = {
 
   /** Set button color */
   color: PropTypes.oneOf([
-    "primary",
-    "secondary",
+    "default",
+    "highlight",
     "success",
     "danger",
     "warning",

@@ -5,7 +5,7 @@ export default {
   component: ButtonGroup,
   args: {
     variant: "solid",
-    color: "primary",
+    color: "default",
     size: "m",
     disabled: true,
   }

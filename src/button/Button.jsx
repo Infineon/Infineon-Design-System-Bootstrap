@@ -11,8 +11,8 @@ const propTypes = {
 
   /** Set button color */
   color: PropTypes.oneOf([
-    "primary",
-    "secondary",
+    "default",
+    "highlight",
     "success",
     "danger",
     "warning",
@@ -38,9 +38,15 @@ const propTypes = {
 };
 
 export const Button = ({ label, variant, color, size, disabled, icon, iconPosition, children, ...props }) => {
+
+  const bsColor = 
+  color === 'default' ? 'primary' 
+  : color === 'highlight' ? 'secondary' 
+  : color 
+
   const bsVariant =
-    variant === "outline" ? `outline-${color}`
-    : color;
+    variant === "outline" ? `outline-${bsColor}`
+    : bsColor;
 
   const bsSize =
     size === "s" ? "sm" 
