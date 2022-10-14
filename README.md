@@ -83,7 +83,16 @@ npm config set "@fortawesome:registry" https://npm.fontawesome.com/
 npm config set "//npm.fontawesome.com/:_authToken" <PASTE KEY HERE>
 ```
 
-Additional Fontawesome installation instructions can be found here: 
+2. Create an <b>.npmrc</b> file in the root folder of your project, then paste the following code:
+
+```bash
+@fortawesome:registry=https://npm.fontawesome.com/
+//npm.fontawesome.com/:_authToken="TOKEN KEY"
+```
+##### NOTE:
+Replace <b>"TOKEN KEY"</b> with the actual token key string without parenthesis. 
+
+##### Additional Fontawesome installation instructions can be found here: 
 
 For Angular: https://fontawesome.com/v5/docs/web/use-with/angular <br />
 For Vue https://fontawesome.com/v6/docs/web/use-with/vue/ <br />
