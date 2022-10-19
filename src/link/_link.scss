@@ -1,7 +1,7 @@
 @use "@infineon/design-system-tokens/dist/tokens";
 
 a {
-  color: tokens.$color-black;
+  color: tokens.$color-text-black;
   font-weight: 600;
   text-decoration: underline;
 
@@ -11,21 +11,21 @@ a {
 
   &:focus-visible:not(.btn) {
     display: inline-block;
-    color: tokens.$color-secondary-600;
+    color: tokens.$color-highlight-600;
     background-color: #B4DDD8;
     padding: 0 4px;
     margin-left: -4px;
 
     & svg {
-      color: tokens.$color-secondary-600;
+      color: tokens.$color-highlight-600;
     }
   }
 
   &:hover {
-    color: tokens.$color-secondary-600;
+    color: tokens.$color-highlight-600;
 
     & svg {
-      color: tokens.$color-secondary-600;
+      color: tokens.$color-highlight-600;
     }
   }
 
@@ -46,10 +46,10 @@ a {
 }
 
 .ifx__link-color-brand {
-  color: tokens.$color-secondary-500;
+  color: tokens.$color-highlight-500;
 
   &:visited {
-    color: tokens.$color-secondary-600;
+    color: tokens.$color-highlight-600;
   }
 }
 

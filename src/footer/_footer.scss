@@ -7,7 +7,7 @@
 }
 
 .ifx__footer-top {
-  border-bottom: 1px solid tokens.$color-info-300;
+  border-bottom: 1px solid tokens.$color-gray-300;
   padding: 36px 0 40px 0;
 
   @media (min-width: 768px) { 
@@ -74,7 +74,7 @@
     font-size: 13px;
     font-weight: 600;
     margin-bottom: 12px;
-    color: tokens.$color-black;
+    color: tokens.$color-text-black;
 
     @media (min-width: 768px) { 
       font-size: 16px;
@@ -90,7 +90,7 @@
     font-size: 13px;
     font-weight: 400;
     text-decoration: none;
-    color: tokens.$color-black;
+    color: tokens.$color-text-black;
 
     @media (min-width: 768px) { 
       font-size: 16px;

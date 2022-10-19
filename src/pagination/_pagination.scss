@@ -5,7 +5,7 @@
 }
 
 .page-item.active .page-link {
-  background-color: tokens.$color-secondary-500;
+  background-color: tokens.$color-default-500;
 }
 
 .page-link {
@@ -17,26 +17,26 @@
   border: none;
   border-radius: 1px;
   font-weight: 600;
-  color: tokens.$color-black;
+  color: tokens.$color-text-black;
   padding: 0;
 
   &:focus {
-    color: tokens.$color-black;
-    background-color: tokens.$color-white;
+    color: tokens.$color-text-black;
+    background-color: tokens.$color-bg-white;
     box-shadow: none;
   }
 
   &:focus-visible {
-    box-shadow: 0 0 0 2px tokens.$color-secondary-400;
+    box-shadow: 0 0 0 2px tokens.$color-default-500;
   }
 
   &:hover {
-    color: tokens.$color-black;
-    background-color: tokens.$color-info-200;
+    color: tokens.$color-text-black;
+    background-color: tokens.$color-gray-200;
 
     & .fa-chevron-left,
     & .fa-chevron-right {
-      color: tokens.$color-black;
+      color: tokens.$color-text-black;
     }
   }
 }
@@ -91,12 +91,12 @@
   &__page-link {
     &--first,
     &--previous {
-      border-right: 1px solid tokens.$color-info-200;
+      border-right: 1px solid tokens.$color-gray-200;
     }
 
     &--next,
     &--last {
-      border-left: 1px solid tokens.$color-info-200;
+      border-left: 1px solid tokens.$color-gray-200;
     }
   }
 }
@@ -104,6 +104,6 @@
 .pagination {
   .fa-chevrons-left,
   .fa-chevrons-right {
-    color: tokens.$color-info-300;
+    color: tokens.$color-gray-300;
   }
 }

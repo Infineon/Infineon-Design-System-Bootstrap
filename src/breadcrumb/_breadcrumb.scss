@@ -5,7 +5,7 @@
 }
 
 .breadcrumb-item.active {
-  color: tokens.$color-black;
+  color: tokens.$color-text-black;
 }
 
 .breadcrumb-item a {
@@ -18,7 +18,7 @@
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
-  color: tokens.$color-info-300;
+  color: tokens.$color-gray-300;
   padding-right: 16px;
   margin: 3px 0;
 }

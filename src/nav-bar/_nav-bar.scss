@@ -14,7 +14,7 @@
 .ifx__navbar {
   position: sticky;
   top: 0;
-  background-color: tokens.$color-white;
+  background-color: tokens.$color-bg-white;
 
   &.scrolling {
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
@@ -95,7 +95,7 @@
 
   & .ifx__application-name {
     font-size: 20px;
-    color: tokens.$color-black;
+    color: tokens.$color-text-black;
     margin: 0;
   }
 
@@ -117,7 +117,7 @@
   }
 
   & .navbar-collapse {
-    border-right: 2px solid tokens.$color-secondary-500;
+    border-right: 2px solid tokens.$color-default-500;
     padding-top: 24px;
     padding-bottom: 32px;
 
@@ -182,22 +182,22 @@
   }
 
   & li:hover > a {
-    color: tokens.$color-secondary-500;    
+    color: tokens.$color-default-500;    
   }
 
   & .nav-link {
     display: block;
     padding: 0;
     font-weight: 400;
-    color: tokens.$color-black;
+    color: tokens.$color-text-black;
     transition: none;
 
     &:hover {
-      color: tokens.$color-secondary-500;    
+      color: tokens.$color-default-500;    
     }
 
     &:focus {
-      color: tokens.$color-secondary-500;    
+      color: tokens.$color-default-500;    
     }
 
     & svg {
@@ -221,7 +221,16 @@
   }
 }
 
+.ifx__nav-metalink {
 
+  &:hover { 
+
+    & svg { 
+      color: tokens.$color-default-500;
+    }
+    
+  }
+}
 
 .ifx__first-level-nav,
 .ifx__second-level-nav {
@@ -320,12 +329,12 @@
 
     a:hover {
       svg {
-        color: tokens.$color-secondary-500;
+        color: tokens.$color-default-500;
       }
     }
 
     & .ifx__nav-mega-dropdown-next-layer svg {
-      color: tokens.$color-info-300;
+      color: tokens.$color-gray-300;
     }
   }
 
@@ -351,7 +360,7 @@
     left: 0;
     top: 0;
     display: none;
-    background-color: tokens.$color-white;
+    background-color: tokens.$color-bg-white;
 
     &.show {
       display: block;
@@ -364,14 +373,14 @@
     & .nav-link {
       &:hover {
         & svg {
-          color: tokens.$color-secondary-500;
+          color: tokens.$color-default-500;
         }
       }
 
       & svg {
         margin-left: 0;
         margin-right: 8px;
-        color: tokens.$color-info-300;
+        color: tokens.$color-gray-300;
       }
     }
   }
@@ -385,8 +394,8 @@
     left: 0;
     top: 36px;
     display: none;
-    border-top: 2px solid tokens.$color-secondary-500;
-    background-color: tokens.$color-white;
+    border-top: 2px solid tokens.$color-default-500;
+    background-color: tokens.$color-bg-white;
 
     & .row {
       width: 100%;
@@ -399,7 +408,7 @@
 
     a:hover {
       svg {
-        color: tokens.$color-secondary-500;
+        color: tokens.$color-default-500;
       }
     }
 
@@ -408,7 +417,7 @@
     }
 
     svg {
-      color: tokens.$color-info-300;
+      color: tokens.$color-gray-300;
     }
 
     & .ifx__nav-mega-dropdown-level-3 {
@@ -417,7 +426,7 @@
       height: 100%;
       top: 0;
       left: 100%;
-      background-color: tokens.$color-info-100;
+      background-color: tokens.$color-gray-100;
       
       & .w-100 {
         padding: 60px 60px 60px 50px;
@@ -477,7 +486,7 @@
     padding-top: 40px;
     padding-bottom: 32px;
     padding-right: 16px;
-    border-right: 2px solid tokens.$color-secondary-500;
+    border-right: 2px solid tokens.$color-default-500;
   }
 
   & ul {
@@ -498,7 +507,7 @@
       align-items: center;
       font-weight: 400;
       padding: 0;
-      color: tokens.$color-black;
+      color: tokens.$color-text-black;
     }
   }
 
@@ -515,7 +524,7 @@
     left: 0;
     top: 0;
     display: none;
-    background-color: tokens.$color-white;
+    background-color: tokens.$color-bg-white;
 
     &.show {
       display: block;
@@ -524,14 +533,14 @@
     & .nav-link {
       &:hover {
         & svg {
-          color: tokens.$color-secondary-500;
+          color: tokens.$color-default-500;
         }
       }
 
       & svg {
         margin-left: 0;
         margin-right: 8px;
-        color: tokens.$color-info-300;
+        color: tokens.$color-gray-300;
       }
     }
   }
@@ -582,27 +591,27 @@
     width: 40px;
     height: 40px;
     padding: 0;
-    background-color: tokens.$color-white;
-    border: 1px solid tokens.$color-info-200;
+    background-color: tokens.$color-bg-white;
+    border: 1px solid tokens.$color-gray-200;
     margin-top: 32.5px;
 
     &:focus {
-      background-color: tokens.$color-white;
-      border-color: tokens.$color-info-200;
+      background-color: tokens.$color-bg-white;
+      border-color: tokens.$color-gray-200;
     }
 
     &:hover {
-      background-color: tokens.$color-white;
-      border-color: tokens.$color-info-200;
+      background-color: tokens.$color-bg-white;
+      border-color: tokens.$color-gray-200;
     }
 
     &:active, &.active {
-      background-color: tokens.$color-white;
-      border-color: tokens.$color-info-200;
+      background-color: tokens.$color-bg-white;
+      border-color: tokens.$color-gray-200;
     }
 
     svg {
-      color: tokens.$color-secondary-500;
+      color: tokens.$color-default-500;
       width: 16px;
       height: 16px;
     }

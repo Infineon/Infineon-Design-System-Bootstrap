@@ -28,7 +28,7 @@
     padding: 0;
     border: none;
     border-radius: 1px;
-    background-color: tokens.$color-info-100;
+    background-color: tokens.$color-gray-100;
     transform: translate3d(0px, calc(54px + 8px), 0px) !important;
 
     & .form-control, .form-select {
@@ -36,7 +36,7 @@
     }
 
     & .form-select {
-      color: tokens.$color-info-400;
+      color: tokens.$color-gray-400;
     }
 
     & .inf__dropdown-search, .inf__dropdown-select {
@@ -50,15 +50,15 @@
     & .dropdown-item {
       font-size: 16px;
       padding: 8px 16px;
-      color: tokens.$color-black;
+      color: tokens.$color-text-black;
 
       &:focus {
-        background-color: tokens.$color-info-100;
+        background-color: tokens.$color-gray-100;
       }
 
       &:focus-visible {
         outline: none;
-        background-color: tokens.$color-info-100;
+        background-color: tokens.$color-gray-100;
         border: 3px solid #B4DDD8;
         padding-left: calc(16px - 3px);
         margin-left: 0;
@@ -66,20 +66,20 @@
 
       &:hover {
         font-weight: 600;
-        background-color: tokens.$color-info-200;
+        background-color: tokens.$color-gray-200;
 
         & svg {
-          color: tokens.$color-black;
+          color: tokens.$color-text-black;
         }
       }
 
       &.active, &:active {
         font-weight: 600;
         background-color: transparent;
-        color: tokens.$color-secondary-500;
+        color: tokens.$color-highlight-500;
 
         & svg {
-          color: tokens.$color-secondary-500;
+          color: tokens.$color-highlight-500;
         }
       }
 

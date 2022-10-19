@@ -3,8 +3,8 @@
 .ifx {
   &__thead {    
     &__background-color {
-      background-color: tokens.$color-info-300;
-      color: tokens.$color-black;
+      background-color: tokens.$color-gray-300;
+      color: tokens.$color-text-black;
     }
   }
 } 
@@ -27,7 +27,7 @@
 }
 
 thead {
-  border-bottom: 2px solid tokens.$color-info-300;
+  border-bottom: 2px solid tokens.$color-gray-300;
 }
 
 th {
@@ -52,6 +52,6 @@ td {
 }
 
 .table caption {
-  color: tokens.$color-black;
+  color: tokens.$color-text-black;
   padding: 16px 0 0 0;
 }

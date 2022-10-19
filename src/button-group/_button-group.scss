@@ -6,7 +6,7 @@
            .btn-outline-success,
            .btn-outline-danger,
            .btn-outline-warning) {
-    border-color: tokens.$color-info-200;
+    border-color: tokens.$color-gray-200;
   }
 
   .btn {
@@ -14,55 +14,55 @@
 
     &.btn-primary, &.btn-secondary, &.btn-success, &.btn-danger, &.btn-warning {
       &:focus {
-        border-color: tokens.$color-info-200;  
+        border-color: tokens.$color-gray-200;  
       }
   
       &:hover {
-        border-color: tokens.$color-info-200;  
+        border-color: tokens.$color-gray-200;  
       }
   
       &:active, &.active {
-        border-color: tokens.$color-info-200;  
+        border-color: tokens.$color-gray-200;  
       }
     }
 
     &.btn-primary {
       &:focus-visible {
-        border-color: tokens.$color-primary-400;  
+        border-color: tokens.$color-default-500;  
       }
     }
 
     &.btn-secondary {
       &:focus-visible {
-        border-color: tokens.$color-secondary-400;  
+        border-color: tokens.$color-highlight-500;  
       }
     }
 
     &.btn-success {
       &:focus-visible {
-        border-color: tokens.$color-success-400;  
+        border-color: tokens.$color-success-500;  
       }
     }
 
     &.btn-danger {
       &:focus-visible {
-        border-color: tokens.$color-danger-400;  
+        border-color: tokens.$color-danger-500;  
       }
     }
 
     &.btn-warning {
       &:focus-visible {
-        border-color: tokens.$color-warning-400;  
+        border-color: tokens.$color-warning-500;  
       }
     }
   }
 
   & .btn + .btn-outline-primary:disabled, & .btn-outline-primary.disabled {
-    border-left-color: tokens.$color-primary-500;
+    border-left-color: tokens.$color-default-500;
   }
 
   & .btn + .btn-outline-secondary:disabled, & .btn-outline-secondary.disabled {
-    border-left-color: tokens.$color-secondary-500;
+    border-left-color: tokens.$color-highlight-500;
   }
 
   & .btn + .btn-outline-success:disabled, & .btn-outline-success.disabled {

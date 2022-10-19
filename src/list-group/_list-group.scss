@@ -6,52 +6,52 @@
 
   & .list-group-item {
     padding: 8px 16px;
-    color: tokens.$color-black;
+    color: tokens.$color-text-black;
 
     &:hover {
-      background-color: tokens.$color-info-200;
+      background-color: tokens.$color-gray-200;
     }
   }
 
   & .list-group-item.active {
-    color: tokens.$color-white;
-    background-color: tokens.$color-secondary-500;
-    border-color: tokens.$color-info-200;
+    color: tokens.$color-text-white;
+    background-color: tokens.$color-default-500;
+    border-color: tokens.$color-gray-200;
   }
 
   & .badge {
-    color: tokens.$color-white;
+    color: tokens.$color-text-white;
     padding: 2px 8px;
   }
 }
 
 .list-group-item {
-  border: 1px solid tokens.$color-info-200;
+  border: 1px solid tokens.$color-gray-200;
 }
 
 .ifx__list-group-heading {
   font-weight: 600;
   line-height: 20px;
-  color: tokens.$color-secondary-500;
+  color: tokens.$color-default-500;
   padding-bottom: 11px;
 }
 
 .active .ifx__list-group-heading {
-  color: tokens.$color-white;
+  color: tokens.$color-text-white;
 }
 
 .ifx__list-group-date {
   font-size: 13px;
   line-height: 20px;
-  color: tokens.$color-secondary-500;
+  color: tokens.$color-default-500;
 }
 
 .active .ifx__list-group-date {
-  color: tokens.$color-white;
+  color: tokens.$color-text-white;
 }
 
 .active .badge {
-  color: tokens.$color-secondary-500;
+  color: tokens.$color-default-500;
 }
 
 .ifx__list-group-notification {

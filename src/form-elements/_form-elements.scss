@@ -60,11 +60,11 @@ input[type=range] {
 input[type=range]::-moz-range-thumb {
   width: 14px;
   height: 14px;
-  background-color: tokens.$color-secondary-500;
+  background-color: tokens.$color-highlight-500;
 }
 
 input[type=range]::-moz-range-thumb:active {
-  background-color: tokens.$color-secondary-600;
+  background-color: tokens.$color-highlight-600;
 }
 
 input[type=range]:focus::-moz-range-thumb {
@@ -73,14 +73,14 @@ input[type=range]:focus::-moz-range-thumb {
 
 input[type=range]::-moz-range-track {
   height: 5px;
-  background-color: tokens.$color-info-200;
+  background-color: tokens.$color-gray-200;
   border-radius: 1px;
 }
 
 input[type=range]::-webkit-slider-thumb {
   width: 14px;
   height: 14px;
-  background-color: tokens.$color-secondary-500;
+  background-color: tokens.$color-highlight-500;
 }
 
 input[type=range]:focus::-webkit-slider-thumb {
@@ -88,12 +88,12 @@ input[type=range]:focus::-webkit-slider-thumb {
 }
 
 input[type=range]::-webkit-slider-thumb:active {
-  background-color: tokens.$color-secondary-600;
+  background-color: tokens.$color-highlight-600;
   box-shadow: 0 0 0 3px #59B29B66;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
   height: 5px;
-  background-color: tokens.$color-info-200;
+  background-color: tokens.$color-gray-200;
   border-radius: 1px;
 }

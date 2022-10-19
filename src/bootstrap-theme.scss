@@ -12,9 +12,6 @@ $gray-300: tokens.$color-gray-300;
 $gray-400: tokens.$color-gray-400;
 $gray-500: tokens.$color-gray-500;
 $gray-600: tokens.$color-gray-600;
-$gray-700: tokens.$color-gray-700;
-$gray-800: tokens.$color-gray-800;
-$gray-900: tokens.$color-gray-900;
 
 $blue: #0d6efd;
 $indigo: #6610f2;
@@ -24,20 +21,20 @@ $red: tokens.$color-danger-500;
 $orange: #fd7e14;
 $yellow: tokens.$color-warning-500;
 $green: tokens.$color-success-600;
-$teal: tokens.$color-primary-500;
-$cyan: tokens.$color-info-500;
+$teal: tokens.$color-default-500;
+$cyan: tokens.$color-gray-500;
 
 $min-contrast-ratio: 3.5;
 
-$primary: tokens.$color-primary-500;
-$secondary: tokens.$color-secondary-500;
+$primary: tokens.$color-default-500;
+$secondary: tokens.$color-highlight-500;
 
 $white: tokens.$color-white;
 $black: tokens.$color-black;
 
 $body-color: $black;
 
-$disabled-color: tokens.$color-info-300;
+$disabled-color: tokens.$color-gray-300;
 
 // Options
 //
@@ -45,7 +42,7 @@ $enable-validation-icons: false;
 
 // Links
 //
-$link-color: tokens.$color-primary-500;
+$link-color: tokens.$color-default-500;
 
 // Typography
 //
@@ -97,8 +94,8 @@ $breadcrumb-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/200
 
 // Table
 //
-$table-striped-bg: tokens.$color-info-100;
-$table-hover-bg: tokens.$color-info-200;
+$table-striped-bg: tokens.$color-gray-100;
+$table-hover-bg: tokens.$color-gray-200;
 
 // Cards
 //
@@ -126,7 +123,7 @@ $input-btn-focus-width: 3px;
 
 // Forms
 //
-$form-label-color: tokens.$color-info-500;
+$form-label-color: tokens.$color-gray-500;
 $form-label-margin-bottom: tokens.$spacing-xs;
 
 $form-text-color: $body-color;
@@ -151,7 +148,7 @@ $input-disabled-bg: $white;
 $input-disabled-border-color: $disabled-color;
 
 $input-color: $body-color;
-$input-border-color: tokens.$color-info-400;
+$input-border-color: tokens.$color-gray-400;
 $input-border-width: 1px;
 $input-box-shadow: none;
 
@@ -163,11 +160,11 @@ $input-focus-bg: $input-bg;
 $input-focus-border-color: $input-border-color;
 $input-focus-color: $input-color;
 
-$input-placeholder-color: tokens.$color-info-400;
+$input-placeholder-color: tokens.$color-gray-400;
 
 $form-file-button-color: $black;
-$form-file-button-bg: tokens.$color-info-100;
-$form-file-button-hover-bg: tokens.$color-info-200;
+$form-file-button-bg: tokens.$color-gray-100;
+$form-file-button-hover-bg: tokens.$color-gray-200;
 
 $form-select-disabled-color: $disabled-color;
 $form-select-disabled-bg: $white;
@@ -182,12 +179,12 @@ $form-searchbar-disabled-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
 
 $form-check-input-width: 0.815em;
 $form-check-padding-start: 1.75em;
-$form-check-input-border: 1px solid tokens.$color-info-400;
+$form-check-input-border: 1px solid tokens.$color-gray-400;
 $form-check-input-border-radius: $border-radius;
 
 $form-check-input-checked-color: $white;
-$form-check-input-checked-bg-color: tokens.$color-secondary-500;
-$form-check-input-checked-border-color: tokens.$color-secondary-500;
+$form-check-input-checked-bg-color: tokens.$color-highlight-500;
+$form-check-input-checked-border-color: tokens.$color-highlight-500;
 
 $form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill='#{$form-check-input-checked-color}' d='M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z'/></svg>");
 
