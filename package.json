@@ -47,7 +47,7 @@
     "bootstrap": "^5.1.3"
   },
   "dependencies": {
-    "@infineon/design-system-tokens": "^1.0.1"
+    "@infineon/design-system-tokens": "^2.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",

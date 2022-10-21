@@ -4,7 +4,7 @@
 // 
 .form-check-input {
   &:hover:not(:checked) {
-    background-color: tokens.$color-info-200;
+    background-color: tokens.$color-gray-200;
   }
 }
 
@@ -70,13 +70,13 @@
   width: 40px;
   margin-top: 3px;
   margin-left: -53px;
-  border: 1px solid tokens.$color-info-500;
+  border: 1px solid tokens.$color-gray-500;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2.7' fill='%237D6F72'/%3E%3C/svg%3E");
 }
 
 #switch.form-check-input:disabled {
   opacity: 1;
-  border-color: tokens.$color-info-400;
+  border-color: tokens.$color-gray-400;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2.7' fill='%23C5BBBD'/%3E%3C/svg%3E");
 }
 
@@ -87,5 +87,5 @@
 
 .form-check-label {
   font-weight: 600;
-  color: tokens.$color-black;
+  color: tokens.$color-text-black;
 }

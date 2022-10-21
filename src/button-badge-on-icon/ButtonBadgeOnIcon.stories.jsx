@@ -14,7 +14,7 @@ const DefaultTemplate = (args) => (
         Link
         <FontAwesomeIcon icon={["fal", "cart-shopping"]}/>
       </div>
-      <Badge pill bg="secondary" className="btn-badge">4</Badge>
+      <Badge pill bg="primary" className="btn-badge">4</Badge>
     </div>
   </ButtonBadgeOnIcon>
 );

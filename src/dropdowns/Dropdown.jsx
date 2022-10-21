@@ -26,7 +26,7 @@ export const Dropdown = ({ size, label, children, autoClose = "default", ...prop
 
   return (
     <BsDropdown autoClose={bsAutoClose}>
-      <BsDropdown.Toggle size={bsSize} data-bs-toggle="dropdown" variant="secondary" {...props}>
+      <BsDropdown.Toggle size={bsSize} data-bs-toggle="dropdown" variant="primary" {...props}>
         {label}
       </BsDropdown.Toggle>
 

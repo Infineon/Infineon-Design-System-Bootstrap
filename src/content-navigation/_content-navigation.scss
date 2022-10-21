@@ -11,7 +11,7 @@
   
   & .nav-link {
     white-space: nowrap;
-    color: tokens.$color-black;
+    color: tokens.$color-text-black;
     padding: 4px calc(8px + 4px);
 
     @media (min-width: 576px) {
@@ -19,13 +19,13 @@
     }
 
     &:hover {
-      color: tokens.$color-secondary-500;
-      background-color: tokens.$color-info-200;
+      color: tokens.$color-default-500;
+      background-color: tokens.$color-gray-200;
     }
 
     &.active {
-      color: tokens.$color-secondary-500;
-      background-color: tokens.$color-white;
+      color: tokens.$color-default-500;
+      background-color: tokens.$color-bg-white;
       padding: 4px 8px;
 
       @media (min-width: 576px) {
@@ -35,14 +35,14 @@
   }
 
   & .nav-link.disabled {
-    color: tokens.$color-info-200;
+    color: tokens.$color-gray-200;
   }
 }
 
 .ifx__content-nav-default:not(.flex-column) {
   & .nav-link {
     &.active {
-      border-bottom: 4px solid tokens.$color-secondary-500;
+      border-bottom: 4px solid tokens.$color-default-500;
     }
   }
 }
@@ -52,7 +52,7 @@
 
   & .nav-link {
     &.active {
-      border-left: 4px solid tokens.$color-secondary-500;
+      border-left: 4px solid tokens.$color-default-500;
     }
   }
 }
@@ -88,22 +88,22 @@
     & .nav-link {
       white-space: nowrap;
       padding: 8px 16px;
-      color: tokens.$color-black;
+      color: tokens.$color-text-black;
       border-radius: 100px;
 
       &:hover {
-        color: tokens.$color-secondary-500;
-        background-color: tokens.$color-info-200;
+        color: tokens.$color-default-500;
+        background-color: tokens.$color-gray-200;
       }
     }
   
     & .nav-link.active {
-      color: tokens.$color-white;
-      background-color: tokens.$color-secondary-500;
+      color: tokens.$color-text-white;
+      background-color: tokens.$color-default-500;
     }
   
     & .nav-link.disabled {
-      color: tokens.$color-info-200;
+      color: tokens.$color-gray-200;
     }
   }
 }

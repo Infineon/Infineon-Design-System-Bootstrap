@@ -9,6 +9,14 @@
   display: none;
   padding: 0;
   border-radius: tokens.$border-radius-circle;
+  background-color: tokens.$color-bg-white;
+  border-color: tokens.$color-default-500;
+  color: tokens.$color-default-500;
+
+  &:hover { 
+    background-color: tokens.$color-default-500!important;
+    border-color: tokens.$color-default-500!important;
+  }
 }
 
 .ifx__btn-back-to-top.scroll-down {

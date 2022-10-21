@@ -24,15 +24,15 @@
 }
 
 .accordion-button {
-  border: 1px solid tokens.$color-info-200;
-  color: tokens.$color-secondary-500;
+  border: 1px solid tokens.$color-gray-200;
+  color: tokens.$color-default-500;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.25;
   padding: 14px 24px 14px 52px;
 
   &:hover {
-    background-color: tokens.$color-info-200;
+    background-color: tokens.$color-gray-200;
   }
 
   &::before {
@@ -53,14 +53,14 @@
   }
 
   &:focus {
-    border-color: tokens.$color-info-200;
+    border-color: tokens.$color-gray-200;
     box-shadow: none;  
   }
 
   &:not(.collapsed) {
     border: 1px solid transparent;
-    color: tokens.$color-white;
-    background-color: tokens.$color-secondary-500;
+    color: tokens.$color-text-white;
+    background-color: tokens.$color-default-500;
     box-shadow: none;
   
     &::before {

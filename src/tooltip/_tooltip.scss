@@ -10,27 +10,27 @@
 
 .bs-tooltip-top .tooltip-arrow::before,
 .bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before {
-  border-top-color: tokens.$color-info-600;
+  border-top-color: tokens.$color-gray-600;
 }
 
 .bs-tooltip-end .tooltip-arrow::before,
 .bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before {
-  border-right-color: tokens.$color-info-600;
+  border-right-color: tokens.$color-gray-600;
 }
 
 .bs-tooltip-bottom .tooltip-arrow::before,
 .bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before {
-  border-bottom-color: tokens.$color-info-600;
+  border-bottom-color: tokens.$color-gray-600;
 }
 
 .bs-tooltip-start .tooltip-arrow::before,
 .bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before {
-  border-left-color: tokens.$color-info-600;
+  border-left-color: tokens.$color-gray-600;
 }
 
 .tooltip-inner {
   font-size: tokens.$font-size-m;
-  background-color: tokens.$color-info-600;
+  background-color: tokens.$color-gray-600;
   border-radius: 1px;
   padding: 0 16px;
 }

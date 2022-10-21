@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 const propTypes = {
   /** Set Alert color */
   variant: PropTypes.oneOf([
-    "primary",
-    "secondary",
+    "default",
+    "highlight",
     "success",
     "danger",
     "warning",
@@ -38,7 +38,7 @@ export const Alert = ({ variant, closable, icon, children, ...props }) => {
   );
 
   if ( icon ) {
-    if ( variant === "primary" ) {
+    if ( variant === "default" ) {
       return (
         <BsAlert {...props} variant="primary" dismissible={closable}>
           <div className="ifx__alert-icon-wrapper">
@@ -47,7 +47,7 @@ export const Alert = ({ variant, closable, icon, children, ...props }) => {
           {children}
         </BsAlert>
       )
-    } else if ( variant === "secondary" ) {
+    } else if ( variant === "highlight" ) {
       return (
         <BsAlert {...props} variant="secondary" dismissible={closable}>
           <div className="ifx__alert-icon-wrapper">
@@ -94,13 +94,13 @@ export const Alert = ({ variant, closable, icon, children, ...props }) => {
       )
     }
   } else {
-    if ( variant === "primary" ) {
+    if ( variant === "default" ) {
       return (
         <BsAlert {...props} variant="primary" dismissible={closable}>
           {children}
         </BsAlert>
       )
-    } else if ( variant === "secondary" ) {
+    } else if ( variant === "highlight" ) {
       return (
         <BsAlert {...props} variant="secondary" dismissible={closable}>
           {children}

@@ -23,8 +23,8 @@ const DefaultTemplate = (args) => {
       </BsModal.Body>
 
       <BsModal.Footer>
-        <Button variant="outline" color="primary" size="s" data-bs-dismiss="modal">Button</Button>
-        <Button size="s">Button</Button>
+        <Button variant="outline" color="secondary" size="s" data-bs-dismiss="modal">Button</Button>
+        <Button size="s" color='secondary'>Button</Button>
       </BsModal.Footer>
     </BsModal.Dialog>
   )
@@ -47,8 +47,8 @@ const MessageTemplate = (args) => {
       </BsModal.Body>
 
       <BsModal.Footer>
-        <Button variant="outline" color="primary" size="s" data-bs-dismiss="modal">Button</Button>
-        <Button size="s">Button</Button>
+        <Button variant="outline" color="secondary" size="s" data-bs-dismiss="modal">Button</Button>
+        <Button size="s" color='secondary'>Button</Button>
       </BsModal.Footer>
     </BsModal.Dialog>
   )
@@ -92,8 +92,8 @@ const AlertTemplate = (args) => {
         </BsModal.Body>
 
         <BsModal.Footer>
-          <Button variant="outline" color="primary" size="s" data-bs-dismiss="modal">Button</Button>
-          <Button size="s">Button</Button>
+          <Button variant="outline" color="secondary" size="s" data-bs-dismiss="modal">Button</Button>
+          <Button size="s" color='secondary'>Button</Button>
         </BsModal.Footer>
       </div>
     </BsModal.Dialog>

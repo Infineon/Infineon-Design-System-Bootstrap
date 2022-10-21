@@ -17,7 +17,7 @@
   padding: 20px 24px;
   border-top-left-radius: 1px;
   border-top-right-radius: 1px;
-  border-bottom: 1px solid tokens.$color-info-300;
+  border-bottom: 1px solid tokens.$color-gray-300;
 
   .btn-close {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231D1D1D' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M315.3 411.3c-6.253 6.253-16.37 6.253-22.63 0L160 278.6l-132.7 132.7c-6.253 6.253-16.37 6.253-22.63 0c-6.253-6.253-6.253-16.37 0-22.63L137.4 256L4.69 123.3c-6.253-6.253-6.253-16.37 0-22.63c6.253-6.253 16.37-6.253 22.63 0L160 233.4l132.7-132.7c6.253-6.253 16.37-6.253 22.63 0c6.253 6.253 6.253 16.37 0 22.63L182.6 256l132.7 132.7C321.6 394.9 321.6 405.1 315.3 411.3z'/%3E%3C/svg%3E");
@@ -33,12 +33,12 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 25px;
-  color: tokens.$color-black;
+  color: tokens.$color-text-black;
 }
 
 .modal-body {
   padding: 16px 24px;
-  color: tokens.$color-black;
+  color: tokens.$color-text-black;
 
   div + div {
     margin-top: 16px;
@@ -81,7 +81,7 @@
   }
 
   .ifx__modal-alert-wrapper {
-    background-color: tokens.$color-primary-500;    
+    background-color: tokens.$color-highlight-500;    
     padding: 20px 12px;
   }
 }
@@ -89,5 +89,5 @@
 .svg-inline--fa.ifx__modal-alert-icon {
   width: 24px;
   height: 24px;
-  color: tokens.$color-white;
+  color: tokens.$color-text-white;
 }
