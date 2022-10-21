@@ -1,3 +1,15 @@
+# v2.0.0 (Fri Oct 21 2022)
+
+#### 💥 Breaking Change
+
+- replace old design tokens with the new ones [#42](https://github.com/Infineon/Infineon-Design-System-Bootstrap/pull/42) ([@tishoyanchev](https://github.com/tishoyanchev))
+
+#### Authors: 1
+
+- Tisho Yanchev ([@tishoyanchev](https://github.com/tishoyanchev))
+
+---
+
 # v1.2.6 (Fri Oct 14 2022)
 
 #### 🐛 Bug Fix
