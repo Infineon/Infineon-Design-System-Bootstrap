@@ -1,3 +1,15 @@
+# v2.1.0 (Fri Oct 21 2022)
+
+#### 🚀 Enhancement
+
+- update active state on button [#43](https://github.com/Infineon/Infineon-Design-System-Bootstrap/pull/43) ([@tishoyanchev](https://github.com/tishoyanchev))
+
+#### Authors: 1
+
+- Tisho Yanchev ([@tishoyanchev](https://github.com/tishoyanchev))
+
+---
+
 # v2.0.0 (Fri Oct 21 2022)
 
 #### 💥 Breaking Change
