@@ -185,8 +185,8 @@
     }
 
     &:active, &.active {
-      background-color: tokens.$color-success-600;
-      border-color: tokens.$color-success-600;
+      background-color: tokens.$color-success-700;
+      border-color: tokens.$color-success-700;
     }
   }
 
@@ -217,8 +217,8 @@
     }
 
     &:active, &.active {
-      background-color: tokens.$color-success-600;
-      border-color: tokens.$color-success-600;
+      background-color: tokens.$color-success-700;
+      border-color: tokens.$color-success-700;
 
       & .btn-badge {
         background-color: tokens.$color-bg-white;
@@ -243,8 +243,8 @@
     }
 
     &:active, &.active {
-      background-color: tokens.$color-danger-600;
-      border-color: tokens.$color-danger-600;
+      background-color: tokens.$color-danger-700;
+      border-color: tokens.$color-danger-700;
     }
   }
 
@@ -273,8 +273,8 @@
     }
 
     &:active, &.active {
-      background-color: tokens.$color-danger-600;
-      border-color: tokens.$color-danger-600;
+      background-color: tokens.$color-danger-700;
+      border-color: tokens.$color-danger-700;
 
       & .btn-badge {
         background-color: tokens.$color-bg-white;
@@ -303,8 +303,8 @@
     }
 
     &:active, &.active {
-      background-color: tokens.$color-warning-600;
-      border-color: tokens.$color-warning-600;
+      background-color: tokens.$color-warning-700;
+      border-color: tokens.$color-warning-700;
     }
   }
 
@@ -335,8 +335,8 @@
     }
 
     &:active, &.active {
-      background-color: tokens.$color-warning-600;
-      border-color: tokens.$color-warning-600;
+      background-color: tokens.$color-warning-700;
+      border-color: tokens.$color-warning-700;
 
       .btn-badge {
         background-color: tokens.$color-bg-white;

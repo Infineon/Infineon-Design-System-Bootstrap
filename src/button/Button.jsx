@@ -21,9 +21,6 @@ const propTypes = {
   /** Specifies a large or small button */
   size: PropTypes.oneOf(["s", "m", "l"]),
 
-  /** Manually set the visual state of the button to `:active` */
-  active: PropTypes.bool,
-
   /** Disables the Button, preventing mouse events */
   disabled: PropTypes.bool,
 

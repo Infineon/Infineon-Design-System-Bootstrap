@@ -10,7 +10,6 @@ export default {
     variant: "solid",
     color: "default",
     size: "m",
-    active: false,
     disabled: false,
     icon: false,
     iconPosition: "left",
