@@ -33,7 +33,7 @@ const MainpageTemplate = (args) => (
               Headline for the hero image with two rows!
             </span>
           </h1>
-          <Button size="s" href="javascript:void(0)">Primary</Button>
+          <Button size="s" color='secondary' href="javascript:void(0)">Primary</Button>
         </div>
       </div>
     </div>

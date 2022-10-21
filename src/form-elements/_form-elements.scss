@@ -60,11 +60,11 @@ input[type=range] {
 input[type=range]::-moz-range-thumb {
   width: 14px;
   height: 14px;
-  background-color: tokens.$color-highlight-500;
+  background-color: tokens.$color-default-500;
 }
 
 input[type=range]::-moz-range-thumb:active {
-  background-color: tokens.$color-highlight-600;
+  background-color: tokens.$color-default-700;
 }
 
 input[type=range]:focus::-moz-range-thumb {
@@ -80,7 +80,7 @@ input[type=range]::-moz-range-track {
 input[type=range]::-webkit-slider-thumb {
   width: 14px;
   height: 14px;
-  background-color: tokens.$color-highlight-500;
+  background-color: tokens.$color-default-500;
 }
 
 input[type=range]:focus::-webkit-slider-thumb {
@@ -88,7 +88,7 @@ input[type=range]:focus::-webkit-slider-thumb {
 }
 
 input[type=range]::-webkit-slider-thumb:active {
-  background-color: tokens.$color-highlight-600;
+  background-color: tokens.$color-default-700;
   box-shadow: 0 0 0 3px #59B29B66;
 }
 

@@ -79,7 +79,7 @@
   &-padded-text {
     @include media-breakpoint-up(lg) {
       color: tokens.$color-text-white;
-      background-color: rgba(tokens.$color-highlight-500, .75);
+      background-color: rgba(tokens.$color-default-500, .75);
       padding: tokens.$sizing-xs tokens.$sizing-m;
       -webkit-box-decoration-break: clone;
       box-decoration-break: clone;

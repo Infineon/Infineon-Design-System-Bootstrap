@@ -30,7 +30,7 @@
     opacity: 1;
     background-color: tokens.$color-gray-300;
     border-color: tokens.$color-gray-300;
-    color: tokens.$color-bg-white;
+    color: tokens.$color-text-white;
   }
 
   &.btn-primary,
@@ -40,7 +40,7 @@
   &.btn-warning {
     &.active {
       & .btn-badge {
-        color: tokens.$color-bg-darken;
+        color: tokens.$color-text-black;
       }
     }
   }
@@ -52,7 +52,7 @@
   &.btn-outline-warning {
     &:disabled, &.disabled {
       & .spinner-border {
-        color: tokens.$color-bg-white;
+        color: tokens.$color-text-white;
       }
     }
   }
@@ -69,15 +69,15 @@
     }
 
     &:active, &.active {
-      background-color: tokens.$color-default-600;
-      border-color: tokens.$color-default-600;  
+      background-color: tokens.$color-default-700;
+      border-color: tokens.$color-default-700;  
     }
   }
 
   &.btn-outline-primary:not(:disabled, .disabled) {
     .btn-badge {
       background-color: tokens.$color-default-500;
-      color: tokens.$color-bg-white;
+      color: tokens.$color-text-white;
     }
 
     &:focus {
@@ -99,8 +99,8 @@
     }
 
     &:active, &.active {
-      background-color: tokens.$color-default-600;
-      border-color: tokens.$color-default-600;
+      background-color: tokens.$color-default-700;
+      border-color: tokens.$color-default-700;
 
       & .btn-badge {
         background-color: tokens.$color-bg-white;
@@ -125,8 +125,8 @@
     }
 
     &:active, &.active {
-      background-color: tokens.$color-highlight-600;
-      border-color: tokens.$color-highlight-600;  
+      background-color: tokens.$color-highlight-700;
+      border-color: tokens.$color-highlight-700;  
     }
   }
 
@@ -155,12 +155,12 @@
     }
 
     &:active, &.active {
-      background-color: tokens.$color-highlight-600;
-      border-color: tokens.$color-highlight-600;
+      background-color: tokens.$color-highlight-700;
+      border-color: tokens.$color-highlight-700;
 
       & .btn-badge {
         background-color: tokens.$color-bg-white;
-        color: tokens.$color-bg-darken;
+        color: tokens.$color-text-black;
       }
 
       & .spinner-border {

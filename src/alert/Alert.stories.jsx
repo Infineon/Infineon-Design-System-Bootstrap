@@ -5,7 +5,7 @@ export default {
   title: "Components/Alert",
   component: Alert,
   args: {
-    variant: "primary",
+    variant: "default",
     closable: true,
     icon: true,
   }
@@ -13,8 +13,8 @@ export default {
 
 const DefaultTemplate = (args) => {
   const variantUppercase = 
-    args.variant === "primary" ? "Primary"
-    : args.variant === "secondary" ? "Secondary"
+    args.variant === "default" ? "Primary"
+    : args.variant === "highlight" ? "Secondary"
     : args.variant === "success" ? "Success" 
     : args.variant === "danger" ? "Danger" 
     : args.variant === "warning" ? "Warning" 

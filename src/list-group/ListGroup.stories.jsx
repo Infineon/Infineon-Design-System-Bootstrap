@@ -30,7 +30,7 @@ const WithBadgesTemplate = (args) => (
       <div>
         List Item Top with badge
       </div>
-      <span class="badge rounded-pill bg-secondary">4</span>
+      <span class="badge rounded-pill bg-primary">4</span>
     </BsListGroup.Item>
     <BsListGroup.Item as="li" className="d-flex justify-content-between align-items-center" active>
       <div>
@@ -42,13 +42,13 @@ const WithBadgesTemplate = (args) => (
       <div>
         List Item Middle with badge
       </div>
-      <span class="badge rounded-pill bg-secondary">140</span>
+      <span class="badge rounded-pill bg-primary">140</span>
     </BsListGroup.Item>
     <BsListGroup.Item as="li" className="d-flex justify-content-between align-items-center">
       <div>
         List Item Bottom with badge
       </div>
-      <span class="badge rounded-pill bg-secondary">1400</span>
+      <span class="badge rounded-pill bg-primary">1400</span>
     </BsListGroup.Item>
   </ListGroup>
 );

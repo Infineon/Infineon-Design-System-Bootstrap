@@ -76,10 +76,10 @@
       &.active, &:active {
         font-weight: 600;
         background-color: transparent;
-        color: tokens.$color-highlight-500;
+        color: tokens.$color-default-500;
 
         & svg {
-          color: tokens.$color-highlight-500;
+          color: tokens.$color-default-500;
         }
       }
 
