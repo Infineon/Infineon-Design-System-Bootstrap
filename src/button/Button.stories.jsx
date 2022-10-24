@@ -34,6 +34,7 @@ const BorderSpinnerTemplate = (args) => (
   </Button>
 );
 
+
 export const Default = DefaultTemplate.bind({});
 
 export const ButtonBadge = ButtonBadgeTemplate.bind({});
@@ -46,3 +47,5 @@ export const BorderSpinner = BorderSpinnerTemplate.bind({});
 BorderSpinner.args = {
   color: "highlight",
 };
+
+

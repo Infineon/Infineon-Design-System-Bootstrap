@@ -4,13 +4,17 @@
   font-weight: 600;
   border-radius: 1px;
   font-weight: 600;
-  padding: 12px 32px;
+  padding: 0px 16px;
+  min-width: 80px;
+  min-height: 40px;
+  line-height: 24px;
 
   &.btn-primary, &.btn-outline-primary,
   &.btn-secondary, &.btn-outline-secondary,
   &.btn-success, &.btn-outline-success,
   &.btn-danger, &.btn-outline-danger,
-  &.btn-warning, &.btn-outline-warning {
+  &.btn-warning, &.btn-outline-warning, 
+  &.btn-outline-text {
     &:focus {
       box-shadow: none;
     }
@@ -20,7 +24,8 @@
   &.btn-secondary, &.btn-outline-secondary,
   &.btn-success, &.btn-outline-success,
   &.btn-danger, &.btn-outline-danger,
-  &.btn-warning, &.btn-outline-warning {
+  &.btn-warning, &.btn-outline-warning, 
+  &.btn-outline-text {
     &:focus-visible {
       box-shadow: 0 0 0 3px #B4DDD8;
     }
@@ -349,6 +354,26 @@
     }
   }
 
+  &.btn-outline-text { 
+    background-color: transparent;
+    color: tokens.$color-default-500;
+
+    &:hover {
+      color: tokens.$color-default-600;
+    }
+
+    &:active, &.active {
+      color: tokens.$color-default-700;  
+    }
+
+    &:disabled, &.disabled {
+      opacity: 1;
+      background-color: transparent;
+      border-color: transparent;
+      color: tokens.$color-gray-300;
+    }
+  }
+
   &.btn-primary svg.svg-inline--fa,
   &.btn-outline-primary svg.svg-inline--fa,
   &.btn-secondary svg.svg-inline--fa,
@@ -382,6 +407,10 @@
 }
 
 .btn-sm {
+  min-width: 71px;
+  min-height: 32px;
+  line-height: 16px;
+
   & svg.svg-inline--fa {
     vertical-align: -2.5px;
   }
@@ -418,3 +447,4 @@
   background-color: tokens.$color-bg-white;
   color: tokens.$color-text-black;
 }
+
