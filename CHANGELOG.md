@@ -1,3 +1,16 @@
+# v2.1.1 (Mon Oct 24 2022)
+
+#### 🐛 Bug Fix
+
+- update button sizing [#44](https://github.com/Infineon/Infineon-Design-System-Bootstrap/pull/44) ([@tishoyanchev](https://github.com/tishoyanchev))
+- add text variant to button [#45](https://github.com/Infineon/Infineon-Design-System-Bootstrap/pull/45) ([@tishoyanchev](https://github.com/tishoyanchev))
+
+#### Authors: 1
+
+- Tisho Yanchev ([@tishoyanchev](https://github.com/tishoyanchev))
+
+---
+
 # v2.1.0 (Fri Oct 21 2022)
 
 #### 🚀 Enhancement
