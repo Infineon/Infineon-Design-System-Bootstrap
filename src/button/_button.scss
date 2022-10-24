@@ -4,7 +4,10 @@
   font-weight: 600;
   border-radius: 1px;
   font-weight: 600;
-  padding: 12px 32px;
+  padding: 0px 16px;
+  min-width: 80px;
+  min-height: 40px;
+  line-height: 24px;
 
   &.btn-primary, &.btn-outline-primary,
   &.btn-secondary, &.btn-outline-secondary,
@@ -382,6 +385,10 @@
 }
 
 .btn-sm {
+  min-width: 71px;
+  min-height: 32px;
+  line-height: 16px;
+
   & svg.svg-inline--fa {
     vertical-align: -2.5px;
   }

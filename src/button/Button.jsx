@@ -19,7 +19,7 @@ const propTypes = {
   ]),
 
   /** Specifies a large or small button */
-  size: PropTypes.oneOf(["s", "m", "l"]),
+  size: PropTypes.oneOf(["s", "m"]),
 
   /** Disables the Button, preventing mouse events */
   disabled: PropTypes.bool,
@@ -46,8 +46,8 @@ export const Button = ({ label, variant, color, size, disabled, icon, iconPositi
     : bsColor;
 
   const bsSize =
-    size === "s" ? "sm" 
-    : size === "l" ? "lg" 
+    size === "s" 
+    ? "sm" 
     : undefined;
 
   const iconPositionClass =
