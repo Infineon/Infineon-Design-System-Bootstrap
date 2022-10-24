@@ -7,7 +7,7 @@ const propTypes = {
   label: PropTypes.string,
 
   /** Set button variant */
-  variant: PropTypes.oneOf(["solid", "outline"]),
+  variant: PropTypes.oneOf(["solid", "outline", "text"]),
 
   /** Set button color */
   color: PropTypes.oneOf([
@@ -19,7 +19,7 @@ const propTypes = {
   ]),
 
   /** Specifies a large or small button */
-  size: PropTypes.oneOf(["s", "m", "l"]),
+  size: PropTypes.oneOf(["s", "m"]),
 
   /** Disables the Button, preventing mouse events */
   disabled: PropTypes.bool,
@@ -40,14 +40,16 @@ export const Button = ({ label, variant, color, size, disabled, icon, iconPositi
   color === 'default' ? 'primary' 
   : color === 'highlight' ? 'secondary' 
   : color 
+  
 
   const bsVariant =
-    variant === "outline" ? `outline-${bsColor}`
-    : bsColor;
+    variant === "outline" 
+    ? `outline-${bsColor}`
+    : variant === 'text' ? 'outline-text' : bsColor;
 
   const bsSize =
-    size === "s" ? "sm" 
-    : size === "l" ? "lg" 
+    size === "s" 
+    ? "sm" 
     : undefined;
 
   const iconPositionClass =
