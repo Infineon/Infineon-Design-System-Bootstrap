@@ -1,0 +1,25 @@
+:host {
+  --background: var(--button-background, ivory);
+  --background-hover: var(--button-background-hover, gold);
+  --color: var(--button-color, rebeccapurple);
+}
+
+button {
+  background: var(--background);
+  border: 2px solid currentcolor;
+  border-radius: 1ex;
+  color: var(--color);
+  cursor: pointer;
+  padding: 0.5ex 1em;
+}
+
+button:hover {
+  --background: var(--background-hover);
+}
+
+/* button:disabled {
+  --background: var(--background-disabled);
+  --color: var(--color-disabled);
+
+  cursor: not-allowed;
+} */

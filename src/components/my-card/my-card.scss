@@ -1,0 +1,52 @@
+.ifx__sass-test { 
+  color: red;
+  &.green { 
+    background: green;
+  }
+}
+
+.my-card-wrapper { 
+  background-color: skyblue;
+  padding: 1rem;
+}
+
+p {
+  padding: 10px;
+  border: 1px solid #f1f1f1;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+p span { 
+  margin-right: 10px;
+}
+  
+.success { 
+  background: lightgreen;
+}
+
+.success { 
+  &.acknowledge {
+    background-color: rgb(15, 107, 15);
+  }
+}
+
+.info { 
+  background-color: lightgray;
+}
+
+.info{ 
+  &.acknowledge {
+    background-color: rgb(130, 130, 130);
+  }
+}
+
+.error { 
+  background-color: lightcoral;
+}
+
+.error { 
+  &.acknowledge { 
+    background-color: rgb(149, 84, 84);
+  }
+}
