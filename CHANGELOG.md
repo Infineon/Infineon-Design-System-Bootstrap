@@ -1,3 +1,16 @@
+# v2.1.4 (Mon Feb 13 2023)
+
+#### ⚠️ Pushed to `master`
+
+- storybook update ([@tishoyanchev](https://github.com/tishoyanchev))
+- Merge branch 'master' of https://github.com/Infineon/Infineon-Design-System-Bootstrap ([@tishoyanchev](https://github.com/tishoyanchev))
+
+#### Authors: 1
+
+- Tisho Yanchev ([@tishoyanchev](https://github.com/tishoyanchev))
+
+---
+
 # v2.1.3 (Mon Feb 13 2023)
 
 #### ⚠️ Pushed to `master`
