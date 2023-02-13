@@ -1,3 +1,15 @@
+# v2.1.3 (Mon Feb 13 2023)
+
+#### ⚠️ Pushed to `master`
+
+- remove unnecessary navbar height ([@tishoyanchev](https://github.com/tishoyanchev))
+
+#### Authors: 1
+
+- Tisho Yanchev ([@tishoyanchev](https://github.com/tishoyanchev))
+
+---
+
 # v2.1.2 (Tue Oct 25 2022)
 
 #### 🐛 Bug Fix
