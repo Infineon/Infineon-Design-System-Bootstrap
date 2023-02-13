@@ -158,8 +158,6 @@ const DefaultTemplate = (args) => {
           </NavBar>
         </div>
       </div>
-
-      <div style={{height: "200vh"}}></div>
     </JsWrapper>
   );
 }
@@ -280,8 +278,6 @@ const ExtendedTemplate = (args) => {
           </NavBar>
         </div>
       </div>
-
-      <div style={{height: "200vh"}}></div>
     </JsWrapper>
   );
 }
@@ -564,9 +560,6 @@ const ExtendedLevel2Template = (args) => {
           </NavBar>
         </div>
       </div>
-
-
-      <div style={{height: "200vh"}}></div>
     </JsWrapper>
   );
 }
@@ -832,8 +825,6 @@ const ExtendedLevel3Template = (args) => {
           </NavBar>
         </div>
       </div>
-      
-      <div style={{height: "200vh"}}></div>
     </JsWrapper>
   );
 }
@@ -897,8 +888,6 @@ const VerticalTemplate = (args) => {
           </ul>
         </div>
       </div>
-
-      <div style={{height: "200vh"}}></div>
     </JsWrapper>
   );
 }
@@ -953,8 +942,6 @@ const VerticalLevel2Template = (args) => {
           </ul>
         </div>
       </div>
-
-      <div style={{height: "200vh"}}></div>
     </JsWrapper>
   );
 }
@@ -963,8 +950,6 @@ const VerticalCollapsibleComponent = (args) => {
   return (
     <JsWrapper>
       <VerticalCollapsibleTemplate {...args}/>
-
-      <div style={{height: "200vh"}}></div>
     </JsWrapper>
   );
 }
