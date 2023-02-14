@@ -35,5 +35,5 @@ export default create({
 
   brandTitle: 'Infineon Technologies AG',
   brandUrl: '/',
-  brandImage: '/Logo.svg',
+  brandImage: './Logo.svg',
 });
