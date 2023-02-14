@@ -1,3 +1,16 @@
+# v2.1.5 (Tue Feb 14 2023)
+
+#### 🐛 Bug Fix
+
+- updated path to brandImage in theme.js [#51](https://github.com/Infineon/Infineon-Design-System-Bootstrap/pull/51) (lechneve@ISCN5CG1201S7M.infineon.com [@verena-ifx](https://github.com/verena-ifx))
+
+#### Authors: 2
+
+- [@verena-ifx](https://github.com/verena-ifx)
+- Verena Lechner (lechneve@ISCN5CG1201S7M.infineon.com)
+
+---
+
 # v2.1.4 (Mon Feb 13 2023)
 
 #### ⚠️ Pushed to `master`
