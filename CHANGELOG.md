@@ -1,3 +1,15 @@
+# v2.1.6 (Thu Apr 27 2023)
+
+#### ⚠️ Pushed to `master`
+
+- Update README.md ([@benedikt-ifx](https://github.com/benedikt-ifx))
+
+#### Authors: 1
+
+- Benedikt Kaemmerer ([@benedikt-ifx](https://github.com/benedikt-ifx))
+
+---
+
 # v2.1.5 (Tue Feb 14 2023)
 
 #### 🐛 Bug Fix
