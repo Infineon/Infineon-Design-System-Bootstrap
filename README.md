@@ -1,4 +1,4 @@
-# Infineon Design System Bootstrap Components
+# [DEPRECATED] Infineon Design System Bootstrap Components
 [![GitHub Repo Issues](https://img.shields.io/github/issues/Infineon/Infineon-Design-System-Bootstrap?style=plastic)](https://github.com/Infineon/Infineon-Design-System-Bootstrap/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr-raw/Infineon/Infineon-Design-System-Bootstrap?style=plastic)](https://github.com/Infineon/Infineon-Design-System-Bootstrap/pulls)
 [![GitHub Repo Version](https://img.shields.io/github/package-json/v/Infineon/Infineon-Design-System-Bootstrap?style=plastic)](https://github.com/Infineon/Infineon-Design-System-Bootstrap/blob/master/package.json)
